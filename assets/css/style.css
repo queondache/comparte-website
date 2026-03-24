@@ -1069,7 +1069,6 @@ header.scrolled .nav {
   gap: 8px;
   max-height: 480px;
   overflow-y: auto;
-  overflow: hidden;
 }
 
 .galleria-thumb {
