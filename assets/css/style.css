@@ -1079,8 +1079,7 @@ header.scrolled .nav {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.2s;
-  outline: 3px solid transparent;
-  outline-offset: -3px;
+  box-shadow: inset 0 0 0 0px transparent;
   box-sizing: border-box;
 }
 
@@ -1090,8 +1089,7 @@ header.scrolled .nav {
 
 .galleria-thumb.active {
   opacity: 1;
-  outline: 3px solid var(--arancione);
-  outline-offset: -3px;
+  box-shadow: inset 0 0 0 3px var(--arancione);
   position: relative;
   z-index: 1;
 }
