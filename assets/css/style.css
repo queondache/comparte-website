@@ -1079,7 +1079,9 @@ header.scrolled .nav {
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.2s;
-  border: 2px solid transparent;
+  outline: 3px solid transparent;
+  outline-offset: -3px;
+  box-sizing: border-box;
 }
 
 .galleria-thumb:hover {
@@ -1088,7 +1090,8 @@ header.scrolled .nav {
 
 .galleria-thumb.active {
   opacity: 1;
-  border-color: var(--arancione);
+  outline: 3px solid var(--arancione);
+  outline-offset: -3px;
   position: relative;
   z-index: 1;
 }
