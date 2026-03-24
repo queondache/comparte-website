@@ -25,7 +25,7 @@ const galleryData = [
   { src: 'assets/img/galleria/03.jpg', alt: 'Nuevo Horizonte, dove è iniziato tutto', project: 'Comparte Onlus', caption: 'Nuevo Horizonte — dove è iniziato tutto' },
   { src: 'assets/img/galleria/04.jpg', alt: 'Il pranzo da cui è nata Comparte nel 2018', project: 'Comparte Onlus', caption: 'Il pranzo da cui è nata Comparte, 2018' },
   { src: 'assets/img/galleria/05.jpg', alt: 'Consegna diplomi USAC Comparte Universidad Petén', project: 'Comparte Universidad', caption: 'Consegna diplomi USAC · Comparte Universidad' },
-  { src: 'assets/img/galleria/06.jpg', alt: 'Seminario in presenza Centro Universitario de Petén Guatemala', project: 'Comparte Universidad', caption: 'Seminario in presenza · Centro Universitario de Petén' },
+  { src: 'assets/img/galleria/06.jpg', alt: 'Seminario in presenza Centro Universitario de Petén Guatemala', project: 'Comparte Universidad', caption: 'Registrazione seminario di Comparte Universidad - Francesca Izzo' },
   { src: 'assets/img/galleria/07.jpg', alt: 'Vita nelle comunità rurali del Petén Guatemala', project: 'Comparte Comunidad', caption: 'Vita nelle comunità del Petén' },
   { src: 'assets/img/galleria/08.jpg', alt: 'Comparte Cinema proiezione nelle comunità rurali Guatemala', project: 'Comparte Cinema', caption: 'Comparte Cinema · proiezione nelle comunità rurali' },
   { src: 'assets/img/galleria/09.jpg', alt: 'Cerimonia USAC studentesse indigene del Petén Guatemala', project: 'Comparte Universidad', caption: 'Cerimonia USAC · studentesse del Petén' },
