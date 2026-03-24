@@ -282,63 +282,29 @@
         </div>
       </div>
     </section>
-    <!-- foto: 3 verticali (01,02,03,05,06) + 1 orizzontale (04) -->
     <section id="galleria">
       <div class="container">
         <div class="galleria-header">
           <span class="section-tag section-tag--dark">Guatemala</span>
           <h2>Dal campo,<br><em>le nostre storie</em></h2>
         </div>
-      </div>
-      <div class="galleria-grid">
-        <div class="galleria-item galleria-item--tall" onclick="openLightbox('assets/img/galleria/01.jpg')">
-          <img src="assets/img/galleria/01.jpg" alt="Studenti del programma Comparte in Guatemala" loading="lazy">
-          <div class="galleria-overlay"></div>
+        <div class="galleria-slider">
+          <div class="galleria-main">
+            <div class="galleria-main-img-wrap">
+              <img src="" alt="" id="galleria-main-img" loading="lazy">
+              <div class="galleria-main-caption">
+                <span id="galleria-caption-project"></span>
+                <span id="galleria-caption-text"></span>
+              </div>
+            </div>
+            <div class="galleria-arrows">
+              <button class="galleria-arrow" id="galleria-prev" aria-label="Foto precedente">←</button>
+              <span class="galleria-counter"><span id="galleria-current">1</span> / <span id="galleria-total">11</span></span>
+              <button class="galleria-arrow" id="galleria-next" aria-label="Foto successiva">→</button>
+            </div>
+          </div>
+          <div class="galleria-thumbs" id="galleria-thumbs"></div>
         </div>
-        <div class="galleria-item" onclick="openLightbox('assets/img/galleria/02.jpg')">
-          <img src="assets/img/galleria/02.jpg" alt="Formazione nelle comunità rurali del Petén" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item" onclick="openLightbox('assets/img/galleria/03.jpg')">
-          <img src="assets/img/galleria/03.jpg" alt="Comparte Universidad, seminari online Guatemala" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item galleria-item--wide" onclick="openLightbox('assets/img/galleria/04.jpg')">
-          <img src="assets/img/galleria/04.jpg" alt="Comunità indigene del Petén, Guatemala" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item" onclick="openLightbox('assets/img/galleria/05.jpg')">
-          <img src="assets/img/galleria/05.jpg" alt="Progetto educativo sulla crisi climatica, Nuevo Horizonte" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item" onclick="openLightbox('assets/img/galleria/06.jpg')">
-          <img src="assets/img/galleria/06.jpg" alt="Riforestazione e formazione agricola, Guatemala" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item" onclick="openLightbox('assets/img/galleria/07.jpg')">
-          <img src="assets/img/galleria/07.jpg" alt="Vita nelle comunità rurali del Petén, Guatemala" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item" onclick="openLightbox('assets/img/galleria/08.jpg')">
-          <img src="assets/img/galleria/08.jpg" alt="Comparte Cinema — proiezione nelle comunità rurali del Petén" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item galleria-item--wide" onclick="openLightbox('assets/img/galleria/09.jpg')">
-          <img src="assets/img/galleria/09.jpg" alt="Consegna diplomi USAC — Comparte Universidad, Petén Guatemala" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item" onclick="openLightbox('assets/img/galleria/10.jpg')">
-          <img src="assets/img/galleria/10.jpg" alt="Foresta del Petén, Guatemala — progetto di riforestazione" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-        <div class="galleria-item" onclick="openLightbox('assets/img/galleria/11.jpg')">
-          <img src="assets/img/galleria/11.jpg" alt="Seminario online Comparte Universidad — Centro Universitario de Petén" loading="lazy">
-          <div class="galleria-overlay"></div>
-        </div>
-      </div>
-      <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-        <button class="lightbox-close" aria-label="Chiudi">&times;</button>
-        <img src="" alt="" id="lightbox-img">
       </div>
     </section>
     <section id="partner">

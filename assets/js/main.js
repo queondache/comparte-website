@@ -19,20 +19,61 @@ if (cfCopyBtn) {
   });
 }
 
-// Lightbox galleria
-function openLightbox(src) {
-  const lb = document.getElementById('lightbox');
-  const img = document.getElementById('lightbox-img');
-  img.src = src;
-  lb.classList.add('active');
-  document.body.style.overflow = 'hidden';
+const galleryData = [
+  { src: 'assets/img/galleria/01.jpg', alt: 'Comunità di Nuevo Horizonte, Petén, Guatemala', project: 'Comparte Comunidad', caption: 'Petén, Guatemala · Comparte Comunidad' },
+  { src: 'assets/img/galleria/02.jpg', alt: 'Formazione agricola nelle comunità rurali del Guatemala', project: 'Comparte Comunidad', caption: 'Formazione agricola nelle comunità rurali' },
+  { src: 'assets/img/galleria/03.jpg', alt: 'Nuevo Horizonte, dove è iniziato tutto', project: 'Comparte Onlus', caption: 'Nuevo Horizonte — dove è iniziato tutto' },
+  { src: 'assets/img/galleria/04.jpg', alt: 'Il pranzo da cui è nata Comparte nel 2018', project: 'Comparte Onlus', caption: 'Il pranzo da cui è nata Comparte, 2018' },
+  { src: 'assets/img/galleria/05.jpg', alt: 'Consegna diplomi USAC Comparte Universidad Petén', project: 'Comparte Universidad', caption: 'Consegna diplomi USAC · Comparte Universidad' },
+  { src: 'assets/img/galleria/06.jpg', alt: 'Seminario in presenza Centro Universitario de Petén Guatemala', project: 'Comparte Universidad', caption: 'Seminario in presenza · Centro Universitario de Petén' },
+  { src: 'assets/img/galleria/07.jpg', alt: 'Vita nelle comunità rurali del Petén Guatemala', project: 'Comparte Comunidad', caption: 'Vita nelle comunità del Petén' },
+  { src: 'assets/img/galleria/08.jpg', alt: 'Comparte Cinema proiezione nelle comunità rurali Guatemala', project: 'Comparte Cinema', caption: 'Comparte Cinema · proiezione nelle comunità rurali' },
+  { src: 'assets/img/galleria/09.jpg', alt: 'Cerimonia USAC studentesse indigene del Petén Guatemala', project: 'Comparte Universidad', caption: 'Cerimonia USAC · studentesse del Petén' },
+  { src: 'assets/img/galleria/10.jpg', alt: 'Foresta del Petén Guatemala 180000 alberi piantati zeroCO2', project: 'Comparte Comunidad', caption: 'Foresta del Petén · 180.000 alberi piantati' },
+  { src: 'assets/img/galleria/11.jpg', alt: 'Seminario online Comparte Universidad Centro Universitario Petén', project: 'Comparte Universidad', caption: 'Seminario online · Comparte Universidad' }
+];
+
+let currentIndex = 0;
+
+function initGallery() {
+  const thumbsContainer = document.getElementById('galleria-thumbs');
+  if (!thumbsContainer) return;
+
+  galleryData.forEach((item, i) => {
+    const thumb = document.createElement('div');
+    thumb.className = 'galleria-thumb' + (i === 0 ? ' active' : '');
+    thumb.innerHTML = `<img src="${item.src}" alt="${item.alt}" loading="lazy">`;
+    thumb.addEventListener('click', () => setSlide(i));
+    thumbsContainer.appendChild(thumb);
+  });
+
+  document.getElementById('galleria-total').textContent = galleryData.length;
+  setSlide(0);
+
+  document.getElementById('galleria-prev').addEventListener('click', () => {
+    setSlide((currentIndex - 1 + galleryData.length) % galleryData.length);
+  });
+  document.getElementById('galleria-next').addEventListener('click', () => {
+    setSlide((currentIndex + 1) % galleryData.length);
+  });
 }
 
-function closeLightbox() {
-  document.getElementById('lightbox').classList.remove('active');
-  document.body.style.overflow = '';
+function setSlide(index) {
+  currentIndex = index;
+  const item = galleryData[index];
+  const mainImg = document.getElementById('galleria-main-img');
+  mainImg.style.opacity = '0';
+  setTimeout(() => {
+    mainImg.src = item.src;
+    mainImg.alt = item.alt;
+    mainImg.style.opacity = '1';
+  }, 150);
+  document.getElementById('galleria-caption-project').textContent = item.project;
+  document.getElementById('galleria-caption-text').textContent = item.caption;
+  document.getElementById('galleria-current').textContent = index + 1;
+  document.querySelectorAll('.galleria-thumb').forEach((t, i) => {
+    t.classList.toggle('active', i === index);
+  });
 }
 
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeLightbox();
-});
+document.addEventListener('DOMContentLoaded', initGallery);
