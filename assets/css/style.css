@@ -710,6 +710,123 @@ header.scrolled .nav {
   border-top: 1px solid rgba(28, 22, 18, 0.08);
 }
 
+/* ------------------------------------------------------------
+   9b. Chi siamo — Origins (Comparte Cinema 2018-2020)
+   ------------------------------------------------------------ */
+
+.chisiamo-origins {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--s5);
+  margin-top: var(--s7);
+  padding-top: var(--s6);
+  border-top: 1px solid rgba(28, 22, 18, 0.08);
+  align-items: center;
+}
+
+.chisiamo-origins-img {
+  border-radius: 16px 16px 16px 60px;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  background: var(--crema-dark);
+}
+
+.chisiamo-origins-img img,
+.chisiamo-origins-img picture {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.origins-text h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 300;
+  line-height: 1.2;
+  margin-top: var(--s2);
+  margin-bottom: var(--s3);
+  color: var(--testo);
+}
+
+.origins-text p {
+  font-size: var(--text-base);
+  color: var(--testo-muted);
+  line-height: 1.8;
+}
+
+
+/* ------------------------------------------------------------
+   9c. Direttivo
+   ------------------------------------------------------------ */
+
+#direttivo {
+  background: var(--crema);
+  padding: var(--s7) 0;
+  border-top: 1px solid rgba(28, 22, 18, 0.05);
+}
+
+.direttivo-header {
+  margin-bottom: var(--s6);
+}
+
+.direttivo-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 300;
+  color: var(--testo);
+  line-height: 1.1;
+  margin-top: var(--s3);
+}
+
+.direttivo-header h2 em {
+  color: var(--arancione-text);
+  font-style: italic;
+}
+
+.direttivo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s4);
+}
+
+.direttivo-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: var(--s4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s1);
+  transition: transform 0.2s;
+}
+
+.direttivo-card:hover {
+  transform: translateY(-2px);
+}
+
+.direttivo-card h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--testo);
+  line-height: 1.2;
+}
+
+.direttivo-role {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--arancione-text);
+}
+
+.direttivo-card p {
+  font-size: var(--text-sm);
+  color: var(--testo-muted);
+  line-height: 1.6;
+  margin-top: var(--s2);
+}
+
 .meta-item {
   display: flex;
   flex-direction: column;
@@ -1425,6 +1542,15 @@ footer {
 
   .chisiamo-meta {
     gap: var(--s3);
+  }
+
+  .chisiamo-origins {
+    grid-template-columns: 1fr;
+    gap: var(--s4);
+  }
+
+  .direttivo-grid {
+    grid-template-columns: 1fr;
   }
 
   .impatto-grid {
