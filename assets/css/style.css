@@ -1598,29 +1598,35 @@ footer {
 
 #trasparenza-hero {
   background: var(--crema);
-  padding: var(--s7) 0 var(--s5);
+  padding: var(--s7) 0 var(--s6);
 }
 
-#trasparenza-hero h1 {
+.trasparenza-claim {
   font-family: var(--font-display);
-  font-size: clamp(40px, 5vw, 64px);
+  font-size: clamp(48px, 7vw, 96px);
   font-weight: 300;
-  line-height: 1.05;
+  line-height: 1.0;
+  letter-spacing: -0.01em;
   margin-top: var(--s3);
-  margin-bottom: var(--s4);
+  margin-bottom: var(--s5);
   color: var(--testo);
+  max-width: 900px;
 }
 
-#trasparenza-hero h1 em {
-  color: var(--arancione-text);
+.trasparenza-claim em {
+  color: var(--arancione);
   font-style: italic;
+  font-weight: 400;
+  font-size: 1.4em;
+  display: inline-block;
+  line-height: 0.9;
 }
 
-.trasparenza-intro {
+.trasparenza-claim-sub {
   font-size: var(--text-lg);
   color: var(--testo-muted);
   line-height: 1.7;
-  max-width: 720px;
+  max-width: 640px;
 }
 
 #trasparenza-identita,
@@ -1628,22 +1634,113 @@ footer {
 #trasparenza-documenti,
 #trasparenza-fondi,
 #trasparenza-5x1000,
-#trasparenza-partner,
 #trasparenza-contatti {
   padding: var(--s6) 0;
   border-top: 1px solid rgba(28, 22, 18, 0.05);
 }
 
-#trasparenza-identita,
-#trasparenza-documenti,
-#trasparenza-partner {
+#trasparenza-fondi,
+#trasparenza-documenti {
   background: var(--crema);
 }
 
+#trasparenza-identita,
 #trasparenza-governance,
-#trasparenza-fondi,
 #trasparenza-5x1000 {
   background: var(--crema-dark);
+}
+
+/* §1 Dove vanno i fondi — asimmetria tipografica */
+
+.fondi-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 28%) 1fr;
+  gap: var(--s5);
+  align-items: center;
+  padding: var(--s5) 0;
+  border-bottom: 1px solid rgba(28, 22, 18, 0.08);
+}
+
+.fondi-row:last-of-type {
+  border-bottom: none;
+}
+
+.fondi-quota-num {
+  font-family: var(--font-display);
+  font-size: clamp(64px, 9vw, 128px);
+  font-weight: 300;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  display: inline-block;
+}
+
+.fondi-row--primary .fondi-quota-num {
+  color: var(--arancione);
+}
+
+.fondi-row--secondary .fondi-quota-num {
+  color: var(--testo);
+  opacity: 0.5;
+}
+
+.fondi-quota-plus,
+.fondi-quota-lt {
+  font-size: 0.55em;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 2px;
+  vertical-align: super;
+  opacity: 0.7;
+}
+
+.fondi-quota-lt {
+  margin-left: 0;
+  margin-right: 4px;
+  vertical-align: baseline;
+  font-style: normal;
+  opacity: 0.5;
+}
+
+.fondi-detail h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--testo);
+  line-height: 1.2;
+  margin-bottom: var(--s2);
+}
+
+.fondi-detail p {
+  font-size: var(--text-base);
+  color: var(--testo-muted);
+  line-height: 1.7;
+}
+
+.fondi-footnote {
+  margin-top: var(--s5);
+  padding-top: var(--s4);
+  border-top: 1px solid rgba(28, 22, 18, 0.08);
+  font-size: var(--text-sm);
+  color: var(--testo-muted);
+  line-height: 1.7;
+}
+
+.fondi-footnote-placeholder,
+.documento-placeholder {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--arancione-text);
+  background: rgba(232, 98, 26, 0.08);
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-top: var(--s1);
+}
+
+.documento-placeholder {
+  margin-top: var(--s2);
+  display: block;
+  width: 100%;
 }
 
 main h2 {
@@ -1696,7 +1793,6 @@ main h2 {
 }
 
 .documenti-grid,
-.fondi-grid,
 .rendiconto-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -1704,7 +1800,6 @@ main h2 {
 }
 
 .documento-card,
-.fondo-card,
 .rendiconto-card {
   background: var(--white);
   border-radius: 16px;
@@ -1712,20 +1807,6 @@ main h2 {
   display: flex;
   flex-direction: column;
   gap: var(--s2);
-}
-
-.documento-tag,
-.rendiconto-status {
-  display: inline-block;
-  align-self: flex-start;
-  background: rgba(28, 22, 18, 0.08);
-  color: var(--testo-muted);
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  padding: 4px 12px;
-  border-radius: 40px;
 }
 
 .documento-card h3,
@@ -1736,45 +1817,7 @@ main h2 {
   color: var(--testo);
 }
 
-.documento-card p,
-.rendiconto-card p {
-  font-size: var(--text-sm);
-  color: var(--testo-muted);
-  line-height: 1.6;
-}
-
-.documento-meta {
-  font-size: var(--text-xs);
-  color: var(--testo-muted);
-  font-style: italic;
-  margin-top: auto;
-}
-
-.fondo-label {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 600;
-  color: var(--testo);
-}
-
-.fondo-desc {
-  font-size: var(--text-sm);
-  color: var(--testo-muted);
-  line-height: 1.6;
-}
-
-.fondo-value-placeholder {
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--arancione-text);
-  font-weight: 700;
-  margin-top: auto;
-}
-
-.fondi-intro,
-.rendiconto-intro,
-.partner-intro {
+.fondi-intro {
   font-size: var(--text-base);
   color: var(--testo-muted);
   line-height: 1.7;
@@ -1782,47 +1825,22 @@ main h2 {
   max-width: 720px;
 }
 
-.partner-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: var(--s2);
-  max-width: 900px;
-}
-
-.partner-list li {
-  background: var(--white);
-  border-radius: 12px;
-  padding: var(--s3);
-  font-size: var(--text-sm);
-  color: var(--testo-muted);
-  line-height: 1.6;
-}
-
-.partner-list li strong {
-  color: var(--testo);
-}
-
 #trasparenza-contatti {
-  background: var(--blu);
-  color: var(--white);
+  background: var(--crema);
+  padding: var(--s5) 0;
 }
 
-.trasparenza-cta h2 {
-  color: var(--white);
+.trasparenza-contatti-line {
+  font-size: var(--text-base);
+  color: var(--testo-muted);
+  line-height: 1.7;
 }
 
-.trasparenza-cta p {
-  font-size: var(--text-lg);
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.6;
-  max-width: 720px;
-}
-
-.trasparenza-cta a {
-  color: var(--rosa);
+.trasparenza-contatti-line a {
+  color: var(--arancione-text);
   text-decoration: underline;
   text-underline-offset: 3px;
+  font-weight: 600;
 }
 
 
