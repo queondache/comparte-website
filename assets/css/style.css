@@ -1593,6 +1593,240 @@ footer {
 
 
 /* ------------------------------------------------------------
+   15b. Pagina /trasparenza
+   ------------------------------------------------------------ */
+
+#trasparenza-hero {
+  background: var(--crema);
+  padding: var(--s7) 0 var(--s5);
+}
+
+#trasparenza-hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 300;
+  line-height: 1.05;
+  margin-top: var(--s3);
+  margin-bottom: var(--s4);
+  color: var(--testo);
+}
+
+#trasparenza-hero h1 em {
+  color: var(--arancione-text);
+  font-style: italic;
+}
+
+.trasparenza-intro {
+  font-size: var(--text-lg);
+  color: var(--testo-muted);
+  line-height: 1.7;
+  max-width: 720px;
+}
+
+#trasparenza-identita,
+#trasparenza-governance,
+#trasparenza-documenti,
+#trasparenza-fondi,
+#trasparenza-5x1000,
+#trasparenza-partner,
+#trasparenza-contatti {
+  padding: var(--s6) 0;
+  border-top: 1px solid rgba(28, 22, 18, 0.05);
+}
+
+#trasparenza-identita,
+#trasparenza-documenti,
+#trasparenza-partner {
+  background: var(--crema);
+}
+
+#trasparenza-governance,
+#trasparenza-fondi,
+#trasparenza-5x1000 {
+  background: var(--crema-dark);
+}
+
+main h2 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 40px);
+  font-weight: 300;
+  color: var(--testo);
+  line-height: 1.2;
+  margin-bottom: var(--s4);
+}
+
+.identita-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--s3);
+}
+
+.identita-item {
+  background: var(--white);
+  border-radius: 12px;
+  padding: var(--s3);
+}
+
+.identita-item dt {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--testo-muted);
+  margin-bottom: 6px;
+}
+
+.identita-item dd {
+  font-size: var(--text-base);
+  color: var(--testo);
+  line-height: 1.5;
+}
+
+.identita-item dd a {
+  color: var(--arancione-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.governance-note {
+  margin-top: var(--s4);
+  font-size: var(--text-sm);
+  color: var(--testo-muted);
+  font-style: italic;
+}
+
+.documenti-grid,
+.fondi-grid,
+.rendiconto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--s3);
+}
+
+.documento-card,
+.fondo-card,
+.rendiconto-card {
+  background: var(--white);
+  border-radius: 16px;
+  padding: var(--s4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+
+.documento-tag,
+.rendiconto-status {
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba(28, 22, 18, 0.08);
+  color: var(--testo-muted);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 40px;
+}
+
+.documento-card h3,
+.rendiconto-anno {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  font-weight: 600;
+  color: var(--testo);
+}
+
+.documento-card p,
+.rendiconto-card p {
+  font-size: var(--text-sm);
+  color: var(--testo-muted);
+  line-height: 1.6;
+}
+
+.documento-meta {
+  font-size: var(--text-xs);
+  color: var(--testo-muted);
+  font-style: italic;
+  margin-top: auto;
+}
+
+.fondo-label {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--testo);
+}
+
+.fondo-desc {
+  font-size: var(--text-sm);
+  color: var(--testo-muted);
+  line-height: 1.6;
+}
+
+.fondo-value-placeholder {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--arancione-text);
+  font-weight: 700;
+  margin-top: auto;
+}
+
+.fondi-intro,
+.rendiconto-intro,
+.partner-intro {
+  font-size: var(--text-base);
+  color: var(--testo-muted);
+  line-height: 1.7;
+  margin-bottom: var(--s4);
+  max-width: 720px;
+}
+
+.partner-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  max-width: 900px;
+}
+
+.partner-list li {
+  background: var(--white);
+  border-radius: 12px;
+  padding: var(--s3);
+  font-size: var(--text-sm);
+  color: var(--testo-muted);
+  line-height: 1.6;
+}
+
+.partner-list li strong {
+  color: var(--testo);
+}
+
+#trasparenza-contatti {
+  background: var(--blu);
+  color: var(--white);
+}
+
+.trasparenza-cta h2 {
+  color: var(--white);
+}
+
+.trasparenza-cta p {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  max-width: 720px;
+}
+
+.trasparenza-cta a {
+  color: var(--rosa);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* ------------------------------------------------------------
    16. Responsive
    ------------------------------------------------------------ */
 
