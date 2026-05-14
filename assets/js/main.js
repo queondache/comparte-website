@@ -42,7 +42,12 @@ function initGallery() {
   galleryData.forEach((item, i) => {
     const thumb = document.createElement('div');
     thumb.className = 'galleria-thumb' + (i === 0 ? ' active' : '');
-    thumb.innerHTML = `<img src="${item.src}" alt="${item.alt}" loading="lazy">`;
+    const img = document.createElement('img');
+    img.src = item.src;
+    img.alt = item.alt;
+    img.loading = i === 0 ? 'eager' : 'lazy';
+    img.decoding = 'async';
+    thumb.appendChild(img);
     thumb.addEventListener('click', () => setSlide(i));
     thumbsContainer.appendChild(thumb);
   });
