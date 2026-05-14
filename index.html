@@ -30,18 +30,240 @@
   <meta name="twitter:description" content="Comparte è una ONLUS italo-guatemalteca che porta educazione e formazione nelle comunità rurali del Petén, Guatemala. Dona il tuo 5x1000: CF 97977810585">
   <meta name="twitter:image" content="/assets/img/hero/hero.jpg">
 
-  <!-- Schema.org JSON-LD -->
+  <!-- Schema.org JSON-LD — @graph completo -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "NGO",
-    "name": "Comparte Onlus",
-    "url": "https://www.comparte.it/",
-    "logo": "https://www.comparte.it/assets/logo/comparte_logo_black.png",
-    "description": "Comparte è una ONLUS italo-guatemalteca che porta educazione e formazione nelle comunità rurali del Petén, Guatemala.",
-    "foundingDate": "2018",
-    "areaServed": "Guatemala",
-    "sameAs": []
+    "@graph": [
+      {
+        "@type": "NGO",
+        "@id": "https://www.comparte.it/#organization",
+        "name": "Comparte Onlus",
+        "alternateName": "Comparte",
+        "legalName": "Comparte Onlus",
+        "url": "https://www.comparte.it/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.comparte.it/assets/logo/comparte_logo_black.png"
+        },
+        "image": "https://www.comparte.it/assets/img/hero/hero.jpg",
+        "description": "Comparte è una ONLUS italo-guatemalteca attiva dal 2018 nel Petén, Guatemala. Lavora su tre programmi di formazione: universitaria con USAC/CUDEP, climatica per ragazzi 13-17 anni, agricola con le comunità rurali.",
+        "foundingDate": "2018",
+        "foundingLocation": {
+          "@type": "Place",
+          "name": "Roma, Italia"
+        },
+        "areaServed": [
+          {"@type": "Country", "name": "Guatemala"},
+          {"@type": "AdministrativeArea", "name": "Petén, Guatemala"}
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Via G. G. Porro, 8",
+          "postalCode": "00197",
+          "addressLocality": "Roma",
+          "addressRegion": "RM",
+          "addressCountry": "IT"
+        },
+        "email": "info@comparte.it",
+        "taxID": "97977810585",
+        "vatID": "IT16847801004",
+        "knowsLanguage": ["it", "es", "en"],
+        "founder": [
+          {"@id": "https://www.comparte.it/#person-andrea-pesce"},
+          {"@id": "https://www.comparte.it/#person-irene-culcasi"},
+          {"@id": "https://www.comparte.it/#person-virgilio-galicia"}
+        ],
+        "member": [
+          {"@id": "https://www.usac.edu.gt/#organization"},
+          {"@id": "https://www.lumsa.it/#organization"},
+          {"@id": "https://www.scholasoccurrentes.org/#organization"},
+          {"@id": "https://www.inab.gob.gt/#organization"},
+          {"@id": "https://www.marn.gob.gt/#organization"},
+          {"@id": "https://www.eun.org/#organization"},
+          {"@id": "https://zeroco2.eu/#organization"},
+          {"@id": "https://1caffe.org/#organization"}
+        ],
+        "subjectOf": {
+          "@type": "Event",
+          "name": "Comparte Cinema (2018-2020)",
+          "description": "Da dove veniamo. Tra il 2018 e il 2020 Comparte ha portato proiezioni cinematografiche in spagnolo a 7 comunità rurali del Petén, in collaborazione con l'ICAIC cubano. È il progetto da cui è nata l'organizzazione.",
+          "startDate": "2018",
+          "endDate": "2020",
+          "location": {"@type": "AdministrativeArea", "name": "Petén, Guatemala"}
+        },
+        "potentialAction": {"@id": "https://www.comparte.it/#donate-action"},
+        "sameAs": [
+          "https://www.instagram.com/comparteonlus/",
+          "https://www.facebook.com/comparteonlus/",
+          "https://it.linkedin.com/company/comparteonlus"
+        ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.comparte.it/#person-andrea-pesce",
+        "name": "Andrea Pesce",
+        "jobTitle": "Presidente",
+        "worksFor": {"@id": "https://www.comparte.it/#organization"},
+        "affiliation": {"@id": "https://zeroco2.eu/#organization"},
+        "description": "Co-fondatore di Comparte e CEO di zeroCO2."
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.comparte.it/#person-irene-culcasi",
+        "name": "Irene Culcasi",
+        "jobTitle": "Vicepresidente",
+        "worksFor": {"@id": "https://www.comparte.it/#organization"},
+        "description": "Pedagogista, ricercatrice in service-learning."
+      },
+      {
+        "@type": "Person",
+        "@id": "https://www.comparte.it/#person-virgilio-galicia",
+        "name": "Virgilio Galicia Gregorio",
+        "jobTitle": "Liaison Guatemala",
+        "worksFor": {"@id": "https://www.comparte.it/#organization"},
+        "description": "Referente comunità indigene del Petén."
+      },
+      {
+        "@type": "Project",
+        "@id": "https://www.comparte.it/#project-comunidad",
+        "name": "Comparte Comunidad",
+        "description": "Nelle comunità rurali del Petén dove zeroCO2 pianta alberi, Comparte porta formazione agricola, gestione sostenibile della terra e autonomia economica per le famiglie contadine.",
+        "url": "https://www.comparte.it/#progetti",
+        "parentOrganization": {"@id": "https://www.comparte.it/#organization"},
+        "areaServed": {"@type": "AdministrativeArea", "name": "Petén, Guatemala"},
+        "status": "Active",
+        "collaborator": {"@id": "https://zeroco2.eu/#organization"}
+      },
+      {
+        "@type": "Project",
+        "@id": "https://www.comparte.it/#project-universidad",
+        "name": "Comparte Universidad",
+        "description": "Seminari online con docenti europei per studenti e professori del CUDEP, il centro universitario più isolato dell'unica università pubblica del Guatemala. Dal 2018, oltre 1.500 persone formate.",
+        "url": "https://www.comparte.it/#progetti",
+        "parentOrganization": {"@id": "https://www.comparte.it/#organization"},
+        "status": "Active",
+        "location": {
+          "@type": "EducationalOrganization",
+          "name": "Centro Universitario de Petén (CUDEP)",
+          "parentOrganization": {"@id": "https://www.usac.edu.gt/#organization"},
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santa Elena",
+            "addressRegion": "Petén",
+            "addressCountry": "GT"
+          }
+        },
+        "collaborator": [
+          {"@id": "https://www.usac.edu.gt/#organization"},
+          {"@id": "https://www.lumsa.it/#organization"},
+          {
+            "@type": "EducationalOrganization",
+            "name": "Universidad Católica de Valencia",
+            "address": {"@type": "PostalAddress", "addressLocality": "Valencia", "addressCountry": "ES"}
+          }
+        ]
+      },
+      {
+        "@type": "Project",
+        "@id": "https://www.comparte.it/#project-educacion",
+        "name": "Comparte Educación",
+        "description": "Programma in 5 moduli sulla crisi climatica per ragazzi di 13-17 anni nelle comunità rurali del Petén. Prima edizione: 27 studenti a Nuevo Horizonte, in collaborazione con INAB e MARN.",
+        "url": "https://www.comparte.it/#progetti",
+        "parentOrganization": {"@id": "https://www.comparte.it/#organization"},
+        "status": "Active",
+        "areaServed": {"@type": "Place", "name": "Nuevo Horizonte, Petén, Guatemala"},
+        "audience": {
+          "@type": "EducationalAudience",
+          "audienceType": "Students aged 13-17",
+          "educationalRole": "student"
+        },
+        "collaborator": [
+          {"@id": "https://www.inab.gob.gt/#organization"},
+          {"@id": "https://www.marn.gob.gt/#organization"}
+        ]
+      },
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://www.usac.edu.gt/#organization",
+        "name": "Universidad de San Carlos de Guatemala",
+        "alternateName": "USAC",
+        "url": "https://www.usac.edu.gt",
+        "sameAs": "https://www.wikidata.org/wiki/Q607331"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://www.lumsa.it/#organization",
+        "name": "Libera Università Maria SS. Assunta",
+        "alternateName": "LUMSA",
+        "url": "https://www.lumsa.it",
+        "sameAs": "https://www.wikidata.org/wiki/Q1454044"
+      },
+      {
+        "@type": "NGO",
+        "@id": "https://www.scholasoccurrentes.org/#organization",
+        "name": "Scholas Occurrentes",
+        "url": "https://www.scholasoccurrentes.org",
+        "sameAs": "https://www.wikidata.org/wiki/Q16913085"
+      },
+      {
+        "@type": "GovernmentOrganization",
+        "@id": "https://www.inab.gob.gt/#organization",
+        "name": "Instituto Nacional de Bosques",
+        "alternateName": "INAB",
+        "url": "https://www.inab.gob.gt",
+        "areaServed": {"@type": "Country", "name": "Guatemala"},
+        "sameAs": "https://www.wikidata.org/wiki/Q5559151"
+      },
+      {
+        "@type": "GovernmentOrganization",
+        "@id": "https://www.marn.gob.gt/#organization",
+        "name": "Ministerio de Ambiente y Recursos Naturales",
+        "alternateName": "MARN",
+        "url": "https://www.marn.gob.gt",
+        "areaServed": {"@type": "Country", "name": "Guatemala"},
+        "sameAs": "https://www.wikidata.org/wiki/Q6017176"
+      },
+      {
+        "@type": "NGO",
+        "@id": "https://www.eun.org/#organization",
+        "name": "European Schoolnet",
+        "url": "https://www.eun.org",
+        "sameAs": "https://www.wikidata.org/wiki/Q17012677"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://zeroco2.eu/#organization",
+        "name": "zeroCO2",
+        "description": "Società benefit italo-guatemalteca attiva nella riforestazione e nello sviluppo rurale.",
+        "url": "https://zeroco2.eu",
+        "sameAs": "https://zeroco2.eu"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://1caffe.org/#organization",
+        "name": "1Caffè",
+        "description": "Piattaforma italiana di raccolta fondi per organizzazioni del terzo settore.",
+        "url": "https://1caffe.org",
+        "sameAs": "https://1caffe.org"
+      },
+      {
+        "@type": "DonateAction",
+        "@id": "https://www.comparte.it/#donate-action",
+        "name": "Dona il 5×1000 a Comparte Onlus",
+        "description": "Destina il 5×1000 della tua dichiarazione dei redditi a Comparte Onlus indicando il codice fiscale 97977810585. Non costa nulla.",
+        "recipient": {"@id": "https://www.comparte.it/#organization"},
+        "target": "https://www.comparte.it/#cinque-x-mille"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.comparte.it/#website",
+        "url": "https://www.comparte.it/",
+        "name": "Comparte Onlus",
+        "inLanguage": ["it"],
+        "publisher": {"@id": "https://www.comparte.it/#organization"}
+      }
+    ]
   }
   </script>
 
