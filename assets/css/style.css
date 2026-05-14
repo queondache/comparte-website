@@ -1074,6 +1074,106 @@ header.scrolled .nav {
 
 
 /* ------------------------------------------------------------
+   11b. FAQ
+   ------------------------------------------------------------ */
+
+#faq {
+  background: var(--crema);
+  padding: var(--s7) 0;
+  border-top: 1px solid rgba(28, 22, 18, 0.05);
+}
+
+.faq-header {
+  margin-bottom: var(--s6);
+}
+
+.faq-header h2 {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 300;
+  color: var(--testo);
+  line-height: 1.1;
+  margin-top: var(--s3);
+}
+
+.faq-header h2 em {
+  color: var(--arancione-text);
+  font-style: italic;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  max-width: 900px;
+}
+
+.faq-item {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 0 var(--s4);
+  border: 1px solid rgba(28, 22, 18, 0.06);
+  transition: border-color 0.2s;
+}
+
+.faq-item[open] {
+  border-color: rgba(232, 98, 26, 0.3);
+}
+
+.faq-item summary {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  color: var(--testo);
+  padding: var(--s3) 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s3);
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: var(--text-2xl);
+  font-weight: 300;
+  color: var(--arancione-text);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-answer {
+  padding: 0 0 var(--s3) 0;
+}
+
+.faq-answer p {
+  font-size: var(--text-base);
+  color: var(--testo-muted);
+  line-height: 1.7;
+  margin-bottom: var(--s2);
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+.faq-answer a {
+  color: var(--arancione-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* ------------------------------------------------------------
    12. Galleria
    ------------------------------------------------------------ */
 
