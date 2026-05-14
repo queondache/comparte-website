@@ -13,8 +13,10 @@
    ------------------------------------------------------------ */
 
 :root {
-  /* Colori */
-  --arancione:   #E8621A;
+  /* Colori — brand */
+  --arancione:        #E8621A;  /* uso su bg/bordi (large text protetto) */
+  --arancione-text:   #C44E0E;  /* variante WCAG-safe per testo small su crema/white */
+  --arancione-deep:   #A03E08;  /* hover stati */
   --rosa:        #D4547A;
   --blu:         #1A4A6B;
   --crema:       #F5EFE0;
@@ -121,7 +123,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--arancione);
+  background-color: var(--arancione-text);
   color: var(--white);
 }
 
@@ -274,12 +276,12 @@ header.scrolled .nav {
 
 .hero-tag {
   display: inline-block;
-  background: var(--arancione);
+  background: var(--arancione-text);
   color: var(--white);
   font-size: var(--text-xs);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   padding: 6px 16px;
   border-radius: 40px;
   margin-bottom: var(--s4);
@@ -295,7 +297,7 @@ header.scrolled .nav {
 }
 
 #hero h1 em {
-  color: var(--arancione);
+  color: var(--arancione-text);
   font-style: italic;
   font-weight: 400;
 }
@@ -316,18 +318,18 @@ header.scrolled .nav {
 }
 
 .btn-primary {
-  background: var(--arancione);
+  background: var(--arancione-text);
   color: var(--white);
   padding: 14px 32px;
   border-radius: 40px;
-  font-weight: 600;
+  font-weight: 700;
   font-size: var(--text-base);
   text-decoration: none;
   transition: all 0.2s;
 }
 
 .btn-primary:hover {
-  background: #C44E0E;
+  background: var(--arancione-deep);
   transform: translateY(-2px);
 }
 
@@ -536,20 +538,20 @@ header.scrolled .nav {
 
 .cf-copy-btn {
   width: 100%;
-  background: var(--arancione);
+  background: var(--arancione-text);
   color: var(--white);
   border: none;
   padding: 14px;
   border-radius: 40px;
   font-size: var(--text-base);
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.2s;
   font-family: var(--font-body);
 }
 
 .cf-copy-btn:hover {
-  background: #C44E0E;
+  background: var(--arancione-deep);
 }
 
 .cf-copy-btn .copy-done {
@@ -678,7 +680,7 @@ header.scrolled .nav {
 }
 
 #chi-siamo h2 em {
-  color: var(--arancione);
+  color: var(--arancione-text);
   font-style: italic;
 }
 
@@ -754,7 +756,7 @@ header.scrolled .nav {
 }
 
 .impatto-header h2 em {
-  color: var(--arancione);
+  color: var(--arancione-text);
   font-style: italic;
 }
 
@@ -806,7 +808,7 @@ header.scrolled .nav {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 600;
-  color: var(--arancione);
+  color: var(--arancione-text);
   margin-top: auto;
 }
 
@@ -838,7 +840,7 @@ header.scrolled .nav {
 }
 
 .progetti-header h2 em {
-  color: var(--arancione);
+  color: var(--arancione-text);
   font-style: italic;
 }
 
@@ -977,7 +979,7 @@ header.scrolled .nav {
 }
 
 .galleria-header h2 em {
-  color: var(--arancione);
+  color: var(--arancione-text);
   font-style: italic;
 }
 
@@ -1021,7 +1023,7 @@ header.scrolled .nav {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 700;
-  color: var(--arancione);
+  color: var(--arancione-text);
 }
 
 #galleria-caption-text {
@@ -1052,7 +1054,7 @@ header.scrolled .nav {
 .galleria-arrow:hover {
   background: var(--arancione);
   color: white;
-  border-color: var(--arancione);
+  border-color: var(--arancione-text);
 }
 
 .galleria-counter {
@@ -1100,7 +1102,7 @@ header.scrolled .nav {
 }
 
 .galleria-thumb.active::after {
-  border-color: var(--arancione);
+  border-color: var(--arancione-text);
 }
 
 .galleria-thumb img {
@@ -1136,7 +1138,7 @@ header.scrolled .nav {
 }
 
 .partner-header h2 em {
-  color: var(--arancione);
+  color: var(--arancione-text);
   font-style: italic;
 }
 
@@ -1197,7 +1199,7 @@ header.scrolled .nav {
 }
 
 .press-header h2 em {
-  color: var(--arancione);
+  color: var(--arancione-text);
   font-style: italic;
 }
 
@@ -1227,7 +1229,7 @@ header.scrolled .nav {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 700;
-  color: var(--arancione);
+  color: var(--arancione-text);
 }
 
 .press-title {
@@ -1292,7 +1294,7 @@ footer {
   color: var(--white);
 }
 
-.footer-col h4 {
+.footer-col h3 {
   font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.1em;
