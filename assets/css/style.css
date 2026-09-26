@@ -1704,7 +1704,7 @@ footer {
 }
 
 .trasparenza-claim em {
-  color: var(--arancione);
+  color: var(--arancione-deep);
   font-weight: 400;
   font-size: 1.4em;
   display: inline-block;
