@@ -2047,3 +2047,10 @@ main h2 {
   gap: var(--s3);
   justify-items: start;
 }
+
+.nl-form input.visually-hidden {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  clip-path: inset(50%);
+}

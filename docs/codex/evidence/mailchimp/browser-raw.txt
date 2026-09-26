@@ -1,0 +1,4151 @@
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --virtual-time-budget=3000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/it-newsletter.png --log-net-log=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/it-network.json http://127.0.0.1:8765/#newsletter
+[0926/202315.253932:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202315.308650:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202315.390552:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202315.419595:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202315.454853:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2743 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/it-newsletter.png
+EXIT 0
+
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --virtual-time-budget=3000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/it-privacy.png http://127.0.0.1:8765/trasparenza/#privacy
+[0926/202318.089293:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202318.106552:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202318.140831:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202318.141149:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202318.152947:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2743 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/it-privacy.png
+EXIT 0
+
+it: 87 URL events; Mailchimp URL events: 0
+[
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "sec-ch-ua-platform: \"macOS\"",
+          "Upgrade-Insecure-Requests: 1",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+        ],
+        "line": "GET / HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/#newsletter"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40913136",
+      "type": 1
+    },
+    "time": "40913136",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 63171670,
+      "url": "http://127.0.0.1:8765/#newsletter"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40913136",
+      "type": 1
+    },
+    "time": "40913136",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "not an origin",
+      "load_flags": 98560,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "main frame",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/#newsletter"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40913136",
+      "type": 1
+    },
+    "time": "40913137",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/#newsletter"
+    },
+    "phase": 1,
+    "source": {
+      "id": 12,
+      "start_time": "40913138",
+      "type": 32
+    },
+    "time": "40913138",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: text/css,*/*;q=0.1"
+        ],
+        "line": "GET /css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40913145",
+      "type": 1
+    },
+    "time": "40913145",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40913145",
+      "type": 1
+    },
+    "time": "40913145",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 8192,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40913145",
+      "type": 1
+    },
+    "time": "40913146",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 21,
+      "start_time": "40913146",
+      "type": 32
+    },
+    "time": "40913146",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: text/css,*/*;q=0.1"
+        ],
+        "line": "GET /assets/css/style.css HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40913147",
+      "type": 1
+    },
+    "time": "40913147",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40913147",
+      "type": 1
+    },
+    "time": "40913147",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40913147",
+      "type": 1
+    },
+    "time": "40913149",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 28,
+      "start_time": "40913149",
+      "type": 32
+    },
+    "time": "40913149",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/logo/comparte_logo_black.png HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40913149",
+      "type": 1
+    },
+    "time": "40913149",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40913149",
+      "type": 1
+    },
+    "time": "40913149",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40913149",
+      "type": 1
+    },
+    "time": "40913149",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 34,
+      "start_time": "40913149",
+      "type": 32
+    },
+    "time": "40913149",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/logo/comparte_spirale.png HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 40,
+      "start_time": "40913150",
+      "type": 32
+    },
+    "time": "40913150",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/hero/hero.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 44,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "MEDIUM",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 44,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 44,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 46,
+      "start_time": "40913150",
+      "type": 32
+    },
+    "time": "40913150",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/hero/chi-siamo.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/hero/chi-siamo.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 50,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/hero/chi-siamo.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 50,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/hero/chi-siamo.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 50,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/hero/chi-siamo.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 52,
+      "start_time": "40913150",
+      "type": 32
+    },
+    "time": "40913150",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/cinema/cinema-origins.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 56,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 56,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 56,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 58,
+      "start_time": "40913150",
+      "type": 32
+    },
+    "time": "40913150",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /assets/js/main.js HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 62,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 62,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913150",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 62,
+      "start_time": "40913150",
+      "type": 1
+    },
+    "time": "40913152",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 64,
+      "start_time": "40913152",
+      "type": 32
+    },
+    "time": "40913152",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/01.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/01.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 68,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/01.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 68,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/01.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 68,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/01.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 70,
+      "start_time": "40913160",
+      "type": 32
+    },
+    "time": "40913160",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/02.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/02.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 74,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/02.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 74,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/02.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 74,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/02.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 76,
+      "start_time": "40913160",
+      "type": 32
+    },
+    "time": "40913160",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/03.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/03.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 80,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/03.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 80,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/03.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 80,
+      "start_time": "40913160",
+      "type": 1
+    },
+    "time": "40913160",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/03.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 82,
+      "start_time": "40913160",
+      "type": 32
+    },
+    "time": "40913160",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/04.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/04.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 86,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/04.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 86,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/04.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 86,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/04.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 88,
+      "start_time": "40913161",
+      "type": 32
+    },
+    "time": "40913161",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/05.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/05.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 92,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/05.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 92,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/05.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 92,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/05.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 94,
+      "start_time": "40913161",
+      "type": 32
+    },
+    "time": "40913161",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/06.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/06.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 98,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/06.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 98,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/06.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 98,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/06.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 100,
+      "start_time": "40913161",
+      "type": 32
+    },
+    "time": "40913161",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/07.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/07.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 104,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/07.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 104,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 2
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/08.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/08.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 105,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/08.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 105,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 2
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/09.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/09.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 106,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/09.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 106,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 2
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/10.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/10.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 107,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/10.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 107,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 2
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/11.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/11.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 108,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/11.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 108,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913161",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/07.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 104,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913164",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/07.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 110,
+      "start_time": "40913164",
+      "type": 32
+    },
+    "time": "40913164",
+    "type": 195
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/08.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 105,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913164",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/08.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 115,
+      "start_time": "40913164",
+      "type": 32
+    },
+    "time": "40913164",
+    "type": 195
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/09.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 106,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913165",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/09.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 120,
+      "start_time": "40913165",
+      "type": 32
+    },
+    "time": "40913165",
+    "type": 195
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/10.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 107,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913166",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/10.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 125,
+      "start_time": "40913166",
+      "type": 32
+    },
+    "time": "40913166",
+    "type": 195
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/11.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 108,
+      "start_time": "40913161",
+      "type": 1
+    },
+    "time": "40913166",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/11.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 130,
+      "start_time": "40913166",
+      "type": 32
+    },
+    "time": "40913166",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "Origin: http://127.0.0.1:8765",
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2 HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 138,
+      "start_time": "40913919",
+      "type": 1
+    },
+    "time": "40913919",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 138,
+      "start_time": "40913919",
+      "type": 1
+    },
+    "time": "40913919",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 73800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 138,
+      "start_time": "40913919",
+      "type": 1
+    },
+    "time": "40913919",
+    "type": 135
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "Origin: http://127.0.0.1:8765",
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2 HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 139,
+      "start_time": "40913924",
+      "type": 1
+    },
+    "time": "40913924",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 139,
+      "start_time": "40913924",
+      "type": 1
+    },
+    "time": "40913924",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 73792,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 139,
+      "start_time": "40913924",
+      "type": 1
+    },
+    "time": "40913924",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "enabled",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 141,
+      "start_time": "40913924",
+      "type": 32
+    },
+    "time": "40913924",
+    "type": 195
+  }
+]
+
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --virtual-time-budget=3000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/es-newsletter.png --log-net-log=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/es-network.json http://127.0.0.1:8765/es/#boletin
+[0926/202318.712292:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202318.727866:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202318.760312:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202318.760771:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202318.775486:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2743 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/es-newsletter.png
+EXIT 0
+
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --virtual-time-budget=3000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/es-privacy.png http://127.0.0.1:8765/es/transparencia/#privacidad
+[0926/202320.015335:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202320.031000:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202320.068525:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202320.069007:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202320.080569:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2743 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/es-privacy.png
+EXIT 0
+
+es: 87 URL events; Mailchimp URL events: 0
+[
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "sec-ch-ua-platform: \"macOS\"",
+          "Upgrade-Insecure-Requests: 1",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+        ],
+        "line": "GET /es/ HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/es/#boletin"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40916463",
+      "type": 1
+    },
+    "time": "40916463",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 63171670,
+      "url": "http://127.0.0.1:8765/es/#boletin"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40916463",
+      "type": 1
+    },
+    "time": "40916463",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "not an origin",
+      "load_flags": 98560,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "main frame",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/es/#boletin"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40916463",
+      "type": 1
+    },
+    "time": "40916463",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/es/#boletin"
+    },
+    "phase": 1,
+    "source": {
+      "id": 12,
+      "start_time": "40916463",
+      "type": 32
+    },
+    "time": "40916463",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: text/css,*/*;q=0.1"
+        ],
+        "line": "GET /css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40916466",
+      "type": 1
+    },
+    "time": "40916466",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40916466",
+      "type": 1
+    },
+    "time": "40916466",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 8192,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40916466",
+      "type": 1
+    },
+    "time": "40916466",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 21,
+      "start_time": "40916466",
+      "type": 32
+    },
+    "time": "40916466",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: text/css,*/*;q=0.1"
+        ],
+        "line": "GET /assets/css/style.css HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40916466",
+      "type": 1
+    },
+    "time": "40916466",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40916466",
+      "type": 1
+    },
+    "time": "40916466",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40916466",
+      "type": 1
+    },
+    "time": "40916467",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 28,
+      "start_time": "40916468",
+      "type": 32
+    },
+    "time": "40916468",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/logo/comparte_logo_black.png HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 34,
+      "start_time": "40916468",
+      "type": 32
+    },
+    "time": "40916468",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/logo/comparte_spirale.png HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 40,
+      "start_time": "40916468",
+      "type": 32
+    },
+    "time": "40916468",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /es/assets/img/hero/hero.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/es/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 46,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "MEDIUM",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/es/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 46,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/es/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 46,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/es/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 48,
+      "start_time": "40916468",
+      "type": 32
+    },
+    "time": "40916468",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /es/assets/img/hero/chi-siamo.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/es/assets/img/hero/chi-siamo.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 52,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/es/assets/img/hero/chi-siamo.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 52,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/es/assets/img/hero/chi-siamo.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 52,
+      "start_time": "40916468",
+      "type": 1
+    },
+    "time": "40916468",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/es/assets/img/hero/chi-siamo.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 54,
+      "start_time": "40916468",
+      "type": 32
+    },
+    "time": "40916468",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /es/assets/img/cinema/cinema-origins.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/es/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 58,
+      "start_time": "40916469",
+      "type": 1
+    },
+    "time": "40916469",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/es/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 58,
+      "start_time": "40916469",
+      "type": 1
+    },
+    "time": "40916469",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/es/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 58,
+      "start_time": "40916469",
+      "type": 1
+    },
+    "time": "40916469",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/es/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 60,
+      "start_time": "40916469",
+      "type": 32
+    },
+    "time": "40916469",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /assets/js/main.js HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 64,
+      "start_time": "40916469",
+      "type": 1
+    },
+    "time": "40916469",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 64,
+      "start_time": "40916469",
+      "type": 1
+    },
+    "time": "40916469",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 64,
+      "start_time": "40916469",
+      "type": 1
+    },
+    "time": "40916470",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 66,
+      "start_time": "40916470",
+      "type": 32
+    },
+    "time": "40916470",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/01.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/01.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 70,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/01.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 70,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/01.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 70,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/01.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 72,
+      "start_time": "40916484",
+      "type": 32
+    },
+    "time": "40916484",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/02.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/02.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 76,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/02.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 76,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/02.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 76,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/02.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 78,
+      "start_time": "40916484",
+      "type": 32
+    },
+    "time": "40916484",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/03.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/03.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 82,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/03.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 82,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/03.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 82,
+      "start_time": "40916484",
+      "type": 1
+    },
+    "time": "40916484",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/03.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 84,
+      "start_time": "40916484",
+      "type": 32
+    },
+    "time": "40916484",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/04.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/04.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 88,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/04.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 88,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/04.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 88,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/04.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 90,
+      "start_time": "40916485",
+      "type": 32
+    },
+    "time": "40916485",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/05.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/05.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 94,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/05.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 94,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/05.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 94,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/05.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 96,
+      "start_time": "40916485",
+      "type": 32
+    },
+    "time": "40916485",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/06.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/06.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 100,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/06.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 100,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/06.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 100,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/06.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 102,
+      "start_time": "40916485",
+      "type": 32
+    },
+    "time": "40916485",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/07.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/07.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 106,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/07.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 106,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 2
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/08.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/08.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 107,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/08.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 107,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 2
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/09.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/09.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 108,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/09.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 108,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 2
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/10.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/10.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 109,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/10.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 109,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 2
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/galleria/11.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/galleria/11.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 110,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/galleria/11.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 110,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916485",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/07.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 106,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916488",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/07.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 112,
+      "start_time": "40916488",
+      "type": 32
+    },
+    "time": "40916488",
+    "type": 195
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/08.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 107,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916489",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/08.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 117,
+      "start_time": "40916489",
+      "type": 32
+    },
+    "time": "40916489",
+    "type": 195
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/09.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 108,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916489",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/09.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 122,
+      "start_time": "40916489",
+      "type": 32
+    },
+    "time": "40916489",
+    "type": 195
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/10.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 109,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916489",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/10.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 127,
+      "start_time": "40916489",
+      "type": 32
+    },
+    "time": "40916489",
+    "type": 195
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/11.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 110,
+      "start_time": "40916485",
+      "type": 1
+    },
+    "time": "40916490",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/galleria/11.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 132,
+      "start_time": "40916490",
+      "type": 32
+    },
+    "time": "40916490",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "Origin: http://127.0.0.1:8765",
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2 HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 141,
+      "start_time": "40917189",
+      "type": 1
+    },
+    "time": "40917189",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 141,
+      "start_time": "40917189",
+      "type": 1
+    },
+    "time": "40917189",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 73800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 141,
+      "start_time": "40917189",
+      "type": 1
+    },
+    "time": "40917190",
+    "type": 135
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "Origin: http://127.0.0.1:8765",
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2 HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 142,
+      "start_time": "40917193",
+      "type": 1
+    },
+    "time": "40917193",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 142,
+      "start_time": "40917193",
+      "type": 1
+    },
+    "time": "40917194",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 73792,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 142,
+      "start_time": "40917193",
+      "type": 1
+    },
+    "time": "40917194",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "enabled",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 144,
+      "start_time": "40917194",
+      "type": 32
+    },
+    "time": "40917194",
+    "type": 195
+  }
+]
+
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --virtual-time-budget=3000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/en-newsletter.png --log-net-log=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/en-network.json http://127.0.0.1:8765/en/#newsletter
+[0926/202320.463885:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202320.480314:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202320.516288:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202320.516738:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202320.533621:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2743 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/en-newsletter.png
+EXIT 0
+
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --virtual-time-budget=3000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/en-privacy.png http://127.0.0.1:8765/en/transparency/#privacy
+[0926/202321.573715:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202321.589459:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202321.622299:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202321.622747:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202321.639166:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+2743 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mailchimp/en-privacy.png
+EXIT 0
+
+en: 43 URL events; Mailchimp URL events: 0
+[
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "sec-ch-ua-platform: \"macOS\"",
+          "Upgrade-Insecure-Requests: 1",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7"
+        ],
+        "line": "GET /en/ HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/en/#newsletter"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40918217",
+      "type": 1
+    },
+    "time": "40918217",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 63171670,
+      "url": "http://127.0.0.1:8765/en/#newsletter"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40918217",
+      "type": 1
+    },
+    "time": "40918217",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "not an origin",
+      "load_flags": 98560,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "main frame",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/en/#newsletter"
+    },
+    "phase": 1,
+    "source": {
+      "id": 10,
+      "start_time": "40918217",
+      "type": 1
+    },
+    "time": "40918217",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/en/#newsletter"
+    },
+    "phase": 1,
+    "source": {
+      "id": 12,
+      "start_time": "40918217",
+      "type": 32
+    },
+    "time": "40918217",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: text/css,*/*;q=0.1"
+        ],
+        "line": "GET /css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40918222",
+      "type": 1
+    },
+    "time": "40918222",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40918222",
+      "type": 1
+    },
+    "time": "40918222",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 8192,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 19,
+      "start_time": "40918222",
+      "type": 1
+    },
+    "time": "40918222",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    },
+    "phase": 1,
+    "source": {
+      "id": 21,
+      "start_time": "40918222",
+      "type": 32
+    },
+    "time": "40918222",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: text/css,*/*;q=0.1"
+        ],
+        "line": "GET /assets/css/style.css HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40918222",
+      "type": 1
+    },
+    "time": "40918222",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40918222",
+      "type": 1
+    },
+    "time": "40918222",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 26,
+      "start_time": "40918222",
+      "type": 1
+    },
+    "time": "40918224",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/css/style.css"
+    },
+    "phase": 1,
+    "source": {
+      "id": 28,
+      "start_time": "40918224",
+      "type": 32
+    },
+    "time": "40918224",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/logo/comparte_logo_black.png HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40918224",
+      "type": 1
+    },
+    "time": "40918224",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40918224",
+      "type": 1
+    },
+    "time": "40918224",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 32,
+      "start_time": "40918224",
+      "type": 1
+    },
+    "time": "40918224",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_logo_black.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 34,
+      "start_time": "40918224",
+      "type": 32
+    },
+    "time": "40918224",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/logo/comparte_spirale.png HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 38,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/logo/comparte_spirale.png"
+    },
+    "phase": 1,
+    "source": {
+      "id": 40,
+      "start_time": "40918225",
+      "type": 32
+    },
+    "time": "40918225",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/hero/hero.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 44,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "MEDIUM",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 44,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 44,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/hero/hero.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 46,
+      "start_time": "40918225",
+      "type": 32
+    },
+    "time": "40918225",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/hero/about.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/hero/about.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 50,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/hero/about.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 50,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/hero/about.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 50,
+      "start_time": "40918225",
+      "type": 1
+    },
+    "time": "40918225",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/hero/about.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 52,
+      "start_time": "40918225",
+      "type": 32
+    },
+    "time": "40918225",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8"
+        ],
+        "line": "GET /assets/img/cinema/cinema-origins.webp HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 58,
+      "start_time": "40918226",
+      "type": 1
+    },
+    "time": "40918226",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOW",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 58,
+      "start_time": "40918226",
+      "type": 1
+    },
+    "time": "40918226",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 58,
+      "start_time": "40918226",
+      "type": 1
+    },
+    "time": "40918226",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/img/cinema/cinema-origins.webp"
+    },
+    "phase": 1,
+    "source": {
+      "id": 60,
+      "start_time": "40918226",
+      "type": 32
+    },
+    "time": "40918226",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /assets/js/main.js HTTP/1.1\r\n"
+      },
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 64,
+      "start_time": "40918226",
+      "type": 1
+    },
+    "time": "40918226",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "LOWEST",
+      "traffic_annotation": 101845102,
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 64,
+      "start_time": "40918226",
+      "type": 1
+    },
+    "time": "40918226",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 204800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 64,
+      "start_time": "40918226",
+      "type": 1
+    },
+    "time": "40918228",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "disabled",
+      "url": "http://127.0.0.1:8765/assets/js/main.js"
+    },
+    "phase": 1,
+    "source": {
+      "id": 66,
+      "start_time": "40918228",
+      "type": 32
+    },
+    "time": "40918228",
+    "type": 195
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "Origin: http://127.0.0.1:8765",
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2 HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 72,
+      "start_time": "40918695",
+      "type": 1
+    },
+    "time": "40918695",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 72,
+      "start_time": "40918695",
+      "type": 1
+    },
+    "time": "40918695",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 73800,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 72,
+      "start_time": "40918695",
+      "type": 1
+    },
+    "time": "40918695",
+    "type": 135
+  },
+  {
+    "params": {
+      "cors_preflight_policy": "consider_preflight",
+      "is_revalidating": false,
+      "request_headers": {
+        "headers": [
+          "Origin: http://127.0.0.1:8765",
+          "sec-ch-ua-platform: \"macOS\"",
+          "User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.8010.12 Safari/537.36",
+          "sec-ch-ua: \"HeadlessChrome\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+          "sec-ch-ua-mobile: ?0",
+          "Accept: */*"
+        ],
+        "line": "GET /s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2 HTTP/1.1\r\n"
+      },
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 73,
+      "start_time": "40918699",
+      "type": 1
+    },
+    "time": "40918699",
+    "type": 606
+  },
+  {
+    "params": {
+      "priority": "HIGHEST",
+      "traffic_annotation": 101845102,
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 73,
+      "start_time": "40918699",
+      "type": 1
+    },
+    "time": "40918699",
+    "type": 2
+  },
+  {
+    "params": {
+      "initiator": "http://127.0.0.1:8765",
+      "load_flags": 73792,
+      "method": "GET",
+      "network_isolation_key": "http://127.0.0.1 http://127.0.0.1",
+      "request_type": "other",
+      "site_for_cookies": "SiteForCookies: {site=http://127.0.0.1; schemefully_same=true}",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 73,
+      "start_time": "40918699",
+      "type": 1
+    },
+    "time": "40918699",
+    "type": 135
+  },
+  {
+    "params": {
+      "allowed_bad_certs": [],
+      "is_preconnect": false,
+      "privacy_mode": "enabled",
+      "url": "https://fonts.gstatic.com/s/plusjakartasans/v12/LDIoaomQNQcsA88c7O9yZ4KMCoOg4Ko20yygg_vb.woff2"
+    },
+    "phase": 1,
+    "source": {
+      "id": 75,
+      "start_time": "40918699",
+      "type": 32
+    },
+    "time": "40918699",
+    "type": 195
+  }
+]

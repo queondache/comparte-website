@@ -1,0 +1,22 @@
+PASS .nojekyll presente
+PASS pagine grazie fuori dalla sitemap
+PASS index.html: nessuno script esterno
+PASS index.html: id univoci
+PASS index.html: email e consenso disabilitati
+PASS index.html: submit disabilitato
+PASS es/index.html: nessuno script esterno
+PASS es/index.html: id univoci
+PASS es/index.html: email e consenso disabilitati
+PASS es/index.html: submit disabilitato
+PASS en/index.html: nessuno script esterno
+PASS en/index.html: id univoci
+PASS en/index.html: email e consenso disabilitati
+PASS en/index.html: submit disabilitato
+PASS trasparenza/index.html: nessuno script esterno
+PASS trasparenza/index.html: id univoci
+PASS es/transparencia/index.html: nessuno script esterno
+PASS es/transparencia/index.html: id univoci
+PASS en/transparency/index.html: nessuno script esterno
+PASS en/transparency/index.html: id univoci
+$ git diff --check
+EXIT 0

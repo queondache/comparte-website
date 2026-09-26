@@ -759,10 +759,11 @@
       <div class="container">
         <h2 id="newsletter-title">Stay in touch</h2>
         <p>A few emails a year: what we do, where funds go, and when the Italian 5×1000 matters.</p>
-        <form class="nl-form" data-mailchimp-action="" method="post" novalidate>
+        <form class="nl-form" data-mailchimp-action="" method="post" target="_blank" rel="noopener">
           <label for="nl-email">Your email</label>
-          <input id="nl-email" name="EMAIL" type="email" autocomplete="email" required placeholder="name@example.com">
-          <label class="nl-consent"><input id="nl-consent" name="consent" type="checkbox" required><span>I agree to receive the newsletter and have read the <a href="/en/transparency/#privacy">privacy notice</a>.</span></label>
+          <input id="nl-email" disabled name="EMAIL" type="email" autocomplete="email" required placeholder="name@example.com">
+          <label class="nl-consent"><input id="nl-consent" disabled name="consent" type="checkbox" required><span>I agree to receive the newsletter and have read the <a href="/en/transparency/#privacy">privacy notice</a>.</span></label>
+          <input type="text" class="visually-hidden" aria-hidden="true" tabindex="-1" autocomplete="off" value="" disabled>
           <button type="submit" disabled aria-describedby="nl-soon">Subscribe</button>
           <p id="nl-soon" class="helper">Subscriptions are coming soon. Until then, follow us on <a href="https://www.instagram.com/comparteonlus/" rel="noopener">Instagram</a>.</p>
         </form>

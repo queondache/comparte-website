@@ -1,0 +1,119 @@
+BASE bd7b449ec84fa50aa1817866272d6e41d30dd697
+Updated oracle against unmodified main archive. Includes inherited Mollie checks.
+
+$ python3 scripts/check_home.py --lang it
+PASS html lang corretto
+PASS ordine sezioni
+PASS direttivo dentro chi-siamo (niente section propria)
+PASS font Plus Jakarta Sans caricato
+PASS Fraunces/Instrument rimossi
+PASS nessuna 'ONLUS' nel file
+PASS nessun segnaposto denominazione
+PASS niente gergo ONG
+PASS link elbloqueo.it
+PASS El Bloqueo come progetto sostenuto
+PASS El Bloqueo non 'nostro progetto'
+PASS CF presente come testo
+PASS IBAN presente come testo
+PASS bottone copia CF
+PASS bottone copia IBAN
+FAIL link carta Mollie
+FAIL pagina grazie presente
+FAIL pagina grazie noindex e lingua corretta
+FAIL pagina grazie canonical e hreflang reciproci
+FAIL form Mailchimp collegato
+FAIL ancora privacy esistente
+PASS campo email con label
+PASS consenso privacy obbligatorio
+PASS educazione: >=2 fonti esterne
+PASS img con width e height
+PASS nessuna emoji bandiera/check strutturale
+PASS reduced-motion nel CSS
+PASS JSON-LD tutti parse OK
+PASS JSON-LD senza Project El Bloqueo
+PASS section bilanciate
+PASS id univoci
+PASS un solo box sosteniamo
+
+26/32 check passati
+EXIT 1
+
+$ python3 scripts/check_home.py --lang es
+PASS html lang corretto
+PASS ordine sezioni
+PASS direttivo dentro chi-siamo (niente section propria)
+PASS font Plus Jakarta Sans caricato
+PASS Fraunces/Instrument rimossi
+PASS nessuna 'ONLUS' nel file
+PASS nessun segnaposto denominazione
+PASS niente gergo ONG
+PASS link elbloqueo.it
+PASS El Bloqueo come progetto sostenuto
+PASS El Bloqueo non 'nostro progetto'
+PASS CF presente come testo
+PASS IBAN presente come testo
+PASS bottone copia CF
+PASS bottone copia IBAN
+FAIL link carta Mollie
+FAIL pagina grazie presente
+FAIL pagina grazie noindex e lingua corretta
+FAIL pagina grazie canonical e hreflang reciproci
+FAIL form Mailchimp collegato
+FAIL ancora privacy esistente
+PASS campo email con label
+PASS consenso privacy obbligatorio
+PASS educazione: >=2 fonti esterne
+PASS img con width e height
+PASS nessuna emoji bandiera/check strutturale
+PASS reduced-motion nel CSS
+PASS JSON-LD tutti parse OK
+PASS JSON-LD senza Project El Bloqueo
+PASS section bilanciate
+PASS id univoci
+PASS un solo box sosteniamo
+PASS CTA primaria hero verso donazione
+PASS link al 5×1000 italiano
+PASS box 5×1000 presente
+
+29/35 check passati
+EXIT 1
+
+$ python3 scripts/check_home.py --lang en
+PASS html lang corretto
+PASS ordine sezioni
+PASS direttivo dentro chi-siamo (niente section propria)
+PASS font Plus Jakarta Sans caricato
+PASS Fraunces/Instrument rimossi
+PASS nessuna 'ONLUS' nel file
+PASS nessun segnaposto denominazione
+PASS niente gergo ONG
+PASS link elbloqueo.it
+PASS El Bloqueo come progetto sostenuto
+PASS El Bloqueo non 'nostro progetto'
+PASS CF presente come testo
+PASS IBAN presente come testo
+PASS bottone copia CF
+PASS bottone copia IBAN
+FAIL link carta Mollie
+FAIL pagina grazie presente
+FAIL pagina grazie noindex e lingua corretta
+FAIL pagina grazie canonical e hreflang reciproci
+FAIL form Mailchimp collegato
+FAIL ancora privacy esistente
+PASS campo email con label
+PASS consenso privacy obbligatorio
+PASS educazione: >=2 fonti esterne
+PASS img con width e height
+PASS nessuna emoji bandiera/check strutturale
+PASS reduced-motion nel CSS
+PASS JSON-LD tutti parse OK
+PASS JSON-LD senza Project El Bloqueo
+PASS section bilanciate
+PASS id univoci
+PASS un solo box sosteniamo
+PASS CTA primaria hero verso donazione
+PASS link al 5×1000 italiano
+PASS box 5×1000 presente
+
+29/35 check passati
+EXIT 1

@@ -6,6 +6,7 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 LANGS = {
     "it": {
@@ -49,12 +50,19 @@ class Collector(HTMLParser):
         super().__init__()
         self.sections, self.imgs, self.jsonld, self.text = [], [], [], []
         self.links, self.elements = [], []
+        self.forms = []
+        self._form = None
         self._in_jsonld = False
         self._skip = 0
 
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
         self.elements.append((tag, attrs_dict))
+        if tag == "form":
+            self._form = {"attrs": attrs_dict, "elements": []}
+            self.forms.append(self._form)
+        elif self._form is not None:
+            self._form["elements"].append((tag, attrs_dict))
         if tag == "section" and "id" in attrs_dict:
             self.sections.append(attrs_dict["id"])
         if tag == "img":
@@ -68,6 +76,8 @@ class Collector(HTMLParser):
             self._skip += 1
 
     def handle_endtag(self, tag):
+        if tag == "form":
+            self._form = None
         if tag == "script" and self._in_jsonld:
             self._in_jsonld = False
         elif tag in ("script", "style") and self._skip:
@@ -146,7 +156,48 @@ check("pagina grazie canonical e hreflang reciproci", all(
 ) and any(tag == "link" and attrs.get("rel") == "canonical"
           and attrs.get("href") == "https://www.comparte.it/" + thanks_paths[args.lang].removesuffix("index.html")
           for tag, attrs in thanks.elements))
-check("form newsletter in attesa Mailchimp", has_el("form", **{"data-mailchimp-action": ""}))
+def mailchimp_connected(form):
+    attrs, elements = form["attrs"], form["elements"]
+    action = attrs.get("action", "")
+    if not re.match(r"^https://[a-z0-9]+\.list-manage\.com/subscribe/post\?u=", action):
+        return False
+    query = parse_qs(urlsplit(action).query)
+    if len(query.get("u", [])) != 1 or len(query.get("id", [])) != 1:
+        return False
+    honeypot = "b_" + query["u"][0] + "_" + query["id"][0]
+    return (
+        attrs.get("method", "").lower() == "post"
+        and attrs.get("target") == "_blank"
+        and "noopener" in attrs.get("rel", "").split()
+        and "novalidate" not in attrs
+        and not any(tag == "fieldset" and "disabled" in a for tag, a in elements)
+        and any(tag == "button" and a.get("type") == "submit" and "disabled" not in a
+                for tag, a in elements)
+        and any(tag == "input" and a.get("name") == "EMAIL" and a.get("type") == "email"
+                and "required" in a and "disabled" not in a for tag, a in elements)
+        and any(tag == "input" and a.get("id") == "nl-consent"
+                and "required" in a and "disabled" not in a for tag, a in elements)
+        and any(tag == "input" and a.get("name") == honeypot and a.get("type") == "text"
+                and a.get("aria-hidden") == "true" and a.get("tabindex") == "-1"
+                and "visually-hidden" in a.get("class", "").split()
+                and "disabled" not in a for tag, a in elements)
+    )
+
+
+newsletter_forms = [form for form in collector.forms if "nl-form" in form["attrs"].get("class", "").split()]
+check("form Mailchimp collegato", len(newsletter_forms) == 1 and mailchimp_connected(newsletter_forms[0]))
+privacy_paths = {"it": "/trasparenza/#privacy", "es": "/es/transparencia/#privacidad", "en": "/en/transparency/#privacy"}
+privacy_href = privacy_paths[args.lang]
+privacy_url = urlsplit(privacy_href)
+privacy_path = Path(privacy_url.path.lstrip("/")) / "index.html"
+privacy_page = Collector()
+if privacy_path.is_file():
+    privacy_page.feed(privacy_path.read_text(encoding="utf-8"))
+check("ancora privacy esistente", any(
+    tag == "a" and attrs.get("href") == privacy_href
+    for form in newsletter_forms for tag, attrs in form["elements"]
+) and any(attrs.get("id") == privacy_url.fragment for _, attrs in privacy_page.elements)
+  and any(tag == "html" and attrs.get("lang") == args.lang for tag, attrs in privacy_page.elements))
 check("campo email con label", has_el("input", type="email", id="nl-email") and has_el("label", **{"for": "nl-email"}))
 check("consenso privacy obbligatorio", any(
     tag == "input" and attrs.get("id") == "nl-consent" and "required" in attrs
