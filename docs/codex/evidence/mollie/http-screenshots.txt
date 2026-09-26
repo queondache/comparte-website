@@ -69,3 +69,13 @@ $ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/c
 [0926/202010.033663:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
 39311 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/en-thanks.png
 EXIT 0
+
+Final EN language navigation correction:
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/en-thanks.png http://127.0.0.1:8765/en/thank-you/
+[0926/202042.492872:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202042.543154:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202042.631766:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202042.695893:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202042.745818:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+39402 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/en-thanks.png
+EXIT 0
