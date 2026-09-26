@@ -193,6 +193,8 @@ header.scrolled .nav {
 
 .nav-logo img {
   display: block;
+  height: 64px;
+  width: auto;
 }
 
 .nav-links {
@@ -1487,6 +1489,8 @@ footer {
 }
 
 .footer-logo {
+  height: 56px;
+  width: auto;
   filter: invert(1);
   opacity: 0.9;
   margin-bottom: var(--s3);
