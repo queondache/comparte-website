@@ -2041,3 +2041,9 @@ main h2 {
     text-align: center;
   }
 }
+
+.thanks-content {
+  display: grid;
+  gap: var(--s3);
+  justify-items: start;
+}

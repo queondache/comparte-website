@@ -1,0 +1,71 @@
+$ curl -I http://127.0.0.1:8765/grazie/
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.9.6
+Date: Sat, 26 Sep 2026 18:20:08 GMT
+Content-type: text/html
+Content-Length: 5240
+Last-Modified: Sat, 26 Sep 2026 18:20:08 GMT
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  5240    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+EXIT 0
+
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/it-thanks.png http://127.0.0.1:8765/grazie/
+[0926/202008.667714:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202008.731088:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202008.803193:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202008.832970:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202008.866940:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+41923 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/it-thanks.png
+EXIT 0
+
+$ curl -I http://127.0.0.1:8765/es/gracias/
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.9.6
+Date: Sat, 26 Sep 2026 18:20:09 GMT
+Content-type: text/html
+Content-Length: 5292
+Last-Modified: Sat, 26 Sep 2026 18:20:08 GMT
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  5292    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+EXIT 0
+
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/es-thanks.png http://127.0.0.1:8765/es/gracias/
+[0926/202009.462038:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202009.477158:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202009.513737:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202009.514188:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202009.525173:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+43615 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/es-thanks.png
+EXIT 0
+
+$ curl -I http://127.0.0.1:8765/en/thank-you/
+HTTP/1.0 200 OK
+Server: SimpleHTTP/0.6 Python/3.9.6
+Date: Sat, 26 Sep 2026 18:20:09 GMT
+Content-type: text/html
+Content-Length: 5229
+Last-Modified: Sat, 26 Sep 2026 18:20:08 GMT
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0  5229    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+EXIT 0
+
+$ /Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell --headless --disable-gpu --no-sandbox --window-size=390,844 --hide-scrollbars --timeout=15000 --screenshot=/Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/en-thanks.png http://127.0.0.1:8765/en/thank-you/
+[0926/202009.965815:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202009.982404:WARNING:net/dns/dns_config_service_posix.cc:197] Failed to read DnsConfig.
+[0926/202010.018511:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202010.018966:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+[0926/202010.033663:ERROR:ui/display/mac/cv_display_link_mac.mm:195] CVDisplayLinkCreateWithCGDisplay failed. CVReturn: -6670
+39311 bytes written to file /Users/andreapesce/Dev/Sito comparte/docs/codex/evidence/mollie/en-thanks.png
+EXIT 0

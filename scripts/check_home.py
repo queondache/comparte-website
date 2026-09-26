@@ -5,6 +5,7 @@ import json
 import re
 import sys
 from html.parser import HTMLParser
+from pathlib import Path
 
 LANGS = {
     "it": {
@@ -118,7 +119,33 @@ check("CF presente come testo", "97977810585" in text)
 check("IBAN presente come testo", "IT27J0501803200000016738783" in text)
 check("bottone copia CF", has_el("button", **{"data-copy": "97977810585"}))
 check("bottone copia IBAN", has_el("button", **{"data-copy": "IT27J0501803200000016738783"}))
-check("bottone carta in attesa Mollie", has_el("button", **{"data-mollie-link": ""}))
+check("link carta Mollie", any(
+    link.get("href", "").startswith("https://payment-links.mollie.com/")
+    and "noopener" in link.get("rel", "").split()
+    and link.get("target") == "_blank"
+    and "btn-primary" in link.get("class", "").split()
+    for link in collector.links
+))
+thanks_paths = {"it": "grazie/index.html", "es": "es/gracias/index.html", "en": "en/thank-you/index.html"}
+thanks_path = Path(thanks_paths[args.lang])
+check("pagina grazie presente", thanks_path.is_file())
+thanks = Collector()
+if thanks_path.is_file():
+    thanks.feed(thanks_path.read_text(encoding="utf-8"))
+check("pagina grazie noindex e lingua corretta", any(
+    tag == "meta" and attrs.get("name") == "robots"
+    and "noindex" in attrs.get("content", "").split(",")
+    for tag, attrs in thanks.elements
+) and any(tag == "html" and attrs.get("lang") == args.lang for tag, attrs in thanks.elements))
+check("pagina grazie canonical e hreflang reciproci", all(
+    any(tag == "link" and attrs.get("rel") == "alternate"
+        and attrs.get("hreflang") == lang
+        and attrs.get("href") == "https://www.comparte.it/" + path.removesuffix("index.html")
+        for tag, attrs in thanks.elements)
+    for lang, path in {**thanks_paths, "x-default": thanks_paths["it"]}.items()
+) and any(tag == "link" and attrs.get("rel") == "canonical"
+          and attrs.get("href") == "https://www.comparte.it/" + thanks_paths[args.lang].removesuffix("index.html")
+          for tag, attrs in thanks.elements))
 check("form newsletter in attesa Mailchimp", has_el("form", **{"data-mailchimp-action": ""}))
 check("campo email con label", has_el("input", type="email", id="nl-email") and has_el("label", **{"for": "nl-email"}))
 check("consenso privacy obbligatorio", any(
