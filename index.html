@@ -45,15 +45,15 @@
         "name": "Come destino il 5×1000 a Comparte?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Indica il codice fiscale 97977810585 nello spazio Sostegno del volontariato e delle altre organizzazioni non lucrative del modello 730, Redditi PF o CU. Firma nello stesso riquadro. Non costa niente, non riduce il rimborso IRPEF."
+          "text": "Indica il codice fiscale 97977810585 nel riquadro Sostegno degli enti del Terzo settore iscritti nel RUNTS del modello 730, Redditi PF o CU. Firma nello stesso riquadro. Non costa nulla e non riduce il rimborso."
         }
       },
       {
         "@type": "Question",
-        "name": "Cos'è Comparte Onlus?",
+        "name": "Cos'è Comparte?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Comparte è una ONLUS italo-guatemalteca attiva dal 2018 nel dipartimento del Petén, Guatemala. Lavora su tre progetti: formazione universitaria con USAC/CUDEP, educazione climatica per ragazzi 13-17 anni, sviluppo agricolo nelle comunità rurali. Dal 2018 ha formato oltre 1.500 persone (fonte: Comparte Onlus, dati interni 2024)."
+          "text": "Comparte lavora dal 2018 nel Petén, in Guatemala. Formiamo docenti e studenti, portiamo educazione climatica nelle scuole e formazione agricola nelle comunità rurali."
         }
       },
       {
@@ -61,7 +61,15 @@
         "name": "Posso donare anche senza il 5×1000?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Sì. Bonifico bancario a Banca Etica, IBAN IT27J0501803200000016738783, intestato a Comparte Onlus. La donazione è detraibile fiscalmente come previsto dalla normativa ONLUS/ETS."
+          "text": "Sì. Puoi fare un bonifico a Banca Etica, IBAN IT27J0501803200000016738783, intestato a {{DENOMINAZIONE}}. Conserva la ricevuta del bonifico."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Posso donare con carta?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Presto sì, tramite Mollie, un provider europeo. I dati della tua carta non passano mai dal nostro sito. Intanto puoi usare il bonifico."
         }
       },
       {
@@ -742,20 +750,24 @@
           <details class="faq-item">
             <summary>Come destino il 5×1000 a Comparte?</summary>
             <div class="faq-answer">
-              <p>Indica il codice fiscale <strong>97977810585</strong> nello spazio "Sostegno del volontariato e delle altre organizzazioni non lucrative" del modello 730, Redditi PF o CU. Firma nello stesso riquadro. Non costa niente, non riduce il rimborso IRPEF.</p>
+              <p>Indica il codice fiscale <strong>97977810585</strong> nel riquadro “Sostegno degli enti del Terzo settore iscritti nel RUNTS” del modello 730, Redditi PF o CU. Firma nello stesso riquadro. Non costa nulla e non riduce il rimborso.</p>
             </div>
           </details>
           <details class="faq-item">
-            <summary>Cos'è Comparte Onlus?</summary>
+            <summary>Cos'è Comparte?</summary>
             <div class="faq-answer">
-              <p>Comparte è una ONLUS italo-guatemalteca attiva dal 2018 nel dipartimento del Petén, Guatemala. Lavora su tre progetti: formazione universitaria con USAC/CUDEP, educazione climatica per ragazzi 13-17 anni, sviluppo agricolo nelle comunità rurali. Dal 2018 ha formato oltre 1.500 persone (fonte: Comparte Onlus, dati interni 2024).</p>
+              <p>Comparte lavora dal 2018 nel Petén, in Guatemala. Formiamo docenti e studenti, portiamo educazione climatica nelle scuole e formazione agricola nelle comunità rurali.</p>
             </div>
           </details>
           <details class="faq-item">
             <summary>Posso donare anche senza il 5×1000?</summary>
             <div class="faq-answer">
-              <p>Sì. Bonifico bancario a Banca Etica, IBAN <strong>IT27J0501803200000016738783</strong>, intestato a Comparte Onlus. La donazione è detraibile fiscalmente come previsto dalla normativa ONLUS/ETS.</p>
+              <p>Sì. Puoi fare un bonifico a Banca Etica, IBAN <strong>IT27J0501803200000016738783</strong>, intestato a {{DENOMINAZIONE}}. Conserva la ricevuta del bonifico.</p>
             </div>
+          </details>
+          <details class="faq-item">
+            <summary>Posso donare con carta?</summary>
+            <div class="faq-answer"><p>Presto sì, tramite Mollie, un provider europeo. I dati della tua carta non passano mai dal nostro sito. Intanto puoi usare il bonifico.</p></div>
           </details>
           <details class="faq-item">
             <summary>Dove vanno esattamente i fondi del 5×1000?</summary>
@@ -775,6 +787,14 @@
     <section id="newsletter" aria-labelledby="newsletter-title">
       <div class="container">
         <h2 id="newsletter-title">Resta in contatto</h2>
+        <p>Poche email all'anno: cosa facciamo, dove vanno i fondi, quando serve il tuo 5×1000.</p>
+        <form class="nl-form" data-mailchimp-action="" method="post" novalidate>
+          <label for="nl-email">La tua email</label>
+          <input id="nl-email" name="EMAIL" type="email" autocomplete="email" required placeholder="nome@esempio.it">
+          <label class="nl-consent"><input id="nl-consent" name="consent" type="checkbox" required> Accetto di ricevere la newsletter e ho letto l'<a href="/trasparenza/#privacy">informativa privacy</a>.</label>
+          <button type="submit" disabled aria-describedby="nl-soon">Iscriviti</button>
+          <p id="nl-soon" class="helper">Iscrizioni in arrivo. Intanto seguici su <a href="https://www.instagram.com/comparteonlus/" rel="noopener">Instagram</a>.</p>
+        </form>
       </div>
     </section>
   </main>
