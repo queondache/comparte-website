@@ -8,6 +8,13 @@ window.addEventListener('scroll', () => {
 });
 
 // Bottoni "copia": data-copy contiene il valore; fallback a selezione manuale se clipboard non disponibile
+const copyMessages = {
+  it: { copied: 'Copiato', fallback: 'Seleziona e copia' },
+  es: { copied: 'Copiado', fallback: 'Seleccionado: cópialo' },
+  en: { copied: 'Copied', fallback: 'Selected: copy it' }
+};
+const copyLocale = copyMessages[document.documentElement.lang] || copyMessages.it;
+
 document.querySelectorAll('button[data-copy]').forEach((btn) => {
   const status = btn.querySelector('.copy-status');
   const target = document.getElementById(btn.getAttribute('aria-controls'));
@@ -18,7 +25,7 @@ document.querySelectorAll('button[data-copy]').forEach((btn) => {
       if (!navigator.clipboard) throw new Error('clipboard non disponibile');
       await navigator.clipboard.writeText(btn.dataset.copy);
       btn.classList.add('copied');
-      say('Copiato');
+      say(copyLocale.copied);
       setTimeout(() => { btn.classList.remove('copied'); say(''); }, 2500);
     } catch (err) {
       console.warn('[copia] fallback a selezione manuale:', err);
@@ -29,7 +36,7 @@ document.querySelectorAll('button[data-copy]').forEach((btn) => {
         selection.removeAllRanges();
         selection.addRange(range);
       }
-      say('Seleziona e copia');
+      say(copyLocale.fallback);
     }
   });
 });
