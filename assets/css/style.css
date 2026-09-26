@@ -628,6 +628,11 @@ header.scrolled .nav {
   background: var(--blu);
 }
 
+.cxm-report { color: var(--blu); font-weight: 700; }
+#dona { padding: var(--s7) 0; }.dona-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s4); margin-bottom: var(--s3); }
+.dona-card { border: 1px solid rgba(28,22,18,.15); border-radius: 16px; padding: var(--s4); }.dona-card h3 { font-weight: 500; }.iban { font-weight: 700; overflow-wrap: anywhere; }.helper { color: var(--testo-muted); font-size: var(--text-sm); line-height: 1.6; }
+[data-mollie-link=""] { opacity: .5; cursor: not-allowed; }
+
 .cf-divider {
   height: 1px;
   background: rgba(28, 22, 18, 0.08);

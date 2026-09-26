@@ -7,17 +7,32 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 20);
 });
 
-// Copia codice fiscale negli appunti
-const cfCopyBtn = document.getElementById('cf-copy');
+// Bottoni "copia": data-copy contiene il valore; fallback a selezione manuale se clipboard non disponibile
+document.querySelectorAll('button[data-copy]').forEach((btn) => {
+  const status = btn.querySelector('.copy-status');
+  const target = document.getElementById(btn.getAttribute('aria-controls'));
+  const say = (msg) => { if (status) status.textContent = msg; };
 
-if (cfCopyBtn) {
-  cfCopyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText('97977810585').then(() => {
-      cfCopyBtn.classList.add('copied');
-      setTimeout(() => cfCopyBtn.classList.remove('copied'), 2500);
-    });
+  btn.addEventListener('click', async () => {
+    try {
+      if (!navigator.clipboard) throw new Error('clipboard non disponibile');
+      await navigator.clipboard.writeText(btn.dataset.copy);
+      btn.classList.add('copied');
+      say('Copiato');
+      setTimeout(() => { btn.classList.remove('copied'); say(''); }, 2500);
+    } catch (err) {
+      console.warn('[copia] fallback a selezione manuale:', err);
+      if (target) {
+        const range = document.createRange();
+        range.selectNodeContents(target);
+        const selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+      }
+      say('Seleziona e copia');
+    }
   });
-}
+});
 
 const galleryData = [
   { src: '/assets/img/galleria/01.webp', alt: 'Comunità di Nuevo Horizonte, Petén, Guatemala', project: 'Comparte Comunidad', caption: 'Petén, Guatemala · Comparte Comunidad' },

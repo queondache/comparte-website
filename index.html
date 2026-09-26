@@ -580,46 +580,38 @@
           <div class="cxm-left">
             <span class="section-tag">5×1000</span>
             <h2>Una firma che<br><em>vale molto</em></h2>
-            <p class="cxm-intro">Quando fai la dichiarazione dei redditi, puoi destinare il tuo 5×1000 a Comparte. Non ti costa nulla — è una quota delle tue tasse che altrimenti andrebbe allo Stato.</p>
+            <p class="cxm-intro">Nella dichiarazione dei redditi puoi destinare il tuo 5×1000 a Comparte. Non ti costa nulla.</p>
             <ol class="cxm-steps">
               <li class="cxm-step">
                 <span class="step-number">01</span>
                 <div class="step-text">
-                  <strong>Apri il tuo 730 o CU</strong>
-                  <span>Cerca la sezione "Sostegno del volontariato e delle altre organizzazioni non lucrative"</span>
+                  <strong>Apri la dichiarazione</strong>
+                  <span>Cerca il riquadro “Sostegno degli enti del Terzo settore iscritti nel RUNTS…”</span>
                 </div>
               </li>
               <li class="cxm-step">
                 <span class="step-number">02</span>
                 <div class="step-text">
                   <strong>Firma il riquadro</strong>
-                  <span>Apponi la tua firma nello spazio dedicato alle ONLUS e al volontariato</span>
+                  <span>Firma nello spazio dedicato.</span>
                 </div>
               </li>
               <li class="cxm-step">
                 <span class="step-number">03</span>
                 <div class="step-text">
                   <strong>Scrivi il codice fiscale</strong>
-                  <span>Inserisci il nostro CF nello spazio apposito: <strong>97977810585</strong></span>
+                  <span>Inserisci il nostro codice fiscale.</span>
                 </div>
               </li>
             </ol>
-            <p class="cxm-note">Non riduce il tuo rimborso IRPEF. Non è una donazione aggiuntiva. È gratuito.</p>
+            <p class="cxm-note">Non ti costa nulla e non riduce il tuo rimborso.</p>
           </div>
           <div class="cxm-right">
             <div class="cxm-card">
-              <p class="cf-label">Codice Fiscale Comparte Onlus</p>
-              <p class="cf-number" id="cf-number">97977810585</p>
-              <button class="cf-copy-btn" id="cf-copy" aria-label="Copia il codice fiscale">
-                <span class="copy-text">Copia il codice fiscale</span>
-                <span class="copy-done" aria-hidden="true"><svg viewBox="0 0 16 16" width="16" height="16" focusable="false"><path d="m3 8 3 3 7-7" fill="none" stroke="currentColor" stroke-width="2"/></svg> Copiato</span>
-              </button>
-              <div class="cf-divider"></div>
-              <p class="cf-also">Puoi anche donare direttamente tramite bonifico:</p>
-              <div class="cf-bank">
-                <span class="cf-bank-label">Banca Etica</span>
-                <span class="cf-bank-iban">IT27J0501803200000016738783</span>
-              </div>
+              <p class="cf-label">Codice fiscale Comparte</p>
+              <p class="cf-number"><span id="cf-value">97977810585</span></p>
+              <button class="cf-copy-btn" type="button" data-copy="97977810585" aria-controls="cf-value">Copia il codice fiscale <span class="copy-status" aria-live="polite"></span></button>
+              <a class="cxm-report" href="/trasparenza/">Come usiamo il 5×1000</a>
             </div>
           </div>
         </div>
@@ -628,6 +620,19 @@
     <section id="dona" aria-labelledby="dona-title">
       <div class="container">
         <h2 id="dona-title">Altri modi per donare</h2>
+        <div class="dona-grid">
+          <article class="dona-card">
+            <h3>Bonifico</h3><p>Banca Etica</p>
+            <p class="iban"><span id="iban-value">IT27J0501803200000016738783</span></p>
+            <button class="cf-copy-btn" type="button" data-copy="IT27J0501803200000016738783" aria-controls="iban-value">Copia l'IBAN <span class="copy-status" aria-live="polite"></span></button>
+            <p>Intestatario: {{DENOMINAZIONE}}</p><p>Causale suggerita: Donazione liberale.</p><p class="helper">Vuoi donare ogni mese? Imposta un bonifico periodico dalla tua banca con questi dati.</p>
+          </article>
+          <article class="dona-card">
+            <h3>Carta</h3><button type="button" class="btn-primary" data-mollie-link="" aria-disabled="true" aria-describedby="card-soon">Dona con carta</button>
+            <p id="card-soon" class="helper">Pagamento con carta in arrivo, tramite Mollie (provider europeo). Nel frattempo puoi usare il bonifico.</p>
+          </article>
+        </div>
+        <p class="helper">Le donazioni a {{DENOMINAZIONE}} sono deducibili o detraibili secondo le regole per gli enti del Terzo settore. Conserva la ricevuta del bonifico.</p>
       </div>
     </section>
     <section id="galleria">
