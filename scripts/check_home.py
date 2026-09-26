@@ -120,6 +120,12 @@ check("JSON-LD senza Project El Bloqueo", not any(
     for parsed_block in parsed for item in walk(parsed_block)
 ))
 check("section bilanciate", len(re.findall(r"<section\b", html, re.I)) == len(re.findall(r"</section\s*>", html, re.I)))
+ids = [attrs["id"] for _, attrs in collector.elements if "id" in attrs]
+check("id univoci", len(ids) == len(set(ids)))
+check("un solo box sosteniamo", sum(
+    tag == "aside" and "supported" in attrs.get("class", "").split()
+    for tag, attrs in collector.elements
+) == 1)
 
 failed = 0
 for name, ok in results:
