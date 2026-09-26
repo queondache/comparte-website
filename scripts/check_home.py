@@ -1,15 +1,44 @@
 #!/usr/bin/env python3
-"""Oracolo della home IT: controlla struttura, contenuti e metadati richiesti dalla spec."""
+"""Oracolo della home: controlla struttura, contenuti e metadati per lingua."""
+import argparse
 import json
 import re
 import sys
 from html.parser import HTMLParser
 
-PATH = sys.argv[1] if len(sys.argv) > 1 else "index.html"
-SECTION_ORDER = [
-    "hero", "perche-educazione", "chi-siamo", "progetti", "impatto",
-    "cinque-x-mille", "dona", "galleria", "partner", "press", "faq", "newsletter",
-]
+LANGS = {
+    "it": {
+        "path": "index.html",
+        "section_order": ["hero", "perche-educazione", "chi-siamo", "progetti", "impatto", "cinque-x-mille", "dona", "galleria", "partner", "press", "faq", "newsletter"],
+        "jargon": r"beneficiari|empowerment|sinergi",
+        "supported_project": r"progett\w* che sosteniamo",
+        "not_our_project": r"(nostro progetto|progetto di comparte)[^.]{0,40}bloqueo",
+        "el_bloqueo_url": "https://elbloqueo.it",
+        "education_id": "perche-educazione",
+    },
+    "es": {
+        "path": "es/index.html",
+        "section_order": ["hero", "por-que-educacion", "quienes-somos", "proyectos", "impacto", "dona", "galeria", "aliados", "prensa", "faq", "boletin"],
+        "jargon": r"beneficiarios|empoderamiento|sinergia",
+        "supported_project": r"proyectos? que apoyamos",
+        "not_our_project": r"(nuestro proyecto|proyecto de comparte)[^.]{0,40}bloqueo",
+        "el_bloqueo_url": "https://elbloqueo.it/es/",
+        "education_id": "por-que-educacion",
+        "donation_id": "dona",
+        "five_thousand_id": "cinco-x-mil",
+    },
+    "en": {
+        "path": "en/index.html",
+        "section_order": ["hero", "why-education", "about", "projects", "impact", "donate", "gallery", "partners", "press", "faq", "newsletter"],
+        "jargon": r"beneficiaries|empower|synerg",
+        "supported_project": r"projects? we support",
+        "not_our_project": r"(our project|comparte's project)[^.]{0,40}bloqueo",
+        "el_bloqueo_url": "https://elbloqueo.it/en/",
+        "education_id": "why-education",
+        "donation_id": "donate",
+        "five_thousand_id": "five-x-thousand",
+    },
+}
 
 
 class Collector(HTMLParser):
@@ -50,7 +79,12 @@ class Collector(HTMLParser):
             self.text.append(data)
 
 
-html = open(PATH, encoding="utf-8").read()
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument("--lang", choices=LANGS, default="it", help="lingua della home (default: it)")
+parser.add_argument("path", nargs="?", help="percorso HTML alternativo")
+args = parser.parse_args()
+config = LANGS[args.lang]
+html = open(args.path or config["path"], encoding="utf-8").read()
 collector = Collector()
 collector.feed(html)
 text = " ".join(" ".join(collector.text).split())
@@ -68,17 +102,18 @@ def has_el(tag, **attrs):
     )
 
 
-check("ordine sezioni", collector.sections == SECTION_ORDER)
+check("html lang corretto", has_el("html", lang=args.lang))
+check("ordine sezioni", collector.sections == config["section_order"])
 check("direttivo dentro chi-siamo (niente section propria)", "direttivo" not in collector.sections)
 check("font Plus Jakarta Sans caricato", "family=Plus+Jakarta+Sans:wght@400;500;700" in html)
 check("Fraunces/Instrument rimossi", "Fraunces" not in html and "Instrument+Sans" not in html)
 html_without_social_handle = re.sub(r"comparteonlus", "", html, flags=re.I)
 check("nessuna 'ONLUS' nel file", not re.search(r"onlus", html_without_social_handle, re.I))
 check("nessun segnaposto denominazione", "{{" not in html)
-check("niente gergo ONG", not re.search(r"\b(beneficiari|empowerment|sinergi)", text, re.I))
-check("link elbloqueo.it", any(link.get("href", "").startswith("https://elbloqueo.it") for link in collector.links))
-check("El Bloqueo come progetto sostenuto", re.search(r"progett\w* che sosteniamo", text, re.I))
-check("El Bloqueo non 'nostro progetto'", not re.search(r"(nostro progetto|progetto di comparte)[^.]{0,40}bloqueo", text, re.I))
+check("niente gergo ONG", not re.search(rf"\b({config['jargon']})", text, re.I))
+check("link elbloqueo.it", any(link.get("href", "").startswith(config["el_bloqueo_url"]) for link in collector.links))
+check("El Bloqueo come progetto sostenuto", re.search(config["supported_project"], text, re.I))
+check("El Bloqueo non 'nostro progetto'", not re.search(config["not_our_project"], text, re.I))
 check("CF presente come testo", "97977810585" in text)
 check("IBAN presente come testo", "IT27J0501803200000016738783" in text)
 check("bottone copia CF", has_el("button", **{"data-copy": "97977810585"}))
@@ -90,7 +125,7 @@ check("consenso privacy obbligatorio", any(
     tag == "input" and attrs.get("id") == "nl-consent" and "required" in attrs
     for tag, attrs in collector.elements
 ))
-education = re.search(r'<section id="perche-educazione".*?</section>', html, re.S)
+education = re.search(rf'<section id="{re.escape(config["education_id"])}".*?</section>', html, re.S)
 check("educazione: >=2 fonti esterne", education and len(re.findall(r'href="https?://', education.group(0))) >= 2)
 check("img con width e height", all("width" in image and "height" in image for image in collector.imgs if image.get("src")))
 check("nessuna emoji bandiera/check strutturale", not re.search("[\U0001F1E6-\U0001F1FF]|✓", html))
@@ -126,6 +161,20 @@ check("un solo box sosteniamo", sum(
     tag == "aside" and "supported" in attrs.get("class", "").split()
     for tag, attrs in collector.elements
 ) == 1)
+
+if args.lang in ("es", "en"):
+    hero = re.search(r'<section id="hero".*?</section>', html, re.S)
+    primary_href = f'#{config["donation_id"]}'
+    check("CTA primaria hero verso donazione", hero and re.search(
+        rf'<a\b(?=[^>]*\bhref="{re.escape(primary_href)}")(?=[^>]*\bclass="[^"]*\bbtn-primary\b)[^>]*>',
+        hero.group(0),
+    ))
+    check("link al 5×1000 italiano", any(
+        link.get("href") == "https://www.comparte.it/#cinque-x-mille" for link in collector.links
+    ))
+    check("box 5×1000 presente", any(
+        attrs.get("id") == config["five_thousand_id"] for _, attrs in collector.elements
+    ))
 
 failed = 0
 for name, ok in results:
