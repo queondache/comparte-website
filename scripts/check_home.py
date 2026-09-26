@@ -70,9 +70,10 @@ def has_el(tag, **attrs):
 
 check("ordine sezioni", collector.sections == SECTION_ORDER)
 check("direttivo dentro chi-siamo (niente section propria)", "direttivo" not in collector.sections)
-check("font Plus Jakarta Sans caricato", "family=Plus+Jakarta+Sans" in html)
+check("font Plus Jakarta Sans caricato", "family=Plus+Jakarta+Sans:wght@400;500;700" in html)
 check("Fraunces/Instrument rimossi", "Fraunces" not in html and "Instrument+Sans" not in html)
-check("nessuna 'ONLUS' nel file", not re.search(r"onlus", html, re.I))
+html_without_social_handle = re.sub(r"comparteonlus", "", html, flags=re.I)
+check("nessuna 'ONLUS' nel file", not re.search(r"onlus", html_without_social_handle, re.I))
 check("segnaposto denominazione presente", "{{DENOMINAZIONE}}" in html)
 check("niente gergo ONG", not re.search(r"\b(beneficiari|empowerment|sinergi)", text, re.I))
 check("link elbloqueo.it", any(link.get("href", "").startswith("https://elbloqueo.it") for link in collector.links))
@@ -118,6 +119,7 @@ check("JSON-LD senza Project El Bloqueo", not any(
     item.get("@type") == "Project" and "bloqueo" in json.dumps(item).lower()
     for parsed_block in parsed for item in walk(parsed_block)
 ))
+check("section bilanciate", len(re.findall(r"<section\\b", html, re.I)) == len(re.findall(r"</section\\s*>", html, re.I)))
 
 failed = 0
 for name, ok in results:
