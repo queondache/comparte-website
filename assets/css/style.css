@@ -114,7 +114,7 @@ h2 {
 h1 em,
 h2 em {
   font-style: normal;
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
 }
 
 h1 {
@@ -364,7 +364,7 @@ header.scrolled .nav {
 }
 
 #hero h1 em {
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
   font-weight: 400;
 }
 
@@ -512,7 +512,7 @@ header.scrolled .nav {
 }
 
 #cinque-x-mille h2 em {
-  color: var(--rosa);
+  color: #F7B8CA;
 }
 
 .cxm-intro {
@@ -806,7 +806,7 @@ header.scrolled .nav {
 }
 
 #chi-siamo h2 em {
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
 }
 
 #chi-siamo p {
@@ -967,7 +967,7 @@ header.scrolled .nav {
 }
 
 .impatto-header h2 em {
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
 }
 
 .impatto-grid {
@@ -1050,7 +1050,7 @@ header.scrolled .nav {
 }
 
 .progetti-header h2 em {
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
 }
 
 .progetti-grid {
@@ -1189,7 +1189,7 @@ header.scrolled .nav {
 }
 
 .faq-header h2 em {
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
 }
 
 .faq-list {
@@ -1287,7 +1287,7 @@ header.scrolled .nav {
 }
 
 .galleria-header h2 em {
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
 }
 
 .galleria-slider {
@@ -1445,7 +1445,7 @@ header.scrolled .nav {
 }
 
 .partner-header h2 em {
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
 }
 
 .partner-grid {
@@ -1505,7 +1505,7 @@ header.scrolled .nav {
 }
 
 .press-header h2 em {
-  color: var(--arancione-text);
+  color: var(--arancione-deep);
 }
 
 .press-grid {
