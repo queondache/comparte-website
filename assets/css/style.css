@@ -111,6 +111,12 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+h1 em,
+h2 em {
+  font-style: normal;
+  color: var(--arancione-text);
+}
+
 h1 {
   font-weight: 700;
 }
