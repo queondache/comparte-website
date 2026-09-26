@@ -26,8 +26,8 @@
   --white:       #FFFFFF;
 
   /* Fonts */
-  --font-display: 'Fraunces', serif;
-  --font-body:    'Instrument Sans', sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
 
   /* Spacing */
   --s1: 8px;
@@ -48,6 +48,15 @@
   --text-2xl:  36px;
   --text-3xl:  48px;
   --text-4xl:  64px;
+}
+
+/* Rispetta la preferenza di movimento ridotto */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 
@@ -334,7 +343,6 @@ header.scrolled .nav {
 
 #hero h1 em {
   color: var(--arancione-text);
-  font-style: italic;
   font-weight: 400;
 }
 
@@ -483,7 +491,6 @@ header.scrolled .nav {
 
 #cinque-x-mille h2 em {
   color: var(--rosa);
-  font-style: italic;
 }
 
 .cxm-intro {
@@ -539,7 +546,6 @@ header.scrolled .nav {
 .cxm-note {
   font-size: var(--text-sm);
   color: rgba(255, 255, 255, 0.5);
-  font-style: italic;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding-top: var(--s3);
 }
@@ -717,7 +723,6 @@ header.scrolled .nav {
 
 #chi-siamo h2 em {
   color: var(--arancione-text);
-  font-style: italic;
 }
 
 #chi-siamo p {
@@ -732,7 +737,6 @@ header.scrolled .nav {
   padding-left: var(--s3);
   margin: var(--s4) 0;
   font-family: var(--font-display);
-  font-style: italic;
   font-size: var(--text-lg);
   color: var(--testo);
   line-height: 1.6;
@@ -817,7 +821,6 @@ header.scrolled .nav {
 
 .direttivo-header h2 em {
   color: var(--arancione-text);
-  font-style: italic;
 }
 
 .direttivo-grid {
@@ -910,7 +913,6 @@ header.scrolled .nav {
 
 .impatto-header h2 em {
   color: var(--arancione-text);
-  font-style: italic;
 }
 
 .impatto-grid {
@@ -994,7 +996,6 @@ header.scrolled .nav {
 
 .progetti-header h2 em {
   color: var(--arancione-text);
-  font-style: italic;
 }
 
 .progetti-grid {
@@ -1134,7 +1135,6 @@ header.scrolled .nav {
 
 .faq-header h2 em {
   color: var(--arancione-text);
-  font-style: italic;
 }
 
 .faq-list {
@@ -1233,7 +1233,6 @@ header.scrolled .nav {
 
 .galleria-header h2 em {
   color: var(--arancione-text);
-  font-style: italic;
 }
 
 .galleria-slider {
@@ -1392,7 +1391,6 @@ header.scrolled .nav {
 
 .partner-header h2 em {
   color: var(--arancione-text);
-  font-style: italic;
 }
 
 .partner-grid {
@@ -1453,7 +1451,6 @@ header.scrolled .nav {
 
 .press-header h2 em {
   color: var(--arancione-text);
-  font-style: italic;
 }
 
 .press-grid {
@@ -1651,7 +1648,6 @@ footer {
 
 .trasparenza-claim em {
   color: var(--arancione);
-  font-style: italic;
   font-weight: 400;
   font-size: 1.4em;
   display: inline-block;
@@ -1723,7 +1719,6 @@ footer {
 .fondi-quota-lt {
   font-size: 0.55em;
   font-weight: 400;
-  font-style: italic;
   margin-left: 2px;
   vertical-align: super;
   opacity: 0.7;
@@ -1825,7 +1820,6 @@ main h2 {
   margin-top: var(--s4);
   font-size: var(--text-sm);
   color: var(--testo-muted);
-  font-style: italic;
 }
 
 .documenti-grid,
