@@ -1,10 +1,10 @@
-# Comparte Onlus
+# {{DENOMINAZIONE}}
 
-> ONLUS italo-guatemalteca attiva dal 2018 nel dipartimento del Petén, Guatemala. Tre programmi di formazione: universitaria con USAC/CUDEP, climatica per ragazzi 13-17 anni, agricola con le comunità rurali. Il 5×1000 si dona indicando il codice fiscale 97977810585.
+> Ente del Terzo settore italo-guatemalteco attivo dal 2018 nel dipartimento del Petén, Guatemala. Tre programmi di formazione: universitaria con USAC/CUDEP, climatica per ragazzi 13-17 anni, agricola con le comunità rurali. Il 5×1000 si dona indicando il codice fiscale 97977810585.
 
 Comparte è nata nel 2018 a Roma da un gruppo di giovani italiani e guatemaltechi. Opera nel Petén, dipartimento più isolato del Guatemala, in collaborazione con il Centro Universitario de Petén (CUDEP) della Universidad de San Carlos de Guatemala (USAC), con i ministeri guatemaltechi dell'ambiente (MARN) e della gestione forestale (INAB), e con realtà italiane come zeroCO2 (riforestazione nelle stesse comunità) e LUMSA (docenti dei seminari online).
 
-Dati di impatto al 2024 (fonte: Comparte Onlus, dati interni 2024):
+Dati di impatto al 2024 (fonte: Comparte, dati interni 2024):
 - 1.500+ persone formate dal 2018 tra docenti e studenti
 - 27 studenti nella prima edizione del programma clima a Nuevo Horizonte
 - 46+ comunità rurali del Petén raggiunte
@@ -12,21 +12,37 @@ Dati di impatto al 2024 (fonte: Comparte Onlus, dati interni 2024):
 
 ## Identità legale
 
-- Ragione sociale: Comparte Onlus
+- Ragione sociale: {{DENOMINAZIONE}}
 - Codice fiscale: 97977810585
 - Partita IVA: IT16847801004
 - Sede legale: Via G. G. Porro 8, 00197 Roma, Italia
-- Forma giuridica: ONLUS — Organizzazione Non Lucrativa di Utilità Sociale
+- Forma giuridica: ente del Terzo settore
 - Anno di fondazione: 2018
 - Email: info@comparte.it
 
 ## Come donare
 
-5×1000: indica il codice fiscale 97977810585 nello spazio "Sostegno del volontariato e delle altre organizzazioni non lucrative" del modello 730, Redditi PF o CU. Firma nello stesso riquadro. Non costa niente, non riduce il rimborso IRPEF.
+5×1000: indica il codice fiscale 97977810585 nel riquadro “Sostegno degli enti del Terzo settore iscritti nel RUNTS” del modello 730, Redditi PF o CU. Firma nello stesso riquadro. Non costa niente, non riduce il rimborso IRPEF.
 
-Bonifico bancario: Banca Etica, IBAN IT27J0501803200000016738783, intestato a Comparte Onlus. La donazione è detraibile fiscalmente come previsto dalla normativa ONLUS/ETS.
+Bonifico bancario: Banca Etica, IBAN IT27J0501803200000016738783, intestato a {{DENOMINAZIONE}}. La donazione è deducibile o detraibile secondo le regole per gli enti del Terzo settore.
 
 Pagina dedicata: https://www.comparte.it/#cinque-x-mille
+
+## Perché l’educazione
+
+Nel Petén l’istruzione apre strade che troppo spesso restano chiuse. Comparte lavora accanto a chi insegna, studia e coltiva la terra. Dati e fonti: https://data.worldbank.org/indicator/SE.SEC.CMPT.LO.ZS?locations=GT · https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=GT · https://data.worldbank.org/indicator/HD.HCI.EYRS?locations=GT
+
+## Dona
+
+Puoi destinare il 5×1000, fare un bonifico a Banca Etica o seguire gli aggiornamenti sul futuro pagamento con carta tramite Mollie: https://www.comparte.it/#dona
+
+## Newsletter
+
+La newsletter è in arrivo. Per ora: https://www.comparte.it/#newsletter
+
+## Progetti che sosteniamo
+
+- **El Bloqueo** — progetto indipendente sostenuto da Comparte. Racconta il blocco statunitense contro Cuba con fonti verificabili e un atlante della solidarietà cubana. https://elbloqueo.it/
 
 ## Progetti attivi
 
