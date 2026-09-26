@@ -632,7 +632,62 @@ header.scrolled .nav {
 #dona { padding: var(--s7) 0; }.dona-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--s4); margin-bottom: var(--s3); }
 .dona-card { border: 1px solid rgba(28,22,18,.15); border-radius: 16px; padding: var(--s4); }.dona-card h3 { font-weight: 500; }.iban { font-weight: 700; overflow-wrap: anywhere; }.helper { color: var(--testo-muted); font-size: var(--text-sm); line-height: 1.6; }
 [data-mollie-link=""] { opacity: .5; cursor: not-allowed; }
-#newsletter { padding: var(--s7) 0; background: var(--rosa); }.nl-form { display: grid; gap: var(--s2); max-width: 620px; }.nl-form input { min-height: 44px; padding: 10px; font: inherit; }.nl-consent { line-height: 1.5; }.nl-form button:disabled { opacity: .55; cursor: not-allowed; }
+#newsletter {
+  padding: var(--s7) 0;
+  background: var(--rosa);
+  color: var(--testo);
+}
+
+#newsletter p,
+#newsletter label,
+#newsletter .helper {
+  color: var(--testo);
+}
+
+#newsletter a {
+  color: var(--testo);
+  text-decoration: underline;
+}
+
+.nl-form {
+  display: grid;
+  gap: var(--s2);
+  max-width: 620px;
+}
+
+.nl-form > label[for="nl-email"] {
+  margin-top: var(--s3);
+}
+
+.nl-form input {
+  min-height: 44px;
+  padding: 10px;
+  border: 1px solid var(--testo);
+  background: var(--white);
+  font: inherit;
+}
+
+.nl-consent {
+  display: flex;
+  gap: var(--s1);
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.nl-consent input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  min-height: 20px;
+  margin: 2px 0 0;
+  padding: 0;
+  flex: 0 0 20px;
+}
+
+.nl-form button:disabled {
+  background: rgb(28 22 18 / 0.55);
+  color: var(--white);
+  cursor: not-allowed;
+}
 @media (max-width: 767px) { .edu-skills, .edu-data, .dona-grid { grid-template-columns: 1fr; } }
 
 .cf-divider {
