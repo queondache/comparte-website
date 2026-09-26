@@ -807,20 +807,7 @@ header.scrolled .nav {
 }
 
 .direttivo-header {
-  margin-bottom: var(--s6);
-}
-
-.direttivo-header h2 {
-  font-family: var(--font-display);
-  font-size: clamp(32px, 4vw, 52px);
-  font-weight: 300;
-  color: var(--testo);
-  line-height: 1.1;
-  margin-top: var(--s3);
-}
-
-.direttivo-header h2 em {
-  color: var(--arancione-text);
+  margin-bottom: var(--s3);
 }
 
 .direttivo-grid {
@@ -833,9 +820,6 @@ header.scrolled .nav {
   background: var(--white);
   border-radius: 16px;
   padding: var(--s4);
-  display: flex;
-  flex-direction: column;
-  gap: var(--s1);
   transition: transform 0.2s;
 }
 
@@ -843,27 +827,14 @@ header.scrolled .nav {
   transform: translateY(-2px);
 }
 
-.direttivo-card h3 {
-  font-family: var(--font-display);
-  font-size: var(--text-xl);
-  font-weight: 600;
-  color: var(--testo);
-  line-height: 1.2;
-}
-
-.direttivo-role {
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-  color: var(--arancione-text);
-}
-
 .direttivo-card p {
   font-size: var(--text-sm);
   color: var(--testo-muted);
   line-height: 1.6;
-  margin-top: var(--s2);
+}
+
+.direttivo-card strong {
+  color: var(--testo);
 }
 
 .meta-item {
