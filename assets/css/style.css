@@ -1780,6 +1780,7 @@ main h2 {
 .edu-skill svg { width: 28px; height: 28px; fill: none; stroke: var(--arancione-text); stroke-width: 1.8; }
 .edu-skill h3 { margin: var(--s2) 0; font-weight: 500; }.edu-skill p, .edu-data a { line-height: 1.6; }
 .edu-data { margin-top: var(--s4); }.edu-data p { margin: 0; }.edu-data strong, .edu-data a { display: block; }.edu-data a { color: var(--arancione-text); font-size: var(--text-sm); }
+.supported { margin-top: var(--s5); padding: var(--s4); border: 2px solid var(--blu); border-radius: 16px; max-width: 900px; }.supported h3 { margin: var(--s1) 0; font-weight: 500; }.supported p:not(.eyebrow) { max-width: 700px; line-height: 1.65; }
 
 .identita-grid {
   display: grid;
