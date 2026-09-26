@@ -1766,7 +1766,7 @@ footer {
 main h2 {
   font-family: var(--font-display);
   font-size: clamp(28px, 3.5vw, 40px);
-  font-weight: 300;
+  font-weight: 500;
   color: var(--testo);
   line-height: 1.2;
   margin-bottom: var(--s4);

@@ -119,7 +119,7 @@ check("JSON-LD senza Project El Bloqueo", not any(
     item.get("@type") == "Project" and "bloqueo" in json.dumps(item).lower()
     for parsed_block in parsed for item in walk(parsed_block)
 ))
-check("section bilanciate", len(re.findall(r"<section\\b", html, re.I)) == len(re.findall(r"</section\\s*>", html, re.I)))
+check("section bilanciate", len(re.findall(r"<section\b", html, re.I)) == len(re.findall(r"</section\s*>", html, re.I)))
 
 failed = 0
 for name, ok in results:
