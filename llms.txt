@@ -1,4 +1,4 @@
-# {{DENOMINAZIONE}}
+# Comparte
 
 > Ente del Terzo settore italo-guatemalteco attivo dal 2018 nel dipartimento del Petén, Guatemala. Tre programmi di formazione: universitaria con USAC/CUDEP, climatica per ragazzi 13-17 anni, agricola con le comunità rurali. Il 5×1000 si dona indicando il codice fiscale 97977810585.
 
@@ -12,11 +12,11 @@ Dati di impatto al 2024 (fonte: Comparte, dati interni 2024):
 
 ## Identità legale
 
-- Ragione sociale: {{DENOMINAZIONE}}
+- Ragione sociale: Comparte
 - Codice fiscale: 97977810585
 - Partita IVA: IT16847801004
 - Sede legale: Via G. G. Porro 8, 00197 Roma, Italia
-- Forma giuridica: ente del Terzo settore
+- Forma giuridica: Associazione
 - Anno di fondazione: 2018
 - Email: info@comparte.it
 
@@ -24,7 +24,7 @@ Dati di impatto al 2024 (fonte: Comparte, dati interni 2024):
 
 5×1000: indica il codice fiscale 97977810585 nel riquadro “Sostegno degli enti del Terzo settore iscritti nel RUNTS” del modello 730, Redditi PF o CU. Firma nello stesso riquadro. Non costa niente, non riduce il rimborso IRPEF.
 
-Bonifico bancario: Banca Etica, IBAN IT27J0501803200000016738783, intestato a {{DENOMINAZIONE}}. La donazione è deducibile o detraibile secondo le regole per gli enti del Terzo settore.
+Bonifico bancario: Banca Etica, IBAN IT27J0501803200000016738783, intestato a Comparte. La donazione è deducibile o detraibile secondo le regole per gli enti del Terzo settore.
 
 Pagina dedicata: https://www.comparte.it/#cinque-x-mille
 

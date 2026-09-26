@@ -74,7 +74,7 @@ check("font Plus Jakarta Sans caricato", "family=Plus+Jakarta+Sans:wght@400;500;
 check("Fraunces/Instrument rimossi", "Fraunces" not in html and "Instrument+Sans" not in html)
 html_without_social_handle = re.sub(r"comparteonlus", "", html, flags=re.I)
 check("nessuna 'ONLUS' nel file", not re.search(r"onlus", html_without_social_handle, re.I))
-check("segnaposto denominazione presente", "{{DENOMINAZIONE}}" in html)
+check("nessun segnaposto denominazione", "{{" not in html)
 check("niente gergo ONG", not re.search(r"\b(beneficiari|empowerment|sinergi)", text, re.I))
 check("link elbloqueo.it", any(link.get("href", "").startswith("https://elbloqueo.it") for link in collector.links))
 check("El Bloqueo come progetto sostenuto", re.search(r"progett\w* che sosteniamo", text, re.I))

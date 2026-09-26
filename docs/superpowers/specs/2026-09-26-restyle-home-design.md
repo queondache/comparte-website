@@ -115,8 +115,9 @@ framework, nuove foto, contenuti ES/EN nella fase 1.
 
 ## Aperti
 
-- **[APERTO-01]** Denominazione legale esatta dopo l'iscrizione RUNTS (es. "Comparte ETS",
-  "Comparte ODV", "Comparte APS"?) e sezione RUNTS. Blocca solo nome in testi/meta/JSON-LD e la
-  dicitura 5×1000; il resto procede con segnaposto `{{DENOMINAZIONE}}` sostituito in un solo passo.
+- **[APERTO-01]** Chiuso il 2026-09-26: Andrea ha deciso denominazione pubblica `Comparte` e forma
+  giuridica generica `Associazione`, senza sigle APS/ODV né numeri di registro. La qualifica di ente
+  del Terzo settore iscritto al RUNTS resta dove già presente. I segnaposto `{{DENOMINAZIONE}}` sono
+  stati sostituiti in testi, meta e JSON-LD.
 - Mollie e Mailchimp: fuori da questo lavoro, delegati a Codex (doc separato).
 - Instagram fermo al 2022: confermato, nessun materiale più recente. Si usano post 2022 + fonti pubbliche.
