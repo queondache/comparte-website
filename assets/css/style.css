@@ -326,7 +326,7 @@ header.scrolled .nav {
   grid-template-columns: 55% 1fr;
   gap: var(--s6);
   align-items: center;
-  padding: var(--s2) 0;
+  padding-block: var(--s2);
   position: relative;
   z-index: 1;
 }
