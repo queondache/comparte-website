@@ -1,0 +1,659 @@
+
+> build
+> astro build
+
+17:59:08 [types] Generated 32ms
+17:59:08 [build] output: "static"
+17:59:08 [build] mode: "static"
+17:59:08 [build] directory: /Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/
+17:59:08 [build] Collecting build info...
+17:59:08 [build] ✓ Completed in 61ms.
+17:59:08 [build] Building static entrypoints...
+17:59:08 [vite] ✓ built in 240ms
+17:59:08 [vite] ✓ built in 14ms
+17:59:08 [build] Rearranging server assets...
+
+ generating static routes 
+17:59:08   ├─ /cuba/index.html (+12ms) 
+17:59:08   ├─ /dona/index.html (+2ms) 
+17:59:08   ├─ /en/cuba/index.html (+7ms) 
+17:59:08   ├─ /en/donate/index.html (+5ms) 
+17:59:08   ├─ /en/thank-you/index.html (+3ms) 
+17:59:08   ├─ /en/transparency/index.html (+2ms) 
+17:59:08   ├─ /en/index.html (+3ms) 
+17:59:08   ├─ /es/cuba/index.html (+2ms) 
+17:59:08   ├─ /es/dona/index.html (+2ms) 
+17:59:08   ├─ /es/gracias/index.html (+1ms) 
+17:59:08   ├─ /es/transparencia/index.html (+1ms) 
+17:59:08   ├─ /es/index.html (+2ms) 
+17:59:08   ├─ /grazie/index.html (+1ms) 
+17:59:08   ├─ /trasparenza/index.html (+1ms) 
+17:59:08   ├─ /index.html (+2ms) 
+17:59:08 ✓ Completed in 55ms.
+
+ generating optimized images 
+17:59:08   ▶ /_astro/cuba-consegna.DpxU7ZX5_Z1bWNYa.webp (reused cache entry) (+1ms) (1/28)
+17:59:08   ▶ /_astro/hero.C8L1AweW_SsQK9.webp (reused cache entry) (+1ms) (2/28)
+17:59:08   ▶ /_astro/03.BHjpqIV7_Zd8601.webp (reused cache entry) (+1ms) (3/28)
+17:59:08   ▶ /_astro/01.BO5NMk_L_2q7oEA.webp (reused cache entry) (+1ms) (4/28)
+17:59:08   ▶ /_astro/02.-_nCQ0af_ZWxVBM.webp (reused cache entry) (+2ms) (5/28)
+17:59:08   ▶ /_astro/chi-siamo.DwmIz_82_ZronoA.webp (reused cache entry) (+2ms) (6/28)
+17:59:08   ▶ /_astro/04.WMnbi-wt_ZMNdkv.webp (reused cache entry) (+2ms) (7/28)
+17:59:08   ▶ /_astro/05.DYo-Mv9r_ZJezfn.webp (reused cache entry) (+2ms) (8/28)
+17:59:08   ▶ /_astro/06.f6iXoN7M_1hduDk.webp (reused cache entry) (+2ms) (9/28)
+17:59:08   ▶ /_astro/hero.C8L1AweW_Z1A3gw7.webp (reused cache entry) (+1ms) (10/28)
+17:59:08   ▶ /_astro/cuba-consegna.DpxU7ZX5_ZXJtJ6.webp (reused cache entry) (+2ms) (11/28)
+17:59:08   ▶ /_astro/01.BO5NMk_L_Z18Lf9V.webp (reused cache entry) (+2ms) (12/28)
+17:59:08   ▶ /_astro/03.BHjpqIV7_1l0aJw.webp (reused cache entry) (+2ms) (13/28)
+17:59:08   ▶ /_astro/chi-siamo.DwmIz_82_1iBl7R.webp (reused cache entry) (+2ms) (14/28)
+17:59:08   ▶ /_astro/05.DYo-Mv9r_qATS3.webp (reused cache entry) (+2ms) (15/28)
+17:59:08   ▶ /_astro/02.-_nCQ0af_Z1jLHNJ.webp (reused cache entry) (+3ms) (16/28)
+17:59:08   ▶ /_astro/04.WMnbi-wt_Z2gtJXn.webp (reused cache entry) (+3ms) (17/28)
+17:59:08   ▶ /_astro/06.f6iXoN7M_Zbs1Yx.webp (reused cache entry) (+3ms) (18/28)
+17:59:08   ▶ /_astro/hero.C8L1AweW_1fXbJq.webp (reused cache entry) (+4ms) (19/28)
+17:59:08   ▶ /_astro/cuba-consegna.DpxU7ZX5_acC64.webp (reused cache entry) (+3ms) (20/28)
+17:59:08   ▶ /_astro/01.BO5NMk_L_1sxhE8.webp (reused cache entry) (+4ms) (21/28)
+17:59:08   ▶ /_astro/03.BHjpqIV7_Z1Gd4x0.webp (reused cache entry) (+4ms) (22/28)
+17:59:08   ▶ /_astro/chi-siamo.DwmIz_82_ZxPLzJ.webp (reused cache entry) (+4ms) (23/28)
+17:59:08   ▶ /_astro/05.DYo-Mv9r_20annd.webp (reused cache entry) (+3ms) (24/28)
+17:59:08   ▶ /_astro/06.f6iXoN7M_1PKuSX.webp (reused cache entry) (+3ms) (25/28)
+17:59:08   ▶ /_astro/02.-_nCQ0af_Z1cx8Wu.webp (reused cache entry) (+4ms) (26/28)
+17:59:08   ▶ /_astro/04.WMnbi-wt_Z1FI6FJ.webp (reused cache entry) (+4ms) (27/28)
+17:59:08   ▶ /_astro/chi-siamo.DwmIz_82_Svifr.webp (reused cache entry) (+3ms) (28/28)
+17:59:08 ✓ Completed in 11ms.
+
+17:59:08 [build] ✓ Completed in 342ms.
+17:59:08 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+17:59:08 [build] 15 page(s) built in 421ms
+17:59:08 [build] Complete!
+✖ it/home: canonical e hreflang reciproci (9.099917ms)
+✖ it/home: JSON-LD valido (5.184291ms)
+✖ it/dona: canonical e hreflang reciproci (0.605ms)
+✖ it/dona: JSON-LD valido (0.800916ms)
+✖ it/cuba: canonical e hreflang reciproci (0.470167ms)
+✖ it/cuba: JSON-LD valido (0.403708ms)
+✖ it/trasparenza: canonical e hreflang reciproci (0.368042ms)
+✖ it/trasparenza: JSON-LD valido (0.607375ms)
+✖ it/grazie: canonical e hreflang reciproci (0.309292ms)
+✖ it/grazie: JSON-LD valido (0.3615ms)
+✖ es/home: canonical e hreflang reciproci (0.506791ms)
+✖ es/home: JSON-LD valido (0.522709ms)
+✔ es/home: nessuna parola italiana nel testo visibile (1.722542ms)
+✖ es/dona: canonical e hreflang reciproci (0.58175ms)
+✖ es/dona: JSON-LD valido (0.518125ms)
+✔ es/dona: nessuna parola italiana nel testo visibile (0.366916ms)
+✖ es/cuba: canonical e hreflang reciproci (0.336959ms)
+✖ es/cuba: JSON-LD valido (0.29275ms)
+✔ es/cuba: nessuna parola italiana nel testo visibile (0.315542ms)
+✖ es/trasparenza: canonical e hreflang reciproci (0.504083ms)
+✖ es/trasparenza: JSON-LD valido (0.432792ms)
+✔ es/trasparenza: nessuna parola italiana nel testo visibile (0.666041ms)
+✖ es/grazie: canonical e hreflang reciproci (0.305833ms)
+✖ es/grazie: JSON-LD valido (0.332292ms)
+✔ es/grazie: nessuna parola italiana nel testo visibile (0.196541ms)
+✖ en/home: canonical e hreflang reciproci (0.489459ms)
+✖ en/home: JSON-LD valido (0.415292ms)
+✔ en/home: nessuna parola italiana nel testo visibile (0.522375ms)
+✖ en/dona: canonical e hreflang reciproci (0.366375ms)
+✖ en/dona: JSON-LD valido (1.104375ms)
+✔ en/dona: nessuna parola italiana nel testo visibile (0.350625ms)
+✖ en/cuba: canonical e hreflang reciproci (0.360084ms)
+✖ en/cuba: JSON-LD valido (0.280375ms)
+✔ en/cuba: nessuna parola italiana nel testo visibile (0.248ms)
+✖ en/trasparenza: canonical e hreflang reciproci (0.361958ms)
+✖ en/trasparenza: JSON-LD valido (0.37275ms)
+✔ en/trasparenza: nessuna parola italiana nel testo visibile (0.340333ms)
+✖ en/grazie: canonical e hreflang reciproci (0.409167ms)
+✖ en/grazie: JSON-LD valido (0.289333ms)
+✔ en/grazie: nessuna parola italiana nel testo visibile (0.237667ms)
+✖ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.61125ms)
+✔ sitemap generata senza pagine grazie (0.230042ms)
+✖ robots, CNAME, llms.txt e 404 presenti (0.328084ms)
+✖ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.089791ms)
+ℹ tests 44
+ℹ suites 0
+ℹ pass 11
+ℹ fail 33
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 115.139791
+
+✖ failing tests:
+
+test at tests/seo.test.mjs:13:5
+✖ it/home: canonical e hreflang reciproci (9.099917ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.start (node:internal/test_runner/test:1015:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17)
+
+test at tests/seo.test.mjs:21:5
+✖ it/home: JSON-LD valido (5.184291ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ it/dona: canonical e hreflang reciproci (0.605ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ it/dona: JSON-LD valido (0.800916ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ it/cuba: canonical e hreflang reciproci (0.470167ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ it/cuba: JSON-LD valido (0.403708ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ it/trasparenza: canonical e hreflang reciproci (0.368042ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ it/trasparenza: JSON-LD valido (0.607375ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ it/grazie: canonical e hreflang reciproci (0.309292ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ it/grazie: JSON-LD valido (0.3615ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ es/home: canonical e hreflang reciproci (0.506791ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ es/home: JSON-LD valido (0.522709ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ es/dona: canonical e hreflang reciproci (0.58175ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ es/dona: JSON-LD valido (0.518125ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ es/cuba: canonical e hreflang reciproci (0.336959ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ es/cuba: JSON-LD valido (0.29275ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ es/trasparenza: canonical e hreflang reciproci (0.504083ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ es/trasparenza: JSON-LD valido (0.432792ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ es/grazie: canonical e hreflang reciproci (0.305833ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ es/grazie: JSON-LD valido (0.332292ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ en/home: canonical e hreflang reciproci (0.489459ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ en/home: JSON-LD valido (0.415292ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ en/dona: canonical e hreflang reciproci (0.366375ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ en/dona: JSON-LD valido (1.104375ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ en/cuba: canonical e hreflang reciproci (0.360084ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ en/cuba: JSON-LD valido (0.280375ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ en/trasparenza: canonical e hreflang reciproci (0.361958ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ en/trasparenza: JSON-LD valido (0.37275ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:13:5
+✖ en/grazie: canonical e hreflang reciproci (0.409167ms)
+  TypeError: Cannot read properties of null (reading 'getAttribute')
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:15:60)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/seo.test.mjs:21:5
+✖ en/grazie: JSON-LD valido (0.289333ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(blocks.length >= 1)
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:23:14)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:38:1
+✖ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.61125ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /"@type":"NGO"/. Input:
+  
+  '[]'
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:41:10)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '[]',
+    expected: /"@type":"NGO"/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:55:1
+✖ robots, CNAME, llms.txt e 404 presenti (0.328084ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /sitemap-index\.xml/. Input:
+  
+  'User-agent: *\nAllow: /\nSitemap: https://www.comparte.it/sitemap.xml\n'
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:57:10)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'User-agent: *\nAllow: /\nSitemap: https://www.comparte.it/sitemap.xml\n',
+    expected: /sitemap-index\.xml/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests/seo.test.mjs:64:1
+✖ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.089791ms)
+  Error: ENOENT: no such file or directory, open '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/es/llms.txt'
+      at readFileSync (node:fs:440:20)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:66:18)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/es/llms.txt'
+  }

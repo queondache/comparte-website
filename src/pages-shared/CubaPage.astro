@@ -32,5 +32,9 @@ const c = d.cubaPage;
   </Block>
 </Base>
 <style>
-  .cuba-img { margin-top: 48px; width: 100%; aspect-ratio: 3 / 1; object-fit: cover; }
+  /* Sotto i 768px il rapporto 3/1 schiaccia la foto a ~125px: su mobile usiamo 4/3 */
+  .cuba-img { margin-top: 48px; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  @media (min-width: 768px) {
+    .cuba-img { aspect-ratio: 3 / 1; }
+  }
 </style>

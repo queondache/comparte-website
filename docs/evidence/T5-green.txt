@@ -1,0 +1,370 @@
+
+> test
+> astro build && node --test tests/*.test.mjs
+
+18:15:10 [types] Generated 18ms
+18:15:10 [build] output: "static"
+18:15:10 [build] mode: "static"
+18:15:10 [build] directory: /Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/
+18:15:10 [build] Collecting build info...
+18:15:10 [build] ✓ Completed in 39ms.
+18:15:10 [build] Building static entrypoints...
+18:15:10 [vite] ✓ built in 110ms
+18:15:10 [vite] ✓ built in 13ms
+18:15:10 [build] Rearranging server assets...
+
+ generating static routes 
+18:15:10   ├─ /404.html (+5ms) 
+18:15:10   ├─ /cuba/index.html (+5ms) 
+18:15:10   ├─ /dona/index.html (+2ms) 
+18:15:10   ├─ /en/cuba/index.html (+1ms) 
+18:15:10   ├─ /en/donate/index.html (+1ms) 
+18:15:10   ├─ /en/thank-you/index.html (+1ms) 
+18:15:10   ├─ /en/transparency/index.html (+1ms) 
+18:15:10   ├─ /en/index.html (+3ms) 
+18:15:10   ├─ /es/cuba/index.html (+1ms) 
+18:15:10   ├─ /es/dona/index.html (+1ms) 
+18:15:10   ├─ /es/gracias/index.html (+1ms) 
+18:15:10   ├─ /es/transparencia/index.html (+1ms) 
+18:15:10   ├─ /es/index.html (+2ms) 
+18:15:10   ├─ /grazie/index.html (+1ms) 
+18:15:10   ├─ /trasparenza/index.html (+1ms) 
+18:15:10   ├─ /index.html (+2ms) 
+18:15:10 ✓ Completed in 37ms.
+
+ generating optimized images 
+18:15:10   ▶ /_astro/cuba-consegna.DpxU7ZX5_Z1bWNYa.webp (reused cache entry) (+1ms) (1/28)
+18:15:10   ▶ /_astro/hero.C8L1AweW_SsQK9.webp (reused cache entry) (+1ms) (2/28)
+18:15:10   ▶ /_astro/01.BO5NMk_L_2q7oEA.webp (reused cache entry) (+1ms) (3/28)
+18:15:10   ▶ /_astro/chi-siamo.DwmIz_82_ZronoA.webp (reused cache entry) (+1ms) (4/28)
+18:15:10   ▶ /_astro/05.DYo-Mv9r_ZJezfn.webp (reused cache entry) (+1ms) (5/28)
+18:15:10   ▶ /_astro/03.BHjpqIV7_Zd8601.webp (reused cache entry) (+1ms) (6/28)
+18:15:10   ▶ /_astro/02.-_nCQ0af_ZWxVBM.webp (reused cache entry) (+1ms) (7/28)
+18:15:10   ▶ /_astro/04.WMnbi-wt_ZMNdkv.webp (reused cache entry) (+1ms) (8/28)
+18:15:10   ▶ /_astro/06.f6iXoN7M_1hduDk.webp (reused cache entry) (+1ms) (9/28)
+18:15:10   ▶ /_astro/cuba-consegna.DpxU7ZX5_ZXJtJ6.webp (reused cache entry) (+1ms) (10/28)
+18:15:10   ▶ /_astro/hero.C8L1AweW_Z1A3gw7.webp (reused cache entry) (+1ms) (11/28)
+18:15:10   ▶ /_astro/01.BO5NMk_L_Z18Lf9V.webp (reused cache entry) (+1ms) (12/28)
+18:15:10   ▶ /_astro/chi-siamo.DwmIz_82_1iBl7R.webp (reused cache entry) (+1ms) (13/28)
+18:15:10   ▶ /_astro/05.DYo-Mv9r_qATS3.webp (reused cache entry) (+1ms) (14/28)
+18:15:10   ▶ /_astro/06.f6iXoN7M_Zbs1Yx.webp (reused cache entry) (+1ms) (15/28)
+18:15:10   ▶ /_astro/03.BHjpqIV7_1l0aJw.webp (reused cache entry) (+2ms) (16/28)
+18:15:10   ▶ /_astro/04.WMnbi-wt_Z2gtJXn.webp (reused cache entry) (+1ms) (17/28)
+18:15:10   ▶ /_astro/02.-_nCQ0af_Z1jLHNJ.webp (reused cache entry) (+1ms) (18/28)
+18:15:10   ▶ /_astro/cuba-consegna.DpxU7ZX5_acC64.webp (reused cache entry) (+2ms) (19/28)
+18:15:10   ▶ /_astro/chi-siamo.DwmIz_82_ZxPLzJ.webp (reused cache entry) (+1ms) (20/28)
+18:15:10   ▶ /_astro/hero.C8L1AweW_1fXbJq.webp (reused cache entry) (+2ms) (21/28)
+18:15:10   ▶ /_astro/01.BO5NMk_L_1sxhE8.webp (reused cache entry) (+2ms) (22/28)
+18:15:10   ▶ /_astro/05.DYo-Mv9r_20annd.webp (reused cache entry) (+2ms) (23/28)
+18:15:10   ▶ /_astro/06.f6iXoN7M_1PKuSX.webp (reused cache entry) (+1ms) (24/28)
+18:15:10   ▶ /_astro/03.BHjpqIV7_Z1Gd4x0.webp (reused cache entry) (+1ms) (25/28)
+18:15:10   ▶ /_astro/04.WMnbi-wt_Z1FI6FJ.webp (reused cache entry) (+1ms) (26/28)
+18:15:10   ▶ /_astro/02.-_nCQ0af_Z1cx8Wu.webp (reused cache entry) (+2ms) (27/28)
+18:15:10   ▶ /_astro/chi-siamo.DwmIz_82_Svifr.webp (reused cache entry) (+2ms) (28/28)
+18:15:10 ✓ Completed in 5ms.
+
+18:15:10 [build] ✓ Completed in 184ms.
+18:15:10 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+18:15:10 [build] 16 page(s) built in 270ms
+18:15:10 [build] Complete!
+✔ home IT esiste con lang="it" e titolo (8.420375ms)
+✔ nessuno script o font esterno nella home IT (0.296334ms)
+✔ nessuna "Onlus" nel testo visibile (1.628208ms)
+✔ contrasto ink su orange ≥ 4.5 (0.499375ms)
+✔ contrasto ink su pink ≥ 4.5 (0.0935ms)
+✔ contrasto ink su cream ≥ 4.5 (0.07375ms)
+✔ contrasto white su blue ≥ 4.5 (0.5ms)
+✔ contrasto accent su blue ≥ 4.5 (1.047375ms)
+✔ contrasto white su ink ≥ 4.5 (0.156625ms)
+✔ contrasto accent su ink ≥ 4.5 (0.069125ms)
+✔ it: blocchi della home nell'ordine della spec (1.060875ms)
+✔ it: ordine 5×1000 / bonifico per lingua (0.271041ms)
+✔ it: chi-siamo prima della donazione, faq dopo, newsletter per ultima (0.316958ms)
+✔ it: tre numeri grandi con fonte linkata (9.368834ms)
+✔ it: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (1.034625ms)
+✔ it: CF e IBAN presenti e copiabili senza JS (1.49125ms)
+✔ it: menu mobile funziona senza JS (<details>) e desktop resta aperto senza JS (0.872208ms)
+✔ it: newsletter senza action → niente form e niente Mailchimp (1.288292ms)
+✔ it: un solo h1 (0.578709ms)
+✔ es: blocchi della home nell'ordine della spec (0.331667ms)
+✔ es: ordine 5×1000 / bonifico per lingua (0.198958ms)
+✔ es: chi-siamo prima della donazione, faq dopo, newsletter per ultima (0.18875ms)
+✔ es: tre numeri grandi con fonte linkata (0.9455ms)
+✔ es: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.53825ms)
+✔ es: CF e IBAN presenti e copiabili senza JS (0.811ms)
+✔ es: menu mobile funziona senza JS (<details>) e desktop resta aperto senza JS (0.451542ms)
+✔ es: newsletter senza action → niente form e niente Mailchimp (1.064625ms)
+✔ es: un solo h1 (0.5085ms)
+✔ en: blocchi della home nell'ordine della spec (0.266167ms)
+✔ en: ordine 5×1000 / bonifico per lingua (0.175375ms)
+✔ en: chi-siamo prima della donazione, faq dopo, newsletter per ultima (0.16575ms)
+✔ en: tre numeri grandi con fonte linkata (0.9665ms)
+✔ en: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.529375ms)
+✔ en: CF e IBAN presenti e copiabili senza JS (0.696792ms)
+✔ en: menu mobile funziona senza JS (<details>) e desktop resta aperto senza JS (0.427709ms)
+✔ en: newsletter senza action → niente form e niente Mailchimp (1.106458ms)
+✔ en: un solo h1 (0.376416ms)
+✔ le tre lingue hanno le stesse chiavi e le stesse lunghezze di lista (5.284ms)
+✔ nessun valore vuoto (1.152416ms)
+✔ nessuna parola italiana nei dizionari ES ed EN (0.571541ms)
+✔ nessuna "Onlus" e nessun riferimento a carta o Mollie (0.661791ms)
+✔ El Bloqueo mai "di Comparte" (0.568541ms)
+✔ dati del sito corretti (0.160334ms)
+✔ it: home esiste con lang corretto e un h1 (5.850625ms)
+✔ it: dona esiste con lang corretto e un h1 (0.975209ms)
+✔ it: cuba esiste con lang corretto e un h1 (0.483458ms)
+✔ it: trasparenza esiste con lang corretto e un h1 (0.558417ms)
+✔ it: grazie esiste con lang corretto e un h1 (0.375125ms)
+✔ it: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.424917ms)
+✔ it: /dona/ ha 5×1000, IBAN e FAQ complete (4.807ms)
+✔ it: pagina grazie noindex (0.248042ms)
+✔ it: trasparenza porta il contenuto vecchio (0.606125ms)
+✔ es: home esiste con lang corretto e un h1 (0.909625ms)
+✔ es: dona esiste con lang corretto e un h1 (0.334333ms)
+✔ es: cuba esiste con lang corretto e un h1 (0.31175ms)
+✔ es: trasparenza esiste con lang corretto e un h1 (0.336ms)
+✔ es: grazie esiste con lang corretto e un h1 (0.258625ms)
+✔ es: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.17475ms)
+✔ es: /dona/ ha 5×1000, IBAN e FAQ complete (0.499333ms)
+✔ es: pagina grazie noindex (0.118167ms)
+✔ es: trasparenza porta il contenuto vecchio (0.339167ms)
+✔ en: home esiste con lang corretto e un h1 (0.625584ms)
+✔ en: dona esiste con lang corretto e un h1 (0.341541ms)
+✔ en: cuba esiste con lang corretto e un h1 (0.231709ms)
+✔ en: trasparenza esiste con lang corretto e un h1 (0.33725ms)
+✔ en: grazie esiste con lang corretto e un h1 (0.248167ms)
+✔ en: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.13525ms)
+✔ en: /dona/ ha 5×1000, IBAN e FAQ complete (0.420292ms)
+✔ en: pagina grazie noindex (0.11175ms)
+✔ en: trasparenza porta il contenuto vecchio (0.384917ms)
+✔ it/home: canonical e hreflang reciproci (8.86525ms)
+✔ it/home: JSON-LD valido (1.748083ms)
+✔ it/dona: canonical e hreflang reciproci (0.638042ms)
+✔ it/dona: JSON-LD valido (0.759875ms)
+✔ it/cuba: canonical e hreflang reciproci (0.484542ms)
+✔ it/cuba: JSON-LD valido (0.5715ms)
+✔ it/trasparenza: canonical e hreflang reciproci (0.505208ms)
+✔ it/trasparenza: JSON-LD valido (0.617541ms)
+✔ it/grazie: canonical e hreflang reciproci (0.405ms)
+✔ it/grazie: JSON-LD valido (0.3825ms)
+✔ es/home: canonical e hreflang reciproci (0.489167ms)
+✔ es/home: JSON-LD valido (0.694125ms)
+✔ es/home: nessuna parola italiana nel testo visibile (0.680542ms)
+✔ es/dona: canonical e hreflang reciproci (0.369875ms)
+✔ es/dona: JSON-LD valido (0.329708ms)
+✔ es/dona: nessuna parola italiana nel testo visibile (0.357833ms)
+✔ es/cuba: canonical e hreflang reciproci (0.41775ms)
+✔ es/cuba: JSON-LD valido (0.500416ms)
+✔ es/cuba: nessuna parola italiana nel testo visibile (0.256792ms)
+✔ es/trasparenza: canonical e hreflang reciproci (0.364ms)
+✔ es/trasparenza: JSON-LD valido (0.371834ms)
+✖ es/trasparenza: nessuna parola italiana nel testo visibile (1.686334ms)
+✔ es/grazie: canonical e hreflang reciproci (0.284792ms)
+✔ es/grazie: JSON-LD valido (0.249542ms)
+✔ es/grazie: nessuna parola italiana nel testo visibile (0.218ms)
+✔ en/home: canonical e hreflang reciproci (0.6035ms)
+✔ en/home: JSON-LD valido (0.466125ms)
+✔ en/home: nessuna parola italiana nel testo visibile (0.539708ms)
+✔ en/dona: canonical e hreflang reciproci (0.317833ms)
+✔ en/dona: JSON-LD valido (0.338084ms)
+✔ en/dona: nessuna parola italiana nel testo visibile (0.486333ms)
+✔ en/cuba: canonical e hreflang reciproci (0.279959ms)
+✔ en/cuba: JSON-LD valido (0.252917ms)
+✔ en/cuba: nessuna parola italiana nel testo visibile (0.222583ms)
+✔ en/trasparenza: canonical e hreflang reciproci (0.279292ms)
+✔ en/trasparenza: JSON-LD valido (0.251ms)
+✔ en/trasparenza: nessuna parola italiana nel testo visibile (0.350208ms)
+✔ en/grazie: canonical e hreflang reciproci (0.189041ms)
+✔ en/grazie: JSON-LD valido (0.157084ms)
+✔ en/grazie: nessuna parola italiana nel testo visibile (0.325958ms)
+✔ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.63225ms)
+✔ sitemap generata senza pagine grazie (0.198667ms)
+✔ robots, CNAME, llms.txt e 404 presenti (0.369708ms)
+✔ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.196ms)
+ℹ tests 114
+ℹ suites 0
+ℹ pass 113
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 110.928875
+
+✖ failing tests:
+
+test at tests/seo.test.mjs:28:7
+✖ es/trasparenza: nessuna parola italiana nel testo visibile (1.686334ms)
+  AssertionError [ERR_ASSERTION]: "delle"
+  + actual - expected
+  
+  + [
+  +   'delle',
+  +   'delle',
+  +   groups: undefined,
+  +   index: 2786,
+  +   input: '<!DOCTYPE html>Transparencia — ComparteIr al contenidoMenúQué hacemosCubaQuiénes somosTransparenciaITESENDona\n' +
+  +     '      \n' +
+  +     '        Transparencia\n' +
+  +     '        Más del\n' +
+  +     '90%\n' +
+  +     'de lo que recaudamos\n' +
+  +     'va a los proyectos.\n' +
+  +     '        El resto sirve para mantener una estructura que pueda llevar recursos donde sirven.\n' +
+  +     '      \n' +
+  +     '    \n' +
+  +     '\n' +
+  +     '    \n' +
+  +     '      \n' +
+  +     '        A dónde van los fondos\n' +
+  +     '        Sin comunicación pagada, sin intermediarios. Solo trabajo en terreno.\n' +
+  +     '\n' +
+  +     '        \n' +
+  +     '          \n' +
+  +     '            90%+\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Proyectos directos\n' +
+  +     '            Petén: educación universitaria con USAC y CUDEP, programa climático para jóvenes de 13 a 17 años, capacitación agrícola con las comunidades campesinas.\n' +
+  +     '          \n' +
+  +     '        \n' +
+  +     '\n' +
+  +     '        \n' +
+  +     '          \n' +
+  +     '            <10%\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Operaciones y administración\n' +
+  +     '            Costos mínimos de funcionamiento: contabilidad, hosting, herramientas de trabajo esenciales.\n' +
+  +     '          \n' +
+  +     '        \n' +
+  +     '\n' +
+  +     '        Las cuotas exactas de cada año fiscal se publican con el balance. [Balance 2024 — en publicación]\n' +
+  +     '      \n' +
+  +     '    \n' +
+  +     '\n' +
+  +     '    \n' +
+  +     '      \n' +
+  +     '        Identidad legal\n' +
+  +     '        \n' +
+  +     '          \n' +
+  +     '            Razón social\n' +
+  +     '            Comparte\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Código fiscal\n' +
+  +     '            97977810585\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Partita IVA\n' +
+  +     '            16847801004\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Sede legal\n' +
+  +     '            Via G. G. Porro, 8 — 00197 Roma, Italia\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Forma jurídica\n' +
+  +     '            Asociación\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Año de constitución\n' +
+  +     '            2018\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Email\n' +
+  +     '            info@comparte.it\n' +
+  +     '          \n' +
+  +     '        \n' +
+  +     '      \n' +
+  +     '    \n' +
+  +     '\n' +
+  +     '    \n' +
+  +     '      \n' +
+  +     '        Gobernanza\n' +
+  +     '        \n' +
+  +     '          \n' +
+  +     '            Andrea Pesce\n' +
+  +     '            Presidente\n' +
+  +     '            Cofundador de Comparte y CEO de zeroCO2.\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Irene Culcasi\n' +
+  +     '            Vicepresidenta\n' +
+  +     '            Pedagoga, investigadora en service-learning.\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Virgilio Galicia Gregorio\n' +
+  +     '            Liaison Guatemala\n' +
+  +     '            Referente comunidades indígenas del Petén.\n' +
+  +     '          \n' +
+  +     '        \n' +
+  +     '        [Consejo directivo y órgano de control — publicación junto al próximo balance aprobado]\n' +
+  +     '      \n' +
+  +     '    \n' +
+  +     '\n' +
+  +     '    \n' +
+  +     '      \n' +
+  +     '        Documentos públicos\n' +
+  +     '        Balances y documentos societarios de Comparte. Aquí encuentras los aprobados.\n' +
+  +     '        \n' +
+  +     '          \n' +
+  +     '            Balance 2024\n' +
+  +     '            [Balance 2024 — en publicación]\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Balance 2023\n' +
+  +     '            [Balance 2023 — en publicación]\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            Estatuto\n' +
+  +     '            [Estatuto — disponible a pedido en info@comparte.it]\n' +
+  +     '          \n' +
+  +     '        \n' +
+  +     '      \n' +
+  +     '    \n' +
+  +     '\n' +
+  +     '    \n' +
+  +     '      \n' +
+  +     '        Rendición 5×1000\n' +
+  +     '        Por ley, cada entidad publica cómo usó el 5×1000 recibido. El dato de cada año llega cuando la Agenzia delle Entrate (la Hacienda italiana) completa el reparto.\n' +
+  +     '        \n' +
+  +     '          \n' +
+  +     '            2024\n' +
+  +     '            [Monto 5×1000 año 2024 — disponible después del reparto Agenzia delle Entrate, primavera 2026]\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            2023\n' +
+  +     '            [Monto 5×1000 año 2023 — en espera de entrega]\n' +
+  +     '          \n' +
+  +     '          \n' +
+  +     '            2022\n' +
+  +     '            [Monto 5×1000 año 2022 — en espera de entrega]\n' +
+  +     '          \n' +
+  +     '        \n' +
+  +     '      \n' +
+  +     '    \n' +
+  +     '\n' +
+  +     '    \n' +
+  +     '      \n' +
+  +     '        ¿Tienes preguntas sobre nuestra transparencia? Escribe a info@comparte.it\n' +
+  +     '      \n' +
+  +     '    \n' +
+  +     'ComparteEducación en Petén, salud en La Habana.El Bloqueo, un proyecto que apoyamos (se abre en una pestaña nueva)Contactoinfo@comparte.it\n' +
+  +     'Via G. G. Porro 8, 00197 RomaInstagram · Facebook · LinkedInTransparenciaAsociación · Código fiscal 97977810585 · IVA 16847801004'
+  + ]
+  - null
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:32:16)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'delle', 'delle', index: 2786, input: '<!DOCTYPE html>Transparencia — ComparteIr al contenidoMenúQué hacemosCubaQuiénes somosTransparenciaITESENDona\n      \n        Transparencia\n        Más del\n90%\nde lo que recaudamos\nva a los proyectos.\n        El resto sirve para mantener una estructura que pueda llevar recursos donde sirven.\n      \n    \n\n    \n      \n        A dónde van los fondos\n        Sin comunicación pagada, sin intermediarios. Solo trabajo en terreno.\n\n        \n          \n            90%+\n          \n          \n            Proyectos directos\n            Petén: educación universitaria con USAC y CUDEP, programa climático para jóvenes de 13 a 17 años, capacitación agrícola con las comunidades campesinas.\n          \n        \n\n        \n          \n            <10%\n          \n          \n            Operaciones y administración\n            Costos mínimos de funcionamiento: contabilidad, hosting, herramientas de trabajo esenciales.\n          \n        \n\n        Las cuotas exactas de cada año fiscal se publican con el balance. [Balance 2024 — en publicación]\n      \n    \n\n    \n      \n        Identidad legal\n        \n          \n            Razón social\n            Comparte\n          \n          \n            Código fiscal\n            97977810585\n          \n          \n            Partita IVA\n            16847801004\n          \n          \n            Sede legal\n            Via G. G. Porro, 8 — 00197 Roma, Italia\n          \n          \n            Forma jurídica\n            Asociación\n          \n          \n            Año de constitución\n            2018\n          \n          \n            Email\n            info@comparte.it\n          \n        \n      \n    \n\n    \n      \n        Gobernanza\n        \n          \n            Andrea Pesce\n            Presidente\n            Cofundador de Comparte y CEO de zeroCO2.\n          \n          \n            Irene Culcasi\n            Vicepresidenta\n            Pedagoga, investigadora en service-learning.\n          \n          \n            Virgilio Galicia Gregorio\n            Liaison Guatemala\n            Referente comunidades indígenas del Petén.\n          \n        \n        [Consejo directivo y órgano de control — publicación junto al próximo balance aprobado]\n      \n    \n\n    \n      \n        Documentos públicos\n        Balances y documentos societarios de Comparte. Aquí encuentras los aprobados.\n        \n          \n            Balance 2024\n            [Balance 2024 — en publicación]\n          \n          \n            Balance 2023\n            [Balance 2023 — en publicación]\n          \n          \n            Estatuto\n            [Estatuto — disponible a pedido en info@comparte.it]\n          \n        \n      \n    \n\n    \n      \n        Rendición 5×1000\n        Por ley, cada entidad publica cómo usó el 5×1000 recibido. El dato de cada año llega cuando la Agenzia delle Entrate (la Hacienda italiana) completa el reparto.\n        \n          \n            2024\n            [Monto 5×1000 año 2024 — disponible después del reparto Agenzia delle Entrate, primavera 2026]\n          \n          \n            2023\n            [Monto 5×1000 año 2023 — en espera de entrega]\n          \n          \n            2022\n            [Monto 5×1000 año 2022 — en espera de entrega]\n          \n        \n      \n    \n\n    \n      \n        ¿Tienes preguntas sobre nuestra transparencia? Escribe a info@comparte.it\n      \n    \nComparteEducación en Petén, salud en La Habana.El Bloqueo, un proyecto que apoyamos (se abre en una pestaña nueva)Contactoinfo@comparte.it\nVia G. G. Porro 8, 00197 RomaInstagram · Facebook · LinkedInTransparenciaAsociación · Código fiscal 97977810585 · IVA 16847801004', groups: undefined ],
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
