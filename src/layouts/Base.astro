@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+interface Props { lang: 'it' | 'es' | 'en'; pageKey: string; title: string; description: string; noindex?: boolean }
+const { lang, title, description, noindex = false } = Astro.props;
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <slot name="head" />
+  </head>
+  <body>
+    <main id="main"><slot /></main>
+  </body>
+</html>

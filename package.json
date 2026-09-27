@@ -1,0 +1,20 @@
+{
+  "name": "comparte-website",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "astro build && node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.3.5",
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource-variable/plus-jakarta-sans": "^5.2.0"
+  },
+  "devDependencies": {
+    "node-html-parser": "^7.0.1"
+  },
+  "engines": { "node": ">=22" }
+}

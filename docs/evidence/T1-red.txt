@@ -1,0 +1,72 @@
+✖ home IT esiste con lang="it" e titolo (0.427167ms)
+✖ nessuno script o font esterno nella home IT (0.09375ms)
+✖ nessuna "Onlus" nel testo visibile (0.158333ms)
+node:fs:440
+    return binding.readFileUtf8(path, stringToFlags(options.flag));
+                   ^
+
+Error: ENOENT: no such file or directory, open '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/styles/tokens.css'
+    at readFileSync (node:fs:440:20)
+    at file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/contrast.test.mjs:6:13
+    at ModuleJob.run (node:internal/modules/esm/module_job:430:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:661:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/styles/tokens.css'
+}
+
+Node.js v24.14.0
+✖ tests/contrast.test.mjs (26.587083ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 0
+ℹ fail 4
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 67.988167
+
+✖ failing tests:
+
+test at tests/base.test.mjs:5:1
+✖ home IT esiste con lang="it" e titolo (0.427167ms)
+  Error: pagina mancante nel dist: /
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/base.test.mjs:6:13)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.start (node:internal/test_runner/test:1015:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17)
+
+test at tests/base.test.mjs:11:1
+✖ nessuno script o font esterno nella home IT (0.09375ms)
+  Error: pagina mancante nel dist: /
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/base.test.mjs:12:13)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+
+test at tests/base.test.mjs:17:1
+✖ nessuna "Onlus" nel testo visibile (0.158333ms)
+  Error: pagina mancante nel dist: /
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/base.test.mjs:18:13)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/contrast.test.mjs:1:1
+✖ tests/contrast.test.mjs (26.587083ms)
+  'test failed'
+EXIT:1
