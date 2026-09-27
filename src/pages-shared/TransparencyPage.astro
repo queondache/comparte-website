@@ -1,0 +1,20 @@
+---
+import Base from '../layouts/Base.astro';
+import { t, type Lang } from '../i18n';
+import itHtml from '../content/trasparenza/it.html?raw';
+import esHtml from '../content/trasparenza/es.html?raw';
+import enHtml from '../content/trasparenza/en.html?raw';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const d = t(lang);
+const body = { it: itHtml, es: esHtml, en: enHtml }[lang];
+---
+<Base lang={lang} pageKey="trasparenza" title={d.meta.trasparenzaTitle} description={d.meta.trasparenzaDescription}>
+  <div class="block block--cream"><div class="inner prose transparency" set:html={body} /></div>
+</Base>
+<style is:global>
+  .transparency h1 { font-size: var(--fs-h2); font-weight: 800; line-height: 1; letter-spacing: -.03em; }
+  .transparency h2 { font-size: var(--fs-h3); }
+  .transparency table { width: 100%; border-collapse: collapse; }
+  .transparency td, .transparency th { border-top: 1px solid var(--ink); padding: 8px 4px; text-align: left; }
+</style>

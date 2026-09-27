@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import Block from '../components/Block.astro';
+import { t, routes, type Lang } from '../i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const d = t(lang);
+---
+<Base lang={lang} pageKey="grazie" title={d.meta.grazieTitle} description={d.meta.grazieDescription} noindex>
+  <Block color="blue" labelledby="thanks-h1">
+    <h1 id="thanks-h1" class="display">{d.thanks.title}</h1>
+    <p class="lead">{d.thanks.text}</p>
+    <div class="btns">
+      <a class="btn btn--solid-orange" href={routes[lang].home}>{d.thanks.back}</a>
+      <a class="btn" href={routes[lang].trasparenza}>{d.thanks.transparency}</a>
+    </div>
+  </Block>
+</Base>
