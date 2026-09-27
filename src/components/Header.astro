@@ -14,7 +14,7 @@ const links = [
 <header class="site-header">
   <a class="skip" href="#main">{d.ui.skip}</a>
   <a class="logo" href={home}><img src="/logo/comparte_logo_black.png" alt="Comparte" width="670" height="839" /></a>
-  <details class="nav">
+  <details class="nav" open>
     <summary>{d.ui.menu}</summary>
     <nav aria-label={d.ui.menu}>
       <ul>{links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
@@ -47,7 +47,8 @@ const links = [
   }
 </style>
 <script is:inline>
-  // Su desktop il menu resta sempre aperto
+  // <details open> arriva già aperto dal server (nav utilizzabile senza JS anche su desktop).
+  // Lo script, se c'è, lo chiude solo sotto i 960px; su desktop resta aperto (summary è nascosto via CSS).
   const nav = document.querySelector('.site-header details');
   const mq = matchMedia('(min-width: 960px)');
   const sync = () => { if (nav) nav.open = mq.matches; };

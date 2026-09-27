@@ -21,7 +21,7 @@ const bankFirst = lang !== 'it';
     <div id="dona" class="donate-card">
       <h3>{d.bankTitle}</h3>
       <p>{site.bank}</p>
-      <CopyField value={site.iban} label={d.ibanLabel} lang={lang} />
+      <CopyField value={site.iban} label={d.ibanLabel} lang={lang} groupSize={4} />
       <p><strong>{d.holderLabel}:</strong> {site.holder} · <strong>{d.reasonLabel}:</strong> {d.reason}</p>
       <p>{d.monthly}</p>
     </div>

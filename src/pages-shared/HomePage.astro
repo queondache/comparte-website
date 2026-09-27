@@ -14,7 +14,11 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const d = t(lang);
 const gallery = import.meta.glob<{ default: ImageMetadata }>('../assets/photos/galleria/0[1-6].webp', { eager: true });
-const galleryImgs = Object.values(gallery).map((m) => m.default);
+// Ordina per chiave (nome file) prima di mappare: l'ordine di un oggetto non è garantito,
+// e known.gallery[i] deve sempre corrispondere al file 0{i+1}.webp
+const galleryImgs = Object.entries(gallery)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, m]) => m.default);
 ---
 <Base lang={lang} pageKey="home" title={d.meta.homeTitle} description={d.meta.homeDescription}>
   <Block id="hero" color="blue" labelledby="hero-title">
@@ -113,10 +117,10 @@ const galleryImgs = Object.values(gallery).map((m) => m.default);
 <style>
   .hero-img { margin-top: 64px; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
   .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
-  .grid-4 { display: grid; gap: 40px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
-  /* Bug della bozza: var(--fs-stat) (fino a 160px) nella griglia a 4 colonne
-     faceva sovrapporre "1.500+" e "46+" a 1440px. Scala ridotta per il numero a fianco di un'etichetta breve. */
-  .impact-value { font-size: clamp(32px, 2.2vw + 20px, 64px); font-weight: 800; line-height: .9; letter-spacing: -.045em; margin: 0 0 12px; }
+  /* Fix round 1: colonne più larghe (2×2 su desktop, 1 su mobile) invece di
+     rimpicciolire il numero — i dati importanti restano in grande (var(--fs-stat)). */
+  .grid-4 { display: grid; gap: 40px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); }
+  .impact-value { font-size: var(--fs-stat); font-weight: 800; line-height: .9; letter-spacing: -.045em; margin: 0 0 12px; overflow-wrap: anywhere; }
   .about { display: grid; gap: 48px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); align-items: center; }
   .small { font-size: var(--fs-small); }
   .partners, .press { list-style: none; padding: 0; margin: 0 0 56px; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }

@@ -23,6 +23,18 @@ for (const lang of LANGS) {
     else assert.ok(bank < five, `in ${lang} il bonifico va prima`);
   });
 
+  test(`${lang}: chi-siamo prima della donazione, faq dopo, newsletter per ultima`, () => {
+    const s = html(path);
+    const chiSiamo = s.indexOf('id="chi-siamo"');
+    const five = s.indexOf('id="cinque-x-mille"');
+    const bank = s.indexOf('id="dona"');
+    const faq = s.indexOf('id="faq"');
+    const newsletter = s.indexOf('id="newsletter"');
+    assert.ok(chiSiamo < Math.min(five, bank), 'chi-siamo deve venire prima del blocco donazione');
+    assert.ok(Math.max(five, bank) < faq, 'la faq deve venire dopo il blocco donazione');
+    assert.ok(faq < newsletter, 'la newsletter deve essere l\'ultimo blocco');
+  });
+
   test(`${lang}: tre numeri grandi con fonte linkata`, () => {
     const stats = page(path).querySelectorAll('#perche-educazione .stat');
     assert.equal(stats.length, 3);
@@ -42,12 +54,22 @@ for (const lang of LANGS) {
     const p = page(path);
     const values = p.querySelectorAll('.copy-value').map((n) => n.text.trim());
     assert.ok(values.includes('97977810585'));
-    assert.ok(values.includes('IT27J0501803200000016738783'));
     p.querySelectorAll('.copy-btn').forEach((b) => assert.ok(b.getAttribute('data-copy'), 'bottone senza data-copy'));
+
+    // IBAN: data-copy resta il valore grezzo; il valore visibile può essere raggruppato
+    // a blocchi di 4 per la leggibilità, ma senza gli spazi deve coincidere con il grezzo.
+    const rawIban = 'IT27J0501803200000016738783';
+    const ibanBtn = p.querySelectorAll('.copy-btn').find((b) => b.getAttribute('data-copy') === rawIban);
+    assert.ok(ibanBtn, 'bottone IBAN con data-copy grezzo mancante');
+    const ibanValueNode = ibanBtn.parentNode.querySelector('.copy-value');
+    assert.equal(ibanValueNode.text.trim().replace(/\s+/g, ''), rawIban, 'valore visibile IBAN senza spazi deve coincidere col grezzo');
   });
 
-  test(`${lang}: menu mobile funziona senza JS (<details>)`, () => {
-    assert.ok(page(path).querySelector('header details summary'), 'manca <details><summary> nel menu');
+  test(`${lang}: menu mobile funziona senza JS (<details>) e desktop resta aperto senza JS`, () => {
+    const p = page(path);
+    assert.ok(p.querySelector('header details summary'), 'manca <details><summary> nel menu');
+    const details = p.querySelector('header details');
+    assert.ok(details.hasAttribute('open'), 'il <details> del menu deve arrivare già aperto (nav desktop senza JS)');
   });
 
   test(`${lang}: newsletter senza action → niente form e niente Mailchimp`, () => {
