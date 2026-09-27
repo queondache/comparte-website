@@ -7,6 +7,8 @@ body { margin: 0; font-family: var(--font); font-size: var(--fs-body); line-heig
 img { display: block; max-width: 100%; height: auto; }
 a { color: inherit; }
 :focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+/* L'header è sticky: senza margine di scorrimento copre il target di ogni ancora #id */
+[id] { scroll-margin-top: 88px; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: -1px; padding: 0; border: 0; }
 
 /* Blocchi a tutta larghezza */

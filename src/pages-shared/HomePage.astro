@@ -33,6 +33,8 @@ const galleryImgs = Object.entries(gallery)
   </Block>
 
   <section id="perche-educazione" aria-labelledby="numbers-title">
+    {lang === 'es' && <span id="por-que-educacion" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="why-education" aria-hidden="true"></span>}
     <div class="block block--cream"><div class="inner"><h2 id="numbers-title">{d.numbers.title}</h2></div></div>
     <div class="stats-row">
       {d.numbers.items.map((it, i) => (
@@ -45,6 +47,8 @@ const galleryImgs = Object.entries(gallery)
   </section>
 
   <Block id="progetti" color="cream" labelledby="projects-title">
+    {lang === 'es' && <span id="proyectos" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="projects" aria-hidden="true"></span>}
     <h2 id="projects-title">{d.projects.title}</h2>
     <div class="grid-3">
       {d.projects.items.map((p) => (
@@ -68,6 +72,8 @@ const galleryImgs = Object.entries(gallery)
   </Block>
 
   <Block id="impatto" color="ink" labelledby="impact-title">
+    {lang === 'es' && <span id="impacto" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="impact" aria-hidden="true"></span>}
     <h2 id="impact-title">{d.impact.title}</h2>
     <div class="grid-4">
       {d.impact.items.map((it) => (
@@ -77,6 +83,8 @@ const galleryImgs = Object.entries(gallery)
   </Block>
 
   <Block id="chi-siamo" color="cream" labelledby="about-title">
+    {lang === 'es' && <span id="quienes-somos" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="about" aria-hidden="true"></span>}
     <div class="about">
       <div>
         <h2 id="about-title">{d.about.title}</h2>
@@ -88,6 +96,8 @@ const galleryImgs = Object.entries(gallery)
   </Block>
 
   <Block color="orange" labelledby="donate-title">
+    {lang === 'es' && <span id="cinco-x-mil" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="five-x-thousand" aria-hidden="true"></span>}
     <DonateBlock lang={lang} />
   </Block>
 
@@ -111,6 +121,8 @@ const galleryImgs = Object.entries(gallery)
   </Block>
 
   <Block id="newsletter" color="pink" labelledby="newsletter-title">
+    {/* L'id inglese "newsletter" coincide già con quello storico EN: nessun alias serve lì */}
+    {lang === 'es' && <span id="boletin" aria-hidden="true"></span>}
     <Newsletter lang={lang} />
   </Block>
 </Base>

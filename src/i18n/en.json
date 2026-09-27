@@ -5,7 +5,7 @@
     "donaTitle": "Donate to Comparte — Bank transfer",
     "donaDescription": "How to support Comparte: bank transfer to Banca Etica and, if you pay taxes in Italy, the 5×1000.",
     "cubaTitle": "Comparte in Cuba — Glasses and medicines in Havana",
-    "cubaDescription": "For more than 4 years we have supported the Belén home for the elderly and primary schools in Havana with prescription glasses and medicines.",
+    "cubaDescription": "For more than 4 years we have supported the Belén home for the elderly and primary schools in Havana with prescription glasses, medicines and educational materials.",
     "trasparenzaTitle": "Transparency — Comparte",
     "trasparenzaDescription": "Financial statements, 5×1000 reports and legal details of Comparte.",
     "grazieTitle": "Thank you — Comparte",
@@ -51,8 +51,8 @@
   },
   "cuba": {
     "eyebrow": "Havana, Cuba",
-    "title": "Glasses and medicines, for more than 4 years",
-    "text": "In Havana we support the Belén home for the elderly and primary schools in the city and the province. We bring prescription glasses and medicines where the embargo makes them hard to find.",
+    "title": "Glasses, medicines and educational materials, for more than 4 years",
+    "text": "In Havana we support the Belén home for the elderly and primary schools in the city and the province. We bring prescription glasses, medicines and educational materials where the embargo makes them hard to find.",
     "ctaBloqueo": "El Bloqueo",
     "ctaDona": "Donate now"
   },
@@ -120,7 +120,7 @@
     "items": [
       { "q": "How can I donate?", "a": "By bank transfer to Banca Etica, IBAN IT27J0501803200000016738783, account holder Comparte. Keep your receipt." },
       { "q": "What is the 5×1000?", "a": "If you pay taxes in Italy, you can give your 5×1000 to Comparte in your tax return with the tax code 97977810585. It costs you nothing and does not reduce your refund." },
-      { "q": "What do you do in Cuba?", "a": "For more than 4 years we have brought prescription glasses and medicines to the Belén home for the elderly and to primary schools in Havana and the province." },
+      { "q": "What do you do in Cuba?", "a": "For more than 4 years we have brought prescription glasses, medicines and educational materials to the Belén home for the elderly and to primary schools in Havana and the province." },
       { "q": "Where does the 5×1000 go?", "a": "To our active projects in Petén: university training with USAC, climate education in Nuevo Horizonte and agricultural training with rural communities. The report is published every year on the Transparency page." },
       { "q": "What is Comparte?", "a": "An association founded in 2018 between Rome and Petén. We train teachers and students, bring climate education to schools and agricultural training to rural communities in Guatemala." },
       { "q": "Is Comparte linked to zeroCO2?", "a": "Yes. Andrea Pesce founded both. zeroCO2 plants trees in rural communities in Petén, and Comparte brings training and education to the same communities. They are independent and work together on the ground." }
@@ -152,16 +152,16 @@
     "report": "How we use the 5×1000"
   },
   "cubaPage": {
-    "title": "Glasses and medicines in Havana",
+    "title": "Glasses, medicines and educational materials in Havana",
     "whoTitle": "Who we help",
     "who": [
       "The Belén home for the elderly, in Havana.",
       "Primary schools in the city and the province."
     ],
     "whatTitle": "What we bring",
-    "what": "Prescription glasses and medicines. For more than 4 years.",
+    "what": "Prescription glasses, medicines and educational materials. For more than 4 years.",
     "whyTitle": "Why it matters",
-    "why": "The US embargo makes it hard to find medicines and everyday supplies in Cuba. Older people and children pay the highest price.",
+    "why": "The US embargo makes it hard to find medicines and everyday supplies in Cuba.",
     "bloqueoText": "El Bloqueo, a project we support, explains it with verifiable sources.",
     "bloqueoCta": "Read El Bloqueo",
     "donateTitle": "Donate for Cuba and Petén",

@@ -5,7 +5,7 @@
     "donaTitle": "Dona a Comparte — 5×1000 e bonifico",
     "donaDescription": "Come sostenere Comparte: 5×1000 con il codice fiscale 97977810585 o bonifico a Banca Etica.",
     "cubaTitle": "Comparte a Cuba — Occhiali e medicine all'Havana",
-    "cubaDescription": "Da oltre 4 anni sosteniamo l'asilo per anziani di Belén e le scuole primarie dell'Havana con occhiali da vista e medicine.",
+    "cubaDescription": "Da oltre 4 anni sosteniamo l'asilo per anziani di Belén e le scuole primarie dell'Havana con occhiali da vista, medicine e materiale didattico.",
     "trasparenzaTitle": "Trasparenza — Comparte",
     "trasparenzaDescription": "Bilanci, rendiconti del 5×1000 e dati legali di Comparte.",
     "grazieTitle": "Grazie — Comparte",
@@ -51,8 +51,8 @@
   },
   "cuba": {
     "eyebrow": "L'Havana, Cuba",
-    "title": "Occhiali e medicine, da oltre 4 anni",
-    "text": "All'Havana sosteniamo l'asilo per anziani di Belén e le scuole primarie della città e della provincia. Portiamo occhiali da vista e medicine, dove il blocco rende difficile trovarli.",
+    "title": "Occhiali, medicine e materiale didattico, da oltre 4 anni",
+    "text": "All'Havana sosteniamo l'asilo per anziani di Belén e le scuole primarie della città e della provincia. Portiamo occhiali da vista, medicine e materiale didattico, dove il blocco rende difficile trovarli.",
     "ctaBloqueo": "El Bloqueo",
     "ctaDona": "Dona ora"
   },
@@ -121,7 +121,7 @@
       { "q": "Come destino il 5×1000 a Comparte?", "a": "Nel modello 730, Redditi PF o CU firma il riquadro «Sostegno degli enti del Terzo settore iscritti nel RUNTS» e scrivi il codice fiscale 97977810585. Non costa nulla e non riduce il rimborso." },
       { "q": "Posso donare anche senza il 5×1000?", "a": "Sì, con un bonifico a Banca Etica, IBAN IT27J0501803200000016738783, intestato a Comparte. Conserva la ricevuta." },
       { "q": "Dove vanno i fondi del 5×1000?", "a": "Ai progetti attivi nel Petén: formazione universitaria con la USAC, educazione climatica a Nuevo Horizonte, formazione agricola con le comunità contadine. Il rendiconto è pubblicato ogni anno nella pagina Trasparenza." },
-      { "q": "Cosa fate a Cuba?", "a": "Da oltre 4 anni portiamo occhiali da vista e medicine all'asilo per anziani di Belén e alle scuole primarie dell'Havana e della provincia." },
+      { "q": "Cosa fate a Cuba?", "a": "Da oltre 4 anni portiamo occhiali da vista, medicine e materiale didattico all'asilo per anziani di Belén e alle scuole primarie dell'Havana e della provincia." },
       { "q": "Cos'è Comparte?", "a": "Un'associazione nata nel 2018 tra Roma e il Petén. Formiamo docenti e studenti, portiamo educazione climatica nelle scuole e formazione agricola nelle comunità rurali del Guatemala." },
       { "q": "Comparte è collegata a zeroCO2?", "a": "Sì. Andrea Pesce ha fondato entrambe. zeroCO2 pianta alberi nelle comunità rurali del Petén, Comparte porta nelle stesse comunità formazione ed educazione. Sono indipendenti e collaborano sul campo." }
     ],
@@ -152,16 +152,16 @@
     "report": "Come usiamo il 5×1000"
   },
   "cubaPage": {
-    "title": "Occhiali e medicine all'Havana",
+    "title": "Occhiali, medicine e materiale didattico all'Havana",
     "whoTitle": "Chi aiutiamo",
     "who": [
       "L'asilo per anziani di Belén, all'Havana.",
       "Le scuole primarie della città e della provincia."
     ],
     "whatTitle": "Cosa portiamo",
-    "what": "Occhiali da vista e medicine. Da oltre 4 anni.",
+    "what": "Occhiali da vista, medicine e materiale didattico. Da oltre 4 anni.",
     "whyTitle": "Perché serve",
-    "why": "Il blocco statunitense rende difficile trovare a Cuba medicine e materiali di uso comune. Chi ne paga il prezzo sono soprattutto anziani e bambini.",
+    "why": "Il blocco statunitense rende difficile trovare a Cuba medicine e materiali di uso comune.",
     "bloqueoText": "El Bloqueo, un progetto che sosteniamo, lo spiega con fonti verificabili.",
     "bloqueoCta": "Leggi El Bloqueo",
     "donateTitle": "Dona per Cuba e per il Petén",

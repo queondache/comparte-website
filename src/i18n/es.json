@@ -5,7 +5,7 @@
     "donaTitle": "Dona a Comparte — Transferencia bancaria",
     "donaDescription": "Cómo apoyar a Comparte: transferencia bancaria a Banca Etica y, si pagas impuestos en Italia, el 5×1000.",
     "cubaTitle": "Comparte en Cuba — Lentes y medicamentos en La Habana",
-    "cubaDescription": "Desde hace más de 4 años apoyamos el hogar de ancianos de Belén y las escuelas primarias de La Habana con lentes graduados y medicamentos.",
+    "cubaDescription": "Desde hace más de 4 años apoyamos el hogar de ancianos de Belén y las escuelas primarias de La Habana con lentes graduados, medicamentos y material didáctico.",
     "trasparenzaTitle": "Transparencia — Comparte",
     "trasparenzaDescription": "Balances, informes del 5×1000 y datos legales de Comparte.",
     "grazieTitle": "Gracias — Comparte",
@@ -51,8 +51,8 @@
   },
   "cuba": {
     "eyebrow": "La Habana, Cuba",
-    "title": "Lentes y medicamentos, desde hace más de 4 años",
-    "text": "En La Habana apoyamos el hogar de ancianos de Belén y las escuelas primarias de la ciudad y de la provincia. Llevamos lentes graduados y medicamentos, allí donde el bloqueo hace difícil conseguirlos.",
+    "title": "Lentes, medicamentos y material didáctico, desde hace más de 4 años",
+    "text": "En La Habana apoyamos el hogar de ancianos de Belén y las escuelas primarias de la ciudad y de la provincia. Llevamos lentes graduados, medicamentos y material didáctico, allí donde el bloqueo hace difícil conseguirlos.",
     "ctaBloqueo": "El Bloqueo",
     "ctaDona": "Dona ahora"
   },
@@ -120,7 +120,7 @@
     "items": [
       { "q": "¿Cómo puedo donar?", "a": "Con una transferencia a Banca Etica, IBAN IT27J0501803200000016738783, a nombre de Comparte. Guarda el comprobante." },
       { "q": "¿Qué es el 5×1000?", "a": "Si pagas impuestos en Italia, puedes destinar el 5×1000 a Comparte en tu declaración con el código fiscal 97977810585. No te cuesta nada y no reduce tu reembolso." },
-      { "q": "¿Qué hacen en Cuba?", "a": "Desde hace más de 4 años llevamos lentes graduados y medicamentos al hogar de ancianos de Belén y a las escuelas primarias de La Habana y de la provincia." },
+      { "q": "¿Qué hacen en Cuba?", "a": "Desde hace más de 4 años llevamos lentes graduados, medicamentos y material didáctico al hogar de ancianos de Belén y a las escuelas primarias de La Habana y de la provincia." },
       { "q": "¿A dónde van los fondos del 5×1000?", "a": "A los proyectos activos en Petén: formación universitaria con la USAC, educación climática en Nuevo Horizonte y formación agrícola con las comunidades campesinas. El informe se publica cada año en la página Transparencia." },
       { "q": "¿Qué es Comparte?", "a": "Una asociación nacida en 2018 entre Roma y Petén. Formamos a docentes y estudiantes, llevamos educación climática a las escuelas y formación agrícola a las comunidades rurales de Guatemala." },
       { "q": "¿Comparte está vinculada a zeroCO2?", "a": "Sí. Andrea Pesce fundó ambas. zeroCO2 siembra árboles en las comunidades rurales de Petén y Comparte lleva a esas mismas comunidades formación y educación. Son independientes y colaboran sobre el terreno." }
@@ -152,16 +152,16 @@
     "report": "Cómo usamos el 5×1000"
   },
   "cubaPage": {
-    "title": "Lentes y medicamentos en La Habana",
+    "title": "Lentes, medicamentos y material didáctico en La Habana",
     "whoTitle": "A quién ayudamos",
     "who": [
       "Al hogar de ancianos de Belén, en La Habana.",
       "A las escuelas primarias de la ciudad y de la provincia."
     ],
     "whatTitle": "Qué llevamos",
-    "what": "Lentes graduados y medicamentos. Desde hace más de 4 años.",
+    "what": "Lentes graduados, medicamentos y material didáctico. Desde hace más de 4 años.",
     "whyTitle": "Por qué hace falta",
-    "why": "El bloqueo estadounidense hace difícil conseguir en Cuba medicamentos y materiales de uso diario. Quienes más lo pagan son los ancianos y los niños.",
+    "why": "El bloqueo estadounidense hace difícil conseguir en Cuba medicamentos y materiales de uso diario.",
     "bloqueoText": "El Bloqueo, un proyecto que apoyamos, lo explica con fuentes verificables.",
     "bloqueoCta": "Lee El Bloqueo",
     "donateTitle": "Dona por Cuba y por Petén",

@@ -1,6 +1,6 @@
 # Comparte
 
-> Associazione italiana del Terzo settore, attiva dal 2018 nel Petén, in Guatemala, con tre programmi di formazione (universitaria con USAC/CUDEP, climatica per ragazzi 13-17 anni, agricola con le comunità rurali). Da oltre 4 anni sostiene all'Havana, Cuba, l'asilo per anziani di Belén e le scuole primarie della città e della provincia con occhiali da vista e medicine. Il 5×1000 si dona con il codice fiscale 97977810585.
+> Associazione italiana del Terzo settore, attiva dal 2018 nel Petén, in Guatemala, con tre programmi di formazione (universitaria con USAC/CUDEP, climatica per ragazzi 13-17 anni, agricola con le comunità rurali). Da oltre 4 anni sostiene all'Havana, Cuba, l'asilo per anziani di Belén e le scuole primarie della città e della provincia con occhiali da vista, medicine e materiale didattico. Il 5×1000 si dona con il codice fiscale 97977810585.
 
 Comparte è nata nel 2018 a Roma da un gruppo di giovani italiani e guatemaltechi. Opera nel Petén, dipartimento più isolato del Guatemala, in collaborazione con il Centro Universitario de Petén (CUDEP) della Universidad de San Carlos de Guatemala (USAC), con i ministeri guatemaltechi dell'ambiente (MARN) e della gestione forestale (INAB), e con realtà italiane come zeroCO2 (riforestazione nelle stesse comunità) e LUMSA (docenti dei seminari online).
 
@@ -34,11 +34,11 @@ Nel Petén l’istruzione apre strade che troppo spesso restano chiuse. Comparte
 
 ## Dona
 
-Puoi destinare il 5×1000, fare un bonifico a Banca Etica o seguire gli aggiornamenti sul futuro pagamento con carta tramite Mollie: https://www.comparte.it/#dona
+Puoi destinare il 5×1000 o fare un bonifico a Banca Etica: https://www.comparte.it/#dona
 
 ## Newsletter
 
-La newsletter è in arrivo. Per ora: https://www.comparte.it/#newsletter
+Iscriviti alla newsletter: https://www.comparte.it/#newsletter
 
 ## Progetti che sosteniamo
 
@@ -87,8 +87,8 @@ La newsletter è in arrivo. Per ora: https://www.comparte.it/#newsletter
 ## Lingue del sito
 
 - Italiano (primario): https://www.comparte.it/
-- Español (in costruzione): https://www.comparte.it/es/
-- English (in costruzione): https://www.comparte.it/en/
+- Español: https://www.comparte.it/es/
+- English: https://www.comparte.it/en/
 
 ## Note per agenti AI
 

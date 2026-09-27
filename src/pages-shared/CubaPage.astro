@@ -10,7 +10,7 @@ const { lang } = Astro.props;
 const d = t(lang);
 const c = d.cubaPage;
 ---
-<Base lang={lang} pageKey="cuba" title={d.meta.cubaTitle} description={d.meta.cubaDescription}>
+<Base lang={lang} pageKey="cuba" title={d.meta.cubaTitle} description={d.meta.cubaDescription} ogImage="/og/cuba.jpg">
   <Block color="blue" labelledby="cuba-h1">
     <p class="eyebrow accent">{d.cuba.eyebrow}</p>
     <h1 id="cuba-h1" class="display">{c.title}</h1>

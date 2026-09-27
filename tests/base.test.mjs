@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { page, html } from './lib/dist.mjs';
+import { page, html, visibleText } from './lib/dist.mjs';
 
 test('home IT esiste con lang="it" e titolo', () => {
   const p = page('/');
@@ -15,7 +15,5 @@ test('nessuno script o font esterno nella home IT', () => {
 });
 
 test('nessuna "Onlus" nel testo visibile', () => {
-  const p = page('/');
-  p.querySelectorAll('script').forEach((n) => n.remove());
-  assert.doesNotMatch(p.text, /onlus/i);
+  assert.doesNotMatch(visibleText(html('/')), /onlus/i);
 });

@@ -9,7 +9,8 @@ export default defineConfig({
   build: { format: 'directory', inlineStylesheets: 'always' },
   integrations: [
     sitemap({
-      i18n: { defaultLocale: 'it', locales: { it: 'it', es: 'es', en: 'en' } },
+      // Niente opzione i18n: gli slug differiscono per lingua e l'hreflang di pagina
+      // (vedi Base.astro) copre già la relazione fra le versioni linguistiche.
       // Le pagine di ringraziamento e la 404 restano fuori
       filter: (url) => !/\/(grazie|gracias|thank-you|404)\//.test(url),
     }),

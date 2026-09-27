@@ -22,3 +22,15 @@ export function html(path) {
 export function page(path) {
   return parse(html(path));
 }
+
+// node-html-parser incolla i nodi di testo adiacenti senza spazio: un confine di parola (\b)
+// a fine elemento (es. "</strong> anni") non scatta mai su `.text`, rendendo vacui i controlli
+// lessicali basati su \b. Costruiamo qui il testo visibile "a mano": tolti script/style,
+// ogni tag diventa uno spazio, poi decodifichiamo le entità HTML più comuni.
+const ENTITIES = { amp: '&', '#39': "'", apos: "'", quot: '"', nbsp: ' ' };
+export function visibleText(rawHtml) {
+  return rawHtml
+    .replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, '')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&(#39|apos|amp|quot|nbsp);/g, (_, e) => ENTITIES[e]);
+}

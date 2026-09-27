@@ -5,7 +5,9 @@ on:
   workflow_dispatch:
 concurrency:
   group: pages
-  cancel-in-progress: true
+  # Non annullare un deploy Pages già in corso: un cancel-in-progress qui rischia
+  # di lasciare l'ambiente github-pages a metà pubblicazione.
+  cancel-in-progress: false
 permissions:
   contents: read
   pages: write

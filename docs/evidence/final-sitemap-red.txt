@@ -1,0 +1,79 @@
+✔ it/home: canonical e hreflang reciproci (8.969458ms)
+✔ it/home: JSON-LD valido (1.149667ms)
+✔ it/dona: canonical e hreflang reciproci (0.459ms)
+✔ it/dona: JSON-LD valido (0.58625ms)
+✔ it/cuba: canonical e hreflang reciproci (0.348459ms)
+✔ it/cuba: JSON-LD valido (0.287125ms)
+✔ it/trasparenza: canonical e hreflang reciproci (0.368584ms)
+✔ it/trasparenza: JSON-LD valido (1.223ms)
+✔ it/grazie: canonical e hreflang reciproci (0.236583ms)
+✔ it/grazie: JSON-LD valido (0.2205ms)
+✔ es/home: canonical e hreflang reciproci (0.414584ms)
+✔ es/home: JSON-LD valido (0.510417ms)
+✔ es/home: nessuna parola italiana nel testo visibile (0.642959ms)
+✔ es/dona: canonical e hreflang reciproci (0.375375ms)
+✔ es/dona: JSON-LD valido (0.206042ms)
+✔ es/dona: nessuna parola italiana nel testo visibile (0.214916ms)
+✔ es/cuba: canonical e hreflang reciproci (0.217167ms)
+✔ es/cuba: JSON-LD valido (0.742625ms)
+✔ es/cuba: nessuna parola italiana nel testo visibile (0.411625ms)
+✔ es/trasparenza: canonical e hreflang reciproci (0.335333ms)
+✔ es/trasparenza: JSON-LD valido (0.272792ms)
+✔ es/trasparenza: nessuna parola italiana nel testo visibile (0.700875ms)
+✔ es/grazie: canonical e hreflang reciproci (0.141166ms)
+✔ es/grazie: JSON-LD valido (0.113875ms)
+✔ es/grazie: nessuna parola italiana nel testo visibile (0.115791ms)
+✔ en/home: canonical e hreflang reciproci (0.32425ms)
+✔ en/home: JSON-LD valido (0.316667ms)
+✔ en/home: nessuna parola italiana nel testo visibile (0.544292ms)
+✔ en/dona: canonical e hreflang reciproci (0.192167ms)
+✔ en/dona: JSON-LD valido (0.180042ms)
+✔ en/dona: nessuna parola italiana nel testo visibile (0.182458ms)
+✔ en/cuba: canonical e hreflang reciproci (0.175291ms)
+✔ en/cuba: JSON-LD valido (0.166584ms)
+✔ en/cuba: nessuna parola italiana nel testo visibile (0.183833ms)
+✔ en/trasparenza: canonical e hreflang reciproci (0.236333ms)
+✔ en/trasparenza: JSON-LD valido (0.32225ms)
+✔ en/trasparenza: nessuna parola italiana nel testo visibile (0.249916ms)
+✔ en/grazie: canonical e hreflang reciproci (0.149292ms)
+✔ en/grazie: JSON-LD valido (0.106625ms)
+✔ en/grazie: nessuna parola italiana nel testo visibile (0.1225ms)
+✔ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.40575ms)
+✔ sitemap generata senza pagine grazie (0.084709ms)
+✖ robots, CNAME, llms.txt e 404 presenti (0.388292ms)
+✔ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.107291ms)
+✔ llms.txt (it, es, en): niente Mollie, carta di credito, o sezioni "in arrivo" (0.199333ms)
+✔ llms.txt it: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.071625ms)
+✔ llms.txt it: sezione pagine presente (0.059625ms)
+✔ llms.txt es: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.032584ms)
+✔ llms.txt es: sezione pagine presente (0.056792ms)
+✔ llms.txt en: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.038584ms)
+✔ llms.txt en: sezione pagine presente (0.045458ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 50
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 91.476166
+
+✖ failing tests:
+
+test at tests/seo.test.mjs:68:1
+✖ robots, CNAME, llms.txt e 404 presenti (0.388292ms)
+  AssertionError [ERR_ASSERTION]: manca dist/sitemap.xml
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:75:10)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

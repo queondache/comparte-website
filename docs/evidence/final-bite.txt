@@ -1,0 +1,90 @@
+✔ it/home: canonical e hreflang reciproci (8.639417ms)
+✔ it/home: JSON-LD valido (1.147791ms)
+✔ it/dona: canonical e hreflang reciproci (0.353708ms)
+✔ it/dona: JSON-LD valido (0.283542ms)
+✔ it/cuba: canonical e hreflang reciproci (0.378167ms)
+✔ it/cuba: JSON-LD valido (0.257584ms)
+✔ it/trasparenza: canonical e hreflang reciproci (0.353459ms)
+✔ it/trasparenza: JSON-LD valido (0.631458ms)
+✔ it/grazie: canonical e hreflang reciproci (0.2955ms)
+✔ it/grazie: JSON-LD valido (0.21725ms)
+✔ es/home: canonical e hreflang reciproci (0.366917ms)
+✔ es/home: JSON-LD valido (0.485791ms)
+✔ es/home: nessuna parola italiana nel testo visibile (0.363833ms)
+✔ es/dona: canonical e hreflang reciproci (0.270709ms)
+✔ es/dona: JSON-LD valido (0.221208ms)
+✔ es/dona: nessuna parola italiana nel testo visibile (0.087958ms)
+✔ es/cuba: canonical e hreflang reciproci (0.301542ms)
+✔ es/cuba: JSON-LD valido (0.172375ms)
+✔ es/cuba: nessuna parola italiana nel testo visibile (0.061541ms)
+✔ es/trasparenza: canonical e hreflang reciproci (0.219833ms)
+✔ es/trasparenza: JSON-LD valido (0.247875ms)
+✔ es/trasparenza: nessuna parola italiana nel testo visibile (0.087916ms)
+✔ es/grazie: canonical e hreflang reciproci (0.154ms)
+✔ es/grazie: JSON-LD valido (0.151708ms)
+✔ es/grazie: nessuna parola italiana nel testo visibile (0.062458ms)
+✔ en/home: canonical e hreflang reciproci (0.371ms)
+✔ en/home: JSON-LD valido (0.396334ms)
+✖ en/home: nessuna parola italiana nel testo visibile (0.766875ms)
+✔ en/dona: canonical e hreflang reciproci (0.230917ms)
+✔ en/dona: JSON-LD valido (0.215209ms)
+✔ en/dona: nessuna parola italiana nel testo visibile (0.078958ms)
+✔ en/cuba: canonical e hreflang reciproci (0.178708ms)
+✔ en/cuba: JSON-LD valido (0.144167ms)
+✔ en/cuba: nessuna parola italiana nel testo visibile (0.061791ms)
+✔ en/trasparenza: canonical e hreflang reciproci (0.252708ms)
+✔ en/trasparenza: JSON-LD valido (0.36975ms)
+✔ en/trasparenza: nessuna parola italiana nel testo visibile (0.124375ms)
+✔ en/grazie: canonical e hreflang reciproci (0.1415ms)
+✔ en/grazie: JSON-LD valido (0.103667ms)
+✔ en/grazie: nessuna parola italiana nel testo visibile (0.049375ms)
+✔ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.434375ms)
+✔ sitemap generata senza pagine grazie (0.220833ms)
+✔ robots, CNAME, llms.txt e 404 presenti (0.33975ms)
+✔ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.108417ms)
+✔ llms.txt (it, es, en): niente Mollie, carta di credito, o sezioni "in arrivo" (0.203542ms)
+✔ llms.txt it: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.08875ms)
+✔ llms.txt it: sezione pagine presente (0.057542ms)
+✔ llms.txt es: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.029417ms)
+✔ llms.txt es: sezione pagine presente (0.039667ms)
+✔ llms.txt en: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.032917ms)
+✔ llms.txt en: sezione pagine presente (0.037584ms)
+ℹ tests 51
+ℹ suites 0
+ℹ pass 50
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 85.901584
+
+✖ failing tests:
+
+test at tests/seo.test.mjs:41:7
+✖ en/home: nessuna parola italiana nel testo visibile (0.766875ms)
+  AssertionError [ERR_ASSERTION]: "bonifico"
+  + actual - expected
+  
+  + [
+  +   'bonifico',
+  +   'bonifico',
+  +   groups: undefined,
+  +   index: 238,
+  +   input: `      Comparte — Education changes everything                 Skip to content      Menu     What we do    Cuba    About us    Transparency      IT    ES    EN      Donate      In Petén, Guatemala, since 2018  Education changes everything bonifico  We train teachers, young people and communities in Petén. And in Havana we bring glasses and medicines to people who need them.   Donate now  What we do         In Petén, an education is still hard-won       49%  of young people in Guatemala finish lower secondary school.  Source:  World Bank, 2024  (opens in a new tab)        82%  of adults can read and write. Almost one in five cannot.  Source:  World Bank, 2024  (opens in a new tab)        9.7  years of school a child can expect.  Source:  World Bank, 2020  (opens in a new tab)         That is why we work alongside people who teach, study and farm the land.       What we do in Petén    Comparte Universidad  Teachers  Online seminars with European lecturers for students and teachers at CUDEP, the most remote campus of Guatemala's public university. Since 2018, more than 1,500 people trained.    Comparte Educación  Young people and climate  Five modules on the climate crisis for girls and boys aged 13 to 17. The first edition, in Nuevo Horizonte with INAB and MARN, involved 27 students.    Comparte Comunidad  Communities  Agricultural training in the communities where zeroCO2 plants trees. Soil, harvests and practices that help every day.        Havana, Cuba  Glasses and medicines, for more than 4 years  In Havana we support the Belén home for the elderly and primary schools in the city and the province. We bring prescription glasses and medicines where the embargo makes them hard to find.   El Bloqueo  Donate now       What we have done so far    1,500+  people trained    46+  rural communities reached    27  students in the climate programme    4+  years of aid to Cuba          Born over lunch, in 2018  A group of young Italians and Guatemalans, sitting at the table, asked themselves what the communities of Petén really lacked. The answer: good education and practical tools. That is how Comparte began; in Spanish the name means "share". We started with cinema: between 2018 and 2020 Comparte Cinema screenings, with Cuba's ICAIC, reached 7 rural communities.  Andrea Pesce, president · Irene Culcasi, vice president · Virgilio Galicia Gregorio, liaison in Guatemala          How to donate    Bank transfer  Banca Etica   IBAN   IT27   J050   1803   2000   0001   6738   783   Copy    Account holder:  Comparte ·  Reference:  Donazione liberale  To give every month, set up a standing order with your bank.    Do you pay taxes in Italy?  5×1000  If you pay taxes in Italy, sign the box for Third Sector organisations in your tax return and write our tax code. It costs you nothing.   Tax code  97977810585  Copy     Donations fund all our work, in Petén and in Cuba. If you pay taxes in Italy, they are tax-deductible under the rules for Third Sector organisations. Keep your transfer receipt.   All the ways to donate        Who knows us  Who we work with    USAC   Universidad de San Carlos de Guatemala    LUMSA   LUMSA University, Rome    Scholas   Pontifical Foundation Scholas Occurrentes    INAB   National Forest Institute, Guatemala    MARN   Ministry of Environment, Guatemala    zeroCO2   Italian-Guatemalan benefit company    1Caffè   Italian fundraising platform    European Schoolnet   Brussels    In the press     Millionaire · February 2021  Article on fruit trees donated to communities (in Italian)   (opens in a new tab)      University of Bologna · Alumni Stories  Interview with Andrea Pesce, founder of zeroCO2 and Comparte (in Italian)   (opens in a new tab)      Tempo Stretto · January 2019  A thread linking Italy and Guatemala (in Italian)   (opens in a new tab)      zeroCO2 Magazine · August 2023  Reforestation and education: a month of Lime for Comparte (in Italian)   (opens in a new tab)        Nuevo Horizonte community, Petén     Agricultural training in rural communities     Nuevo Horizonte, where it all began     The lunch where Comparte was born, 2018     USAC graduation, Comparte Universidad     Seminar at the Centro Universitario de Petén        Frequently asked questions    How can I donate?  By bank transfer to Banca Etica, IBAN IT27J0501803200000016738783, account holder Comparte. Keep your receipt.    What is the 5×1000?  If you pay taxes in Italy, you can give your 5×1000 to Comparte in your tax return with the tax code 97977810585. It costs you nothing and does not reduce your refund.    What do you do in Cuba?  For more than 4 years we have brought prescription glasses and medicines to the Belén home for the elderly and to primary schools in Havana and the province.        Stay in touch  A few emails a year: what we do, where the money goes and when we need you most.   In the meantime, follow us on Instagram.  (opens in a new tab)          Comparte  Education in Petén, health in Havana.   El Bloqueo, a project we support  (opens in a new tab)      Contact   info@comparte.it  Via G. G. Porro 8, 00197 Roma   Instagram  ·  Facebook  ·  LinkedIn      Transparency   Association · Tax code 97977810585 · VAT no. 16847801004      `
+  + ]
+  - null
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:43:16)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ 'bonifico', 'bonifico', index: 238, input: `      Comparte — Education changes everything                 Skip to content      Menu     What we do    Cuba    About us    Transparency      IT    ES    EN      Donate      In Petén, Guatemala, since 2018  Education changes everything bonifico  We train teachers, young people and communities in Petén. And in Havana we bring glasses and medicines to people who need them.   Donate now  What we do         In Petén, an education is still hard-won       49%  of young people in Guatemala finish lower secondary school.  Source:  World Bank, 2024  (opens in a new tab)        82%  of adults can read and write. Almost one in five cannot.  Source:  World Bank, 2024  (opens in a new tab)        9.7  years of school a child can expect.  Source:  World Bank, 2020  (opens in a new tab)         That is why we work alongside people who teach, study and farm the land.       What we do in Petén    Comparte Universidad  Teachers  Online seminars with European lecturers for students and teachers at CUDEP, the most remote campus of Guatemala's public university. Since 2018, more than 1,500 people trained.    Comparte Educación  Young people and climate  Five modules on the climate crisis for girls and boys aged 13 to 17. The first edition, in Nuevo Horizonte with INAB and MARN, involved 27 students.    Comparte Comunidad  Communities  Agricultural training in the communities where zeroCO2 plants trees. Soil, harvests and practices that help every day.        Havana, Cuba  Glasses and medicines, for more than 4 years  In Havana we support the Belén home for the elderly and primary schools in the city and the province. We bring prescription glasses and medicines where the embargo makes them hard to find.   El Bloqueo  Donate now       What we have done so far    1,500+  people trained    46+  rural communities reached    27  students in the climate programme    4+  years of aid to Cuba          Born over lunch, in 2018  A group of young Italians and Guatemalans, sitting at the table, asked themselves what the communities of Petén really lacked. The answer: good education and practical tools. That is how Comparte began; in Spanish the name means "share". We started with cinema: between 2018 and 2020 Comparte Cinema screenings, with Cuba's ICAIC, reached 7 rural communities.  Andrea Pesce, president · Irene Culcasi, vice president · Virgilio Galicia Gregorio, liaison in Guatemala          How to donate    Bank transfer  Banca Etica   IBAN   IT27   J050   1803   2000   0001   6738   783   Copy    Account holder:  Comparte ·  Reference:  Donazione liberale  To give every month, set up a standing order with your bank.    Do you pay taxes in Italy?  5×1000  If you pay taxes in Italy, sign the box for Third Sector organisations in your tax return and write our tax code. It costs you nothing.   Tax code  97977810585  Copy     Donations fund all our work, in Petén and in Cuba. If you pay taxes in Italy, they are tax-deductible under the rules for Third Sector organisations. Keep your transfer receipt.   All the ways to donate        Who knows us  Who we work with    USAC   Universidad de San Carlos de Guatemala    LUMSA   LUMSA University, Rome    Scholas   Pontifical Foundation Scholas Occurrentes    INAB   National Forest Institute, Guatemala    MARN   Ministry of Environment, Guatemala    zeroCO2   Italian-Guatemalan benefit company    1Caffè   Italian fundraising platform    European Schoolnet   Brussels    In the press     Millionaire · February 2021  Article on fruit trees donated to communities (in Italian)   (opens in a new tab)      University of Bologna · Alumni Stories  Interview with Andrea Pesce, founder of zeroCO2 and Comparte (in Italian)   (opens in a new tab)      Tempo Stretto · January 2019  A thread linking Italy and Guatemala (in Italian)   (opens in a new tab)      zeroCO2 Magazine · August 2023  Reforestation and education: a month of Lime for Comparte (in Italian)   (opens in a new tab)        Nuevo Horizonte community, Petén     Agricultural training in rural communities     Nuevo Horizonte, where it all began     The lunch where Comparte was born, 2018     USAC graduation, Comparte Universidad     Seminar at the Centro Universitario de Petén        Frequently asked questions    How can I donate?  By bank transfer to Banca Etica, IBAN IT27J0501803200000016738783, account holder Comparte. Keep your receipt.    What is the 5×1000?  If you pay taxes in Italy, you can give your 5×1000 to Comparte in your tax return with the tax code 97977810585. It costs you nothing and does not reduce your refund.    What do you do in Cuba?  For more than 4 years we have brought prescription glasses and medicines to the Belén home for the elderly and to primary schools in Havana and the province.        Stay in touch  A few emails a year: what we do, where the money goes and when we need you most.   In the meantime, follow us on Instagram.  (opens in a new tab)          Comparte  Education in Petén, health in Havana.   El Bloqueo, a project we support  (opens in a new tab)      Contact   info@comparte.it  Via G. G. Porro 8, 00197 Roma   Instagram  ·  Facebook  ·  LinkedIn      Transparency   Association · Tax code 97977810585 · VAT no. 16847801004      `, groups: undefined ],
+    expected: null,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

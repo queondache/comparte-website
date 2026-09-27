@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Alias statico: gli scraper che cercano /sitemap.xml per convenzione trovano comunque
+     l'indice reale generato da @astrojs/sitemap (sitemap-index.xml -> sitemap-0.xml). -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><sitemap><loc>https://www.comparte.it/sitemap-0.xml</loc></sitemap></sitemapindex>
