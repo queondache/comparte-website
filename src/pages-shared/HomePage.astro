@@ -43,12 +43,13 @@ const galleryImgs = Object.entries(gallery)
         </div>
       ))}
     </div>
-    <div class="block block--cream"><div class="inner"><p class="lead">{d.numbers.outro}</p></div></div>
   </section>
 
   <Block id="progetti" color="cream" labelledby="projects-title">
     {lang === 'es' && <span id="proyectos" aria-hidden="true"></span>}
     {lang === 'en' && <span id="projects" aria-hidden="true"></span>}
+    <!-- La conclusione dei numeri apre i progetti: evita due blocchi crema consecutivi -->
+    <p class="lead outro">{d.numbers.outro}</p>
     <h2 id="projects-title">{d.projects.title}</h2>
     <div class="grid-3">
       {d.projects.items.map((p) => (
@@ -116,7 +117,7 @@ const galleryImgs = Object.entries(gallery)
     </div>
   </Block>
 
-  <Block id="faq" color="cream" labelledby="faq-title">
+  <Block id="faq" color="blue" labelledby="faq-title">
     <Faq lang={lang} limit={d.faq.homeCount} />
   </Block>
 
@@ -138,7 +139,11 @@ const galleryImgs = Object.entries(gallery)
   .partners, .press { list-style: none; padding: 0; margin: 0 0 56px; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
   .partners span { display: block; font-size: var(--fs-small); }
   .press a { display: grid; gap: 8px; text-decoration: none; border-top: 3px solid var(--ink); padding-top: 16px; }
-  .gallery { display: grid; gap: 8px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+  /* 6 foto: 1, 2 o 3 colonne, mai righe con foto orfane */
+  .gallery { display: grid; gap: 8px; grid-template-columns: 1fr; }
+  @media (min-width: 600px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 960px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
+  .outro { margin: 0 0 clamp(48px, 6vw, 96px); }
   .gallery figure { margin: 0; }
   .gallery img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
   .gallery figcaption { font-size: var(--fs-small); padding: 8px 0; }

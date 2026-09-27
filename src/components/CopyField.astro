@@ -19,7 +19,7 @@ const groups = groupSize ? value.match(new RegExp(`.{1,${groupSize}}`, 'g')) ?? 
 <style>
   .copy { display: grid; gap: 8px; justify-items: start; }
   .copy-label { font-size: var(--fs-small); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
-  .copy-value { font-size: clamp(22px, 2vw + 14px, 40px); font-weight: 800; letter-spacing: -.01em; overflow-wrap: anywhere; user-select: all; }
+  .copy-value { font-size: clamp(22px, 2vw + 14px, 40px); font-weight: 800; letter-spacing: -.01em; overflow-wrap: anywhere; user-select: all; text-wrap: balance; }
   .copy-group { white-space: nowrap; }
   .copy-btn { background: transparent; cursor: pointer; font: inherit; font-weight: 700; }
 </style>

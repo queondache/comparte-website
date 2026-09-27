@@ -21,8 +21,8 @@ a { color: inherit; }
 .block--ink { background: var(--ink); color: var(--white); }
 
 .eyebrow { font-size: var(--fs-small); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 24px; }
-.display { font-size: var(--fs-display); font-weight: 800; line-height: .95; letter-spacing: -.035em; margin: 0; overflow-wrap: anywhere; }
-h2, .h2 { font-size: var(--fs-h2); font-weight: 800; line-height: 1; letter-spacing: -.03em; margin: 0 0 32px; overflow-wrap: anywhere; }
+.display { font-size: var(--fs-display); font-weight: 800; line-height: .95; letter-spacing: -.035em; margin: 0; overflow-wrap: break-word; }
+h2, .h2 { font-size: var(--fs-h2); font-weight: 800; line-height: 1; letter-spacing: -.03em; margin: 0 0 32px; overflow-wrap: break-word; }
 h3, .h3 { font-size: var(--fs-h3); font-weight: 700; line-height: 1.2; margin: 0 0 12px; }
 .lead { font-size: clamp(20px, 1vw + 16px, 26px); max-width: 38ch; }
 .prose { max-width: 62ch; }
