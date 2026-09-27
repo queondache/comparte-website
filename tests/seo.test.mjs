@@ -31,10 +31,15 @@ for (const lang of LANGS) {
       assert.equal(alts['x-default'], ABS + PAGES.it[key]);
     });
 
-    test(`${lang}/${key}: og:image assoluto sotto /og/`, () => {
+    test(`${lang}/${key}: og:image assoluto sotto /og/, og:type e twitter:card corretti`, () => {
       const p = page(path);
       const ogImage = p.querySelector('meta[property="og:image"]')?.getAttribute('content');
       assert.ok(ogImage && ogImage.startsWith(`${ABS}/og/`), `og:image mancante o non assoluto per ${path}: ${ogImage}`);
+      // Le pagine Cuba hanno la foto dedicata /og/cuba.jpg, tutte le altre ereditano /og/home.jpg
+      const expectedFile = key === 'cuba' ? '/og/cuba.jpg' : '/og/home.jpg';
+      assert.ok(ogImage.endsWith(expectedFile), `og:image per ${path} dovrebbe finire con ${expectedFile}, è "${ogImage}"`);
+      assert.equal(p.querySelector('meta[property="og:type"]')?.getAttribute('content'), 'website', `og:type mancante o errato per ${path}`);
+      assert.equal(p.querySelector('meta[name="twitter:card"]')?.getAttribute('content'), 'summary_large_image', `twitter:card mancante o errato per ${path}`);
     });
 
     test(`${lang}/${key}: JSON-LD valido`, () => {
@@ -78,6 +83,9 @@ test('robots, CNAME, llms.txt e 404 presenti', () => {
   assert.doesNotMatch(stripAllowedOnlusUrls(llms), ONLUS);
   assert.ok(existsSync(new URL('404.html', DIST)));
   assert.ok(existsSync(new URL('sitemap.xml', DIST)), 'manca dist/sitemap.xml');
+  const sitemapAlias = readFileSync(new URL('sitemap.xml', DIST), 'utf8');
+  assert.match(sitemapAlias, /<sitemapindex/, 'dist/sitemap.xml non è un sitemapindex');
+  assert.match(sitemapAlias, /https:\/\/www\.comparte\.it\/sitemap-0\.xml/, 'dist/sitemap.xml non punta a sitemap-0.xml');
 });
 
 test('vecchi ancoraggi ES/EN (bd7b449) restano risolvibili nelle nuove home', () => {
