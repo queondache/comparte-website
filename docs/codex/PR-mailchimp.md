@@ -7,7 +7,7 @@ Le tre home avevano moduli disabilitati. Ora collegano moduli statici nelle risp
 
 Moduli IT 26059, ES 26060, EN 26062, gruppi distinti e mittente Comparte. Email e pagine provider salvate con grafica Comparte. Testo privacy fornito da Andrea e revisione tracking autorizzata, tradotti nelle tre pagine di trasparenza. Nessun acquisto o cambiamento dei limiti di spesa; quota verificata 100 crediti mensili inclusi con kSuite.
 
-**Bozza non pronta al merge:** manca la prova end-to-end del percorso definitivo e Lighthouse mobile. La prova precedente ha verificato ricezione, conferma cliccata da Andrea e stato Attivo. Nessuna seconda email inviata senza autorizzazione. Disiscrizione non collaudata.
+**Bozza non pronta al merge:** restano conferma della ricezione della seconda prova e Lighthouse mobile. Il modulo IT definitivo è stato inviato con autorizzazione: risposta positiva e redirect alla pagina Comparte «Controlla la tua email» verificati in Chrome. La prova precedente ha verificato ricezione, conferma cliccata da Andrea e stato Attivo. Seconda prova autorizzata eseguita; consegna della nuova email non ancora confermata. Disiscrizione non collaudata.
 
 L'oracolo nuovo fallisce su main e passa tutti i check newsletter sul branch. Totali: IT 34/35, ES 37/38, EN 37/38. Unico FAIL residuo per lingua: Payment Link Mollie assente, ereditato dalla base. Nessun altro check indebolito: label e consenso sono verificati nella pagina effettiva del modulo. `.nojekyll` conservato.
 
@@ -597,8 +597,8 @@ exit=1
 
 ## Da completare
 
-1. Andrea: rispondere all'autorizzazione per una seconda prova email. Il destinatario già attivo potrebbe produrre “già iscritto”; non cancellare l'abbonato per forzare un nuovo opt-in.
-2. Codex: collaudare risposta e redirect del percorso definitivo, completare Lighthouse e review finale prima del rilascio.
+1. Andrea: verificare la ricezione della seconda email di prova autorizzata. Il modulo ha restituito «Controlla la tua email»; nessuna cancellazione dell’abbonato.
+2. Codex: completare Lighthouse e review finale prima del rilascio. Risposta e redirect IT verificati; prova conservata in docs/codex/evidence/infomaniak/final-submit-it.txt e final-submit-it.png.
 3. Andrea: fornire il Payment Link Mollie quando disponibile e impostarne il redirect; la newsletter non richiede altri dati Mailchimp.
 4. Andrea: rivedere le PR e decidere il merge. Nessun merge automatico.
 

@@ -1,0 +1,10 @@
+2026-09-27 — Prova autorizzata del modulo IT definitivo
+Origine: http://localhost:8766/newsletter/
+Chrome: email compilata, consenso selezionato, un solo clic Iscriviti.
+Esito visibile: navigazione principale verso Infomaniak, titolo Newsletter.
+Testo: Controlla la tua email
+Per completare l’iscrizione, apri il messaggio di Comparte e conferma.
+Se non lo trovi, controlla anche lo spam.
+Screenshot: final-submit-it.png
+Indirizzo del destinatario e URL firmato omessi dal verbale pubblico.
+Nessuna prova della ricezione della seconda email; nessuna modifica manuale dell’abbonato.
