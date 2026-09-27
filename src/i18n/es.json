@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "homeTitle": "Comparte — La educación lo cambia todo",
+    "homeDescription": "Desde 2018 formamos a docentes, jóvenes y comunidades en Petén, Guatemala. En La Habana llevamos lentes y medicamentos. Dona por transferencia bancaria.",
+    "donaTitle": "Dona a Comparte — Transferencia bancaria",
+    "donaDescription": "Cómo apoyar a Comparte: transferencia bancaria a Banca Etica y, si pagas impuestos en Italia, el 5×1000.",
+    "cubaTitle": "Comparte en Cuba — Lentes y medicamentos en La Habana",
+    "cubaDescription": "Desde hace más de 4 años apoyamos el hogar de ancianos de Belén y las escuelas primarias de La Habana con lentes graduados y medicamentos.",
+    "trasparenzaTitle": "Transparencia — Comparte",
+    "trasparenzaDescription": "Balances, informes del 5×1000 y datos legales de Comparte.",
+    "grazieTitle": "Gracias — Comparte",
+    "grazieDescription": "Gracias por tu apoyo a Comparte."
+  },
+  "ui": {
+    "skip": "Ir al contenido",
+    "menu": "Menú",
+    "langLabel": "Idioma",
+    "copy": "Copiar",
+    "copied": "Copiado",
+    "copyFallback": "Selecciona y copia",
+    "newTab": "(se abre en una pestaña nueva)",
+    "source": "Fuente"
+  },
+  "nav": { "progetti": "Qué hacemos", "cuba": "Cuba", "chiSiamo": "Quiénes somos", "trasparenza": "Transparencia", "dona": "Dona" },
+  "hero": {
+    "eyebrow": "Desde 2018 en Petén, Guatemala",
+    "title": "La educación lo cambia todo",
+    "subtitle": "Formamos a docentes, jóvenes y comunidades en Petén. Y en La Habana llevamos lentes y medicamentos a quien los necesita.",
+    "ctaPrimary": "Dona ahora",
+    "ctaPrimaryHref": "#dona",
+    "ctaSecondary": "Qué hacemos",
+    "ctaSecondaryHref": "#progetti",
+    "imgAlt": "Estudiantes del Centro Universitario de Petén, Guatemala"
+  },
+  "numbers": {
+    "title": "En Petén, estudiar todavía es una conquista",
+    "items": [
+      { "value": "49%", "text": "de los jóvenes en Guatemala termina la secundaria básica.", "source": "Banco Mundial, 2024", "url": "https://data.worldbank.org/indicator/SE.SEC.CMPT.LO.ZS?locations=GT" },
+      { "value": "82%", "text": "de los adultos sabe leer y escribir. Casi uno de cada cinco, no.", "source": "Banco Mundial, 2024", "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=GT" },
+      { "value": "9,7", "text": "los años de estudio que puede esperar un niño.", "source": "Banco Mundial, 2020", "url": "https://data.worldbank.org/indicator/HD.HCI.EYRS?locations=GT" }
+    ],
+    "outro": "Por eso trabajamos junto a quien enseña, estudia y cultiva la tierra."
+  },
+  "projects": {
+    "title": "Qué hacemos en Petén",
+    "items": [
+      { "label": "Docentes", "name": "Comparte Universidad", "text": "Seminarios en línea con profesores europeos para quienes estudian y enseñan en el CUDEP, el centro más aislado de la universidad pública de Guatemala. Desde 2018, más de 1.500 personas formadas." },
+      { "label": "Jóvenes y clima", "name": "Comparte Educación", "text": "Cinco módulos sobre la crisis climática para chicas y chicos de 13 a 17 años. La primera edición, en Nuevo Horizonte con INAB y MARN, reunió a 27 estudiantes." },
+      { "label": "Comunidades", "name": "Comparte Comunidad", "text": "Formación agrícola en las comunidades donde zeroCO2 siembra árboles. Tierra, cosechas y prácticas útiles para cada día." }
+    ]
+  },
+  "cuba": {
+    "eyebrow": "La Habana, Cuba",
+    "title": "Lentes y medicamentos, desde hace más de 4 años",
+    "text": "En La Habana apoyamos el hogar de ancianos de Belén y las escuelas primarias de la ciudad y de la provincia. Llevamos lentes graduados y medicamentos, allí donde el bloqueo hace difícil conseguirlos.",
+    "ctaBloqueo": "El Bloqueo",
+    "ctaDona": "Dona ahora"
+  },
+  "impact": {
+    "title": "Lo que hemos hecho hasta ahora",
+    "items": [
+      { "value": "1.500+", "label": "personas formadas" },
+      { "value": "46+", "label": "comunidades rurales alcanzadas" },
+      { "value": "27", "label": "estudiantes en el programa de clima" },
+      { "value": "4+", "label": "años de ayuda a Cuba" }
+    ]
+  },
+  "about": {
+    "title": "Nacimos en un almuerzo, en 2018",
+    "text": "Un grupo de jóvenes italianos y guatemaltecos, sentados a la mesa, se preguntó qué les faltaba de verdad a las comunidades de Petén. La respuesta: educación de calidad y herramientas concretas. Así nació Comparte. Empezamos con el cine: entre 2018 y 2020 las proyecciones de Comparte Cinema, con el ICAIC cubano, llegaron a 7 comunidades rurales.",
+    "board": "Andrea Pesce, presidente · Irene Culcasi, vicepresidenta · Virgilio Galicia Gregorio, enlace en Guatemala",
+    "imgAlt": "El equipo de Comparte en Guatemala"
+  },
+  "donate": {
+    "title": "Cómo donar",
+    "fiveTitle": "5×1000",
+    "fiveText": "Si pagas impuestos en Italia, en tu declaración de la renta firma la casilla de las entidades del Tercer Sector y escribe nuestro código fiscal. No te cuesta nada.",
+    "cfLabel": "Código fiscal",
+    "bankTitle": "Transferencia bancaria",
+    "ibanLabel": "IBAN",
+    "holderLabel": "Titular",
+    "reasonLabel": "Concepto",
+    "reason": "Donación",
+    "monthly": "Para donar cada mes, programa una transferencia periódica desde tu banco.",
+    "note": "Las donaciones van a todas nuestras actividades, en Petén y en Cuba. Guarda el comprobante de la transferencia.",
+    "allWays": "Todas las formas de donar",
+    "secondaryIntro": "¿Pagas impuestos en Italia?"
+  },
+  "known": {
+    "title": "Quién nos conoce",
+    "partnersTitle": "Con quién trabajamos",
+    "pressTitle": "Hablan de nosotros",
+    "partners": [
+      { "name": "USAC", "desc": "Universidad de San Carlos de Guatemala" },
+      { "name": "LUMSA", "desc": "Universidad de Roma" },
+      { "name": "Scholas", "desc": "Fundación Pontificia Scholas Occurrentes" },
+      { "name": "INAB", "desc": "Instituto Nacional de Bosques, Guatemala" },
+      { "name": "MARN", "desc": "Ministerio de Ambiente, Guatemala" },
+      { "name": "zeroCO2", "desc": "Empresa de beneficio italo-guatemalteca" },
+      { "name": "1Caffè", "desc": "Plataforma italiana de recaudación de fondos" },
+      { "name": "European Schoolnet", "desc": "Bruselas" }
+    ],
+    "press": [
+      { "source": "Millionaire", "title": "Artículo sobre los árboles frutales donados a las comunidades (en italiano)", "date": "Febrero 2021", "url": "https://www.millionaire.it/prendiamo-alberi-da-frutto-e-li-doniamo-alle-popolazioni/" },
+      { "source": "Universidad de Bolonia", "title": "Entrevista a Andrea Pesce, fundador de zeroCO2 y Comparte (en italiano)", "date": "Alumni Stories", "url": "https://site.unibo.it/alumni-association/it/alumni-stories/intervista-con-andrea-pesce" },
+      { "source": "Tempo Stretto", "title": "Un hilo que une Italia y Guatemala (en italiano)", "date": "Enero 2019", "url": "https://www.tempostretto.it/news/336348.html" },
+      { "source": "zeroCO2 Magazine", "title": "Reforestación y educación: un mes de Lime para Comparte (en italiano)", "date": "Agosto 2023", "url": "https://zeroco2.eco/it/magazine/persone/lime-per-comparte/" }
+    ],
+    "gallery": [
+      "Comunidad de Nuevo Horizonte, Petén",
+      "Formación agrícola en las comunidades rurales",
+      "Nuevo Horizonte, donde empezó todo",
+      "El almuerzo donde nació Comparte, 2018",
+      "Entrega de diplomas USAC, Comparte Universidad",
+      "Seminario en el Centro Universitario de Petén"
+    ]
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      { "q": "¿Cómo puedo donar?", "a": "Con una transferencia a Banca Etica, IBAN IT27J0501803200000016738783, a nombre de Comparte. Guarda el comprobante." },
+      { "q": "¿Qué es el 5×1000?", "a": "Si pagas impuestos en Italia, puedes destinar el 5×1000 a Comparte en tu declaración con el código fiscal 97977810585. No te cuesta nada." },
+      { "q": "¿Qué hacen en Cuba?", "a": "Desde hace más de 4 años llevamos lentes graduados y medicamentos al hogar de ancianos de Belén y a las escuelas primarias de La Habana y de la provincia." },
+      { "q": "¿A dónde van los fondos del 5×1000?", "a": "A los proyectos activos en Petén: formación universitaria con la USAC, educación climática en Nuevo Horizonte y formación agrícola con las comunidades campesinas. El informe se publica cada año en la página Transparencia." },
+      { "q": "¿Qué es Comparte?", "a": "Una asociación nacida en 2018 entre Roma y Petén. Formamos a docentes y estudiantes, llevamos educación climática a las escuelas y formación agrícola a las comunidades rurales de Guatemala." },
+      { "q": "¿Comparte está vinculada a zeroCO2?", "a": "Sí. Andrea Pesce fundó ambas. zeroCO2 siembra árboles en las comunidades rurales de Petén y Comparte lleva a esas mismas comunidades formación y educación. Son independientes y colaboran en el terreno." }
+    ],
+    "homeCount": 3
+  },
+  "newsletter": {
+    "title": "Mantente en contacto",
+    "text": "Pocos correos al año: qué hacemos, a dónde van los fondos y cuándo más te necesitamos.",
+    "emailLabel": "Tu correo",
+    "consent": "Acepto recibir el boletín y he leído la política de privacidad.",
+    "submit": "Suscríbete",
+    "fallback": "Mientras tanto, síguenos en Instagram."
+  },
+  "footer": {
+    "tagline": "Educación en Petén, salud en La Habana.",
+    "contacts": "Contacto",
+    "legal": "Asociación · Código fiscal 97977810585 · IVA 16847801004",
+    "bloqueoNote": "El Bloqueo, un proyecto que apoyamos"
+  },
+  "donaPage": {
+    "title": "Cómo donar",
+    "intro": "Cada euro llega a Petén y a La Habana. Elige la forma que te resulte más cómoda.",
+    "fiveSteps": [
+      "Abre tu declaración de la renta italiana (730, Redditi PF o CU).",
+      "Firma la casilla de las entidades del Tercer Sector inscritas en el RUNTS.",
+      "Escribe nuestro código fiscal debajo de tu firma."
+    ],
+    "report": "Cómo usamos el 5×1000"
+  },
+  "cubaPage": {
+    "title": "Lentes y medicamentos en La Habana",
+    "whoTitle": "A quién ayudamos",
+    "who": [
+      "Al hogar de ancianos de Belén, en La Habana.",
+      "A las escuelas primarias de la ciudad y de la provincia."
+    ],
+    "whatTitle": "Qué llevamos",
+    "what": "Lentes graduados y medicamentos. Desde hace más de 4 años.",
+    "whyTitle": "Por qué hace falta",
+    "why": "El bloqueo estadounidense hace difícil conseguir en Cuba medicamentos y materiales de uso diario. Quienes más lo pagan son los ancianos y los niños.",
+    "bloqueoText": "El Bloqueo, un proyecto que apoyamos, lo explica con fuentes verificables.",
+    "bloqueoCta": "Lee El Bloqueo",
+    "donateTitle": "Dona por Cuba y por Petén",
+    "photoAlt": "Entrega de medicamentos y materiales en La Habana"
+  },
+  "thanks": {
+    "title": "Gracias",
+    "text": "Tu apoyo llega a Petén y a La Habana. Si te suscribiste al boletín, revisa tu correo para confirmar.",
+    "back": "Volver al inicio",
+    "transparency": "Mira cómo usamos los fondos"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "homeTitle": "Comparte — L'educazione cambia tutto",
+    "homeDescription": "Dal 2018 formiamo docenti, ragazzi e comunità nel Petén, in Guatemala. All'Havana portiamo occhiali e medicine. Dona il 5×1000: codice fiscale 97977810585.",
+    "donaTitle": "Dona a Comparte — 5×1000 e bonifico",
+    "donaDescription": "Come sostenere Comparte: 5×1000 con il codice fiscale 97977810585 o bonifico a Banca Etica.",
+    "cubaTitle": "Comparte a Cuba — Occhiali e medicine all'Havana",
+    "cubaDescription": "Da oltre 4 anni sosteniamo l'asilo per anziani di Belén e le scuole primarie dell'Havana con occhiali da vista e medicine.",
+    "trasparenzaTitle": "Trasparenza — Comparte",
+    "trasparenzaDescription": "Bilanci, rendiconti del 5×1000 e dati legali di Comparte.",
+    "grazieTitle": "Grazie — Comparte",
+    "grazieDescription": "Grazie per il tuo sostegno a Comparte."
+  },
+  "ui": {
+    "skip": "Vai al contenuto",
+    "menu": "Menu",
+    "langLabel": "Lingua",
+    "copy": "Copia",
+    "copied": "Copiato",
+    "copyFallback": "Seleziona e copia",
+    "newTab": "(si apre in una nuova scheda)",
+    "source": "Fonte"
+  },
+  "nav": { "progetti": "Cosa facciamo", "cuba": "Cuba", "chiSiamo": "Chi siamo", "trasparenza": "Trasparenza", "dona": "Dona" },
+  "hero": {
+    "eyebrow": "Dal 2018 nel Petén, in Guatemala",
+    "title": "L'educazione cambia tutto",
+    "subtitle": "Formiamo docenti, ragazzi e comunità nel Petén. E all'Havana portiamo occhiali e medicine a chi ne ha bisogno.",
+    "ctaPrimary": "Dona il 5×1000",
+    "ctaPrimaryHref": "#cinque-x-mille",
+    "ctaSecondary": "Altri modi per donare",
+    "ctaSecondaryHref": "#dona",
+    "imgAlt": "Studenti del Centro Universitario de Petén, Guatemala"
+  },
+  "numbers": {
+    "title": "Nel Petén la scuola è ancora una conquista",
+    "items": [
+      { "value": "49%", "text": "dei ragazzi in Guatemala finisce la scuola media.", "source": "Banca Mondiale, 2024", "url": "https://data.worldbank.org/indicator/SE.SEC.CMPT.LO.ZS?locations=GT" },
+      { "value": "82%", "text": "degli adulti sa leggere e scrivere. Quasi uno su cinque no.", "source": "Banca Mondiale, 2024", "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=GT" },
+      { "value": "9,7", "text": "gli anni di scuola che un bambino può aspettarsi.", "source": "Banca Mondiale, 2020", "url": "https://data.worldbank.org/indicator/HD.HCI.EYRS?locations=GT" }
+    ],
+    "outro": "Per questo lavoriamo accanto a chi insegna, studia e coltiva la terra."
+  },
+  "projects": {
+    "title": "Cosa facciamo nel Petén",
+    "items": [
+      { "label": "Docenti", "name": "Comparte Universidad", "text": "Seminari online con docenti europei per chi studia e insegna al CUDEP, il centro più isolato dell'università pubblica del Guatemala. Dal 2018, oltre 1.500 persone formate." },
+      { "label": "Ragazzi e clima", "name": "Comparte Educación", "text": "Cinque moduli sulla crisi climatica per ragazze e ragazzi dai 13 ai 17 anni. La prima edizione, a Nuevo Horizonte con INAB e MARN, ha coinvolto 27 studenti." },
+      { "label": "Comunità", "name": "Comparte Comunidad", "text": "Formazione agricola nelle comunità dove zeroCO2 pianta alberi. Terra, raccolti e pratiche utili ogni giorno." }
+    ]
+  },
+  "cuba": {
+    "eyebrow": "L'Havana, Cuba",
+    "title": "Occhiali e medicine, da oltre 4 anni",
+    "text": "All'Havana sosteniamo l'asilo per anziani di Belén e le scuole primarie della città e della provincia. Portiamo occhiali da vista e medicine, dove il blocco rende difficile trovarli.",
+    "ctaBloqueo": "El Bloqueo",
+    "ctaDona": "Dona ora"
+  },
+  "impact": {
+    "title": "Quello che abbiamo fatto finora",
+    "items": [
+      { "value": "1.500+", "label": "persone formate" },
+      { "value": "46+", "label": "comunità rurali raggiunte" },
+      { "value": "27", "label": "studenti nel programma clima" },
+      { "value": "4+", "label": "anni di aiuti a Cuba" }
+    ]
+  },
+  "about": {
+    "title": "Nati a un pranzo, nel 2018",
+    "text": "Un gruppo di ragazzi italiani e guatemaltechi, seduti a tavola, si è chiesto cosa mancasse davvero alle comunità del Petén. La risposta: educazione di qualità e strumenti concreti. Da lì è nata Comparte, che in spagnolo vuol dire \"condividi\". Abbiamo cominciato con il cinema: tra il 2018 e il 2020 le proiezioni di Comparte Cinema, con l'ICAIC cubano, hanno raggiunto 7 comunità rurali.",
+    "board": "Andrea Pesce, presidente · Irene Culcasi, vicepresidente · Virgilio Galicia Gregorio, referente in Guatemala",
+    "imgAlt": "Il gruppo di Comparte in Guatemala"
+  },
+  "donate": {
+    "title": "Una firma, un bonifico",
+    "fiveTitle": "5×1000",
+    "fiveText": "Nella dichiarazione dei redditi firma il riquadro degli enti del Terzo settore e scrivi il nostro codice fiscale. Non ti costa nulla.",
+    "cfLabel": "Codice fiscale",
+    "bankTitle": "Bonifico",
+    "ibanLabel": "IBAN",
+    "holderLabel": "Intestato a",
+    "reasonLabel": "Causale",
+    "reason": "Donazione liberale",
+    "monthly": "Per donare ogni mese, imposta un bonifico periodico dalla tua banca.",
+    "note": "Le donazioni vanno a tutte le nostre attività, nel Petén e a Cuba. Sono deducibili o detraibili secondo le regole per gli enti del Terzo settore: conserva la ricevuta.",
+    "allWays": "Tutti i modi per donare",
+    "secondaryIntro": "Per chi paga le tasse in Italia"
+  },
+  "known": {
+    "title": "Chi ci conosce",
+    "partnersTitle": "Con chi lavoriamo",
+    "pressTitle": "Parlano di noi",
+    "partners": [
+      { "name": "USAC", "desc": "Universidad de San Carlos de Guatemala" },
+      { "name": "LUMSA", "desc": "Università di Roma" },
+      { "name": "Scholas", "desc": "Fondazione Pontificia Scholas Occurrentes" },
+      { "name": "INAB", "desc": "Instituto Nacional de Bosques, Guatemala" },
+      { "name": "MARN", "desc": "Ministerio de Ambiente, Guatemala" },
+      { "name": "zeroCO2", "desc": "Società benefit italo-guatemalteca" },
+      { "name": "1Caffè", "desc": "Piattaforma italiana di raccolta fondi" },
+      { "name": "European Schoolnet", "desc": "Bruxelles" }
+    ],
+    "press": [
+      { "source": "Millionaire", "title": "«Prendiamo alberi da frutto e li doniamo alle popolazioni»", "date": "Febbraio 2021", "url": "https://www.millionaire.it/prendiamo-alberi-da-frutto-e-li-doniamo-alle-popolazioni/" },
+      { "source": "Università di Bologna", "title": "Intervista con Andrea Pesce, fondatore di zeroCO2 e Comparte", "date": "Alumni Stories", "url": "https://site.unibo.it/alumni-association/it/alumni-stories/intervista-con-andrea-pesce" },
+      { "source": "Tempo Stretto", "title": "Un filo che lega Italia e Guatemala: il sogno di un gruppo di giovani", "date": "Gennaio 2019", "url": "https://www.tempostretto.it/news/336348.html" },
+      { "source": "zeroCO2 Magazine", "title": "Riforestazione ed educazione: un mese di Lime per Comparte", "date": "Agosto 2023", "url": "https://zeroco2.eco/it/magazine/persone/lime-per-comparte/" }
+    ],
+    "gallery": [
+      "Comunità di Nuevo Horizonte, Petén",
+      "Formazione agricola nelle comunità rurali",
+      "Nuevo Horizonte, dove è iniziato tutto",
+      "Il pranzo da cui è nata Comparte, 2018",
+      "Consegna dei diplomi USAC, Comparte Universidad",
+      "Seminario al Centro Universitario de Petén"
+    ]
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "items": [
+      { "q": "Come destino il 5×1000 a Comparte?", "a": "Nel modello 730, Redditi PF o CU firma il riquadro «Sostegno degli enti del Terzo settore iscritti nel RUNTS» e scrivi il codice fiscale 97977810585. Non costa nulla e non riduce il rimborso." },
+      { "q": "Posso donare anche senza il 5×1000?", "a": "Sì, con un bonifico a Banca Etica, IBAN IT27J0501803200000016738783, intestato a Comparte. Conserva la ricevuta." },
+      { "q": "Dove vanno i fondi del 5×1000?", "a": "Ai progetti attivi nel Petén: formazione universitaria con la USAC, educazione climatica a Nuevo Horizonte, formazione agricola con le comunità contadine. Il rendiconto è pubblicato ogni anno nella pagina Trasparenza." },
+      { "q": "Cosa fate a Cuba?", "a": "Da oltre 4 anni portiamo occhiali da vista e medicine all'asilo per anziani di Belén e alle scuole primarie dell'Havana e della provincia." },
+      { "q": "Cos'è Comparte?", "a": "Un'associazione nata nel 2018 tra Roma e il Petén. Formiamo docenti e studenti, portiamo educazione climatica nelle scuole e formazione agricola nelle comunità rurali del Guatemala." },
+      { "q": "Comparte è collegata a zeroCO2?", "a": "Sì. Andrea Pesce ha fondato entrambe. zeroCO2 pianta alberi nelle comunità rurali del Petén, Comparte porta nelle stesse comunità formazione ed educazione. Sono indipendenti e collaborano sul campo." }
+    ],
+    "homeCount": 3
+  },
+  "newsletter": {
+    "title": "Resta in contatto",
+    "text": "Poche email all'anno: cosa facciamo, dove vanno i fondi, quando serve il tuo 5×1000.",
+    "emailLabel": "La tua email",
+    "consent": "Accetto di ricevere la newsletter e ho letto l'informativa privacy.",
+    "submit": "Iscriviti",
+    "fallback": "Intanto seguici su Instagram."
+  },
+  "footer": {
+    "tagline": "Educazione nel Petén, salute all'Havana.",
+    "contacts": "Contatti",
+    "legal": "Associazione · C.F. 97977810585 · P.IVA 16847801004",
+    "bloqueoNote": "El Bloqueo, un progetto che sosteniamo"
+  },
+  "donaPage": {
+    "title": "Come donare",
+    "intro": "Ogni euro va nel Petén e all'Havana. Scegli il modo che ti è più comodo.",
+    "fiveSteps": [
+      "Apri la dichiarazione dei redditi (730, Redditi PF o CU).",
+      "Firma il riquadro «Sostegno degli enti del Terzo settore iscritti nel RUNTS».",
+      "Scrivi il nostro codice fiscale sotto la firma."
+    ],
+    "report": "Come usiamo il 5×1000"
+  },
+  "cubaPage": {
+    "title": "Occhiali e medicine all'Havana",
+    "whoTitle": "Chi aiutiamo",
+    "who": [
+      "L'asilo per anziani di Belén, all'Havana.",
+      "Le scuole primarie della città e della provincia."
+    ],
+    "whatTitle": "Cosa portiamo",
+    "what": "Occhiali da vista e medicine. Da oltre 4 anni.",
+    "whyTitle": "Perché serve",
+    "why": "Il blocco statunitense rende difficile trovare a Cuba medicine e materiali di uso comune. Chi ne paga il prezzo sono soprattutto anziani e bambini.",
+    "bloqueoText": "El Bloqueo, un progetto che sosteniamo, lo spiega con fonti verificabili.",
+    "bloqueoCta": "Leggi El Bloqueo",
+    "donateTitle": "Dona per Cuba e per il Petén",
+    "photoAlt": "Consegna di medicine e materiali all'Havana"
+  },
+  "thanks": {
+    "title": "Grazie",
+    "text": "Il tuo sostegno arriva nel Petén e all'Havana. Se ti sei iscritto alla newsletter, controlla la tua email per confermare.",
+    "back": "Torna alla home",
+    "transparency": "Guarda come usiamo i fondi"
+  }
+}

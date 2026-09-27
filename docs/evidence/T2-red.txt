@@ -1,0 +1,121 @@
+✖ le tre lingue hanno le stesse chiavi e le stesse lunghezze di lista (0.561291ms)
+✖ nessun valore vuoto (0.0885ms)
+✖ nessuna parola italiana nei dizionari ES ed EN (0.062709ms)
+✖ nessuna "Onlus" e nessun riferimento a carta o Mollie (0.056708ms)
+✖ El Bloqueo mai "di Comparte" (0.047416ms)
+✖ dati del sito corretti (0.676542ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 0
+ℹ fail 6
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 43.394708
+
+✖ failing tests:
+
+test at tests/i18n.test.mjs:9:1
+✖ le tre lingue hanno le stesse chiavi e le stesse lunghezze di lista (0.561291ms)
+  Error: ENOENT: no such file or directory, open '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/it.json'
+      at readFileSync (node:fs:440:20)
+      at load (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:5:32)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:10:20)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.start (node:internal/test_runner/test:1015:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/it.json'
+  }
+
+test at tests/i18n.test.mjs:14:1
+✖ nessun valore vuoto (0.0885ms)
+  Error: ENOENT: no such file or directory, open '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/it.json'
+      at readFileSync (node:fs:440:20)
+      at load (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:5:32)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:17:10)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/it.json'
+  }
+
+test at tests/i18n.test.mjs:23:1
+✖ nessuna parola italiana nei dizionari ES ed EN (0.062709ms)
+  Error: ENOENT: no such file or directory, open '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/es.json'
+      at readFileSync (node:fs:440:20)
+      at load (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:5:32)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:25:32)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/es.json'
+  }
+
+test at tests/i18n.test.mjs:31:1
+✖ nessuna "Onlus" e nessun riferimento a carta o Mollie (0.056708ms)
+  Error: ENOENT: no such file or directory, open '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/it.json'
+      at readFileSync (node:fs:440:20)
+      at load (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:5:32)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:33:32)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/it.json'
+  }
+
+test at tests/i18n.test.mjs:38:1
+✖ El Bloqueo mai "di Comparte" (0.047416ms)
+  Error: ENOENT: no such file or directory, open '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/it.json'
+      at readFileSync (node:fs:440:20)
+      at load (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:5:32)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:40:40)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/i18n/it.json'
+  }
+
+test at tests/i18n.test.mjs:44:1
+✖ dati del sito corretti (0.676542ms)
+  Error: ENOENT: no such file or directory, open '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/data/site.json'
+      at readFileSync (node:fs:440:20)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/i18n.test.mjs:45:24)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    errno: -2,
+    code: 'ENOENT',
+    syscall: 'open',
+    path: '/Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/src/data/site.json'
+  }
