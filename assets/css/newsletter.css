@@ -1,0 +1,15 @@
+.newsletter-page { background: #ede3cc; color: #1c1612; font-family: Arial, sans-serif; }
+.newsletter-header { position: static; background: transparent; display: flex; justify-content: space-between; align-items: center; max-width: 760px; margin: auto; padding: 24px; }
+.newsletter-wordmark { font-size: 36px; font-weight: 900; letter-spacing: -2px; text-decoration: none; color: #1c1612; }
+.newsletter-wordmark span { color: #c44e0e; }
+.newsletter-card { max-width: 680px; margin: 24px auto; padding: 40px; background: #f5efe0; border-radius: 16px; }
+.newsletter-card h1 { font-size: clamp(28px, 5vw, 40px); color: #1a4a6b; margin-bottom: 20px; }
+.newsletter-card p { margin: 20px 0; line-height: 1.6; }
+.newsletter-card a { color: #1a4a6b; }
+.newsletter-card [hidden] { display: none !important; }
+.newsletter-card label { display: block; margin: 16px 0 8px; }
+.newsletter-card .nl-consent { display: flex; }
+.newsletter-card input[type="email"] { width: 100%; border-radius: 6px; }
+.newsletter-card input[type="submit"] { color: #fff; background: #c44e0e; border: none; cursor: pointer; margin-top: 20px; }
+.newsletter-card :focus-visible, .newsletter-header :focus-visible { outline: 3px solid #1a4a6b; outline-offset: 4px; }
+@media (max-width: 700px) { .newsletter-card { margin: 12px; padding: 24px; } }

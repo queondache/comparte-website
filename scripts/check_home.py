@@ -6,7 +6,7 @@ import re
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import parse_qs, urlsplit
+from urllib.parse import urlsplit
 
 LANGS = {
     "it": {
@@ -156,36 +156,55 @@ check("pagina grazie canonical e hreflang reciproci", all(
 ) and any(tag == "link" and attrs.get("rel") == "canonical"
           and attrs.get("href") == "https://www.comparte.it/" + thanks_paths[args.lang].removesuffix("index.html")
           for tag, attrs in thanks.elements))
-def mailchimp_connected(form):
+newsletter_paths = {"it": "newsletter/index.html", "es": "es/newsletter/index.html", "en": "en/newsletter/index.html"}
+newsletter_path = Path(newsletter_paths[args.lang])
+newsletter = Collector()
+newsletter_html = newsletter_path.read_text(encoding="utf-8") if newsletter_path.is_file() else ""
+newsletter.feed(newsletter_html)
+newsletter_forms = [form for form in newsletter.forms if "nl-form" in form["attrs"].get("class", "").split()]
+
+
+def infomaniak_connected(form):
     attrs, elements = form["attrs"], form["elements"]
-    action = attrs.get("action", "")
-    if not re.match(r"^https://[a-z0-9]+\.list-manage\.com/subscribe/post\?u=", action):
-        return False
-    query = parse_qs(urlsplit(action).query)
-    if len(query.get("u", [])) != 1 or len(query.get("id", [])) != 1:
-        return False
-    honeypot = "b_" + query["u"][0] + "_" + query["id"][0]
+    form_id = {"it": "26059", "es": "26060", "en": "26062"}[args.lang]
     return (
-        attrs.get("method", "").lower() == "post"
-        and attrs.get("target") == "_blank"
-        and "noopener" in attrs.get("rel", "").split()
+        attrs.get("action") == f"https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/{form_id}/submit"
+        and attrs.get("method", "").lower() == "post"
+        and attrs.get("target") == "_self"
         and "novalidate" not in attrs
         and not any(tag == "fieldset" and "disabled" in a for tag, a in elements)
-        and any(tag == "button" and a.get("type") == "submit" and "disabled" not in a
-                for tag, a in elements)
-        and any(tag == "input" and a.get("name") == "EMAIL" and a.get("type") == "email"
+        and any(tag in ("button", "input") and a.get("type") == "submit" and "disabled" not in a for tag, a in elements)
+        and any(tag == "input" and a.get("name") == "inf[1]" and a.get("type") == "email"
                 and "required" in a and "disabled" not in a for tag, a in elements)
-        and any(tag == "input" and a.get("id") == "nl-consent"
-                and "required" in a and "disabled" not in a for tag, a in elements)
-        and any(tag == "input" and a.get("name") == honeypot and a.get("type") == "text"
-                and a.get("aria-hidden") == "true" and a.get("tabindex") == "-1"
-                and "visually-hidden" in a.get("class", "").split()
-                and "disabled" not in a for tag, a in elements)
+        and any(tag == "input" and a.get("id") == "nl-consent" and a.get("type") == "checkbox"
+                and "required" in a and "checked" not in a and "disabled" not in a for tag, a in elements)
+        and all(any(tag == "input" and a.get("name") == name and a.get("type") == "text"
+                    and a.get("aria-hidden") == "true" and a.get("tabindex") == "-1"
+                    and ("display:none" in a.get("style", "") or "left:-9999px" in a.get("style", ""))
+                    and "disabled" not in a for tag, a in elements) for name in ("inf_email_check", "website"))
+        and any(tag == "input" and a.get("name") == "webform_id" and a.get("value") == form_id for tag, a in elements)
+        and any(tag == "input" and a.get("name") == "key" and len(a.get("value", "")) > 100 for tag, a in elements)
+        and any(tag == "altcha-widget" and a.get("challengeurl") == "https://newsletter.infomaniak.com/v3/altcha-challenge" for tag, a in elements)
     )
 
 
-newsletter_forms = [form for form in collector.forms if "nl-form" in form["attrs"].get("class", "").split()]
-check("form Mailchimp collegato", len(newsletter_forms) == 1 and mailchimp_connected(newsletter_forms[0]))
+check("form Infomaniak collegato", len(newsletter_forms) == 1 and infomaniak_connected(newsletter_forms[0])
+      and any(link.get("href") == "/" + newsletter_paths[args.lang].removesuffix("index.html")
+              and "data-newsletter-link" in link for link in collector.links))
+check("newsletter: nessuno script esterno al caricamento", bool(newsletter_html) and all(
+    not a.get("src", "").startswith(("https:", "http:", "//"))
+    for tag, a in collector.elements + newsletter.elements if tag == "script"
+))
+check("newsletter: antispam solo dopo attivazione", all(
+    any(tag == "script" and a.get("type") == "application/json"
+        and urlsplit(a.get("data-newsletter-script", "")).path == path
+        and urlsplit(a.get("data-newsletter-script", "")).netloc == "newsletter.infomaniak.com"
+        and "src" not in a for tag, a in newsletter.elements)
+    for path in ("/v3/static/mcaptcha/altcha.min.js", "/v3/static/mcaptcha/altcha-index.js", "/v3/static/webform_index.js")
+) and any(tag == "button" and a.get("id") == "nl-load" and a.get("type") == "button" for tag, a in newsletter.elements)
+  and any(tag == "script" and a.get("src") == "/assets/js/newsletter.js" for tag, a in newsletter.elements)
+  and not any(tag == "iframe" for tag, _ in newsletter.elements))
+check("newsletter: lingua corretta", any(tag == "html" and a.get("lang") == args.lang for tag, a in newsletter.elements))
 privacy_paths = {"it": "/trasparenza/#privacy", "es": "/es/transparencia/#privacidad", "en": "/en/transparency/#privacy"}
 privacy_href = privacy_paths[args.lang]
 privacy_url = urlsplit(privacy_href)
@@ -198,10 +217,11 @@ check("ancora privacy esistente", any(
     for form in newsletter_forms for tag, attrs in form["elements"]
 ) and any(attrs.get("id") == privacy_url.fragment for _, attrs in privacy_page.elements)
   and any(tag == "html" and attrs.get("lang") == args.lang for tag, attrs in privacy_page.elements))
-check("campo email con label", has_el("input", type="email", id="nl-email") and has_el("label", **{"for": "nl-email"}))
+check("campo email con label", any(tag == "input" and a.get("type") == "email" and a.get("id") == "nl-email" for tag, a in newsletter.elements)
+      and any(tag == "label" and a.get("for") == "nl-email" for tag, a in newsletter.elements))
 check("consenso privacy obbligatorio", any(
     tag == "input" and attrs.get("id") == "nl-consent" and "required" in attrs
-    for tag, attrs in collector.elements
+    for tag, attrs in newsletter.elements
 ))
 education = re.search(rf'<section id="{re.escape(config["education_id"])}".*?</section>', html, re.S)
 check("educazione: >=2 fonti esterne", education and len(re.findall(r'href="https?://', education.group(0))) >= 2)

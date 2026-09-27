@@ -1,5 +1,7 @@
 # Mailchimp — Task 2 fermo al passo 1
 
+> Documento storico: Andrea ha scelto Infomaniak dopo una prova con Brevo. Per lo stato attuale vedere [infomaniak-activation.md](infomaniak-activation.md). Non richiedere più dati Mailchimp.
+
 Branch `feat/mailchimp-form`, basato su `feat/mollie-payment-link`. La futura PR deve avere quest’ultimo come base, finché la PR Mollie non sarà integrata da Andrea. Nessun account, login, script Mailchimp, API o invio di dati è necessario per questa preparazione.
 
 ## I quattro dati richiesti ad Andrea

@@ -1,0 +1,230 @@
+[
+{
+  "path": "/",
+  "viewport": 390,
+  "scrollWidth": 578,
+  "resources": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/hero/hero.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_logo_black.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_spirale.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/main.js",
+      "type": "script"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/01.webp",
+      "type": "img"
+    }
+  ],
+  "form": null
+},
+{
+  "path": "/es/",
+  "viewport": 390,
+  "scrollWidth": 596,
+  "resources": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_logo_black.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_spirale.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/main.js",
+      "type": "script"
+    },
+    {
+      "url": "http://localhost:8780/es/assets/img/hero/hero.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/02.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/03.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/01.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/04.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/05.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/06.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/07.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/08.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/09.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/11.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/10.webp",
+      "type": "img"
+    }
+  ],
+  "form": null
+},
+{
+  "path": "/en/",
+  "viewport": 390,
+  "scrollWidth": 568,
+  "resources": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_logo_black.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_spirale.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/hero/hero.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/main.js",
+      "type": "script"
+    }
+  ],
+  "form": null
+},
+{
+  "path": "/newsletter/",
+  "viewport": 390,
+  "scrollWidth": 390,
+  "resources": [
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/newsletter.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/newsletter.js",
+      "type": "script"
+    }
+  ],
+  "form": {
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26059/submit",
+    "target": "_self",
+    "emailRequired": true,
+    "consentRequired": true,
+    "consentChecked": false,
+    "emailMissing": true,
+    "consentMissing": true
+  }
+},
+{
+  "path": "/es/newsletter/",
+  "viewport": 390,
+  "scrollWidth": 390,
+  "resources": [
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/newsletter.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/newsletter.js",
+      "type": "script"
+    }
+  ],
+  "form": {
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26060/submit",
+    "target": "_self",
+    "emailRequired": true,
+    "consentRequired": true,
+    "consentChecked": false,
+    "emailMissing": true,
+    "consentMissing": true
+  }
+},
+{
+  "path": "/en/newsletter/",
+  "viewport": 390,
+  "scrollWidth": 390,
+  "resources": [
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/newsletter.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/newsletter.js",
+      "type": "script"
+    }
+  ],
+  "form": {
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26062/submit",
+    "target": "_self",
+    "emailRequired": true,
+    "consentRequired": true,
+    "consentChecked": false,
+    "emailMissing": true,
+    "consentMissing": true
+  }
+}
+]

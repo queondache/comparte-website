@@ -1,0 +1,44 @@
+{
+  "path": "/es/newsletter/",
+  "viewport": 390,
+  "scrollWidth": 390,
+  "resources": [
+    {
+      "url": "http://localhost:8780/assets/css/newsletter.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/newsletter.js",
+      "type": "script"
+    },
+    {
+      "url": "https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v=1790528400",
+      "type": "script"
+    },
+    {
+      "url": "https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha-index.js?v=1790528400",
+      "type": "script"
+    },
+    {
+      "url": "https://newsletter.infomaniak.com/v3/static/webform_index.js?v=1790528400",
+      "type": "script"
+    },
+    {
+      "url": "https://newsletter.infomaniak.com/v3/static/jquery-1.12.4.min.js",
+      "type": "script"
+    }
+  ],
+  "form": {
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26060/submit",
+    "target": "_self",
+    "emailRequired": true,
+    "consentRequired": true,
+    "consentChecked": false,
+    "emailMissing": true,
+    "consentMissing": true
+  }
+}
