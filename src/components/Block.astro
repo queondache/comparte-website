@@ -1,0 +1,8 @@
+---
+// Blocco a tutta larghezza con colore pieno
+interface Props { id?: string; color: 'blue' | 'orange' | 'pink' | 'cream' | 'ink'; labelledby?: string }
+const { id, color, labelledby } = Astro.props;
+---
+<section id={id} class={`block block--${color}`} aria-labelledby={labelledby}>
+  <div class="inner"><slot /></div>
+</section>

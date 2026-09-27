@@ -1,0 +1,21 @@
+---
+import { t, type Lang } from '../i18n';
+interface Props { lang: Lang; limit?: number }
+const { lang, limit } = Astro.props;
+const f = t(lang).faq;
+const items = limit ? f.items.slice(0, limit) : f.items;
+---
+<h2 id="faq-title">{f.title}</h2>
+<div class="faq">
+  {items.map((it) => (
+    <details>
+      <summary>{it.q}</summary>
+      <p>{it.a}</p>
+    </details>
+  ))}
+</div>
+<style>
+  .faq details { border-top: 2px solid currentColor; padding: 20px 0; }
+  .faq summary { font-size: var(--fs-h3); font-weight: 700; cursor: pointer; min-height: 48px; }
+  .faq p { max-width: 62ch; margin: 12px 0 0; }
+</style>

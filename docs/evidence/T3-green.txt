@@ -1,0 +1,101 @@
+
+> test
+> astro build && node --test tests/*.test.mjs
+
+17:11:59 [types] Generated 18ms
+17:11:59 [build] output: "static"
+17:11:59 [build] mode: "static"
+17:11:59 [build] directory: /Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/
+17:11:59 [build] Collecting build info...
+17:11:59 [build] ✓ Completed in 37ms.
+17:11:59 [build] Building static entrypoints...
+17:11:59 [vite] ✓ built in 99ms
+17:11:59 [vite] ✓ built in 11ms
+17:11:59 [build] Rearranging server assets...
+
+ generating static routes 
+17:11:59   ├─ /en/index.html (+15ms) 
+17:11:59   ├─ /es/index.html (+2ms) 
+17:11:59   ├─ /index.html (+2ms) 
+17:11:59 ✓ Completed in 25ms.
+
+ generating optimized images 
+17:11:59   ▶ /_astro/hero.C8L1AweW_SsQK9.webp (reused cache entry) (+1ms) (1/25)
+17:11:59   ▶ /_astro/03.BHjpqIV7_Zd8601.webp (reused cache entry) (+1ms) (2/25)
+17:11:59   ▶ /_astro/chi-siamo.DwmIz_82_ZronoA.webp (reused cache entry) (+1ms) (3/25)
+17:11:59   ▶ /_astro/01.BO5NMk_L_2q7oEA.webp (reused cache entry) (+1ms) (4/25)
+17:11:59   ▶ /_astro/05.DYo-Mv9r_ZJezfn.webp (reused cache entry) (+1ms) (5/25)
+17:11:59   ▶ /_astro/06.f6iXoN7M_1hduDk.webp (reused cache entry) (+1ms) (6/25)
+17:11:59   ▶ /_astro/04.WMnbi-wt_ZMNdkv.webp (reused cache entry) (+1ms) (7/25)
+17:11:59   ▶ /_astro/02.-_nCQ0af_ZWxVBM.webp (reused cache entry) (+2ms) (8/25)
+17:11:59   ▶ /_astro/hero.C8L1AweW_Z1A3gw7.webp (reused cache entry) (+1ms) (9/25)
+17:11:59   ▶ /_astro/chi-siamo.DwmIz_82_1iBl7R.webp (reused cache entry) (+1ms) (10/25)
+17:11:59   ▶ /_astro/01.BO5NMk_L_Z18Lf9V.webp (reused cache entry) (+1ms) (11/25)
+17:11:59   ▶ /_astro/05.DYo-Mv9r_qATS3.webp (reused cache entry) (+1ms) (12/25)
+17:11:59   ▶ /_astro/06.f6iXoN7M_Zbs1Yx.webp (reused cache entry) (+2ms) (13/25)
+17:11:59   ▶ /_astro/03.BHjpqIV7_1l0aJw.webp (reused cache entry) (+3ms) (14/25)
+17:11:59   ▶ /_astro/04.WMnbi-wt_Z2gtJXn.webp (reused cache entry) (+3ms) (15/25)
+17:11:59   ▶ /_astro/02.-_nCQ0af_Z1jLHNJ.webp (reused cache entry) (+3ms) (16/25)
+17:11:59   ▶ /_astro/hero.C8L1AweW_1fXbJq.webp (reused cache entry) (+3ms) (17/25)
+17:11:59   ▶ /_astro/chi-siamo.DwmIz_82_ZxPLzJ.webp (reused cache entry) (+3ms) (18/25)
+17:11:59   ▶ /_astro/01.BO5NMk_L_1sxhE8.webp (reused cache entry) (+4ms) (19/25)
+17:11:59   ▶ /_astro/05.DYo-Mv9r_20annd.webp (reused cache entry) (+4ms) (20/25)
+17:11:59   ▶ /_astro/06.f6iXoN7M_1PKuSX.webp (reused cache entry) (+3ms) (21/25)
+17:11:59   ▶ /_astro/04.WMnbi-wt_Z1FI6FJ.webp (reused cache entry) (+4ms) (22/25)
+17:11:59   ▶ /_astro/03.BHjpqIV7_Z1Gd4x0.webp (reused cache entry) (+5ms) (23/25)
+17:11:59   ▶ /_astro/chi-siamo.DwmIz_82_Svifr.webp (reused cache entry) (+5ms) (24/25)
+17:11:59   ▶ /_astro/02.-_nCQ0af_Z1cx8Wu.webp (reused cache entry) (+6ms) (25/25)
+17:11:59 ✓ Completed in 11ms.
+
+17:11:59 [build] ✓ Completed in 162ms.
+17:11:59 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+17:11:59 [build] 3 page(s) built in 208ms
+17:11:59 [build] Complete!
+✔ home IT esiste con lang="it" e titolo (8.866375ms)
+✔ nessuno script o font esterno nella home IT (0.525125ms)
+✔ nessuna "Onlus" nel testo visibile (1.287334ms)
+✔ contrasto ink su orange ≥ 4.5 (0.564416ms)
+✔ contrasto ink su pink ≥ 4.5 (0.093167ms)
+✔ contrasto ink su cream ≥ 4.5 (0.071083ms)
+✔ contrasto white su blue ≥ 4.5 (0.165875ms)
+✔ contrasto accent su blue ≥ 4.5 (0.093375ms)
+✔ contrasto white su ink ≥ 4.5 (0.044167ms)
+✔ contrasto accent su ink ≥ 4.5 (0.040709ms)
+✔ it: blocchi della home nell'ordine della spec (1.212834ms)
+✔ it: ordine 5×1000 / bonifico per lingua (0.2735ms)
+✔ it: tre numeri grandi con fonte linkata (10.094916ms)
+✔ it: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.878208ms)
+✔ it: CF e IBAN presenti e copiabili senza JS (1.496667ms)
+✔ it: menu mobile funziona senza JS (<details>) (0.737875ms)
+✔ it: newsletter senza action → niente form e niente Mailchimp (1.321458ms)
+✔ it: un solo h1 (0.658583ms)
+✔ es: blocchi della home nell'ordine della spec (0.221042ms)
+✔ es: ordine 5×1000 / bonifico per lingua (0.179416ms)
+✔ es: tre numeri grandi con fonte linkata (0.634709ms)
+✔ es: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.581042ms)
+✔ es: CF e IBAN presenti e copiabili senza JS (0.693958ms)
+✔ es: menu mobile funziona senza JS (<details>) (0.596125ms)
+✔ es: newsletter senza action → niente form e niente Mailchimp (0.886167ms)
+✔ es: un solo h1 (0.344958ms)
+✔ en: blocchi della home nell'ordine della spec (0.198042ms)
+✔ en: ordine 5×1000 / bonifico per lingua (0.117166ms)
+✔ en: tre numeri grandi con fonte linkata (0.7715ms)
+✔ en: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.459166ms)
+✔ en: CF e IBAN presenti e copiabili senza JS (0.857708ms)
+✔ en: menu mobile funziona senza JS (<details>) (0.418167ms)
+✔ en: newsletter senza action → niente form e niente Mailchimp (1.590458ms)
+✔ en: un solo h1 (0.377917ms)
+✔ le tre lingue hanno le stesse chiavi e le stesse lunghezze di lista (2.197458ms)
+✔ nessun valore vuoto (0.688167ms)
+✔ nessuna parola italiana nei dizionari ES ed EN (0.518541ms)
+✔ nessuna "Onlus" e nessun riferimento a carta o Mollie (0.586125ms)
+✔ El Bloqueo mai "di Comparte" (0.674916ms)
+✔ dati del sito corretti (0.174916ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 87.350292

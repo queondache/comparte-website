@@ -1,0 +1,410 @@
+
+> test
+> astro build && node --test tests/*.test.mjs
+
+17:08:57 [types] Generated 46ms
+17:08:57 [build] output: "static"
+17:08:57 [build] mode: "static"
+17:08:57 [build] directory: /Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/
+17:08:57 [build] Collecting build info...
+17:08:57 [build] ✓ Completed in 68ms.
+17:08:57 [build] Building static entrypoints...
+17:08:58 [vite] ✓ built in 150ms
+17:08:58 [vite] ✓ built in 12ms
+17:08:58 [build] Rearranging server assets...
+
+ generating static routes 
+17:08:58   ├─ /index.html (+5ms) 
+17:08:58 ✓ Completed in 11ms.
+
+17:08:58 [build] ✓ Completed in 191ms.
+17:08:58 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+17:08:58 [build] 1 page(s) built in 268ms
+17:08:58 [build] Complete!
+✔ home IT esiste con lang="it" e titolo (8.141ms)
+✔ nessuno script o font esterno nella home IT (0.350792ms)
+✔ nessuna "Onlus" nel testo visibile (0.413542ms)
+✔ contrasto ink su orange ≥ 4.5 (0.517583ms)
+✔ contrasto ink su pink ≥ 4.5 (0.092ms)
+✔ contrasto ink su cream ≥ 4.5 (0.071583ms)
+✔ contrasto white su blue ≥ 4.5 (0.170292ms)
+✔ contrasto accent su blue ≥ 4.5 (0.136375ms)
+✔ contrasto white su ink ≥ 4.5 (0.061041ms)
+✔ contrasto accent su ink ≥ 4.5 (0.043625ms)
+✖ it: blocchi della home nell'ordine della spec (0.994ms)
+✖ it: ordine 5×1000 / bonifico per lingua (0.278166ms)
+✖ it: tre numeri grandi con fonte linkata (8.098875ms)
+✖ it: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.396166ms)
+✖ it: CF e IBAN presenti e copiabili senza JS (3.664458ms)
+✖ it: menu mobile funziona senza JS (<details>) (0.537542ms)
+✖ it: newsletter senza action → niente form e niente Mailchimp (0.955625ms)
+✔ it: un solo h1 (0.29075ms)
+✖ es: blocchi della home nell'ordine della spec (0.071208ms)
+✖ es: ordine 5×1000 / bonifico per lingua (0.07625ms)
+✖ es: tre numeri grandi con fonte linkata (0.042834ms)
+✖ es: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.032041ms)
+✖ es: CF e IBAN presenti e copiabili senza JS (0.032583ms)
+✖ es: menu mobile funziona senza JS (<details>) (0.023875ms)
+✖ es: newsletter senza action → niente form e niente Mailchimp (0.020667ms)
+✖ es: un solo h1 (0.022625ms)
+✖ en: blocchi della home nell'ordine della spec (0.079208ms)
+✖ en: ordine 5×1000 / bonifico per lingua (0.044458ms)
+✖ en: tre numeri grandi con fonte linkata (0.037208ms)
+✖ en: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.027ms)
+✖ en: CF e IBAN presenti e copiabili senza JS (0.025375ms)
+✖ en: menu mobile funziona senza JS (<details>) (0.029042ms)
+✖ en: newsletter senza action → niente form e niente Mailchimp (0.026084ms)
+✖ en: un solo h1 (0.024792ms)
+✔ le tre lingue hanno le stesse chiavi e le stesse lunghezze di lista (2.658083ms)
+✔ nessun valore vuoto (1.481167ms)
+✔ nessuna parola italiana nei dizionari ES ed EN (0.660666ms)
+✔ nessuna "Onlus" e nessun riferimento a carta o Mollie (0.621625ms)
+✔ El Bloqueo mai "di Comparte" (0.635333ms)
+✔ dati del sito corretti (0.369417ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 17
+ℹ fail 23
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 91.251666
+
+✖ failing tests:
+
+test at tests/home.test.mjs:10:3
+✖ it: blocchi della home nell'ordine della spec (0.994ms)
+  AssertionError [ERR_ASSERTION]: manca #perche-educazione
+      at file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:13:34
+      at Array.forEach (<anonymous>)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:13:9)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.start (node:internal/test_runner/test:1015:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:358:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/home.test.mjs:18:3
+✖ it: ordine 5×1000 / bonifico per lingua (0.278166ms)
+  AssertionError [ERR_ASSERTION]: in IT il 5×1000 va prima
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:22:31)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/home.test.mjs:26:3
+✖ it: tre numeri grandi con fonte linkata (8.098875ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 3
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:28:12)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 3,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/home.test.mjs:35:3
+✖ it: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.396166ms)
+  AssertionError [ERR_ASSERTION]: link a /cuba/ mancante: 
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:37:12)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/home.test.mjs:41:3
+✖ it: CF e IBAN presenti e copiabili senza JS (3.664458ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(values.includes('97977810585'))
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:44:12)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/home.test.mjs:49:3
+✖ it: menu mobile funziona senza JS (<details>) (0.537542ms)
+  AssertionError [ERR_ASSERTION]: manca <details><summary> nel menu
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:50:12)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/home.test.mjs:53:3
+✖ it: newsletter senza action → niente form e niente Mailchimp (0.955625ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(page(path).querySelector('#newsletter a[href*="instagram.com"]'))
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:57:12)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/home.test.mjs:10:3
+✖ es: blocchi della home nell'ordine della spec (0.071208ms)
+  Error: pagina mancante nel dist: /es/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:11:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:18:3
+✖ es: ordine 5×1000 / bonifico per lingua (0.07625ms)
+  Error: pagina mancante nel dist: /es/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:19:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:26:3
+✖ es: tre numeri grandi con fonte linkata (0.042834ms)
+  Error: pagina mancante nel dist: /es/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:27:19)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:35:3
+✖ es: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.032041ms)
+  Error: pagina mancante nel dist: /es/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:36:19)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:41:3
+✖ es: CF e IBAN presenti e copiabili senza JS (0.032583ms)
+  Error: pagina mancante nel dist: /es/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:42:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:49:3
+✖ es: menu mobile funziona senza JS (<details>) (0.023875ms)
+  Error: pagina mancante nel dist: /es/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:50:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:53:3
+✖ es: newsletter senza action → niente form e niente Mailchimp (0.020667ms)
+  Error: pagina mancante nel dist: /es/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:54:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:60:3
+✖ es: un solo h1 (0.022625ms)
+  Error: pagina mancante nel dist: /es/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:61:18)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:10:3
+✖ en: blocchi della home nell'ordine della spec (0.079208ms)
+  Error: pagina mancante nel dist: /en/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:11:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:18:3
+✖ en: ordine 5×1000 / bonifico per lingua (0.044458ms)
+  Error: pagina mancante nel dist: /en/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:19:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:26:3
+✖ en: tre numeri grandi con fonte linkata (0.037208ms)
+  Error: pagina mancante nel dist: /en/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:27:19)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:35:3
+✖ en: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.027ms)
+  Error: pagina mancante nel dist: /en/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:36:19)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:41:3
+✖ en: CF e IBAN presenti e copiabili senza JS (0.025375ms)
+  Error: pagina mancante nel dist: /en/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:42:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:49:3
+✖ en: menu mobile funziona senza JS (<details>) (0.029042ms)
+  Error: pagina mancante nel dist: /en/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:50:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:53:3
+✖ en: newsletter senza action → niente form e niente Mailchimp (0.026084ms)
+  Error: pagina mancante nel dist: /en/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:54:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/home.test.mjs:60:3
+✖ en: un solo h1 (0.024792ms)
+  Error: pagina mancante nel dist: /en/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/home.test.mjs:61:18)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
