@@ -1,37 +1,36 @@
-# Draft: Mailchimp — preparazione e ancore privacy
+# Draft: newsletter Infomaniak IT/ES/EN con caricamento esplicito
 
-Commit implementazione: `a6739db4c7bc719df9372ba6cd167cf7487627aa`.
-Base: `feat/mollie-payment-link` (`10353a2446de2032fe11739b9cd17dce53b972f4`). Branch: `feat/mailchimp-form`.
-PR dipendente da Mollie: usare quest’ultimo branch come base finché Andrea non lo integra.
+Commit implementazione: `c56dc71cd75a715984f5262ed7c728ac1e221c1e`. Branch `feat/mailchimp-form` (nome richiesto in origine, provider aggiornato a Infomaniak).
+Base PR: `feat/mollie-payment-link` (`10353a2446de2032fe11739b9cd17dce53b972f4`). Nessun merge.
 
-**TASK 2 FERMO AL PASSO 1. NON PRONTA PER IL MERGE.** Mancano action, honeypot, conferma doppio opt-in e tag lingua/eventuale assenza. Mancano anche i testi privacy approvati. Nessun account, login, invio di email o iscrizione eseguiti.
+Le tre home avevano moduli disabilitati. Ora collegano moduli statici nelle rispettive lingue: il visitatore carica esplicitamente l'antispam, inserisce l'email e accetta l'informativa. Nessuno script Infomaniak al caricamento. Action, token pubblico, identificativi, honeypot e ALTCHA provengono dall'export reale; nessuna chiave API o backend. Le risposte del provider aprono nella pagina principale: il prototipo in iframe bloccava il redirect.
 
-Form predisposti con validazione HTML nativa, post in nuova scheda e noopener; input e submit disabilitati. Honeypot senza nome inventato, nascosto con CSS dedicato. Nessuno script esterno aggiunto. Ancore privacy locali nelle tre lingue; consenso ES corretto a #privacidad. Solo segnaposto: nessuna informativa scritta.
+Moduli IT 26059, ES 26060, EN 26062, gruppi distinti e mittente Comparte. Email e pagine provider salvate con grafica Comparte. Testo privacy fornito da Andrea e revisione tracking autorizzata, tradotti nelle tre pagine di trasparenza. Nessun acquisto o cambiamento dei limiti di spesa; quota verificata 100 crediti mensili inclusi con kSuite.
 
-Il check in attesa viene sostituito dal check collegato, che resta FAIL finché i dati mancano. Il nuovo check ancora privacy è rosso su main e verde qui. Il FAIL Mollie è ereditato dal branch base. Nessun altro gate indebolito; nessun dato fittizio per ottenere verde.
+**Bozza non pronta al merge:** manca la prova end-to-end del percorso definitivo e Lighthouse mobile. La prova precedente ha verificato ricezione, conferma cliccata da Andrea e stato Attivo. Nessuna seconda email inviata senza autorizzazione. Disiscrizione non collaudata.
 
-## Screenshot finali, Chromium locale
+L'oracolo nuovo fallisce su main e passa tutti i check newsletter sul branch. Totali: IT 34/35, ES 37/38, EN 37/38. Unico FAIL residuo per lingua: Payment Link Mollie assente, ereditato dalla base. Nessun altro check indebolito: label e consenso sono verificati nella pagina effettiva del modulo. `.nojekyll` conservato.
 
-![it newsletter](https://raw.githubusercontent.com/queondache/comparte-website/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/it-newsletter.png)
+## Screenshot
 
-![it privacy](https://raw.githubusercontent.com/queondache/comparte-website/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/it-privacy.png)
+![site-it-form.png](https://raw.githubusercontent.com/queondache/comparte-website/c56dc71cd75a715984f5262ed7c728ac1e221c1e/docs/codex/evidence/infomaniak/site-it-form.png)
 
-![es newsletter](https://raw.githubusercontent.com/queondache/comparte-website/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/es-newsletter.png)
+![site-es-form.png](https://raw.githubusercontent.com/queondache/comparte-website/c56dc71cd75a715984f5262ed7c728ac1e221c1e/docs/codex/evidence/infomaniak/site-es-form.png)
 
-![es privacy](https://raw.githubusercontent.com/queondache/comparte-website/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/es-privacy.png)
+![site-en-form.png](https://raw.githubusercontent.com/queondache/comparte-website/c56dc71cd75a715984f5262ed7c728ac1e221c1e/docs/codex/evidence/infomaniak/site-en-form.png)
 
-![en newsletter](https://raw.githubusercontent.com/queondache/comparte-website/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/en-newsletter.png)
+![site-es-mobile.png](https://raw.githubusercontent.com/queondache/comparte-website/c56dc71cd75a715984f5262ed7c728ac1e221c1e/docs/codex/evidence/infomaniak/site-es-mobile.png)
 
-![en privacy](https://raw.githubusercontent.com/queondache/comparte-website/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/en-privacy.png)
+![email-en-branded.png](https://raw.githubusercontent.com/queondache/comparte-website/c56dc71cd75a715984f5262ed7c728ac1e221c1e/docs/codex/evidence/infomaniak/email-en-branded.png)
 
 ## Comandi e output raw
 
 ### main-red.txt
 
 ```text
-BASE bd7b449ec84fa50aa1817866272d6e41d30dd697
-Updated oracle against unmodified main archive. Includes inherited Mollie checks.
-
+$ git rev-parse origin/main
+bd7b449ec84fa50aa1817866272d6e41d30dd697
+Working directory: /var/folders/kf/r5q8hsb118342zjbgj8kxb0h0000gn/T/comparte-main-oracle-xwhgw5sw
 $ python3 scripts/check_home.py --lang it
 PASS html lang corretto
 PASS ordine sezioni
@@ -52,10 +51,13 @@ FAIL link carta Mollie
 FAIL pagina grazie presente
 FAIL pagina grazie noindex e lingua corretta
 FAIL pagina grazie canonical e hreflang reciproci
-FAIL form Mailchimp collegato
+FAIL form Infomaniak collegato
+FAIL newsletter: nessuno script esterno al caricamento
+FAIL newsletter: antispam solo dopo attivazione
+FAIL newsletter: lingua corretta
 FAIL ancora privacy esistente
-PASS campo email con label
-PASS consenso privacy obbligatorio
+FAIL campo email con label
+FAIL consenso privacy obbligatorio
 PASS educazione: >=2 fonti esterne
 PASS img con width e height
 PASS nessuna emoji bandiera/check strutturale
@@ -66,9 +68,10 @@ PASS section bilanciate
 PASS id univoci
 PASS un solo box sosteniamo
 
-26/32 check passati
-EXIT 1
+24/35 check passati
 
+
+exit=1
 $ python3 scripts/check_home.py --lang es
 PASS html lang corretto
 PASS ordine sezioni
@@ -89,10 +92,13 @@ FAIL link carta Mollie
 FAIL pagina grazie presente
 FAIL pagina grazie noindex e lingua corretta
 FAIL pagina grazie canonical e hreflang reciproci
-FAIL form Mailchimp collegato
+FAIL form Infomaniak collegato
+FAIL newsletter: nessuno script esterno al caricamento
+FAIL newsletter: antispam solo dopo attivazione
+FAIL newsletter: lingua corretta
 FAIL ancora privacy esistente
-PASS campo email con label
-PASS consenso privacy obbligatorio
+FAIL campo email con label
+FAIL consenso privacy obbligatorio
 PASS educazione: >=2 fonti esterne
 PASS img con width e height
 PASS nessuna emoji bandiera/check strutturale
@@ -106,9 +112,10 @@ PASS CTA primaria hero verso donazione
 PASS link al 5×1000 italiano
 PASS box 5×1000 presente
 
-29/35 check passati
-EXIT 1
+27/38 check passati
 
+
+exit=1
 $ python3 scripts/check_home.py --lang en
 PASS html lang corretto
 PASS ordine sezioni
@@ -129,10 +136,13 @@ FAIL link carta Mollie
 FAIL pagina grazie presente
 FAIL pagina grazie noindex e lingua corretta
 FAIL pagina grazie canonical e hreflang reciproci
-FAIL form Mailchimp collegato
+FAIL form Infomaniak collegato
+FAIL newsletter: nessuno script esterno al caricamento
+FAIL newsletter: antispam solo dopo attivazione
+FAIL newsletter: lingua corretta
 FAIL ancora privacy esistente
-PASS campo email con label
-PASS consenso privacy obbligatorio
+FAIL campo email con label
+FAIL consenso privacy obbligatorio
 PASS educazione: >=2 fonti esterne
 PASS img con width e height
 PASS nessuna emoji bandiera/check strutturale
@@ -146,202 +156,450 @@ PASS CTA primaria hero verso donazione
 PASS link al 5×1000 italiano
 PASS box 5×1000 presente
 
-29/35 check passati
-EXIT 1
+27/38 check passati
+
+
+exit=1
 
 ```
 
-### prepared.txt
+### prepared-raw.txt
 
 ```text
-$ python3 scripts/check_home.py --lang it
-PASS html lang corretto
-PASS ordine sezioni
-PASS direttivo dentro chi-siamo (niente section propria)
-PASS font Plus Jakarta Sans caricato
-PASS Fraunces/Instrument rimossi
-PASS nessuna 'ONLUS' nel file
-PASS nessun segnaposto denominazione
-PASS niente gergo ONG
-PASS link elbloqueo.it
-PASS El Bloqueo come progetto sostenuto
-PASS El Bloqueo non 'nostro progetto'
-PASS CF presente come testo
-PASS IBAN presente come testo
-PASS bottone copia CF
-PASS bottone copia IBAN
-FAIL link carta Mollie
-PASS pagina grazie presente
-PASS pagina grazie noindex e lingua corretta
-PASS pagina grazie canonical e hreflang reciproci
-FAIL form Mailchimp collegato
-PASS ancora privacy esistente
-PASS campo email con label
-PASS consenso privacy obbligatorio
-PASS educazione: >=2 fonti esterne
-PASS img con width e height
-PASS nessuna emoji bandiera/check strutturale
-PASS reduced-motion nel CSS
-PASS JSON-LD tutti parse OK
-PASS JSON-LD senza Project El Bloqueo
-PASS section bilanciate
-PASS id univoci
-PASS un solo box sosteniamo
-
-30/32 check passati
-EXIT 1
-
-$ python3 scripts/check_home.py --lang es
-PASS html lang corretto
-PASS ordine sezioni
-PASS direttivo dentro chi-siamo (niente section propria)
-PASS font Plus Jakarta Sans caricato
-PASS Fraunces/Instrument rimossi
-PASS nessuna 'ONLUS' nel file
-PASS nessun segnaposto denominazione
-PASS niente gergo ONG
-PASS link elbloqueo.it
-PASS El Bloqueo come progetto sostenuto
-PASS El Bloqueo non 'nostro progetto'
-PASS CF presente come testo
-PASS IBAN presente come testo
-PASS bottone copia CF
-PASS bottone copia IBAN
-FAIL link carta Mollie
-PASS pagina grazie presente
-PASS pagina grazie noindex e lingua corretta
-PASS pagina grazie canonical e hreflang reciproci
-FAIL form Mailchimp collegato
-PASS ancora privacy esistente
-PASS campo email con label
-PASS consenso privacy obbligatorio
-PASS educazione: >=2 fonti esterne
-PASS img con width e height
-PASS nessuna emoji bandiera/check strutturale
-PASS reduced-motion nel CSS
-PASS JSON-LD tutti parse OK
-PASS JSON-LD senza Project El Bloqueo
-PASS section bilanciate
-PASS id univoci
-PASS un solo box sosteniamo
-PASS CTA primaria hero verso donazione
-PASS link al 5×1000 italiano
-PASS box 5×1000 presente
-
-33/35 check passati
-EXIT 1
-
-$ python3 scripts/check_home.py --lang en
-PASS html lang corretto
-PASS ordine sezioni
-PASS direttivo dentro chi-siamo (niente section propria)
-PASS font Plus Jakarta Sans caricato
-PASS Fraunces/Instrument rimossi
-PASS nessuna 'ONLUS' nel file
-PASS nessun segnaposto denominazione
-PASS niente gergo ONG
-PASS link elbloqueo.it
-PASS El Bloqueo come progetto sostenuto
-PASS El Bloqueo non 'nostro progetto'
-PASS CF presente come testo
-PASS IBAN presente come testo
-PASS bottone copia CF
-PASS bottone copia IBAN
-FAIL link carta Mollie
-PASS pagina grazie presente
-PASS pagina grazie noindex e lingua corretta
-PASS pagina grazie canonical e hreflang reciproci
-FAIL form Mailchimp collegato
-PASS ancora privacy esistente
-PASS campo email con label
-PASS consenso privacy obbligatorio
-PASS educazione: >=2 fonti esterne
-PASS img con width e height
-PASS nessuna emoji bandiera/check strutturale
-PASS reduced-motion nel CSS
-PASS JSON-LD tutti parse OK
-PASS JSON-LD senza Project El Bloqueo
-PASS section bilanciate
-PASS id univoci
-PASS un solo box sosteniamo
-PASS CTA primaria hero verso donazione
-PASS link al 5×1000 italiano
-PASS box 5×1000 presente
-
-33/35 check passati
-EXIT 1
-
-```
-
-### static-checks.txt
-
-```text
-PASS .nojekyll presente
-PASS pagine grazie fuori dalla sitemap
-PASS index.html: nessuno script esterno
-PASS index.html: id univoci
-PASS index.html: email e consenso disabilitati
-PASS index.html: submit disabilitato
-PASS es/index.html: nessuno script esterno
-PASS es/index.html: id univoci
-PASS es/index.html: email e consenso disabilitati
-PASS es/index.html: submit disabilitato
-PASS en/index.html: nessuno script esterno
-PASS en/index.html: id univoci
-PASS en/index.html: email e consenso disabilitati
-PASS en/index.html: submit disabilitato
-PASS trasparenza/index.html: nessuno script esterno
-PASS trasparenza/index.html: id univoci
-PASS es/transparencia/index.html: nessuno script esterno
-PASS es/transparencia/index.html: id univoci
-PASS en/transparency/index.html: nessuno script esterno
-PASS en/transparency/index.html: id univoci
 $ git diff --check
-EXIT 0
+
+
+exit=0
+$ node --check assets/js/newsletter.js
+
+
+exit=0
+$ git ls-files .nojekyll
+.nojekyll
+
+
+exit=0
+$ python3 scripts/check_home.py --lang it
+PASS html lang corretto
+PASS ordine sezioni
+PASS direttivo dentro chi-siamo (niente section propria)
+PASS font Plus Jakarta Sans caricato
+PASS Fraunces/Instrument rimossi
+PASS nessuna 'ONLUS' nel file
+PASS nessun segnaposto denominazione
+PASS niente gergo ONG
+PASS link elbloqueo.it
+PASS El Bloqueo come progetto sostenuto
+PASS El Bloqueo non 'nostro progetto'
+PASS CF presente come testo
+PASS IBAN presente come testo
+PASS bottone copia CF
+PASS bottone copia IBAN
+FAIL link carta Mollie
+PASS pagina grazie presente
+PASS pagina grazie noindex e lingua corretta
+PASS pagina grazie canonical e hreflang reciproci
+PASS form Infomaniak collegato
+PASS newsletter: nessuno script esterno al caricamento
+PASS newsletter: antispam solo dopo attivazione
+PASS newsletter: lingua corretta
+PASS ancora privacy esistente
+PASS campo email con label
+PASS consenso privacy obbligatorio
+PASS educazione: >=2 fonti esterne
+PASS img con width e height
+PASS nessuna emoji bandiera/check strutturale
+PASS reduced-motion nel CSS
+PASS JSON-LD tutti parse OK
+PASS JSON-LD senza Project El Bloqueo
+PASS section bilanciate
+PASS id univoci
+PASS un solo box sosteniamo
+
+34/35 check passati
+
+
+exit=1
+$ python3 scripts/check_home.py --lang es
+PASS html lang corretto
+PASS ordine sezioni
+PASS direttivo dentro chi-siamo (niente section propria)
+PASS font Plus Jakarta Sans caricato
+PASS Fraunces/Instrument rimossi
+PASS nessuna 'ONLUS' nel file
+PASS nessun segnaposto denominazione
+PASS niente gergo ONG
+PASS link elbloqueo.it
+PASS El Bloqueo come progetto sostenuto
+PASS El Bloqueo non 'nostro progetto'
+PASS CF presente come testo
+PASS IBAN presente come testo
+PASS bottone copia CF
+PASS bottone copia IBAN
+FAIL link carta Mollie
+PASS pagina grazie presente
+PASS pagina grazie noindex e lingua corretta
+PASS pagina grazie canonical e hreflang reciproci
+PASS form Infomaniak collegato
+PASS newsletter: nessuno script esterno al caricamento
+PASS newsletter: antispam solo dopo attivazione
+PASS newsletter: lingua corretta
+PASS ancora privacy esistente
+PASS campo email con label
+PASS consenso privacy obbligatorio
+PASS educazione: >=2 fonti esterne
+PASS img con width e height
+PASS nessuna emoji bandiera/check strutturale
+PASS reduced-motion nel CSS
+PASS JSON-LD tutti parse OK
+PASS JSON-LD senza Project El Bloqueo
+PASS section bilanciate
+PASS id univoci
+PASS un solo box sosteniamo
+PASS CTA primaria hero verso donazione
+PASS link al 5×1000 italiano
+PASS box 5×1000 presente
+
+37/38 check passati
+
+
+exit=1
+$ python3 scripts/check_home.py --lang en
+PASS html lang corretto
+PASS ordine sezioni
+PASS direttivo dentro chi-siamo (niente section propria)
+PASS font Plus Jakarta Sans caricato
+PASS Fraunces/Instrument rimossi
+PASS nessuna 'ONLUS' nel file
+PASS nessun segnaposto denominazione
+PASS niente gergo ONG
+PASS link elbloqueo.it
+PASS El Bloqueo come progetto sostenuto
+PASS El Bloqueo non 'nostro progetto'
+PASS CF presente come testo
+PASS IBAN presente come testo
+PASS bottone copia CF
+PASS bottone copia IBAN
+FAIL link carta Mollie
+PASS pagina grazie presente
+PASS pagina grazie noindex e lingua corretta
+PASS pagina grazie canonical e hreflang reciproci
+PASS form Infomaniak collegato
+PASS newsletter: nessuno script esterno al caricamento
+PASS newsletter: antispam solo dopo attivazione
+PASS newsletter: lingua corretta
+PASS ancora privacy esistente
+PASS campo email con label
+PASS consenso privacy obbligatorio
+PASS educazione: >=2 fonti esterne
+PASS img con width e height
+PASS nessuna emoji bandiera/check strutturale
+PASS reduced-motion nel CSS
+PASS JSON-LD tutti parse OK
+PASS JSON-LD senza Project El Bloqueo
+PASS section bilanciate
+PASS id univoci
+PASS un solo box sosteniamo
+PASS CTA primaria hero verso donazione
+PASS link al 5×1000 italiano
+PASS box 5×1000 presente
+
+37/38 check passati
+
+
+exit=1
 
 ```
 
-### screenshots-raw.txt
+### network-initial-raw.json
 
 ```text
-{"route":"/#newsletter","output":"docs/codex/evidence/mailchimp/it-newsletter.png","title":"Comparte – Dona il 5×1000 all'educazione in Guatemala | CF 97977810585","section":"Resta in contatto\n\nPoche email all'anno: cosa facciamo, dove vanno i fondi, quando serve il tuo 5×1000.\n\nLa tua email\nAccetto di ricevere la newsletter e ho letto l'informativa privacy.\nIscriviti\n\nIscrizioni in arrivo. Intanto seguici su Instagram.","width":578,"scrollWidth":578}
-{"route":"/trasparenza/#privacy","output":"docs/codex/evidence/mailchimp/it-privacy.png","title":"Trasparenza — Comparte | Bilanci, governance, 5×1000","section":"Informativa privacy\n\nSegnaposto: il testo legale per la newsletter deve ancora essere pubblicato. Le iscrizioni non sono attive.","width":504,"scrollWidth":504}
-{"route":"/es/#boletin","output":"docs/codex/evidence/mailchimp/es-newsletter.png","title":"Comparte — Educación en Petén, Guatemala | Dona","section":"Mantente en contacto\n\nPocos correos al año: qué hacemos, a dónde van los fondos y cuándo puedes apoyar.\n\nTu correo electrónico\nAcepto recibir el boletín y he leído la política de privacidad.\nSuscríbete\n\nLas suscripciones estarán disponibles próximamente. Mientras tanto síguenos en Instagram.","width":619,"scrollWidth":619}
-{"route":"/es/transparencia/#privacidad","output":"docs/codex/evidence/mailchimp/es-privacy.png","title":"Transparencia — Comparte | Documentos y gobernanza","section":"Política de privacidad\n\nSección pendiente: falta publicar el texto legal del boletín. Las suscripciones no están activas.","width":478,"scrollWidth":478}
-{"route":"/en/#newsletter","output":"docs/codex/evidence/mailchimp/en-newsletter.png","title":"Comparte – Education in Guatemala | Donate","section":"Stay in touch\n\nA few emails a year: what we do, where funds go, and when the Italian 5×1000 matters.\n\nYour email\nI agree to receive the newsletter and have read the privacy notice.\nSubscribe\n\nSubscriptions are coming soon. Until then, follow us on Instagram.","width":594,"scrollWidth":594}
-{"route":"/en/transparency/#privacy","output":"docs/codex/evidence/mailchimp/en-privacy.png","title":"Transparency — Comparte | Reports and governance","section":"Privacy notice\n\nPlaceholder: the legal text for the newsletter has not been published yet. Subscriptions are not active.","width":472,"scrollWidth":472}
-
+[
+{
+  "path": "/",
+  "viewport": 390,
+  "scrollWidth": 578,
+  "resources": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/hero/hero.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_logo_black.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_spirale.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/main.js",
+      "type": "script"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/01.webp",
+      "type": "img"
+    }
+  ],
+  "form": null
+},
+{
+  "path": "/es/",
+  "viewport": 390,
+  "scrollWidth": 596,
+  "resources": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_logo_black.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_spirale.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/main.js",
+      "type": "script"
+    },
+    {
+      "url": "http://localhost:8780/es/assets/img/hero/hero.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/02.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/03.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/01.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/04.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/05.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/06.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/07.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/08.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/09.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/11.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/galleria/10.webp",
+      "type": "img"
+    }
+  ],
+  "form": null
+},
+{
+  "path": "/en/",
+  "viewport": 390,
+  "scrollWidth": 568,
+  "resources": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_logo_black.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/logo/comparte_spirale.png",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/img/hero/hero.webp",
+      "type": "img"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/main.js",
+      "type": "script"
+    }
+  ],
+  "form": null
+},
+{
+  "path": "/newsletter/",
+  "viewport": 390,
+  "scrollWidth": 390,
+  "resources": [
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/newsletter.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/newsletter.js",
+      "type": "script"
+    }
+  ],
+  "form": {
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26059/submit",
+    "target": "_self",
+    "emailRequired": true,
+    "consentRequired": true,
+    "consentChecked": false,
+    "emailMissing": true,
+    "consentMissing": true
+  }
+},
+{
+  "path": "/es/newsletter/",
+  "viewport": 390,
+  "scrollWidth": 390,
+  "resources": [
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/newsletter.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/newsletter.js",
+      "type": "script"
+    }
+  ],
+  "form": {
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26060/submit",
+    "target": "_self",
+    "emailRequired": true,
+    "consentRequired": true,
+    "consentChecked": false,
+    "emailMissing": true,
+    "consentMissing": true
+  }
+},
+{
+  "path": "/en/newsletter/",
+  "viewport": 390,
+  "scrollWidth": 390,
+  "resources": [
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/newsletter.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/newsletter.js",
+      "type": "script"
+    }
+  ],
+  "form": {
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26062/submit",
+    "target": "_self",
+    "emailRequired": true,
+    "consentRequired": true,
+    "consentChecked": false,
+    "emailMissing": true,
+    "consentMissing": true
+  }
+}
+]
 ```
 
-Cattura finale riproducibile, server locale già avviato con `python3 -m http.server 8765 --bind 127.0.0.1`:
-
-```sh
-CHROMIUM_BINARY=/Users/andreapesce/Library/Caches/ms-playwright/chromium_headless_shell-1243/chrome-headless-shell-mac-arm64/chrome-headless-shell node docs/codex/capture-preparation.mjs
-```
-
-Log network raw della preparazione disabilitata (da ripetere dopo action reale):
-
-- [it: log Chromium originale](https://github.com/queondache/comparte-website/blob/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/it-network.json)
-- [es: log Chromium originale](https://github.com/queondache/comparte-website/blob/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/es-network.json)
-- [en: log Chromium originale](https://github.com/queondache/comparte-website/blob/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/en-network.json)
-
-[Comandi Chromium, output raw ed eventi URL](https://github.com/queondache/comparte-website/blob/a6739db4c7bc719df9372ba6cd167cf7487627aa/docs/codex/evidence/mailchimp/browser-raw.txt). Le catture CLI iniziali erano vuote; le immagini finali provengono dallo script CDP, dopo caricamento e scroll alla sezione.
+### network-after-activation-es.json
 
 ```text
-it: 87 URL events; Mailchimp URL events: 0
-es: 87 URL events; Mailchimp URL events: 0
-en: 43 URL events; Mailchimp URL events: 0
+{
+  "path": "/es/newsletter/",
+  "viewport": 390,
+  "scrollWidth": 390,
+  "resources": [
+    {
+      "url": "http://localhost:8780/assets/css/newsletter.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/css/style.css",
+      "type": "link"
+    },
+    {
+      "url": "http://localhost:8780/assets/js/newsletter.js",
+      "type": "script"
+    },
+    {
+      "url": "https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha.min.js?v=1790528400",
+      "type": "script"
+    },
+    {
+      "url": "https://newsletter.infomaniak.com/v3/static/mcaptcha/altcha-index.js?v=1790528400",
+      "type": "script"
+    },
+    {
+      "url": "https://newsletter.infomaniak.com/v3/static/webform_index.js?v=1790528400",
+      "type": "script"
+    },
+    {
+      "url": "https://newsletter.infomaniak.com/v3/static/jquery-1.12.4.min.js",
+      "type": "script"
+    }
+  ],
+  "form": {
+    "action": "https://newsletter.infomaniak.com/v3/api/1/newsletters/webforms/26060/submit",
+    "target": "_self",
+    "emailRequired": true,
+    "consentRequired": true,
+    "consentChecked": false,
+    "emailMissing": true,
+    "consentMissing": true
+  }
+}
 ```
 
-## Cosa resta ad Andrea
+## Da completare
 
-1. Da Audience → Signup forms → Embedded forms: URL action pubblico, nome honeypot, conferma doppio opt-in, tag lingua oppure conferma che non esiste.
-2. Fornire il testo privacy approvato IT/ES/EN, con Mailchimp (Intuit, USA) e valutazione DPF/SCC come richiesto dal brief. I segnaposto non sono un’informativa.
-3. Dopo il collegamento, iscrizione di prova con la propria email: verificare `pending`, confermare, verificare `subscribed`.
-4. Rileggere e decidere il merge solo dopo completamento e review indipendente.
+1. Andrea: rispondere all'autorizzazione per una seconda prova email. Il destinatario già attivo potrebbe produrre “già iscritto”; non cancellare l'abbonato per forzare un nuovo opt-in.
+2. Codex: collaudare risposta e redirect del percorso definitivo, completare Lighthouse e review finale prima del rilascio.
+3. Andrea: fornire il Payment Link Mollie quando disponibile e impostarne il redirect; la newsletter non richiede altri dati Mailchimp.
+4. Andrea: rivedere le PR e decidere il merge. Nessun merge automatico.
 
-## Lavoro tecnico ancora da completare
-
-Applicare i dati reali e i testi pronti in `docs/codex/mailchimp-activation.md`; abilitare il form dopo i testi privacy; dimostrare tutti i gate verdi, ripetere network log e misurare Lighthouse mobile. Nessuna misurazione Lighthouse né review indipendente effettuata in questa preparazione.
-
-Pubblicazione PR non eseguita: la revisione automatica delle autorizzazioni ha rifiutato `gh pr list` con «approval required by policy, but AskForApproval is set to Never». Nessun push o merge effettuato.
+La revisione automatica ha rifiutato `gh pr list --state open --json number,title,headRefName,url`: `approval required by policy, but AskForApproval is set to Never`. Nessun login tentato e nessun aggiramento.
