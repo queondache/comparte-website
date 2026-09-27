@@ -181,5 +181,5 @@ Pagamento con carta (manca il provider), donazioni ricorrenti online, CMS, blog,
 - **[APERTO-01]** Il 5×1000: la FAQ attuale dice che i fondi vanno "ai tre progetti attivi in Petén". Con il fondo unico, il 5×1000 può andare anche a Cuba? Finché non risponde Andrea, il testo resta com'è (solo Petén).
 - **[APERTO-02]** Foto `IMG_0152`: sulla maglietta si legge uno slogan politico. Proposta: ritaglio sul tavolo con le medicine, senza la scritta. Altrimenti non si usa.
 - **[APERTO-03]** Foto `IMG_0180`: si vedono in faccia dei bambini. Serve il consenso della scuola o dei genitori. Proposta: finché non c'è, si usa solo un'inquadratura senza volti riconoscibili (dalle spalle) o nessuna foto.
-- **[APERTO-04]** Nella foto `IMG_0180` c'è un kit di robotica educativa: portiamo anche materiale didattico? Se sì, si aggiunge ai testi; se no, i testi restano "occhiali e medicine".
+- **[APERTO-04]** Chiuso il 2026-09-27: Andrea ha confermato in chat che portiamo anche materiale didattico ("si anche materiale didattico"). Testi Cuba aggiornati: occhiali da vista, medicine e materiale didattico.
 - **[APERTO-05]** Provider per la carta, non USA e che accetti Comparte: ricerca separata.
