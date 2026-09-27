@@ -33,7 +33,7 @@
     "imgAlt": "Students at the Centro Universitario de Petén, Guatemala"
   },
   "numbers": {
-    "title": "In Petén, getting an education is still a struggle",
+    "title": "In Petén, an education is still hard-won",
     "items": [
       { "value": "49%", "text": "of young people in Guatemala finish lower secondary school.", "source": "World Bank, 2024", "url": "https://data.worldbank.org/indicator/SE.SEC.CMPT.LO.ZS?locations=GT" },
       { "value": "82%", "text": "of adults can read and write. Almost one in five cannot.", "source": "World Bank, 2024", "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=GT" },
@@ -46,7 +46,7 @@
     "items": [
       { "label": "Teachers", "name": "Comparte Universidad", "text": "Online seminars with European lecturers for students and teachers at CUDEP, the most remote campus of Guatemala's public university. Since 2018, more than 1,500 people trained." },
       { "label": "Young people and climate", "name": "Comparte Educación", "text": "Five modules on the climate crisis for girls and boys aged 13 to 17. The first edition, in Nuevo Horizonte with INAB and MARN, involved 27 students." },
-      { "label": "Communities", "name": "Comparte Comunidad", "text": "Farming training in the communities where zeroCO2 plants trees. Soil, harvests and practices that help every day." }
+      { "label": "Communities", "name": "Comparte Comunidad", "text": "Agricultural training in the communities where zeroCO2 plants trees. Soil, harvests and practices that help every day." }
     ]
   },
   "cuba": {
@@ -80,9 +80,9 @@
     "ibanLabel": "IBAN",
     "holderLabel": "Account holder",
     "reasonLabel": "Reference",
-    "reason": "Donation",
+    "reason": "Donazione liberale",
     "monthly": "To give every month, set up a standing order with your bank.",
-    "note": "Donations fund all our work, in Petén and in Cuba. Keep your transfer receipt.",
+    "note": "Donations fund all our work, in Petén and in Cuba. If you pay taxes in Italy, they are tax-deductible under the rules for Third Sector organisations. Keep your transfer receipt.",
     "allWays": "All the ways to donate",
     "secondaryIntro": "Do you pay taxes in Italy?"
   },
@@ -92,7 +92,7 @@
     "pressTitle": "In the press",
     "partners": [
       { "name": "USAC", "desc": "Universidad de San Carlos de Guatemala" },
-      { "name": "LUMSA", "desc": "University of Rome" },
+      { "name": "LUMSA", "desc": "LUMSA University, Rome" },
       { "name": "Scholas", "desc": "Pontifical Foundation Scholas Occurrentes" },
       { "name": "INAB", "desc": "National Forest Institute, Guatemala" },
       { "name": "MARN", "desc": "Ministry of Environment, Guatemala" },
@@ -108,7 +108,7 @@
     ],
     "gallery": [
       "Nuevo Horizonte community, Petén",
-      "Farming training in rural communities",
+      "Agricultural training in rural communities",
       "Nuevo Horizonte, where it all began",
       "The lunch where Comparte was born, 2018",
       "USAC graduation, Comparte Universidad",
@@ -119,7 +119,7 @@
     "title": "Frequently asked questions",
     "items": [
       { "q": "How can I donate?", "a": "By bank transfer to Banca Etica, IBAN IT27J0501803200000016738783, account holder Comparte. Keep your receipt." },
-      { "q": "What is the 5×1000?", "a": "If you pay taxes in Italy, you can give your 5×1000 to Comparte in your tax return with the tax code 97977810585. It costs you nothing." },
+      { "q": "What is the 5×1000?", "a": "If you pay taxes in Italy, you can give your 5×1000 to Comparte in your tax return with the tax code 97977810585. It costs you nothing and does not reduce your refund." },
       { "q": "What do you do in Cuba?", "a": "For more than 4 years we have brought prescription glasses and medicines to the Belén home for the elderly and to primary schools in Havana and the province." },
       { "q": "Where does the 5×1000 go?", "a": "To our active projects in Petén: university training with USAC, climate education in Nuevo Horizonte and farming training with rural communities. The report is published every year on the Transparency page." },
       { "q": "What is Comparte?", "a": "An association founded in 2018 between Rome and Petén. We train teachers and students, bring climate education to schools and farming training to rural communities in Guatemala." },
@@ -138,7 +138,7 @@
   "footer": {
     "tagline": "Education in Petén, health in Havana.",
     "contacts": "Contact",
-    "legal": "Association · Tax code 97977810585 · VAT 16847801004",
+    "legal": "Association · Tax code 97977810585 · VAT no. 16847801004",
     "bloqueoNote": "El Bloqueo, a project we support"
   },
   "donaPage": {

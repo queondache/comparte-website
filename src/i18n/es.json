@@ -80,9 +80,9 @@
     "ibanLabel": "IBAN",
     "holderLabel": "Titular",
     "reasonLabel": "Concepto",
-    "reason": "Donación",
+    "reason": "Donazione liberale",
     "monthly": "Para donar cada mes, programa una transferencia periódica desde tu banco.",
-    "note": "Las donaciones van a todas nuestras actividades, en Petén y en Cuba. Guarda el comprobante de la transferencia.",
+    "note": "Las donaciones van a todas nuestras actividades, en Petén y en Cuba. Si pagas impuestos en Italia, son deducibles según las normas para las entidades del Tercer Sector. Guarda el comprobante de la transferencia.",
     "allWays": "Todas las formas de donar",
     "secondaryIntro": "¿Pagas impuestos en Italia?"
   },
@@ -92,19 +92,19 @@
     "pressTitle": "Hablan de nosotros",
     "partners": [
       { "name": "USAC", "desc": "Universidad de San Carlos de Guatemala" },
-      { "name": "LUMSA", "desc": "Universidad de Roma" },
+      { "name": "LUMSA", "desc": "Universidad LUMSA, Roma" },
       { "name": "Scholas", "desc": "Fundación Pontificia Scholas Occurrentes" },
       { "name": "INAB", "desc": "Instituto Nacional de Bosques, Guatemala" },
       { "name": "MARN", "desc": "Ministerio de Ambiente, Guatemala" },
-      { "name": "zeroCO2", "desc": "Empresa de beneficio italo-guatemalteca" },
+      { "name": "zeroCO2", "desc": "Empresa de beneficio común italo-guatemalteca" },
       { "name": "1Caffè", "desc": "Plataforma italiana de recaudación de fondos" },
       { "name": "European Schoolnet", "desc": "Bruselas" }
     ],
     "press": [
-      { "source": "Millionaire", "title": "Artículo sobre los árboles frutales donados a las comunidades (en italiano)", "date": "Febrero 2021", "url": "https://www.millionaire.it/prendiamo-alberi-da-frutto-e-li-doniamo-alle-popolazioni/" },
+      { "source": "Millionaire", "title": "Artículo sobre los árboles frutales donados a las comunidades (en italiano)", "date": "febrero de 2021", "url": "https://www.millionaire.it/prendiamo-alberi-da-frutto-e-li-doniamo-alle-popolazioni/" },
       { "source": "Universidad de Bolonia", "title": "Entrevista a Andrea Pesce, fundador de zeroCO2 y Comparte (en italiano)", "date": "Alumni Stories", "url": "https://site.unibo.it/alumni-association/it/alumni-stories/intervista-con-andrea-pesce" },
-      { "source": "Tempo Stretto", "title": "Un hilo que une Italia y Guatemala (en italiano)", "date": "Enero 2019", "url": "https://www.tempostretto.it/news/336348.html" },
-      { "source": "zeroCO2 Magazine", "title": "Reforestación y educación: un mes de Lime para Comparte (en italiano)", "date": "Agosto 2023", "url": "https://zeroco2.eco/it/magazine/persone/lime-per-comparte/" }
+      { "source": "Tempo Stretto", "title": "Un hilo que une Italia y Guatemala (en italiano)", "date": "enero de 2019", "url": "https://www.tempostretto.it/news/336348.html" },
+      { "source": "zeroCO2 Magazine", "title": "Reforestación y educación: un mes de Lime para Comparte (en italiano)", "date": "agosto de 2023", "url": "https://zeroco2.eco/it/magazine/persone/lime-per-comparte/" }
     ],
     "gallery": [
       "Comunidad de Nuevo Horizonte, Petén",
@@ -119,11 +119,11 @@
     "title": "Preguntas frecuentes",
     "items": [
       { "q": "¿Cómo puedo donar?", "a": "Con una transferencia a Banca Etica, IBAN IT27J0501803200000016738783, a nombre de Comparte. Guarda el comprobante." },
-      { "q": "¿Qué es el 5×1000?", "a": "Si pagas impuestos en Italia, puedes destinar el 5×1000 a Comparte en tu declaración con el código fiscal 97977810585. No te cuesta nada." },
+      { "q": "¿Qué es el 5×1000?", "a": "Si pagas impuestos en Italia, puedes destinar el 5×1000 a Comparte en tu declaración con el código fiscal 97977810585. No te cuesta nada y no reduce tu reembolso." },
       { "q": "¿Qué hacen en Cuba?", "a": "Desde hace más de 4 años llevamos lentes graduados y medicamentos al hogar de ancianos de Belén y a las escuelas primarias de La Habana y de la provincia." },
       { "q": "¿A dónde van los fondos del 5×1000?", "a": "A los proyectos activos en Petén: formación universitaria con la USAC, educación climática en Nuevo Horizonte y formación agrícola con las comunidades campesinas. El informe se publica cada año en la página Transparencia." },
       { "q": "¿Qué es Comparte?", "a": "Una asociación nacida en 2018 entre Roma y Petén. Formamos a docentes y estudiantes, llevamos educación climática a las escuelas y formación agrícola a las comunidades rurales de Guatemala." },
-      { "q": "¿Comparte está vinculada a zeroCO2?", "a": "Sí. Andrea Pesce fundó ambas. zeroCO2 siembra árboles en las comunidades rurales de Petén y Comparte lleva a esas mismas comunidades formación y educación. Son independientes y colaboran en el terreno." }
+      { "q": "¿Comparte está vinculada a zeroCO2?", "a": "Sí. Andrea Pesce fundó ambas. zeroCO2 siembra árboles en las comunidades rurales de Petén y Comparte lleva a esas mismas comunidades formación y educación. Son independientes y colaboran sobre el terreno." }
     ],
     "homeCount": 3
   },

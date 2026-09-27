@@ -92,7 +92,7 @@
     "pressTitle": "Parlano di noi",
     "partners": [
       { "name": "USAC", "desc": "Universidad de San Carlos de Guatemala" },
-      { "name": "LUMSA", "desc": "Università di Roma" },
+      { "name": "LUMSA", "desc": "Università LUMSA, Roma" },
       { "name": "Scholas", "desc": "Fondazione Pontificia Scholas Occurrentes" },
       { "name": "INAB", "desc": "Instituto Nacional de Bosques, Guatemala" },
       { "name": "MARN", "desc": "Ministerio de Ambiente, Guatemala" },
