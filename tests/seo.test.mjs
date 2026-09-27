@@ -5,8 +5,18 @@ import { page, html, file, LANGS, PAGES, DIST } from './lib/dist.mjs';
 
 const ABS = 'https://www.comparte.it';
 const ITALIAN = /\b(della|degli|delle|nelle|nella|sono|anche|questo|nostro|nostra|lavoriamo|formiamo|dichiarazione|codice fiscale|sosteniamo|iscriviti|perché|chi siamo|anni|bonifico|scuola|comunità|occhiali|medicine|grazie)\b/i;
-// Parola "onlus" come termine a sé (non come sottostringa di URL tipo comparteonlus)
-const ONLUS_WORD = /\bonlus\b/i;
+// "onlus" come da brief: /onlus/i, applicato dopo aver tolto gli URL social "comparteonlus" (ammessi, minuscoli)
+const ONLUS = /onlus/i;
+const stripAllowedOnlusUrls = (text) => text.replace(/comparteonlus/gi, '');
+// Percorso del llms.txt nel dist per ciascuna lingua
+const LLMS_PATH = { it: 'llms.txt', es: 'es/llms.txt', en: 'en/llms.txt' };
+// La prima riga "> " di ogni llms.txt deve citare Cuba/Havana/Belén nella lingua giusta
+const LLMS_SUMMARY_CHECKS = {
+  it: [/Havana/, /Belén/],
+  es: [/La Habana/, /Belén/],
+  en: [/Havana/, /Belén/],
+};
+const LLMS_HEADING = { it: /^## Pagine$/m, es: /^## Páginas$/m, en: /^## Pages$/m };
 
 for (const lang of LANGS) {
   for (const [key, path] of Object.entries(PAGES[lang])) {
@@ -57,7 +67,7 @@ test('robots, CNAME, llms.txt e 404 presenti', () => {
   assert.match(readFileSync(new URL('robots.txt', DIST), 'utf8'), /sitemap-index\.xml/);
   const llms = readFileSync(new URL('llms.txt', DIST), 'utf8');
   assert.match(llms, /Cuba/);
-  assert.doesNotMatch(llms, ONLUS_WORD);
+  assert.doesNotMatch(stripAllowedOnlusUrls(llms), ONLUS);
   assert.ok(existsSync(new URL('404.html', DIST)));
 });
 
@@ -65,6 +75,20 @@ test('llms.txt tradotti (es, en): presenti, con Cuba, senza onlus', () => {
   for (const lang of ['es', 'en']) {
     const llms = readFileSync(new URL(`${lang}/llms.txt`, DIST), 'utf8');
     assert.match(llms, /Cuba/);
-    assert.doesNotMatch(llms, ONLUS_WORD);
+    assert.doesNotMatch(stripAllowedOnlusUrls(llms), ONLUS);
   }
 });
+
+for (const lang of LANGS) {
+  test(`llms.txt ${lang}: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta`, () => {
+    const llms = readFileSync(new URL(LLMS_PATH[lang], DIST), 'utf8');
+    const summaryLine = llms.split('\n').find((l) => l.startsWith('> '));
+    assert.ok(summaryLine, `manca una riga "> " in ${LLMS_PATH[lang]}`);
+    for (const re of LLMS_SUMMARY_CHECKS[lang]) assert.match(summaryLine, re);
+  });
+
+  test(`llms.txt ${lang}: sezione pagine presente`, () => {
+    const llms = readFileSync(new URL(LLMS_PATH[lang], DIST), 'utf8');
+    assert.match(llms, LLMS_HEADING[lang]);
+  });
+}

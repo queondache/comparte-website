@@ -27,7 +27,7 @@ const jsonld = buildJsonLd(lang, pageKey);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content={{ it: 'it_IT', es: 'es_ES', en: 'en_GB' }[lang]} />
-    {jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
+    {jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j).replace(/</g, '\\u003c')} />)}
     <slot name="head" />
   </head>
   <body>
