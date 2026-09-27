@@ -44,5 +44,5 @@ Con approvazione separata di Andrea, aggiunti in OVH due TXT di verifica e tre C
 
 1. Seconda prova del modulo definitivo solo dopo autorizzazione di Andrea; verificare risposta e redirect, senza eliminare o modificare l'abbonato già confermato. La prova con un indirizzo già attivo può restituire “già iscritto”, non dimostra un nuovo doppio opt-in.
 2. Verifica Lighthouse mobile prima del rilascio. Nessun merge automatico.
-3. Aprire le PR richieste quando le operazioni GitHub saranno disponibili. Il comando `gh pr list --state open --json number,title,headRefName,url` è stato rifiutato dalla revisione automatica: `approval required by policy, but AskForApproval is set to Never`. Non aggirato.
+3. Entrambi i branch sono stati pubblicati con push normale. Le PR non sono aperte: anche il comando `gh pr create --draft` per Mollie è stato rifiutato dalla revisione automatica: `approval required by policy, but AskForApproval is set to Never`. Non aggirato.
 4. Mollie resta bloccato fino alla disponibilità del Payment Link reale; Andrea imposta il redirect su `https://www.comparte.it/grazie/`.

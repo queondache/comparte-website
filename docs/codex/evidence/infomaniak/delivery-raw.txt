@@ -1,0 +1,11 @@
+$ git push -u origin feat/mollie-payment-link feat/mailchimp-form
+To https://github.com/queondache/comparte-website.git
+ * [new branch]      feat/mollie-payment-link -> feat/mollie-payment-link
+ * [new branch]      feat/mailchimp-form -> feat/mailchimp-form
+branch 'feat/mollie-payment-link' set up to track 'origin/feat/mollie-payment-link'.
+branch 'feat/mailchimp-form' set up to track 'origin/feat/mailchimp-form'.
+exit=0
+
+$ gh pr create --draft --base main --head feat/mollie-payment-link --title "Draft: prepara Mollie e pagine di ringraziamento" --body-file docs/codex/PR-mollie.md
+CreateProcess rejected: approval required by policy, but AskForApproval is set to Never
+Command did not execute. No PR created.
