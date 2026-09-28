@@ -76,6 +76,9 @@
     "fiveTitle": "5×1000",
     "fiveText": "Si pagas impuestos en Italia, en tu declaración de la renta firma la casilla de las entidades del Tercer Sector y escribe nuestro código fiscal. No te cuesta nada.",
     "cfLabel": "Código fiscal",
+    "cardTitle": "Tarjeta",
+    "cardText": "Dona la cantidad que quieras con tarjeta de crédito o de débito. El pago lo gestiona SumUp, una entidad europea: los datos de tu tarjeta no pasan por nuestra web.",
+    "cardCta": "Dona con tarjeta",
     "bankTitle": "Transferencia bancaria",
     "ibanLabel": "IBAN",
     "holderLabel": "Titular",
@@ -118,7 +121,7 @@
   "faq": {
     "title": "Preguntas frecuentes",
     "items": [
-      { "q": "¿Cómo puedo donar?", "a": "Con una transferencia a Banca Etica, IBAN IT27J0501803200000016738783, a nombre de Comparte. Guarda el comprobante." },
+      { "q": "¿Cómo puedo donar?", "a": "Con tarjeta a través de SumUp o con una transferencia a Banca Etica, IBAN IT27J0501803200000016738783, a nombre de Comparte. Guarda el comprobante." },
       { "q": "¿Qué es el 5×1000?", "a": "Si pagas impuestos en Italia, puedes destinar el 5×1000 a Comparte en tu declaración con el código fiscal 97977810585. No te cuesta nada y no reduce tu reembolso." },
       { "q": "¿Qué hacen en Cuba?", "a": "Desde hace más de 4 años llevamos lentes graduados, medicamentos y material didáctico al hogar de ancianos de Belén y a las escuelas primarias de La Habana y de la provincia." },
       { "q": "¿A dónde van los fondos del 5×1000?", "a": "A los proyectos activos en Petén: formación universitaria con la USAC, educación climática en Nuevo Horizonte y formación agrícola con las comunidades campesinas. El informe se publica cada año en la página Transparencia." },

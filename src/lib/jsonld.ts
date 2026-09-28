@@ -26,6 +26,7 @@ export function buildJsonLd(lang: Lang, pageKey: PageKey): object[] {
       recipient: { '@id': `${SITE_URL}/#org` },
       description: `${d.donate.bankTitle}: ${site.bank}, IBAN ${site.iban}`,
       url: SITE_URL + routes[lang].dona,
+      ...(site.cardLink ? { target: { '@type': 'EntryPoint', urlTemplate: site.cardLink } } : {}),
     });
   }
   if (pageKey === 'home' || pageKey === 'dona') {

@@ -76,6 +76,9 @@
     "fiveTitle": "5×1000",
     "fiveText": "Nella dichiarazione dei redditi firma il riquadro degli enti del Terzo settore e scrivi il nostro codice fiscale. Non ti costa nulla.",
     "cfLabel": "Codice fiscale",
+    "cardTitle": "Carta",
+    "cardText": "Dona l'importo che vuoi con carta di credito o di debito. Il pagamento è gestito da SumUp, istituto europeo: i dati della carta non passano dal nostro sito.",
+    "cardCta": "Dona con carta",
     "bankTitle": "Bonifico",
     "ibanLabel": "IBAN",
     "holderLabel": "Intestato a",
@@ -119,7 +122,7 @@
     "title": "Domande frequenti",
     "items": [
       { "q": "Come destino il 5×1000 a Comparte?", "a": "Nel modello 730, Redditi PF o CU firma il riquadro «Sostegno degli enti del Terzo settore iscritti nel RUNTS» e scrivi il codice fiscale 97977810585. Non costa nulla e non riduce il rimborso." },
-      { "q": "Posso donare anche senza il 5×1000?", "a": "Sì, con un bonifico a Banca Etica, IBAN IT27J0501803200000016738783, intestato a Comparte. Conserva la ricevuta." },
+      { "q": "Posso donare anche senza il 5×1000?", "a": "Sì, con carta tramite SumUp oppure con un bonifico a Banca Etica, IBAN IT27J0501803200000016738783, intestato a Comparte. Conserva la ricevuta." },
       { "q": "Dove vanno i fondi del 5×1000?", "a": "Ai progetti attivi nel Petén: formazione universitaria con la USAC, educazione climatica a Nuevo Horizonte, formazione agricola con le comunità contadine. Il rendiconto è pubblicato ogni anno nella pagina Trasparenza." },
       { "q": "Cosa fate a Cuba?", "a": "Da oltre 4 anni portiamo occhiali da vista, medicine e materiale didattico all'asilo per anziani di Belén e alle scuole primarie dell'Havana e della provincia." },
       { "q": "Cos'è Comparte?", "a": "Un'associazione nata nel 2018 tra Roma e il Petén. Formiamo docenti e studenti, portiamo educazione climatica nelle scuole e formazione agricola nelle comunità rurali del Guatemala." },
