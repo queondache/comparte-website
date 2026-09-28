@@ -4,6 +4,7 @@ import { t, routes, site, type Lang } from '../i18n';
 interface Props { lang: Lang; showAllWays?: boolean; steps?: string[] }
 const { lang, showAllWays = true, steps } = Astro.props;
 const d = t(lang).donate;
+const ui = t(lang).ui;
 const five = { id: 'cinque-x-mille' };
 const bankFirst = lang !== 'it';
 ---
@@ -16,6 +17,13 @@ const bankFirst = lang !== 'it';
         <p>{d.fiveText}</p>
         {steps && <ol>{steps.map((s) => <li>{s}</li>)}</ol>}
         <CopyField value={site.cf} label={d.cfLabel} lang={lang} />
+      </div>
+    )}
+    {site.cardLink && (
+      <div id="carta" class="donate-card">
+        <h3>{d.cardTitle}</h3>
+        <p>{d.cardText}</p>
+        <p><a class="btn btn--solid-ink" href={site.cardLink} target="_blank" rel="noopener">{d.cardCta}<span class="visually-hidden"> {ui.newTab}</span></a></p>
       </div>
     )}
     <div id="dona" class="donate-card">

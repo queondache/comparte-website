@@ -8,9 +8,9 @@ const ITALIAN = /\b(della|degli|delle|nelle|nella|sono|anche|questo|nostro|nostr
 // "onlus" come da brief: /onlus/i, applicato dopo aver tolto gli URL social "comparteonlus" (ammessi, minuscoli)
 const ONLUS = /onlus/i;
 const stripAllowedOnlusUrls = (text) => text.replace(/comparteonlus/gi, '');
-// Mollie/carta/onlus/"in arrivo" sono contenuti vietati o superati nei llms.txt: le modalità di
-// donazione sono solo 5x1000 e bonifico, niente pagamento con carta né sezioni "in costruzione".
-const FORBIDDEN_LLMS = /mollie|carta di credito|pagamento con carta|tarjeta|credit card|in arrivo|in costruzione|próximamente|coming soon/i;
+// Mollie e sezioni "in arrivo" sono contenuti superati nei llms.txt: la carta passa da SumUp
+// (verificato in card.test.mjs), non da Mollie, e non ci sono sezioni "in costruzione".
+const FORBIDDEN_LLMS = /mollie|in arrivo|in costruzione|próximamente|coming soon/i;
 // Percorso del llms.txt nel dist per ciascuna lingua
 const LLMS_PATH = { it: 'llms.txt', es: 'es/llms.txt', en: 'en/llms.txt' };
 // La prima riga "> " di ogni llms.txt deve citare Cuba/Havana/Belén nella lingua giusta
@@ -112,7 +112,7 @@ test('llms.txt tradotti (es, en): presenti, con Cuba, senza onlus', () => {
   }
 });
 
-test('llms.txt (it, es, en): niente Mollie, carta di credito, o sezioni "in arrivo"', () => {
+test('llms.txt (it, es, en): niente Mollie o sezioni "in arrivo"', () => {
   for (const path of Object.values(LLMS_PATH)) {
     const llms = readFileSync(new URL(path, DIST), 'utf8');
     assert.doesNotMatch(llms, FORBIDDEN_LLMS, `${path} contiene testo vietato`);

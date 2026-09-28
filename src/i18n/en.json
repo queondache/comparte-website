@@ -76,6 +76,9 @@
     "fiveTitle": "5×1000",
     "fiveText": "If you pay taxes in Italy, sign the box for Third Sector organisations in your tax return and write our tax code. It costs you nothing.",
     "cfLabel": "Tax code",
+    "cardTitle": "Card",
+    "cardText": "Give any amount by credit or debit card. Payments are handled by SumUp, a European provider: your card details never touch our site.",
+    "cardCta": "Donate by card",
     "bankTitle": "Bank transfer",
     "ibanLabel": "IBAN",
     "holderLabel": "Account holder",
@@ -118,7 +121,7 @@
   "faq": {
     "title": "Frequently asked questions",
     "items": [
-      { "q": "How can I donate?", "a": "By bank transfer to Banca Etica, IBAN IT27J0501803200000016738783, account holder Comparte. Keep your receipt." },
+      { "q": "How can I donate?", "a": "By card through SumUp, or by bank transfer to Banca Etica, IBAN IT27J0501803200000016738783, account holder Comparte. Keep your receipt." },
       { "q": "What is the 5×1000?", "a": "If you pay taxes in Italy, you can give your 5×1000 to Comparte in your tax return with the tax code 97977810585. It costs you nothing and does not reduce your refund." },
       { "q": "What do you do in Cuba?", "a": "For more than 4 years we have brought prescription glasses, medicines and educational materials to the Belén home for the elderly and to primary schools in Havana and the province." },
       { "q": "Where does the 5×1000 go?", "a": "To our active projects in Petén: university training with USAC, climate education in Nuevo Horizonte and agricultural training with rural communities. The report is published every year on the Transparency page." },

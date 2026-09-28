@@ -24,6 +24,8 @@ Impact data as of 2024 (source: Comparte, internal data 2024):
 
 The Italian 5×1000 lets taxpayers direct 0.5% of their income tax to a nonprofit at no extra cost. If you file taxes in Italy, use tax code 97977810585 for Comparte. Donors who do not file taxes in Italy can donate by bank transfer.
 
+Credit or debit card: any amount through SumUp, a European provider: https://pay.sumup.com/b2c/QPE9G8BD
+
 Bank transfer: Banca Etica, IBAN IT27J0501803200000016738783, payable to Comparte. Donations are tax deductible as provided by applicable regulations.
 
 Dedicated page: https://www.comparte.it/en/donate/
