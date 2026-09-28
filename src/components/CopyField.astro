@@ -1,0 +1,43 @@
+---
+import { t, type Lang } from '../i18n';
+// groupSize: solo per la visualizzazione (es. IBAN a blocchi di 4). data-copy e il valore
+// copiato restano sempre il valore grezzo, senza spazi.
+interface Props { value: string; label: string; lang: Lang; groupSize?: number }
+const { value, label, lang, groupSize } = Astro.props;
+const ui = t(lang).ui;
+const groups = groupSize ? value.match(new RegExp(`.{1,${groupSize}}`, 'g')) ?? [value] : null;
+---
+<div class="copy">
+  <span class="copy-label">{label}</span>
+  <span class="copy-value" translate="no">
+    {groups
+      ? groups.map((g, i) => (i > 0 ? [' ', <span class="copy-group">{g}</span>] : <span class="copy-group">{g}</span>))
+      : value}
+  </span>
+  <button type="button" class="btn copy-btn" data-copy={value} data-done={ui.copied} data-fallback={ui.copyFallback}>{ui.copy}</button>
+</div>
+<style>
+  .copy { display: grid; gap: 8px; justify-items: start; }
+  .copy-label { font-size: var(--fs-small); font-weight: 700; text-transform: uppercase; letter-spacing: .08em; }
+  .copy-value { font-size: clamp(22px, 2vw + 14px, 40px); font-weight: 800; letter-spacing: -.01em; overflow-wrap: anywhere; user-select: all; text-wrap: balance; }
+  .copy-group { white-space: nowrap; }
+  .copy-btn { background: transparent; cursor: pointer; font: inherit; font-weight: 700; }
+</style>
+<script is:inline>
+  // Copia negli appunti; se l'API non c'è, seleziona il testo e cambia etichetta
+  document.querySelectorAll('.copy-btn:not([data-ready])').forEach((b) => {
+    b.dataset.ready = '1';
+    b.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(b.dataset.copy);
+        b.textContent = b.dataset.done;
+      } catch (err) {
+        console.warn('Copia non riuscita, selezione manuale', err);
+        const v = b.parentElement.querySelector('.copy-value');
+        const r = document.createRange(); r.selectNodeContents(v);
+        const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+        b.textContent = b.dataset.fallback;
+      }
+    });
+  });
+</script>

@@ -1,0 +1,46 @@
+---
+import CopyField from './CopyField.astro';
+import { t, routes, site, type Lang } from '../i18n';
+interface Props { lang: Lang; showAllWays?: boolean; steps?: string[] }
+const { lang, showAllWays = true, steps } = Astro.props;
+const d = t(lang).donate;
+const five = { id: 'cinque-x-mille' };
+const bankFirst = lang !== 'it';
+---
+<div class="donate">
+  <h2 id="donate-title">{d.title}</h2>
+  <div class={`donate-grid ${bankFirst ? 'bank-first' : ''}`}>
+    {bankFirst ? null : (
+      <div id={five.id} class="donate-card">
+        <h3>{d.fiveTitle}</h3>
+        <p>{d.fiveText}</p>
+        {steps && <ol>{steps.map((s) => <li>{s}</li>)}</ol>}
+        <CopyField value={site.cf} label={d.cfLabel} lang={lang} />
+      </div>
+    )}
+    <div id="dona" class="donate-card">
+      <h3>{d.bankTitle}</h3>
+      <p>{site.bank}</p>
+      <CopyField value={site.iban} label={d.ibanLabel} lang={lang} groupSize={4} />
+      <p><strong>{d.holderLabel}:</strong> {site.holder} · <strong>{d.reasonLabel}:</strong> {d.reason}</p>
+      <p>{d.monthly}</p>
+    </div>
+    {bankFirst && (
+      <div id={five.id} class="donate-card donate-card--secondary">
+        <p class="eyebrow">{d.secondaryIntro}</p>
+        <h3>{d.fiveTitle}</h3>
+        <p>{d.fiveText}</p>
+        {steps && <ol>{steps.map((s) => <li>{s}</li>)}</ol>}
+        <CopyField value={site.cf} label={d.cfLabel} lang={lang} />
+      </div>
+    )}
+  </div>
+  <p class="prose donate-note">{d.note}</p>
+  {showAllWays && <p><a class="btn btn--solid-ink" href={routes[lang].dona}>{d.allWays}</a></p>}
+</div>
+<style>
+  .donate-grid { display: grid; gap: 48px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr)); margin-bottom: 40px; }
+  .donate-card { display: grid; gap: 16px; align-content: start; }
+  .donate-card--secondary { border-top: 3px solid var(--ink); padding-top: 24px; }
+  .donate-card p, .donate-card ol { margin: 0; }
+</style>

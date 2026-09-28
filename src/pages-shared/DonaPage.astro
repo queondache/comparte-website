@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import Block from '../components/Block.astro';
+import DonateBlock from '../components/DonateBlock.astro';
+import Faq from '../components/Faq.astro';
+import { t, routes, type Lang } from '../i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const d = t(lang);
+---
+<Base lang={lang} pageKey="dona" title={d.meta.donaTitle} description={d.meta.donaDescription}>
+  <Block color="blue" labelledby="dona-h1">
+    <h1 id="dona-h1" class="display">{d.donaPage.title}</h1>
+    <p class="lead">{d.donaPage.intro}</p>
+  </Block>
+  <Block color="orange" labelledby="donate-title">
+    <DonateBlock lang={lang} showAllWays={false} steps={d.donaPage.fiveSteps} />
+    <p><a href={routes[lang].trasparenza}>{d.donaPage.report}</a></p>
+  </Block>
+  <Block id="faq" color="cream" labelledby="faq-title">
+    <Faq lang={lang} />
+  </Block>
+</Base>

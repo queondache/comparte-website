@@ -1,0 +1,21 @@
+---
+import { t, routes, site, type Lang } from '../i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const n = t(lang).newsletter;
+const ui = t(lang).ui;
+const privacyId = lang === 'es' ? 'privacidad' : 'privacy';
+---
+<h2 id="newsletter-title">{n.title}</h2>
+<p class="prose">{n.text}</p>
+{site.mailchimpAction ? (
+  <form action={site.mailchimpAction} method="post" target="_blank" class="nl-form">
+    <label for="nl-email">{n.emailLabel}</label>
+    <input id="nl-email" type="email" name="EMAIL" autocomplete="email" required />
+    <label class="nl-consent"><input type="checkbox" required /> <a href={`${routes[lang].trasparenza}#${privacyId}`}>{n.consent}</a></label>
+    <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name={site.mailchimpHoneypot} tabindex="-1" value="" /></div>
+    <button class="btn btn--solid-ink" type="submit">{n.submit}</button>
+  </form>
+) : (
+  <p><a href={site.social.instagram} target="_blank" rel="noopener">{n.fallback}<span class="visually-hidden"> {ui.newTab}</span></a></p>
+)}

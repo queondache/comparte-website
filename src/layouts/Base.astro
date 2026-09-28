@@ -1,0 +1,45 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { altLinks, routes, SITE_URL, type PageKey } from '../i18n';
+import { buildJsonLd } from '../lib/jsonld';
+interface Props { lang: 'it' | 'es' | 'en'; pageKey: PageKey; title: string; description: string; noindex?: boolean; ogImage?: string }
+const { lang, pageKey, title, description, noindex = false, ogImage = '/og/home.jpg' } = Astro.props;
+const canonical = SITE_URL + routes[lang][pageKey];
+// og:image assoluto: alcuni crawler (es. i bot di condivisione social) non risolvono URL relativi
+const ogImageAbs = SITE_URL + ogImage;
+const alts = altLinks(pageKey);
+const jsonld = buildJsonLd(lang, pageKey);
+---
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="canonical" href={canonical} />
+    {alts.map((a) => <link rel="alternate" hreflang={a.lang} href={a.href} />)}
+    <link rel="alternate" hreflang="x-default" href={SITE_URL + routes.it[pageKey]} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={{ it: 'it_IT', es: 'es_ES', en: 'en_GB' }[lang]} />
+    <meta property="og:image" content={ogImageAbs} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j).replace(/</g, '\\u003c')} />)}
+    <slot name="head" />
+  </head>
+  <body>
+    <Header lang={lang} pageKey={pageKey} />
+    <main id="main"><slot /></main>
+    <Footer lang={lang} />
+  </body>
+</html>

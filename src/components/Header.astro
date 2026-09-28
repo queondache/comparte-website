@@ -1,0 +1,56 @@
+---
+import { t, routes, LANGS, type Lang, type PageKey } from '../i18n';
+interface Props { lang: Lang; pageKey: PageKey }
+const { lang, pageKey } = Astro.props;
+const d = t(lang);
+const home = routes[lang].home;
+const links = [
+  { href: `${home}#progetti`, label: d.nav.progetti },
+  { href: routes[lang].cuba, label: d.nav.cuba },
+  { href: `${home}#chi-siamo`, label: d.nav.chiSiamo },
+  { href: routes[lang].trasparenza, label: d.nav.trasparenza },
+];
+---
+<header class="site-header">
+  <a class="skip" href="#main">{d.ui.skip}</a>
+  <a class="logo" href={home}><img src="/logo/comparte_logo_black.png" alt="Comparte" width="670" height="839" /></a>
+  <details class="nav" open>
+    <summary>{d.ui.menu}</summary>
+    <nav aria-label={d.ui.menu}>
+      <ul>{links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}</ul>
+      <ul class="langs" aria-label={d.ui.langLabel}>
+        {LANGS.map((l) => (
+          <li><a href={routes[l][pageKey]} lang={l} hreflang={l} aria-current={l === lang ? 'page' : undefined}>{l.toUpperCase()}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </details>
+  <a class="btn btn--solid-orange header-cta" href={routes[lang].dona}>{d.nav.dona}</a>
+</header>
+<style>
+  .site-header { display: flex; align-items: center; gap: 16px; padding: 16px var(--gutter); background: var(--cream); position: sticky; top: 0; z-index: 10; }
+  .logo img { width: 40px; height: auto; }
+  .skip { position: absolute; left: -9999px; }
+  .skip:focus { left: 16px; top: 16px; background: var(--ink); color: var(--white); padding: 8px 16px; }
+  .nav { margin-left: auto; }
+  .nav summary { min-height: 48px; display: flex; align-items: center; font-weight: 700; cursor: pointer; }
+  .nav nav { position: absolute; left: 0; right: 0; top: 100%; background: var(--cream); padding: 24px var(--gutter); }
+  .nav ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 16px; font-size: var(--fs-h3); font-weight: 700; }
+  .nav a { text-decoration: none; }
+  .langs { grid-auto-flow: column; justify-content: start; margin-top: 24px !important; font-size: var(--fs-body) !important; }
+  .langs [aria-current] { text-decoration: underline; }
+  @media (min-width: 960px) {
+    .nav summary { display: none; }
+    .nav nav { position: static; display: flex; gap: 40px; padding: 0; background: none; }
+    .nav ul { grid-auto-flow: column; font-size: var(--fs-body); gap: 28px; }
+    .langs { margin-top: 0 !important; gap: 12px !important; }
+  }
+</style>
+<script is:inline>
+  // <details open> arriva già aperto dal server (nav utilizzabile senza JS anche su desktop).
+  // Lo script, se c'è, lo chiude solo sotto i 960px; su desktop resta aperto (summary è nascosto via CSS).
+  const nav = document.querySelector('.site-header details');
+  const mq = matchMedia('(min-width: 960px)');
+  const sync = () => { if (nav) nav.open = mq.matches; };
+  sync(); mq.addEventListener('change', sync);
+</script>

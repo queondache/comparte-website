@@ -1,0 +1,28 @@
+---
+import { t, routes, site, type Lang } from '../i18n';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const d = t(lang);
+---
+<footer class="block block--ink site-footer">
+  <div class="inner footer-grid">
+    <div>
+      <p class="h3">Comparte</p>
+      <p>{d.footer.tagline}</p>
+      <p><a href="https://elbloqueo.it/" target="_blank" rel="noopener">{d.footer.bloqueoNote}<span class="visually-hidden"> {d.ui.newTab}</span></a></p>
+    </div>
+    <div>
+      <p class="h3">{d.footer.contacts}</p>
+      <p><a href={`mailto:${site.email}`}>{site.email}</a><br />{site.address}</p>
+      <p><a href={site.social.instagram} target="_blank" rel="noopener">Instagram</a> · <a href={site.social.facebook} target="_blank" rel="noopener">Facebook</a> · <a href={site.social.linkedin} target="_blank" rel="noopener">LinkedIn</a></p>
+    </div>
+    <div>
+      <p><a href={routes[lang].trasparenza}>{d.nav.trasparenza}</a></p>
+      <p class="small">{d.footer.legal}</p>
+    </div>
+  </div>
+</footer>
+<style>
+  .footer-grid { display: grid; gap: 40px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); }
+  .site-footer .small { font-size: var(--fs-small); }
+</style>

@@ -1,0 +1,96 @@
+✔ it/home: canonical e hreflang reciproci (8.700292ms)
+✔ it/home: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.830375ms)
+✔ it/home: JSON-LD valido (1.137208ms)
+✔ it/dona: canonical e hreflang reciproci (0.447667ms)
+✔ it/dona: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.324042ms)
+✔ it/dona: JSON-LD valido (0.259625ms)
+✔ it/cuba: canonical e hreflang reciproci (0.310667ms)
+✔ it/cuba: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.2495ms)
+✔ it/cuba: JSON-LD valido (0.266083ms)
+✔ it/trasparenza: canonical e hreflang reciproci (0.539167ms)
+✔ it/trasparenza: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.334792ms)
+✔ it/trasparenza: JSON-LD valido (0.250791ms)
+✔ it/grazie: canonical e hreflang reciproci (0.17425ms)
+✔ it/grazie: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.131375ms)
+✔ it/grazie: JSON-LD valido (0.15225ms)
+✔ es/home: canonical e hreflang reciproci (0.460291ms)
+✔ es/home: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.414042ms)
+✔ es/home: JSON-LD valido (0.487125ms)
+✔ es/home: nessuna parola italiana nel testo visibile (0.355792ms)
+✔ es/dona: canonical e hreflang reciproci (0.230291ms)
+✔ es/dona: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.203375ms)
+✔ es/dona: JSON-LD valido (0.171958ms)
+✔ es/dona: nessuna parola italiana nel testo visibile (0.108083ms)
+✔ es/cuba: canonical e hreflang reciproci (0.198542ms)
+✔ es/cuba: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.199875ms)
+✔ es/cuba: JSON-LD valido (0.335208ms)
+✔ es/cuba: nessuna parola italiana nel testo visibile (0.107791ms)
+✔ es/trasparenza: canonical e hreflang reciproci (0.304084ms)
+✔ es/trasparenza: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.257875ms)
+✔ es/trasparenza: JSON-LD valido (0.25025ms)
+✔ es/trasparenza: nessuna parola italiana nel testo visibile (0.095875ms)
+✔ es/grazie: canonical e hreflang reciproci (0.152333ms)
+✔ es/grazie: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.134833ms)
+✔ es/grazie: JSON-LD valido (0.117333ms)
+✔ es/grazie: nessuna parola italiana nel testo visibile (0.078458ms)
+✔ en/home: canonical e hreflang reciproci (0.530125ms)
+✔ en/home: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.367709ms)
+✔ en/home: JSON-LD valido (0.335167ms)
+✔ en/home: nessuna parola italiana nel testo visibile (0.140125ms)
+✔ en/dona: canonical e hreflang reciproci (0.187041ms)
+✔ en/dona: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.185291ms)
+✔ en/dona: JSON-LD valido (0.196167ms)
+✔ en/dona: nessuna parola italiana nel testo visibile (0.068542ms)
+✔ en/cuba: canonical e hreflang reciproci (0.387542ms)
+✔ en/cuba: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.262875ms)
+✔ en/cuba: JSON-LD valido (0.1855ms)
+✔ en/cuba: nessuna parola italiana nel testo visibile (0.075875ms)
+✔ en/trasparenza: canonical e hreflang reciproci (0.230875ms)
+✔ en/trasparenza: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.207166ms)
+✔ en/trasparenza: JSON-LD valido (0.21225ms)
+✔ en/trasparenza: nessuna parola italiana nel testo visibile (0.077916ms)
+✔ en/grazie: canonical e hreflang reciproci (0.112709ms)
+✔ en/grazie: og:image assoluto sotto /og/, og:type e twitter:card corretti (0.250292ms)
+✔ en/grazie: JSON-LD valido (0.145041ms)
+✔ en/grazie: nessuna parola italiana nel testo visibile (0.062959ms)
+✔ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.44975ms)
+✔ sitemap generata senza pagine grazie (0.072792ms)
+✖ robots, CNAME, llms.txt e 404 presenti (0.363583ms)
+✔ vecchi ancoraggi ES/EN (bd7b449) restano risolvibili nelle nuove home (1.109333ms)
+✔ vecchi URL immagine pubblici (bd7b449) restano risolvibili (0.034084ms)
+✔ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.082542ms)
+✔ llms.txt (it, es, en): niente Mollie, carta di credito, o sezioni "in arrivo" (0.163708ms)
+✔ llms.txt it: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.062125ms)
+✔ llms.txt it: sezione pagine presente (0.069042ms)
+✔ llms.txt es: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.028292ms)
+✔ llms.txt es: sezione pagine presente (0.039833ms)
+✔ llms.txt en: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.049667ms)
+✔ llms.txt en: sezione pagine presente (0.038583ms)
+ℹ tests 68
+ℹ suites 0
+ℹ pass 67
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 86.526166
+
+✖ failing tests:
+
+test at tests/seo.test.mjs:78:1
+✖ robots, CNAME, llms.txt e 404 presenti (0.363583ms)
+  AssertionError [ERR_ASSERTION]: dist/sitemap.xml non è un sitemapindex
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:87:10)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: '<?xml version="1.0" encoding="UTF-8"?>\n<broken>not a sitemapindex</broken>\n',
+    expected: /<sitemapindex/,
+    operator: 'match',
+    diff: 'simple'
+  }

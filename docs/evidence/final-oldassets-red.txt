@@ -1,0 +1,95 @@
+✔ it/home: canonical e hreflang reciproci (8.853042ms)
+✔ it/home: og:image assoluto sotto /og/ (0.89875ms)
+✔ it/home: JSON-LD valido (1.036584ms)
+✔ it/dona: canonical e hreflang reciproci (0.375542ms)
+✔ it/dona: og:image assoluto sotto /og/ (0.243708ms)
+✔ it/dona: JSON-LD valido (0.255542ms)
+✔ it/cuba: canonical e hreflang reciproci (0.306875ms)
+✔ it/cuba: og:image assoluto sotto /og/ (0.204958ms)
+✔ it/cuba: JSON-LD valido (0.249375ms)
+✔ it/trasparenza: canonical e hreflang reciproci (0.332ms)
+✔ it/trasparenza: og:image assoluto sotto /og/ (0.307166ms)
+✔ it/trasparenza: JSON-LD valido (0.239166ms)
+✔ it/grazie: canonical e hreflang reciproci (0.144667ms)
+✔ it/grazie: og:image assoluto sotto /og/ (0.117209ms)
+✔ it/grazie: JSON-LD valido (0.124292ms)
+✔ es/home: canonical e hreflang reciproci (0.366041ms)
+✔ es/home: og:image assoluto sotto /og/ (0.369167ms)
+✔ es/home: JSON-LD valido (0.418875ms)
+✔ es/home: nessuna parola italiana nel testo visibile (0.276958ms)
+✔ es/dona: canonical e hreflang reciproci (0.176042ms)
+✔ es/dona: og:image assoluto sotto /og/ (0.156041ms)
+✔ es/dona: JSON-LD valido (0.187291ms)
+✔ es/dona: nessuna parola italiana nel testo visibile (0.083792ms)
+✔ es/cuba: canonical e hreflang reciproci (0.161083ms)
+✔ es/cuba: og:image assoluto sotto /og/ (0.147333ms)
+✔ es/cuba: JSON-LD valido (0.146292ms)
+✔ es/cuba: nessuna parola italiana nel testo visibile (0.148958ms)
+✔ es/trasparenza: canonical e hreflang reciproci (0.202292ms)
+✔ es/trasparenza: og:image assoluto sotto /og/ (0.195167ms)
+✔ es/trasparenza: JSON-LD valido (0.201084ms)
+✔ es/trasparenza: nessuna parola italiana nel testo visibile (0.086459ms)
+✔ es/grazie: canonical e hreflang reciproci (0.110333ms)
+✔ es/grazie: og:image assoluto sotto /og/ (0.101292ms)
+✔ es/grazie: JSON-LD valido (0.165125ms)
+✔ es/grazie: nessuna parola italiana nel testo visibile (0.108958ms)
+✔ en/home: canonical e hreflang reciproci (0.296417ms)
+✔ en/home: og:image assoluto sotto /og/ (0.429458ms)
+✔ en/home: JSON-LD valido (0.32375ms)
+✔ en/home: nessuna parola italiana nel testo visibile (0.137708ms)
+✔ en/dona: canonical e hreflang reciproci (0.206042ms)
+✔ en/dona: og:image assoluto sotto /og/ (0.159833ms)
+✔ en/dona: JSON-LD valido (0.183459ms)
+✔ en/dona: nessuna parola italiana nel testo visibile (0.064666ms)
+✔ en/cuba: canonical e hreflang reciproci (0.167291ms)
+✔ en/cuba: og:image assoluto sotto /og/ (0.248875ms)
+✔ en/cuba: JSON-LD valido (0.167333ms)
+✔ en/cuba: nessuna parola italiana nel testo visibile (0.064417ms)
+✔ en/trasparenza: canonical e hreflang reciproci (0.233875ms)
+✔ en/trasparenza: og:image assoluto sotto /og/ (0.186584ms)
+✔ en/trasparenza: JSON-LD valido (0.237708ms)
+✔ en/trasparenza: nessuna parola italiana nel testo visibile (0.077875ms)
+✔ en/grazie: canonical e hreflang reciproci (0.118583ms)
+✔ en/grazie: og:image assoluto sotto /og/ (0.095541ms)
+✔ en/grazie: JSON-LD valido (0.0955ms)
+✔ en/grazie: nessuna parola italiana nel testo visibile (0.045958ms)
+✔ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.498333ms)
+✔ sitemap generata senza pagine grazie (0.060834ms)
+✔ robots, CNAME, llms.txt e 404 presenti (0.127458ms)
+✖ vecchi URL immagine pubblici (bd7b449) restano risolvibili (0.222ms)
+✔ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.08175ms)
+✔ llms.txt (it, es, en): niente Mollie, carta di credito, o sezioni "in arrivo" (0.180541ms)
+✔ llms.txt it: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.056416ms)
+✔ llms.txt it: sezione pagine presente (0.048042ms)
+✔ llms.txt es: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.03525ms)
+✔ llms.txt es: sezione pagine presente (0.050541ms)
+✔ llms.txt en: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.0495ms)
+✔ llms.txt en: sezione pagine presente (0.042209ms)
+ℹ tests 67
+ℹ suites 0
+ℹ pass 66
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 72.525166
+
+✖ failing tests:
+
+test at tests/seo.test.mjs:83:1
+✖ vecchi URL immagine pubblici (bd7b449) restano risolvibili (0.222ms)
+  AssertionError [ERR_ASSERTION]: manca dist/assets/img/hero/hero.jpg
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:84:10)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

@@ -1,0 +1,396 @@
+
+> build
+> astro build
+
+17:38:05 [types] Generated 30ms
+17:38:05 [build] output: "static"
+17:38:05 [build] mode: "static"
+17:38:05 [build] directory: /Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/
+17:38:05 [build] Collecting build info...
+17:38:05 [build] ✓ Completed in 50ms.
+17:38:05 [build] Building static entrypoints...
+17:38:05 [vite] ✓ built in 187ms
+17:38:05 [vite] ✓ built in 12ms
+17:38:05 [build] Rearranging server assets...
+
+ generating static routes 
+17:38:05   ├─ /en/index.html (+11ms) 
+17:38:05   ├─ /es/index.html (+2ms) 
+17:38:05   ├─ /index.html (+2ms) 
+17:38:06 ✓ Completed in 22ms.
+
+ generating optimized images 
+17:38:06   ▶ /_astro/01.BO5NMk_L_2q7oEA.webp (reused cache entry) (+1ms) (1/25)
+17:38:06   ▶ /_astro/chi-siamo.DwmIz_82_ZronoA.webp (reused cache entry) (+1ms) (2/25)
+17:38:06   ▶ /_astro/hero.C8L1AweW_SsQK9.webp (reused cache entry) (+1ms) (3/25)
+17:38:06   ▶ /_astro/03.BHjpqIV7_Zd8601.webp (reused cache entry) (+1ms) (4/25)
+17:38:06   ▶ /_astro/05.DYo-Mv9r_ZJezfn.webp (reused cache entry) (+1ms) (5/25)
+17:38:06   ▶ /_astro/04.WMnbi-wt_ZMNdkv.webp (reused cache entry) (+2ms) (6/25)
+17:38:06   ▶ /_astro/06.f6iXoN7M_1hduDk.webp (reused cache entry) (+2ms) (7/25)
+17:38:06   ▶ /_astro/02.-_nCQ0af_ZWxVBM.webp (reused cache entry) (+2ms) (8/25)
+17:38:06   ▶ /_astro/chi-siamo.DwmIz_82_1iBl7R.webp (reused cache entry) (+1ms) (9/25)
+17:38:06   ▶ /_astro/01.BO5NMk_L_Z18Lf9V.webp (reused cache entry) (+2ms) (10/25)
+17:38:06   ▶ /_astro/hero.C8L1AweW_Z1A3gw7.webp (reused cache entry) (+2ms) (11/25)
+17:38:06   ▶ /_astro/05.DYo-Mv9r_qATS3.webp (reused cache entry) (+2ms) (12/25)
+17:38:06   ▶ /_astro/03.BHjpqIV7_1l0aJw.webp (reused cache entry) (+2ms) (13/25)
+17:38:06   ▶ /_astro/04.WMnbi-wt_Z2gtJXn.webp (reused cache entry) (+2ms) (14/25)
+17:38:06   ▶ /_astro/06.f6iXoN7M_Zbs1Yx.webp (reused cache entry) (+2ms) (15/25)
+17:38:06   ▶ /_astro/01.BO5NMk_L_1sxhE8.webp (reused cache entry) (+2ms) (16/25)
+17:38:06   ▶ /_astro/chi-siamo.DwmIz_82_ZxPLzJ.webp (reused cache entry) (+2ms) (17/25)
+17:38:06   ▶ /_astro/02.-_nCQ0af_Z1jLHNJ.webp (reused cache entry) (+4ms) (18/25)
+17:38:06   ▶ /_astro/05.DYo-Mv9r_20annd.webp (reused cache entry) (+3ms) (19/25)
+17:38:06   ▶ /_astro/hero.C8L1AweW_1fXbJq.webp (reused cache entry) (+4ms) (20/25)
+17:38:06   ▶ /_astro/06.f6iXoN7M_1PKuSX.webp (reused cache entry) (+3ms) (21/25)
+17:38:06   ▶ /_astro/03.BHjpqIV7_Z1Gd4x0.webp (reused cache entry) (+4ms) (22/25)
+17:38:06   ▶ /_astro/04.WMnbi-wt_Z1FI6FJ.webp (reused cache entry) (+4ms) (23/25)
+17:38:06   ▶ /_astro/chi-siamo.DwmIz_82_Svifr.webp (reused cache entry) (+5ms) (24/25)
+17:38:06   ▶ /_astro/02.-_nCQ0af_Z1cx8Wu.webp (reused cache entry) (+4ms) (25/25)
+17:38:06 ✓ Completed in 10ms.
+
+17:38:06 [build] ✓ Completed in 249ms.
+17:38:06 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+17:38:06 [build] 3 page(s) built in 312ms
+17:38:06 [build] Complete!
+✔ it: home esiste con lang corretto e un h1 (5.333334ms)
+✖ it: dona esiste con lang corretto e un h1 (0.103334ms)
+✖ it: cuba esiste con lang corretto e un h1 (0.051333ms)
+✖ it: trasparenza esiste con lang corretto e un h1 (0.042709ms)
+✖ it: grazie esiste con lang corretto e un h1 (0.041166ms)
+✖ it: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.051959ms)
+✖ it: /dona/ ha 5×1000, IBAN e FAQ complete (0.038167ms)
+✖ it: pagina grazie noindex (0.037875ms)
+✖ it: trasparenza porta il contenuto vecchio (0.050375ms)
+✔ es: home esiste con lang corretto e un h1 (1.159125ms)
+✖ es: dona esiste con lang corretto e un h1 (0.177833ms)
+✖ es: cuba esiste con lang corretto e un h1 (0.060416ms)
+✖ es: trasparenza esiste con lang corretto e un h1 (0.0445ms)
+✖ es: grazie esiste con lang corretto e un h1 (0.041167ms)
+✖ es: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.029458ms)
+✖ es: /dona/ ha 5×1000, IBAN e FAQ complete (0.025875ms)
+✖ es: pagina grazie noindex (0.023833ms)
+✖ es: trasparenza porta il contenuto vecchio (0.038542ms)
+✔ en: home esiste con lang corretto e un h1 (0.707125ms)
+✖ en: dona esiste con lang corretto e un h1 (0.052416ms)
+✖ en: cuba esiste con lang corretto e un h1 (0.357375ms)
+✖ en: trasparenza esiste con lang corretto e un h1 (0.064917ms)
+✖ en: grazie esiste con lang corretto e un h1 (0.036667ms)
+✖ en: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.030167ms)
+✖ en: /dona/ ha 5×1000, IBAN e FAQ complete (0.030709ms)
+✖ en: pagina grazie noindex (0.032291ms)
+✖ en: trasparenza porta il contenuto vecchio (0.027125ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 3
+ℹ fail 24
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 83.743584
+
+✖ failing tests:
+
+test at tests/pages.test.mjs:7:5
+✖ it: dona esiste con lang corretto e un h1 (0.103334ms)
+  Error: pagina mancante nel dist: /dona/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+
+test at tests/pages.test.mjs:7:5
+✖ it: cuba esiste con lang corretto e un h1 (0.051333ms)
+  Error: pagina mancante nel dist: /cuba/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ it: trasparenza esiste con lang corretto e un h1 (0.042709ms)
+  Error: pagina mancante nel dist: /trasparenza/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ it: grazie esiste con lang corretto e un h1 (0.041166ms)
+  Error: pagina mancante nel dist: /grazie/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:14:3
+✖ it: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.051959ms)
+  Error: pagina mancante nel dist: /cuba/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:15:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:21:3
+✖ it: /dona/ ha 5×1000, IBAN e FAQ complete (0.038167ms)
+  Error: pagina mancante nel dist: /dona/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:22:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:28:3
+✖ it: pagina grazie noindex (0.037875ms)
+  Error: pagina mancante nel dist: /grazie/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:29:18)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:32:3
+✖ it: trasparenza porta il contenuto vecchio (0.050375ms)
+  Error: pagina mancante nel dist: /trasparenza/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:33:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ es: dona esiste con lang corretto e un h1 (0.177833ms)
+  Error: pagina mancante nel dist: /es/dona/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ es: cuba esiste con lang corretto e un h1 (0.060416ms)
+  Error: pagina mancante nel dist: /es/cuba/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ es: trasparenza esiste con lang corretto e un h1 (0.0445ms)
+  Error: pagina mancante nel dist: /es/transparencia/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ es: grazie esiste con lang corretto e un h1 (0.041167ms)
+  Error: pagina mancante nel dist: /es/gracias/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:14:3
+✖ es: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.029458ms)
+  Error: pagina mancante nel dist: /es/cuba/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:15:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:21:3
+✖ es: /dona/ ha 5×1000, IBAN e FAQ complete (0.025875ms)
+  Error: pagina mancante nel dist: /es/dona/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:22:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:28:3
+✖ es: pagina grazie noindex (0.023833ms)
+  Error: pagina mancante nel dist: /es/gracias/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:29:18)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:32:3
+✖ es: trasparenza porta il contenuto vecchio (0.038542ms)
+  Error: pagina mancante nel dist: /es/transparencia/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:33:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ en: dona esiste con lang corretto e un h1 (0.052416ms)
+  Error: pagina mancante nel dist: /en/donate/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ en: cuba esiste con lang corretto e un h1 (0.357375ms)
+  Error: pagina mancante nel dist: /en/cuba/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ en: trasparenza esiste con lang corretto e un h1 (0.064917ms)
+  Error: pagina mancante nel dist: /en/transparency/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:7:5
+✖ en: grazie esiste con lang corretto e un h1 (0.036667ms)
+  Error: pagina mancante nel dist: /en/thank-you/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:8:17)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:14:3
+✖ en: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.030167ms)
+  Error: pagina mancante nel dist: /en/cuba/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:15:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:21:3
+✖ en: /dona/ ha 5×1000, IBAN e FAQ complete (0.030709ms)
+  Error: pagina mancante nel dist: /en/donate/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:22:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:28:3
+✖ en: pagina grazie noindex (0.032291ms)
+  Error: pagina mancante nel dist: /en/thank-you/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:29:18)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)
+
+test at tests/pages.test.mjs:32:3
+✖ en: trasparenza porta il contenuto vecchio (0.027125ms)
+  Error: pagina mancante nel dist: /en/transparency/
+      at html (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:19:29)
+      at page (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/lib/dist.mjs:23:16)
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/pages.test.mjs:33:15)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7)

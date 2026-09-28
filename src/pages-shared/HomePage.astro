@@ -1,0 +1,150 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Block from '../components/Block.astro';
+import Stat from '../components/Stat.astro';
+import DonateBlock from '../components/DonateBlock.astro';
+import Faq from '../components/Faq.astro';
+import Newsletter from '../components/Newsletter.astro';
+import { t, routes, type Lang } from '../i18n';
+import hero from '../assets/photos/hero.jpg';
+import about from '../assets/photos/chi-siamo.jpg';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const d = t(lang);
+const gallery = import.meta.glob<{ default: ImageMetadata }>('../assets/photos/galleria/0[1-6].webp', { eager: true });
+// Ordina per chiave (nome file) prima di mappare: l'ordine di un oggetto non è garantito,
+// e known.gallery[i] deve sempre corrispondere al file 0{i+1}.webp
+const galleryImgs = Object.entries(gallery)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([, m]) => m.default);
+---
+<Base lang={lang} pageKey="home" title={d.meta.homeTitle} description={d.meta.homeDescription}>
+  <Block id="hero" color="blue" labelledby="hero-title">
+    <p class="eyebrow">{d.hero.eyebrow}</p>
+    <h1 id="hero-title" class="display">{d.hero.title}</h1>
+    <p class="lead">{d.hero.subtitle}</p>
+    <div class="btns">
+      <a class="btn btn--solid-orange" href={d.hero.ctaPrimaryHref}>{d.hero.ctaPrimary}</a>
+      <a class="btn" href={d.hero.ctaSecondaryHref}>{d.hero.ctaSecondary}</a>
+    </div>
+    <Image src={hero} alt={d.hero.imgAlt} widths={[640, 1024, 1600]} sizes="(min-width: 1320px) 1320px, 100vw" class="hero-img" loading="eager" fetchpriority="high" />
+  </Block>
+
+  <section id="perche-educazione" aria-labelledby="numbers-title">
+    {lang === 'es' && <span id="por-que-educacion" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="why-education" aria-hidden="true"></span>}
+    <div class="block block--cream"><div class="inner"><h2 id="numbers-title">{d.numbers.title}</h2></div></div>
+    <div class="stats-row">
+      {d.numbers.items.map((it, i) => (
+        <div class={`block ${i === 1 ? 'block--pink' : 'block--orange'}`}>
+          <Stat value={it.value} text={it.text} source={it.source} url={it.url} sourceLabel={d.ui.source} newTab={d.ui.newTab} />
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <Block id="progetti" color="cream" labelledby="projects-title">
+    {lang === 'es' && <span id="proyectos" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="projects" aria-hidden="true"></span>}
+    <!-- La conclusione dei numeri apre i progetti: evita due blocchi crema consecutivi -->
+    <p class="lead outro">{d.numbers.outro}</p>
+    <h2 id="projects-title">{d.projects.title}</h2>
+    <div class="grid-3">
+      {d.projects.items.map((p) => (
+        <article>
+          <p class="eyebrow">{p.name}</p>
+          <h3>{p.label}</h3>
+          <p>{p.text}</p>
+        </article>
+      ))}
+    </div>
+  </Block>
+
+  <Block id="cuba" color="blue" labelledby="cuba-title">
+    <p class="eyebrow accent">{d.cuba.eyebrow}</p>
+    <h2 id="cuba-title">{d.cuba.title}</h2>
+    <p class="lead">{d.cuba.text}</p>
+    <div class="btns">
+      <a class="btn btn--solid-orange" href={routes[lang].cuba}>{d.cuba.ctaBloqueo}</a>
+      <a class="btn" href="#dona">{d.cuba.ctaDona}</a>
+    </div>
+  </Block>
+
+  <Block id="impatto" color="ink" labelledby="impact-title">
+    {lang === 'es' && <span id="impacto" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="impact" aria-hidden="true"></span>}
+    <h2 id="impact-title">{d.impact.title}</h2>
+    <div class="grid-4">
+      {d.impact.items.map((it) => (
+        <div class="impact"><p class="impact-value accent">{it.value}</p><p>{it.label}</p></div>
+      ))}
+    </div>
+  </Block>
+
+  <Block id="chi-siamo" color="cream" labelledby="about-title">
+    {lang === 'es' && <span id="quienes-somos" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="about" aria-hidden="true"></span>}
+    <div class="about">
+      <div>
+        <h2 id="about-title">{d.about.title}</h2>
+        <p class="prose">{d.about.text}</p>
+        <p class="small">{d.about.board}</p>
+      </div>
+      <Image src={about} alt={d.about.imgAlt} widths={[480, 800, 1200]} sizes="(min-width: 960px) 50vw, 100vw" loading="lazy" />
+    </div>
+  </Block>
+
+  <Block color="orange" labelledby="donate-title">
+    {lang === 'es' && <span id="cinco-x-mil" aria-hidden="true"></span>}
+    {lang === 'en' && <span id="five-x-thousand" aria-hidden="true"></span>}
+    <DonateBlock lang={lang} />
+  </Block>
+
+  <Block id="chi-ci-conosce" color="cream" labelledby="known-title">
+    <h2 id="known-title">{d.known.title}</h2>
+    <h3>{d.known.partnersTitle}</h3>
+    <ul class="partners">{d.known.partners.map((p) => <li><strong>{p.name}</strong> <span>{p.desc}</span></li>)}</ul>
+    <h3>{d.known.pressTitle}</h3>
+    <ul class="press">{d.known.press.map((p) => (
+      <li><a href={p.url} target="_blank" rel="noopener"><span class="eyebrow">{p.source} · {p.date}</span><span class="h3">{p.title}</span><span class="visually-hidden"> {d.ui.newTab}</span></a></li>
+    ))}</ul>
+    <div class="gallery">
+      {galleryImgs.map((img, i) => (
+        <figure><Image src={img} alt={d.known.gallery[i]} widths={[400, 800]} sizes="(min-width: 960px) 33vw, 50vw" loading="lazy" /><figcaption>{d.known.gallery[i]}</figcaption></figure>
+      ))}
+    </div>
+  </Block>
+
+  <Block id="faq" color="blue" labelledby="faq-title">
+    <Faq lang={lang} limit={d.faq.homeCount} />
+  </Block>
+
+  <Block id="newsletter" color="pink" labelledby="newsletter-title">
+    {/* L'id inglese "newsletter" coincide già con quello storico EN: nessun alias serve lì */}
+    {lang === 'es' && <span id="boletin" aria-hidden="true"></span>}
+    <Newsletter lang={lang} />
+  </Block>
+</Base>
+<style>
+  .hero-img { margin-top: 64px; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+  .stats-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+  /* Fix round 1: colonne più larghe (2×2 su desktop, 1 su mobile) invece di
+     rimpicciolire il numero — i dati importanti restano in grande (var(--fs-stat)). */
+  .grid-4 { display: grid; gap: 40px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 520px), 1fr)); }
+  .impact-value { font-size: var(--fs-stat); font-weight: 800; line-height: .9; letter-spacing: -.045em; margin: 0 0 12px; overflow-wrap: anywhere; }
+  .about { display: grid; gap: 48px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); align-items: center; }
+  .small { font-size: var(--fs-small); }
+  .partners, .press { list-style: none; padding: 0; margin: 0 0 56px; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+  .partners span { display: block; font-size: var(--fs-small); }
+  .press a { display: grid; gap: 8px; text-decoration: none; border-top: 3px solid var(--ink); padding-top: 16px; }
+  /* 6 foto: 1, 2 o 3 colonne, mai righe con foto orfane */
+  .gallery { display: grid; gap: 8px; grid-template-columns: 1fr; }
+  @media (min-width: 600px) { .gallery { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 960px) { .gallery { grid-template-columns: repeat(3, 1fr); } }
+  .outro { margin: 0 0 clamp(48px, 6vw, 96px); }
+  .gallery figure { margin: 0; }
+  .gallery img { aspect-ratio: 4 / 3; object-fit: cover; width: 100%; }
+  .gallery figcaption { font-size: var(--fs-small); padding: 8px 0; }
+</style>

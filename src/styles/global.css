@@ -1,0 +1,42 @@
+@import '@fontsource-variable/plus-jakarta-sans';
+@import './tokens.css';
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; font-family: var(--font); font-size: var(--fs-body); line-height: 1.6; color: var(--ink); background: var(--cream); overflow-x: clip; }
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid currentColor; outline-offset: 3px; }
+/* L'header è sticky: senza margine di scorrimento copre il target di ogni ancora #id */
+[id] { scroll-margin-top: 88px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; margin: -1px; padding: 0; border: 0; }
+
+/* Blocchi a tutta larghezza */
+.block { padding: var(--block-pad) var(--gutter); }
+.block > .inner { max-width: var(--max); margin: 0 auto; }
+.block--blue { background: var(--blue); color: var(--white); }
+.block--orange { background: var(--orange); color: var(--ink); }
+.block--pink { background: var(--pink); color: var(--ink); }
+.block--cream { background: var(--cream); color: var(--ink); }
+.block--ink { background: var(--ink); color: var(--white); }
+
+.eyebrow { font-size: var(--fs-small); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 24px; }
+.display { font-size: var(--fs-display); font-weight: 800; line-height: .95; letter-spacing: -.035em; margin: 0; overflow-wrap: break-word; }
+h2, .h2 { font-size: var(--fs-h2); font-weight: 800; line-height: 1; letter-spacing: -.03em; margin: 0 0 32px; overflow-wrap: break-word; }
+h3, .h3 { font-size: var(--fs-h3); font-weight: 700; line-height: 1.2; margin: 0 0 12px; }
+.lead { font-size: clamp(20px, 1vw + 16px, 26px); max-width: 38ch; }
+.prose { max-width: 62ch; }
+.accent { color: var(--accent); }
+
+/* Bottoni a pillola */
+.btn { display: inline-flex; align-items: center; min-height: 48px; padding: 12px 28px; border-radius: 999px; font-weight: 700; text-decoration: none; border: 2px solid currentColor; }
+.btn--solid-orange { background: var(--orange); color: var(--ink); border-color: var(--orange); }
+.btn--solid-ink { background: var(--ink); color: var(--white); border-color: var(--ink); }
+.btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
+
+.grid-3 { display: grid; gap: 40px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .stat-value { animation: rise .6s ease-out both; }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+}

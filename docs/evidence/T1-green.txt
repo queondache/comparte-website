@@ -1,0 +1,42 @@
+
+> test
+> astro build && node --test tests/*.test.mjs
+
+09:47:46 [types] Generated 63ms
+09:47:46 [build] output: "static"
+09:47:46 [build] mode: "static"
+09:47:46 [build] directory: /Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/
+09:47:46 [build] Collecting build info...
+09:47:46 [build] ✓ Completed in 79ms.
+09:47:46 [build] Building static entrypoints...
+09:47:47 [vite] ✓ built in 448ms
+09:47:47 [vite] ✓ built in 14ms
+09:47:47 [build] Rearranging server assets...
+
+ generating static routes 
+09:47:47   ├─ /index.html (+5ms) 
+09:47:47 ✓ Completed in 12ms.
+
+09:47:47 [build] ✓ Completed in 490ms.
+09:47:47 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+09:47:47 [build] 1 page(s) built in 575ms
+09:47:47 [build] Complete!
+✔ home IT esiste con lang="it" e titolo (7.901666ms)
+✔ nessuno script o font esterno nella home IT (0.210375ms)
+✔ nessuna "Onlus" nel testo visibile (0.255083ms)
+✔ contrasto ink su orange ≥ 4.5 (0.459625ms)
+✔ contrasto ink su pink ≥ 4.5 (0.079875ms)
+✔ contrasto ink su cream ≥ 4.5 (0.069541ms)
+✔ contrasto white su blue ≥ 4.5 (0.084375ms)
+✔ contrasto accent su blue ≥ 4.5 (0.073792ms)
+✔ contrasto white su ink ≥ 4.5 (0.036208ms)
+✔ contrasto accent su ink ≥ 4.5 (0.036083ms)
+ℹ tests 10
+ℹ suites 0
+ℹ pass 10
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 64.921958
+EXIT:0

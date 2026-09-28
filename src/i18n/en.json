@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "homeTitle": "Comparte — Education changes everything",
+    "homeDescription": "Since 2018 we have trained teachers, young people and communities in Petén, Guatemala. In Havana we bring glasses and medicines. Donate by bank transfer.",
+    "donaTitle": "Donate to Comparte — Bank transfer",
+    "donaDescription": "How to support Comparte: bank transfer to Banca Etica and, if you pay taxes in Italy, the 5×1000.",
+    "cubaTitle": "Comparte in Cuba — Glasses, medicines and educational materials in Havana",
+    "cubaDescription": "For more than 4 years we have supported the Belén home for the elderly and primary schools in Havana with prescription glasses, medicines and educational materials.",
+    "trasparenzaTitle": "Transparency — Comparte",
+    "trasparenzaDescription": "Financial statements, 5×1000 reports and legal details of Comparte.",
+    "grazieTitle": "Thank you — Comparte",
+    "grazieDescription": "Thank you for supporting Comparte."
+  },
+  "ui": {
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "langLabel": "Language",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyFallback": "Select and copy",
+    "newTab": "(opens in a new tab)",
+    "source": "Source"
+  },
+  "nav": { "progetti": "What we do", "cuba": "Cuba", "chiSiamo": "About us", "trasparenza": "Transparency", "dona": "Donate" },
+  "hero": {
+    "eyebrow": "In Petén, Guatemala, since 2018",
+    "title": "Education changes everything",
+    "subtitle": "We train teachers, young people and communities in Petén. And in Havana we bring glasses and medicines to people who need them.",
+    "ctaPrimary": "Donate now",
+    "ctaPrimaryHref": "#dona",
+    "ctaSecondary": "What we do",
+    "ctaSecondaryHref": "#progetti",
+    "imgAlt": "Students at the Centro Universitario de Petén, Guatemala"
+  },
+  "numbers": {
+    "title": "In Petén, an education is still hard-won",
+    "items": [
+      { "value": "49%", "text": "of young people in Guatemala finish lower secondary school.", "source": "World Bank, 2024", "url": "https://data.worldbank.org/indicator/SE.SEC.CMPT.LO.ZS?locations=GT" },
+      { "value": "82%", "text": "of adults can read and write. Almost one in five cannot.", "source": "World Bank, 2024", "url": "https://data.worldbank.org/indicator/SE.ADT.LITR.ZS?locations=GT" },
+      { "value": "9.7", "text": "years of school a child can expect.", "source": "World Bank, 2020", "url": "https://data.worldbank.org/indicator/HD.HCI.EYRS?locations=GT" }
+    ],
+    "outro": "That is why we work alongside people who teach, study and farm the land."
+  },
+  "projects": {
+    "title": "What we do in Petén",
+    "items": [
+      { "label": "Teachers", "name": "Comparte Universidad", "text": "Online seminars with European lecturers for students and teachers at CUDEP, the most remote campus of Guatemala's public university. Since 2018, more than 1,500 people trained." },
+      { "label": "Young people and climate", "name": "Comparte Educación", "text": "Five modules on the climate crisis for girls and boys aged 13 to 17. The first edition, in Nuevo Horizonte with INAB and MARN, involved 27 students." },
+      { "label": "Communities", "name": "Comparte Comunidad", "text": "Agricultural training in the communities where zeroCO2 plants trees. Soil, harvests and practices that help every day." }
+    ]
+  },
+  "cuba": {
+    "eyebrow": "Havana, for more than 4 years",
+    "title": "Cuba: glasses, medicines and educational materials",
+    "text": "In Havana we support the Belén home for the elderly and primary schools in the city and the province. We bring prescription glasses, medicines and educational materials where the embargo makes them hard to find.",
+    "ctaBloqueo": "El Bloqueo",
+    "ctaDona": "Donate now"
+  },
+  "impact": {
+    "title": "What we have done so far",
+    "items": [
+      { "value": "1,500+", "label": "people trained" },
+      { "value": "46+", "label": "rural communities reached" },
+      { "value": "27", "label": "students in the climate programme" },
+      { "value": "4+", "label": "years of aid to Cuba" }
+    ]
+  },
+  "about": {
+    "title": "Born over lunch, in 2018",
+    "text": "A group of young Italians and Guatemalans, sitting at the table, asked themselves what the communities of Petén really lacked. The answer: good education and practical tools. That is how Comparte began; in Spanish the name means \"share\". We started with cinema: between 2018 and 2020 Comparte Cinema screenings, with Cuba's ICAIC, reached 7 rural communities.",
+    "board": "Andrea Pesce, president · Irene Culcasi, vice president · Virgilio Galicia Gregorio, liaison in Guatemala",
+    "imgAlt": "The Comparte team in Guatemala"
+  },
+  "donate": {
+    "title": "How to donate",
+    "fiveTitle": "5×1000",
+    "fiveText": "If you pay taxes in Italy, sign the box for Third Sector organisations in your tax return and write our tax code. It costs you nothing.",
+    "cfLabel": "Tax code",
+    "bankTitle": "Bank transfer",
+    "ibanLabel": "IBAN",
+    "holderLabel": "Account holder",
+    "reasonLabel": "Reference",
+    "reason": "Donazione liberale",
+    "monthly": "To give every month, set up a standing order with your bank.",
+    "note": "Donations fund all our work, in Petén and in Cuba. If you pay taxes in Italy, they are tax-deductible under the rules for Third Sector organisations. Keep your transfer receipt.",
+    "allWays": "All the ways to donate",
+    "secondaryIntro": "Do you pay taxes in Italy?"
+  },
+  "known": {
+    "title": "Who knows us",
+    "partnersTitle": "Who we work with",
+    "pressTitle": "In the press",
+    "partners": [
+      { "name": "USAC", "desc": "Universidad de San Carlos de Guatemala" },
+      { "name": "LUMSA", "desc": "LUMSA University, Rome" },
+      { "name": "Scholas", "desc": "Pontifical Foundation Scholas Occurrentes" },
+      { "name": "INAB", "desc": "National Forest Institute, Guatemala" },
+      { "name": "MARN", "desc": "Ministry of Environment, Guatemala" },
+      { "name": "zeroCO2", "desc": "Italian-Guatemalan benefit company" },
+      { "name": "1Caffè", "desc": "Italian fundraising platform" },
+      { "name": "European Schoolnet", "desc": "Brussels" }
+    ],
+    "press": [
+      { "source": "Millionaire", "title": "Article on fruit trees donated to communities (in Italian)", "date": "February 2021", "url": "https://www.millionaire.it/prendiamo-alberi-da-frutto-e-li-doniamo-alle-popolazioni/" },
+      { "source": "University of Bologna", "title": "Interview with Andrea Pesce, founder of zeroCO2 and Comparte (in Italian)", "date": "Alumni Stories", "url": "https://site.unibo.it/alumni-association/it/alumni-stories/intervista-con-andrea-pesce" },
+      { "source": "Tempo Stretto", "title": "A thread linking Italy and Guatemala (in Italian)", "date": "January 2019", "url": "https://www.tempostretto.it/news/336348.html" },
+      { "source": "zeroCO2 Magazine", "title": "Reforestation and education: a month of Lime for Comparte (in Italian)", "date": "August 2023", "url": "https://zeroco2.eco/it/magazine/persone/lime-per-comparte/" }
+    ],
+    "gallery": [
+      "Nuevo Horizonte community, Petén",
+      "Agricultural training in rural communities",
+      "Nuevo Horizonte, where it all began",
+      "The lunch where Comparte was born, 2018",
+      "USAC graduation, Comparte Universidad",
+      "Seminar at the Centro Universitario de Petén"
+    ]
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      { "q": "How can I donate?", "a": "By bank transfer to Banca Etica, IBAN IT27J0501803200000016738783, account holder Comparte. Keep your receipt." },
+      { "q": "What is the 5×1000?", "a": "If you pay taxes in Italy, you can give your 5×1000 to Comparte in your tax return with the tax code 97977810585. It costs you nothing and does not reduce your refund." },
+      { "q": "What do you do in Cuba?", "a": "For more than 4 years we have brought prescription glasses, medicines and educational materials to the Belén home for the elderly and to primary schools in Havana and the province." },
+      { "q": "Where does the 5×1000 go?", "a": "To our active projects in Petén: university training with USAC, climate education in Nuevo Horizonte and agricultural training with rural communities. The report is published every year on the Transparency page." },
+      { "q": "What is Comparte?", "a": "An association founded in 2018 between Rome and Petén. We train teachers and students, bring climate education to schools and agricultural training to rural communities in Guatemala." },
+      { "q": "Is Comparte linked to zeroCO2?", "a": "Yes. Andrea Pesce founded both. zeroCO2 plants trees in rural communities in Petén, and Comparte brings training and education to the same communities. They are independent and work together on the ground." }
+    ],
+    "homeCount": 3
+  },
+  "newsletter": {
+    "title": "Stay in touch",
+    "text": "A few emails a year: what we do, where the money goes and when we need you most.",
+    "emailLabel": "Your email",
+    "consent": "I agree to receive the newsletter and have read the privacy policy.",
+    "submit": "Subscribe",
+    "fallback": "In the meantime, follow us on Instagram."
+  },
+  "footer": {
+    "tagline": "Education in Petén, health in Havana.",
+    "contacts": "Contact",
+    "legal": "Association · Tax code 97977810585 · VAT no. 16847801004",
+    "bloqueoNote": "El Bloqueo, a project we support"
+  },
+  "donaPage": {
+    "title": "How to donate",
+    "intro": "Every euro goes to Petén and Havana. Choose the way that suits you.",
+    "fiveSteps": [
+      "Open your Italian tax return (730, Redditi PF or CU).",
+      "Sign the box for Third Sector organisations listed in the RUNTS.",
+      "Write our tax code under your signature."
+    ],
+    "report": "How we use the 5×1000"
+  },
+  "cubaPage": {
+    "title": "Glasses, medicines and educational materials in Havana",
+    "whoTitle": "Who we help",
+    "who": [
+      "The Belén home for the elderly, in Havana.",
+      "Primary schools in the city and the province."
+    ],
+    "whatTitle": "What we bring",
+    "what": "Prescription glasses, medicines and educational materials. For more than 4 years.",
+    "whyTitle": "Why it matters",
+    "why": "The US embargo makes it hard to find medicines and everyday supplies in Cuba.",
+    "bloqueoText": "El Bloqueo, a project we support, explains it with verifiable sources.",
+    "bloqueoCta": "Read El Bloqueo",
+    "donateTitle": "Donate for Cuba and Petén",
+    "photoAlt": "Delivery of medicines and supplies in Havana"
+  },
+  "thanks": {
+    "title": "Thank you",
+    "text": "Your support reaches Petén and Havana. If you signed up for the newsletter, check your inbox to confirm.",
+    "back": "Back to home",
+    "transparency": "See how we use the money"
+  }
+}

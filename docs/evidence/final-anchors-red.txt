@@ -1,0 +1,96 @@
+✔ it/home: canonical e hreflang reciproci (8.674083ms)
+✔ it/home: og:image assoluto sotto /og/ (0.705625ms)
+✔ it/home: JSON-LD valido (1.111041ms)
+✔ it/dona: canonical e hreflang reciproci (0.326792ms)
+✔ it/dona: og:image assoluto sotto /og/ (0.229375ms)
+✔ it/dona: JSON-LD valido (0.244875ms)
+✔ it/cuba: canonical e hreflang reciproci (0.274084ms)
+✔ it/cuba: og:image assoluto sotto /og/ (0.230291ms)
+✔ it/cuba: JSON-LD valido (0.26725ms)
+✔ it/trasparenza: canonical e hreflang reciproci (0.336125ms)
+✔ it/trasparenza: og:image assoluto sotto /og/ (0.47575ms)
+✔ it/trasparenza: JSON-LD valido (0.244959ms)
+✔ it/grazie: canonical e hreflang reciproci (0.16025ms)
+✔ it/grazie: og:image assoluto sotto /og/ (0.143791ms)
+✔ it/grazie: JSON-LD valido (0.136542ms)
+✔ es/home: canonical e hreflang reciproci (0.380875ms)
+✔ es/home: og:image assoluto sotto /og/ (0.392959ms)
+✔ es/home: JSON-LD valido (0.424459ms)
+✔ es/home: nessuna parola italiana nel testo visibile (0.272667ms)
+✔ es/dona: canonical e hreflang reciproci (0.199125ms)
+✔ es/dona: og:image assoluto sotto /og/ (0.155459ms)
+✔ es/dona: JSON-LD valido (0.173041ms)
+✔ es/dona: nessuna parola italiana nel testo visibile (0.077291ms)
+✔ es/cuba: canonical e hreflang reciproci (0.168125ms)
+✔ es/cuba: og:image assoluto sotto /og/ (0.150083ms)
+✔ es/cuba: JSON-LD valido (0.149542ms)
+✔ es/cuba: nessuna parola italiana nel testo visibile (0.178666ms)
+✔ es/trasparenza: canonical e hreflang reciproci (0.232875ms)
+✔ es/trasparenza: og:image assoluto sotto /og/ (0.209042ms)
+✔ es/trasparenza: JSON-LD valido (0.194292ms)
+✔ es/trasparenza: nessuna parola italiana nel testo visibile (0.07225ms)
+✔ es/grazie: canonical e hreflang reciproci (0.117666ms)
+✔ es/grazie: og:image assoluto sotto /og/ (0.098125ms)
+✔ es/grazie: JSON-LD valido (0.099375ms)
+✔ es/grazie: nessuna parola italiana nel testo visibile (0.052208ms)
+✔ en/home: canonical e hreflang reciproci (0.352708ms)
+✔ en/home: og:image assoluto sotto /og/ (0.591542ms)
+✔ en/home: JSON-LD valido (0.45275ms)
+✔ en/home: nessuna parola italiana nel testo visibile (0.181625ms)
+✔ en/dona: canonical e hreflang reciproci (0.221417ms)
+✔ en/dona: og:image assoluto sotto /og/ (0.162583ms)
+✔ en/dona: JSON-LD valido (0.200083ms)
+✔ en/dona: nessuna parola italiana nel testo visibile (0.066333ms)
+✔ en/cuba: canonical e hreflang reciproci (0.199458ms)
+✔ en/cuba: og:image assoluto sotto /og/ (0.275209ms)
+✔ en/cuba: JSON-LD valido (0.16625ms)
+✔ en/cuba: nessuna parola italiana nel testo visibile (0.066666ms)
+✔ en/trasparenza: canonical e hreflang reciproci (0.232125ms)
+✔ en/trasparenza: og:image assoluto sotto /og/ (0.274291ms)
+✔ en/trasparenza: JSON-LD valido (0.334042ms)
+✔ en/trasparenza: nessuna parola italiana nel testo visibile (0.092541ms)
+✔ en/grazie: canonical e hreflang reciproci (0.120042ms)
+✔ en/grazie: og:image assoluto sotto /og/ (0.104875ms)
+✔ en/grazie: JSON-LD valido (0.098916ms)
+✔ en/grazie: nessuna parola italiana nel testo visibile (0.045208ms)
+✔ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.66ms)
+✔ sitemap generata senza pagine grazie (0.130834ms)
+✔ robots, CNAME, llms.txt e 404 presenti (0.165375ms)
+✖ vecchi ancoraggi ES/EN (bd7b449) restano risolvibili nelle nuove home (0.950833ms)
+✔ vecchi URL immagine pubblici (bd7b449) restano risolvibili (0.066083ms)
+✔ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.119792ms)
+✔ llms.txt (it, es, en): niente Mollie, carta di credito, o sezioni "in arrivo" (0.185541ms)
+✔ llms.txt it: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.075334ms)
+✔ llms.txt it: sezione pagine presente (0.073083ms)
+✔ llms.txt es: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.034166ms)
+✔ llms.txt es: sezione pagine presente (0.04375ms)
+✔ llms.txt en: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.048042ms)
+✔ llms.txt en: sezione pagine presente (0.057166ms)
+ℹ tests 68
+ℹ suites 0
+ℹ pass 67
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 74.97575
+
+✖ failing tests:
+
+test at tests/seo.test.mjs:83:1
+✖ vecchi ancoraggi ES/EN (bd7b449) restano risolvibili nelle nuove home (0.950833ms)
+  AssertionError [ERR_ASSERTION]: manca #cinco-x-mil nella home es
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:90:34)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: null,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }

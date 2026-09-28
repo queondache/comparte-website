@@ -1,0 +1,15 @@
+OK / 375
+OK /dona/ 375
+OK /cuba/ 375
+OK /trasparenza/ 375
+OK /grazie/ 375
+OK /es/ 375
+OK /es/dona/ 375
+OK /es/cuba/ 375
+OK /es/transparencia/ 375
+OK /es/gracias/ 375
+OK /en/ 375
+OK /en/donate/ 375
+OK /en/cuba/ 375
+OK /en/transparency/ 375
+OK /en/thank-you/ 375

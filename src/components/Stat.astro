@@ -1,0 +1,16 @@
+---
+interface Props { value: string; text: string; source?: string; url?: string; sourceLabel?: string; newTab?: string }
+const { value, text, source, url, sourceLabel, newTab } = Astro.props;
+---
+<div class="stat">
+  <p class="stat-value">{value}</p>
+  <p class="stat-text">{text}</p>
+  {source && url && (
+    <p class="stat-source">{sourceLabel}: <a href={url} target="_blank" rel="noopener">{source}<span class="visually-hidden"> {newTab}</span></a></p>
+  )}
+</div>
+<style>
+  .stat-value { font-size: var(--fs-stat); font-weight: 800; line-height: .9; letter-spacing: -.045em; margin: 0; }
+  .stat-text { font-size: clamp(18px, .6vw + 16px, 22px); font-weight: 500; margin: 16px 0 8px; max-width: 26ch; }
+  .stat-source { font-size: var(--fs-small); margin: 0; }
+</style>

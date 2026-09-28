@@ -1,0 +1,220 @@
+
+> test
+> astro build && node --test tests/*.test.mjs
+
+18:23:55 [types] Generated 17ms
+18:23:55 [build] output: "static"
+18:23:55 [build] mode: "static"
+18:23:55 [build] directory: /Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/dist/
+18:23:55 [build] Collecting build info...
+18:23:55 [build] ✓ Completed in 36ms.
+18:23:55 [build] Building static entrypoints...
+18:23:55 [vite] ✓ built in 98ms
+18:23:55 [vite] ✓ built in 10ms
+18:23:55 [build] Rearranging server assets...
+
+ generating static routes 
+18:23:55   ├─ /404.html (+5ms) 
+18:23:55   ├─ /cuba/index.html (+5ms) 
+18:23:55   ├─ /dona/index.html (+2ms) 
+18:23:55   ├─ /en/cuba/index.html (+1ms) 
+18:23:55   ├─ /en/donate/index.html (+1ms) 
+18:23:55   ├─ /en/thank-you/index.html (+1ms) 
+18:23:55   ├─ /en/transparency/index.html (+1ms) 
+18:23:55   ├─ /en/index.html (+3ms) 
+18:23:55   ├─ /es/cuba/index.html (+1ms) 
+18:23:55   ├─ /es/dona/index.html (+1ms) 
+18:23:55   ├─ /es/gracias/index.html (+1ms) 
+18:23:55   ├─ /es/transparencia/index.html (+1ms) 
+18:23:55   ├─ /es/index.html (+3ms) 
+18:23:55   ├─ /grazie/index.html (+1ms) 
+18:23:55   ├─ /trasparenza/index.html (+1ms) 
+18:23:55   ├─ /index.html (+2ms) 
+18:23:55 ✓ Completed in 35ms.
+
+ generating optimized images 
+18:23:55   ▶ /_astro/03.BHjpqIV7_Zd8601.webp (reused cache entry) (+1ms) (1/28)
+18:23:55   ▶ /_astro/chi-siamo.DwmIz_82_ZronoA.webp (reused cache entry) (+1ms) (2/28)
+18:23:55   ▶ /_astro/hero.C8L1AweW_SsQK9.webp (reused cache entry) (+1ms) (3/28)
+18:23:55   ▶ /_astro/cuba-consegna.DpxU7ZX5_Z1bWNYa.webp (reused cache entry) (+1ms) (4/28)
+18:23:55   ▶ /_astro/02.-_nCQ0af_ZWxVBM.webp (reused cache entry) (+1ms) (5/28)
+18:23:55   ▶ /_astro/05.DYo-Mv9r_ZJezfn.webp (reused cache entry) (+1ms) (6/28)
+18:23:55   ▶ /_astro/01.BO5NMk_L_2q7oEA.webp (reused cache entry) (+1ms) (7/28)
+18:23:55   ▶ /_astro/06.f6iXoN7M_1hduDk.webp (reused cache entry) (+1ms) (8/28)
+18:23:55   ▶ /_astro/04.WMnbi-wt_ZMNdkv.webp (reused cache entry) (+1ms) (9/28)
+18:23:55   ▶ /_astro/chi-siamo.DwmIz_82_1iBl7R.webp (reused cache entry) (+1ms) (10/28)
+18:23:55   ▶ /_astro/03.BHjpqIV7_1l0aJw.webp (reused cache entry) (+1ms) (11/28)
+18:23:55   ▶ /_astro/hero.C8L1AweW_Z1A3gw7.webp (reused cache entry) (+1ms) (12/28)
+18:23:55   ▶ /_astro/cuba-consegna.DpxU7ZX5_ZXJtJ6.webp (reused cache entry) (+1ms) (13/28)
+18:23:55   ▶ /_astro/05.DYo-Mv9r_qATS3.webp (reused cache entry) (+1ms) (14/28)
+18:23:55   ▶ /_astro/06.f6iXoN7M_Zbs1Yx.webp (reused cache entry) (+1ms) (15/28)
+18:23:55   ▶ /_astro/01.BO5NMk_L_Z18Lf9V.webp (reused cache entry) (+1ms) (16/28)
+18:23:55   ▶ /_astro/02.-_nCQ0af_Z1jLHNJ.webp (reused cache entry) (+1ms) (17/28)
+18:23:55   ▶ /_astro/04.WMnbi-wt_Z2gtJXn.webp (reused cache entry) (+1ms) (18/28)
+18:23:55   ▶ /_astro/chi-siamo.DwmIz_82_ZxPLzJ.webp (reused cache entry) (+1ms) (19/28)
+18:23:55   ▶ /_astro/hero.C8L1AweW_1fXbJq.webp (reused cache entry) (+1ms) (20/28)
+18:23:55   ▶ /_astro/03.BHjpqIV7_Z1Gd4x0.webp (reused cache entry) (+1ms) (21/28)
+18:23:55   ▶ /_astro/cuba-consegna.DpxU7ZX5_acC64.webp (reused cache entry) (+1ms) (22/28)
+18:23:55   ▶ /_astro/05.DYo-Mv9r_20annd.webp (reused cache entry) (+1ms) (23/28)
+18:23:55   ▶ /_astro/06.f6iXoN7M_1PKuSX.webp (reused cache entry) (+1ms) (24/28)
+18:23:55   ▶ /_astro/01.BO5NMk_L_1sxhE8.webp (reused cache entry) (+1ms) (25/28)
+18:23:55   ▶ /_astro/04.WMnbi-wt_Z1FI6FJ.webp (reused cache entry) (+1ms) (26/28)
+18:23:55   ▶ /_astro/02.-_nCQ0af_Z1cx8Wu.webp (reused cache entry) (+1ms) (27/28)
+18:23:55   ▶ /_astro/chi-siamo.DwmIz_82_Svifr.webp (reused cache entry) (+1ms) (28/28)
+18:23:55 ✓ Completed in 4ms.
+
+18:23:55 [build] ✓ Completed in 163ms.
+18:23:55 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+18:23:55 [build] 16 page(s) built in 211ms
+18:23:55 [build] Complete!
+✔ home IT esiste con lang="it" e titolo (8.14425ms)
+✔ nessuno script o font esterno nella home IT (0.339834ms)
+✔ nessuna "Onlus" nel testo visibile (1.405834ms)
+✔ contrasto ink su orange ≥ 4.5 (0.48825ms)
+✔ contrasto ink su pink ≥ 4.5 (0.080583ms)
+✔ contrasto ink su cream ≥ 4.5 (0.070542ms)
+✔ contrasto white su blue ≥ 4.5 (0.089833ms)
+✔ contrasto accent su blue ≥ 4.5 (0.068208ms)
+✔ contrasto white su ink ≥ 4.5 (0.037333ms)
+✔ contrasto accent su ink ≥ 4.5 (0.037125ms)
+✔ it: blocchi della home nell'ordine della spec (1.055625ms)
+✔ it: ordine 5×1000 / bonifico per lingua (0.350375ms)
+✔ it: chi-siamo prima della donazione, faq dopo, newsletter per ultima (0.252459ms)
+✔ it: tre numeri grandi con fonte linkata (9.26025ms)
+✔ it: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (1.014584ms)
+✔ it: CF e IBAN presenti e copiabili senza JS (1.453084ms)
+✔ it: menu mobile funziona senza JS (<details>) e desktop resta aperto senza JS (0.578166ms)
+✔ it: newsletter senza action → niente form e niente Mailchimp (1.513292ms)
+✔ it: un solo h1 (0.628958ms)
+✔ es: blocchi della home nell'ordine della spec (0.383666ms)
+✔ es: ordine 5×1000 / bonifico per lingua (0.239416ms)
+✔ es: chi-siamo prima della donazione, faq dopo, newsletter per ultima (0.243875ms)
+✔ es: tre numeri grandi con fonte linkata (0.810125ms)
+✔ es: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.595583ms)
+✔ es: CF e IBAN presenti e copiabili senza JS (0.986708ms)
+✔ es: menu mobile funziona senza JS (<details>) e desktop resta aperto senza JS (0.476208ms)
+✔ es: newsletter senza action → niente form e niente Mailchimp (0.936208ms)
+✔ es: un solo h1 (0.567375ms)
+✔ en: blocchi della home nell'ordine della spec (0.23675ms)
+✔ en: ordine 5×1000 / bonifico per lingua (0.159292ms)
+✔ en: chi-siamo prima della donazione, faq dopo, newsletter per ultima (0.165959ms)
+✔ en: tre numeri grandi con fonte linkata (0.604875ms)
+✔ en: blocco Cuba con El Bloqueo → pagina cuba e Dona ora → #dona (0.508167ms)
+✔ en: CF e IBAN presenti e copiabili senza JS (0.912ms)
+✔ en: menu mobile funziona senza JS (<details>) e desktop resta aperto senza JS (0.450834ms)
+✔ en: newsletter senza action → niente form e niente Mailchimp (1.024375ms)
+✔ en: un solo h1 (0.586625ms)
+✔ le tre lingue hanno le stesse chiavi e le stesse lunghezze di lista (2.378458ms)
+✔ nessun valore vuoto (0.883625ms)
+✔ nessuna parola italiana nei dizionari ES ed EN (0.672459ms)
+✔ nessuna "Onlus" e nessun riferimento a carta o Mollie (0.857417ms)
+✔ El Bloqueo mai "di Comparte" (0.605083ms)
+✔ dati del sito corretti (0.224209ms)
+✔ it: home esiste con lang corretto e un h1 (5.426125ms)
+✔ it: dona esiste con lang corretto e un h1 (0.986625ms)
+✔ it: cuba esiste con lang corretto e un h1 (0.447375ms)
+✔ it: trasparenza esiste con lang corretto e un h1 (0.479125ms)
+✔ it: grazie esiste con lang corretto e un h1 (0.287834ms)
+✔ it: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.248208ms)
+✔ it: /dona/ ha 5×1000, IBAN e FAQ complete (4.047125ms)
+✔ it: pagina grazie noindex (0.269375ms)
+✔ it: trasparenza porta il contenuto vecchio (0.69075ms)
+✔ es: home esiste con lang corretto e un h1 (0.893167ms)
+✔ es: dona esiste con lang corretto e un h1 (0.332333ms)
+✔ es: cuba esiste con lang corretto e un h1 (0.3695ms)
+✔ es: trasparenza esiste con lang corretto e un h1 (0.344333ms)
+✔ es: grazie esiste con lang corretto e un h1 (0.225667ms)
+✔ es: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.158583ms)
+✔ es: /dona/ ha 5×1000, IBAN e FAQ complete (0.48775ms)
+✔ es: pagina grazie noindex (0.136542ms)
+✔ es: trasparenza porta il contenuto vecchio (0.502542ms)
+✔ en: home esiste con lang corretto e un h1 (0.65825ms)
+✔ en: dona esiste con lang corretto e un h1 (0.335583ms)
+✔ en: cuba esiste con lang corretto e un h1 (0.3465ms)
+✔ en: trasparenza esiste con lang corretto e un h1 (0.382416ms)
+✔ en: grazie esiste con lang corretto e un h1 (0.215125ms)
+✔ en: /cuba/ nomina Belén, ha IBAN e link a elbloqueo.it (0.13725ms)
+✔ en: /dona/ ha 5×1000, IBAN e FAQ complete (0.415667ms)
+✔ en: pagina grazie noindex (0.128542ms)
+✔ en: trasparenza porta il contenuto vecchio (0.341375ms)
+✔ it/home: canonical e hreflang reciproci (8.705083ms)
+✔ it/home: JSON-LD valido (1.438667ms)
+✔ it/dona: canonical e hreflang reciproci (0.64325ms)
+✔ it/dona: JSON-LD valido (0.648416ms)
+✔ it/cuba: canonical e hreflang reciproci (0.489ms)
+✔ it/cuba: JSON-LD valido (0.466041ms)
+✔ it/trasparenza: canonical e hreflang reciproci (0.480667ms)
+✔ it/trasparenza: JSON-LD valido (0.631875ms)
+✔ it/grazie: canonical e hreflang reciproci (0.3855ms)
+✔ it/grazie: JSON-LD valido (0.320583ms)
+✔ es/home: canonical e hreflang reciproci (0.492417ms)
+✔ es/home: JSON-LD valido (0.482084ms)
+✔ es/home: nessuna parola italiana nel testo visibile (0.744083ms)
+✔ es/dona: canonical e hreflang reciproci (0.47575ms)
+✔ es/dona: JSON-LD valido (0.353584ms)
+✔ es/dona: nessuna parola italiana nel testo visibile (0.3695ms)
+✔ es/cuba: canonical e hreflang reciproci (0.336709ms)
+✔ es/cuba: JSON-LD valido (0.30625ms)
+✔ es/cuba: nessuna parola italiana nel testo visibile (0.297084ms)
+✔ es/trasparenza: canonical e hreflang reciproci (0.370708ms)
+✔ es/trasparenza: JSON-LD valido (0.325083ms)
+✔ es/trasparenza: nessuna parola italiana nel testo visibile (0.458708ms)
+✔ es/grazie: canonical e hreflang reciproci (0.269125ms)
+✔ es/grazie: JSON-LD valido (0.251542ms)
+✔ es/grazie: nessuna parola italiana nel testo visibile (0.230625ms)
+✔ en/home: canonical e hreflang reciproci (0.449792ms)
+✔ en/home: JSON-LD valido (0.405958ms)
+✔ en/home: nessuna parola italiana nel testo visibile (0.70075ms)
+✔ en/dona: canonical e hreflang reciproci (0.32325ms)
+✔ en/dona: JSON-LD valido (0.311875ms)
+✔ en/dona: nessuna parola italiana nel testo visibile (0.302542ms)
+✔ en/cuba: canonical e hreflang reciproci (0.262333ms)
+✔ en/cuba: JSON-LD valido (0.274334ms)
+✔ en/cuba: nessuna parola italiana nel testo visibile (0.288583ms)
+✔ en/trasparenza: canonical e hreflang reciproci (0.345916ms)
+✔ en/trasparenza: JSON-LD valido (0.415375ms)
+✔ en/trasparenza: nessuna parola italiana nel testo visibile (0.420958ms)
+✔ en/grazie: canonical e hreflang reciproci (0.295458ms)
+✔ en/grazie: JSON-LD valido (0.2135ms)
+✔ en/grazie: nessuna parola italiana nel testo visibile (0.219167ms)
+✔ JSON-LD home: NGO con CF e DonateAction con IBAN, niente Onlus (0.596417ms)
+✔ sitemap generata senza pagine grazie (0.223041ms)
+✔ robots, CNAME, llms.txt e 404 presenti (0.404541ms)
+✔ llms.txt tradotti (es, en): presenti, con Cuba, senza onlus (0.284666ms)
+✔ llms.txt it: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.216042ms)
+✔ llms.txt it: sezione pagine presente (0.169167ms)
+✔ llms.txt es: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.142458ms)
+✔ llms.txt es: sezione pagine presente (0.172208ms)
+✖ llms.txt en: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.445625ms)
+✔ llms.txt en: sezione pagine presente (0.182667ms)
+ℹ tests 120
+ℹ suites 0
+ℹ pass 119
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 100.140125
+
+✖ failing tests:
+
+test at tests/seo.test.mjs:83:3
+✖ llms.txt en: prima riga "> " cita Cuba/Havana/Belén nella lingua giusta (0.445625ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Havana/. Input:
+  
+  '> Italian-Guatemalan nonprofit active since 2018 in the department of Petén, Guatemala. Three training programs: university with USAC/CUDEP, climate education for teens aged 13-17, agricultural training with rural communities. The 5×1000 is donated by indicating tax code 97977810585.'
+  
+      at TestContext.<anonymous> (file:///Users/andreapesce/Dev/worktrees/comparte-sito-nuovo/tests/seo.test.mjs:87:56)
+      at Test.runInAsyncScope (node:async_hooks:228:14)
+      at Test.run (node:internal/test_runner/test:1118:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:787:18)
+      at Test.postRun (node:internal/test_runner/test:1247:19)
+      at Test.run (node:internal/test_runner/test:1175:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:787:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: '> Italian-Guatemalan nonprofit active since 2018 in the department of Petén, Guatemala. Three training programs: university with USAC/CUDEP, climate education for teens aged 13-17, agricultural training with rural communities. The 5×1000 is donated by indicating tax code 97977810585.',
+    expected: /Havana/,
+    operator: 'match',
+    diff: 'simple'
+  }

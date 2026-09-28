@@ -1,0 +1,40 @@
+---
+import { Image } from 'astro:assets';
+import Base from '../layouts/Base.astro';
+import Block from '../components/Block.astro';
+import DonateBlock from '../components/DonateBlock.astro';
+import { t, type Lang } from '../i18n';
+import photo from '../assets/photos/cuba-consegna.jpg';
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const d = t(lang);
+const c = d.cubaPage;
+---
+<Base lang={lang} pageKey="cuba" title={d.meta.cubaTitle} description={d.meta.cubaDescription} ogImage="/og/cuba.jpg">
+  <Block color="blue" labelledby="cuba-h1">
+    <p class="eyebrow accent">{d.cuba.eyebrow}</p>
+    <h1 id="cuba-h1" class="display">{c.title}</h1>
+    <Image src={photo} alt={c.photoAlt} widths={[640, 1200, 2000]} sizes="100vw" class="cuba-img" loading="eager" fetchpriority="high" />
+  </Block>
+  <Block color="cream">
+    <div class="grid-3">
+      <div><h2 class="h3">{c.whoTitle}</h2><ul>{c.who.map((w) => <li>{w}</li>)}</ul></div>
+      <div><h2 class="h3">{c.whatTitle}</h2><p>{c.what}</p></div>
+      <div><h2 class="h3">{c.whyTitle}</h2><p>{c.why}</p></div>
+    </div>
+  </Block>
+  <Block color="ink">
+    <p class="lead">{c.bloqueoText}</p>
+    <p><a class="btn btn--solid-orange" href="https://elbloqueo.it/" target="_blank" rel="noopener">{c.bloqueoCta}<span class="visually-hidden"> {d.ui.newTab}</span></a></p>
+  </Block>
+  <Block color="orange" labelledby="donate-title">
+    <DonateBlock lang={lang} />
+  </Block>
+</Base>
+<style>
+  /* Sotto i 768px il rapporto 3/1 schiaccia la foto a ~125px: su mobile usiamo 4/3 */
+  .cuba-img { margin-top: 48px; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  @media (min-width: 768px) {
+    .cuba-img { aspect-ratio: 3 / 1; }
+  }
+</style>

@@ -1,0 +1,22 @@
+/* Token del design "manifesto": colori e scala tipografica unica */
+:root {
+  --blue: #1A4A6B;
+  --orange: #E8621A;
+  --pink: #D4547A;
+  --cream: #F5EFE0;
+  --ink: #1C1612;
+  --white: #FFFFFF;
+  --accent: #FFB27A;
+
+  --font: 'Plus Jakarta Sans Variable', system-ui, sans-serif;
+  --fs-display: clamp(36px, 6vw + 18px, 120px);
+  --fs-h2: clamp(34px, 3.5vw + 24px, 72px);
+  --fs-stat: clamp(72px, 8.2vw + 41px, 160px);
+  --fs-h3: clamp(22px, 0.6vw + 20px, 28px);
+  --fs-body: 18px;
+  --fs-small: 14px;
+
+  --gutter: clamp(20px, 4vw, 64px);
+  --block-pad: clamp(64px, 8vw, 160px);
+  --max: 1320px;
+}
