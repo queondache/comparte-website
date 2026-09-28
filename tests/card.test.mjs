@@ -31,3 +31,7 @@ for (const lang of LANGS) {
     assert.match(readFileSync(new URL(LLMS[lang], DIST), 'utf8'), /https:\/\/pay\.sumup\.com\/b2c\/QPE9G8BD/);
   });
 }
+
+test('it: il blocco donazioni si intitola "Tre modi per donare"', () => {
+  assert.equal(page(PAGES.it.home).querySelector('#donate-title')?.text.trim(), 'Tre modi per donare');
+});
